@@ -1,11 +1,42 @@
-# STATIC
+# Nuxt 3 Minimal Starter
 
-**This directory is not required, you can delete it if you don't want to use it.**
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-This directory contains your static files.
-Each file inside this directory is mapped to `/`.
-Thus you'd want to delete this README.md before deploying to production.
+## Setup
 
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
+Make sure to install the dependencies:
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/assets#static).
+```bash
+# yarn
+yarn install
+
+# npm
+npm install
+
+# pnpm
+pnpm install
+```
+
+## Development Server
+
+Start the development server on `http://localhost:3000`
+
+```bash
+npm run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+npm run build
+```
+
+Locally preview production build:
+
+```bash
+npm run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
