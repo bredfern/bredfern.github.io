@@ -1,46 +1,46 @@
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/node-fetch-native/dist/polyfill.mjs';
-import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseStatus, setResponseHeader, getRequestHeaders, getQuery as getQuery$1, getCookie, createError, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/h3/dist/index.mjs';
-import { createFetch as createFetch$1, Headers } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/ofetch/dist/node.mjs';
-import destr from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/destr/dist/index.mjs';
-import { createCall, createFetch } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/hookable/dist/index.mjs';
-import { snakeCase, kebabCase, pascalCase, camelCase } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/scule/dist/index.mjs';
-import { klona } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/klona/dist/index.mjs';
-import defu, { defuFn } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/defu/dist/defu.mjs';
-import { hash } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/ohash/dist/index.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, withLeadingSlash, withoutTrailingSlash, isRelative } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/ufo/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/unstorage/drivers/fs.mjs';
-import { toRouteMatcher, createRouter } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/radix3/dist/index.mjs';
-import { extname, join } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/pathe/dist/index.mjs';
-import { unified } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/unified/index.js';
-import { toString } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/mdast-util-to-string/index.js';
-import { preprocess } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/micromark/lib/preprocess.js';
-import { postprocess } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/micromark/lib/postprocess.js';
-import { stringifyPosition } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/unist-util-stringify-position/index.js';
-import { markdownLineEnding, markdownSpace } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/micromark-util-character/index.js';
-import { push, splice } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/micromark-util-chunked/index.js';
-import { resolveAll } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/micromark-util-resolve-all/index.js';
-import remarkEmoji from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/remark-emoji/index.js';
-import rehypeSlug from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/rehype-slug/index.js';
-import remarkSqueezeParagraphs from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/remark-squeeze-paragraphs/index.js';
-import rehypeExternalLinks from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/rehype-external-links/index.js';
-import remarkGfm from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/remark-gfm/index.js';
-import rehypeSortAttributeValues from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/rehype-sort-attribute-values/index.js';
-import rehypeSortAttributes from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/rehype-sort-attributes/index.js';
-import rehypeRaw from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/rehype-raw/index.js';
-import remarkMDC, { parseFrontMatter } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/remark-mdc/dist/index.mjs';
-import remarkParse from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/remark-parse/index.js';
-import remark2rehype from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/remark-rehype/index.js';
-import { all } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/mdast-util-to-hast/index.js';
-import { detab } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/detab/index.js';
-import { u } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/unist-builder/index.js';
-import { encode } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/mdurl/index.js';
-import slugify from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/slugify/slugify.js';
-import { position } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/unist-util-position/index.js';
-import { visit } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/unist-util-visit/index.js';
-import { BUNDLED_LANGUAGES, BUNDLED_THEMES, getHighlighter } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/shiki-es/dist/shiki.node.mjs';
-import { consola } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/unenv/runtime/npm/consola.mjs';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/node-fetch-native/dist/polyfill.mjs';
+import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseStatus, setResponseHeader, getRequestHeaders, getQuery as getQuery$1, getCookie, createError, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/h3/dist/index.mjs';
+import { createFetch as createFetch$1, Headers } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/ofetch/dist/node.mjs';
+import destr from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/destr/dist/index.mjs';
+import { createCall, createFetch } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/hookable/dist/index.mjs';
+import { snakeCase, kebabCase, pascalCase, camelCase } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/scule/dist/index.mjs';
+import { klona } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/klona/dist/index.mjs';
+import defu, { defuFn } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/defu/dist/defu.mjs';
+import { hash } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/ohash/dist/index.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, withLeadingSlash, withoutTrailingSlash, isRelative } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/ufo/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/unstorage/drivers/fs.mjs';
+import { toRouteMatcher, createRouter } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/radix3/dist/index.mjs';
+import { extname, join } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/pathe/dist/index.mjs';
+import { unified } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/unified/index.js';
+import { toString } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/mdast-util-to-string/index.js';
+import { preprocess } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/micromark/lib/preprocess.js';
+import { postprocess } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/micromark/lib/postprocess.js';
+import { stringifyPosition } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/unist-util-stringify-position/index.js';
+import { markdownLineEnding, markdownSpace } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/micromark-util-character/index.js';
+import { push, splice } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/micromark-util-chunked/index.js';
+import { resolveAll } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/micromark-util-resolve-all/index.js';
+import remarkEmoji from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/remark-emoji/index.js';
+import rehypeSlug from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/rehype-slug/index.js';
+import remarkSqueezeParagraphs from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/remark-squeeze-paragraphs/index.js';
+import rehypeExternalLinks from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/rehype-external-links/index.js';
+import remarkGfm from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/remark-gfm/index.js';
+import rehypeSortAttributeValues from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/rehype-sort-attribute-values/index.js';
+import rehypeSortAttributes from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/rehype-sort-attributes/index.js';
+import rehypeRaw from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/rehype-raw/index.js';
+import remarkMDC, { parseFrontMatter } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/remark-mdc/dist/index.mjs';
+import remarkParse from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/remark-parse/index.js';
+import remark2rehype from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/remark-rehype/index.js';
+import { all } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/mdast-util-to-hast/index.js';
+import { detab } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/detab/index.js';
+import { u } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/unist-builder/index.js';
+import { encode } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/mdurl/index.js';
+import slugify from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/slugify/slugify.js';
+import { position } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/unist-util-position/index.js';
+import { visit } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/unist-util-visit/index.js';
+import { BUNDLED_LANGUAGES, BUNDLED_THEMES, getHighlighter } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/shiki-es/dist/shiki.node.mjs';
+import { consola } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/unenv/runtime/npm/consola.mjs';
 
 const inlineAppConfig = {};
 
@@ -71,7 +71,7 @@ const _inlineRuntimeConfig = {
     "content": {
       "locales": [],
       "defaultLocale": "",
-      "integrity": 1685074750536,
+      "integrity": 1685081306033,
       "experimental": {
         "stripQueryParameters": false,
         "clientDB": false,
@@ -265,7 +265,7 @@ new Proxy(/* @__PURE__ */ Object.create(null), {
   }
 });
 
-const serverAssets = [{"baseName":"server","dir":"/home/bredfern/Documents/projects/bredfern.github.io/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/home/bredfern/Documents/bredfern.github.io/server/assets"}];
 
 const assets = createStorage();
 
@@ -277,12 +277,12 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets);
 
-storage.mount('content:source:content', unstorage_47drivers_47fs({"name":"content:source:content","driver":"fs","base":"/home/bredfern/Documents/projects/bredfern.github.io/content","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache:content', unstorage_47drivers_47fs({"driver":"fs","base":"/home/bredfern/Documents/projects/bredfern.github.io/.nuxt/content-cache","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/home/bredfern/Documents/projects/bredfern.github.io","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/home/bredfern/Documents/projects/bredfern.github.io/server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/home/bredfern/Documents/projects/bredfern.github.io/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/home/bredfern/Documents/projects/bredfern.github.io/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('content:source:content', unstorage_47drivers_47fs({"name":"content:source:content","driver":"fs","base":"/home/bredfern/Documents/bredfern.github.io/content","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache:content', unstorage_47drivers_47fs({"driver":"fs","base":"/home/bredfern/Documents/bredfern.github.io/.nuxt/content-cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/home/bredfern/Documents/bredfern.github.io","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/home/bredfern/Documents/bredfern.github.io/server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/home/bredfern/Documents/bredfern.github.io/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/home/bredfern/Documents/bredfern.github.io/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -3295,7 +3295,7 @@ const json = defineTransformer({
     let parsed;
     if (typeof content === "string") {
       if (_id.endsWith("json5")) {
-        parsed = (await import('file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
+        parsed = (await import('file:///home/bredfern/Documents/bredfern.github.io/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
       } else if (_id.endsWith("json")) {
         parsed = destr(content);
       }
@@ -3639,7 +3639,7 @@ const getContentQuery = (event) => {
   return query;
 };
 
-const _5IIdB8 = defineEventHandler(async (event) => {
+const _gvapF7 = defineEventHandler(async (event) => {
   const query = getContentQuery(event);
   if (query.first) {
     const content = await serverQueryContent(event, query).findOne();
@@ -3670,7 +3670,7 @@ const _5IIdB8 = defineEventHandler(async (event) => {
   return contents;
 });
 
-const _mAmXNc = defineEventHandler(async (event) => {
+const _FSJt7U = defineEventHandler(async (event) => {
   const { content } = useRuntimeConfig();
   const now = Date.now();
   const contents = await serverQueryContent(event).find();
@@ -3772,7 +3772,7 @@ function isObject(obj) {
   return Object.prototype.toString.call(obj) === "[object Object]";
 }
 
-const _Wv1NRz = defineEventHandler(async (event) => {
+const _SaYCvy = defineEventHandler(async (event) => {
   const query = getContentQuery(event);
   if (!isPreview(event) && Object.keys(query).length === 0) {
     const cache = await cacheStorage.getItem("content-navigation.json");
@@ -3809,17 +3809,17 @@ const _Wv1NRz = defineEventHandler(async (event) => {
   return createNav(contents, configs);
 });
 
-const _lazy_vMkdCY = () => import('../renderer.mjs');
+const _lazy_Glo9gr = () => import('../renderer.mjs');
 
 const handlers = [
-  { route: '/api/_content/query/:qid/**:params', handler: _5IIdB8, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/query/:qid', handler: _5IIdB8, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/query', handler: _5IIdB8, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/cache.1685074750536.json', handler: _mAmXNc, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation/:qid/**:params', handler: _Wv1NRz, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation/:qid', handler: _Wv1NRz, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation', handler: _Wv1NRz, lazy: false, middleware: false, method: "get" },
-  { route: '/**', handler: _lazy_vMkdCY, lazy: true, middleware: false, method: undefined }
+  { route: '/api/_content/query/:qid/**:params', handler: _gvapF7, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query/:qid', handler: _gvapF7, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query', handler: _gvapF7, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/cache.1685081306033.json', handler: _FSJt7U, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid/**:params', handler: _SaYCvy, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid', handler: _SaYCvy, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation', handler: _SaYCvy, lazy: false, middleware: false, method: "get" },
+  { route: '/**', handler: _lazy_Glo9gr, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {

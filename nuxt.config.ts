@@ -10,11 +10,7 @@ export default defineNuxtConfig({
       "lintOnStart": false
   },
 
-  ssr: false,
-  nitro: {
-    preset: 'service-worker'
-  },
-
+  ssr: true,
   devtools: {
     enabled: true
   },

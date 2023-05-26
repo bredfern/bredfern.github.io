@@ -1,8 +1,8 @@
 {
-  "_nuxt-link.65fc3b75.js": {
+  "_nuxt-link.8090ac49.js": {
     "resourceType": "script",
     "module": true,
-    "file": "nuxt-link.65fc3b75.js",
+    "file": "nuxt-link.8090ac49.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -10,7 +10,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/ContentList.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "ContentList.28945dc5.js",
+    "file": "ContentList.7b6f87a3.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -23,10 +23,10 @@
     "dynamicImports": [
       "node_modules/@nuxt/content/dist/runtime/composables/client-db.mjs"
     ],
-    "file": "ContentNavigation.f28f399c.js",
+    "file": "ContentNavigation.a73a4c45.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_nuxt-link.65fc3b75.js"
+      "_nuxt-link.8090ac49.js"
     ],
     "isDynamicEntry": true,
     "src": "node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.vue"
@@ -34,7 +34,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "ContentSlot.e2345ad3.js",
+    "file": "ContentSlot.6669dc0d.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -44,7 +44,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenEmpty.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "DocumentDrivenEmpty.54dd7708.js",
+    "file": "DocumentDrivenEmpty.021fb855.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -54,7 +54,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/DocumentDrivenNotFound.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "DocumentDrivenNotFound.f2664262.js",
+    "file": "DocumentDrivenNotFound.ba526295.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -64,7 +64,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/Markdown.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "Markdown.b2c74690.js",
+    "file": "Markdown.750b42bd.js",
     "imports": [
       "node_modules/@nuxt/content/dist/runtime/components/ContentSlot.vue",
       "node_modules/nuxt/dist/app/entry.js"
@@ -75,9 +75,9 @@
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseA.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "ProseA.5ab5fad3.js",
+    "file": "ProseA.a504d87d.js",
     "imports": [
-      "_nuxt-link.65fc3b75.js",
+      "_nuxt-link.8090ac49.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -86,7 +86,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseBlockquote.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "ProseBlockquote.30349da2.js",
+    "file": "ProseBlockquote.2b4fe80d.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -101,10 +101,8 @@
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue": {
     "resourceType": "script",
     "module": true,
-    "css": [
-      "ProseCode.e63e49c6.css"
-    ],
-    "file": "ProseCode.67c47cd0.js",
+    "css": [],
+    "file": "ProseCode.131e0745.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -118,7 +116,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCodeInline.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "ProseCodeInline.b6736e95.js",
+    "file": "ProseCodeInline.c337a518.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -128,7 +126,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseEm.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "ProseEm.ef13c5ee.js",
+    "file": "ProseEm.661f8aed.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -138,7 +136,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH1.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "ProseH1.b7c8c5bf.js",
+    "file": "ProseH1.82cd4957.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -148,7 +146,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH2.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "ProseH2.2b711af8.js",
+    "file": "ProseH2.921f2f20.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -158,7 +156,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH3.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "ProseH3.83c96d41.js",
+    "file": "ProseH3.6cdd4266.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -168,7 +166,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH4.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "ProseH4.aab92d36.js",
+    "file": "ProseH4.16704e5c.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -178,7 +176,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH5.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "ProseH5.8d2d589b.js",
+    "file": "ProseH5.c5ced61c.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -188,7 +186,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH6.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "ProseH6.8d434425.js",
+    "file": "ProseH6.c427acf0.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -198,7 +196,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseHr.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "ProseHr.329d70a6.js",
+    "file": "ProseHr.2990d47f.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -208,7 +206,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseImg.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "ProseImg.c2c616df.js",
+    "file": "ProseImg.70e5a014.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -218,7 +216,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseLi.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "ProseLi.c3e2b3e6.js",
+    "file": "ProseLi.05e51fb4.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -228,7 +226,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseOl.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "ProseOl.4d54e3aa.js",
+    "file": "ProseOl.3769c598.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -238,7 +236,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseP.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "ProseP.f84ab5f1.js",
+    "file": "ProseP.c192d5dc.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -248,7 +246,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseStrong.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "ProseStrong.e99e0dba.js",
+    "file": "ProseStrong.ae957147.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -258,7 +256,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTable.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "ProseTable.d860f87b.js",
+    "file": "ProseTable.a067757f.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -268,7 +266,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTbody.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "ProseTbody.688b99bb.js",
+    "file": "ProseTbody.7d8a1ab2.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -278,7 +276,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTd.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "ProseTd.15692802.js",
+    "file": "ProseTd.8781dc5d.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -288,7 +286,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTh.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "ProseTh.c39dcded.js",
+    "file": "ProseTh.f8e96328.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -298,7 +296,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseThead.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "ProseThead.380059e7.js",
+    "file": "ProseThead.fb3bb7bb.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -308,7 +306,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTr.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "ProseTr.5f9396ed.js",
+    "file": "ProseTr.c94c0403.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -318,7 +316,7 @@
   "node_modules/@nuxt/content/dist/runtime/components/Prose/ProseUl.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "ProseUl.ab1c71ab.js",
+    "file": "ProseUl.ade991f0.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -328,7 +326,7 @@
   "node_modules/@nuxt/content/dist/runtime/composables/client-db.mjs": {
     "resourceType": "script",
     "module": true,
-    "file": "client-db.753618e1.js",
+    "file": "client-db.a83146f0.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -343,12 +341,10 @@
   "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue": {
     "resourceType": "script",
     "module": true,
-    "css": [
-      "error-404.8bdbaeb8.css"
-    ],
-    "file": "error-404.2418d213.js",
+    "css": [],
+    "file": "error-404.920b14db.js",
     "imports": [
-      "_nuxt-link.65fc3b75.js",
+      "_nuxt-link.8090ac49.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -366,10 +362,8 @@
   "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue": {
     "resourceType": "script",
     "module": true,
-    "css": [
-      "error-500.b63a96f5.css"
-    ],
-    "file": "error-500.a0473d23.js",
+    "css": [],
+    "file": "error-500.e18f2be9.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -393,9 +387,9 @@
     ],
     "dynamicImports": [
       "node_modules/@nuxt/content/dist/runtime/composables/client-db.mjs",
-      "virtual:nuxt:/home/bredfern/Documents/projects/bredfern.github.io/.nuxt/error-component.mjs"
+      "virtual:nuxt:/home/bredfern/Documents/bredfern.github.io/.nuxt/error-component.mjs"
     ],
-    "file": "entry.71e45e8b.js",
+    "file": "entry.ea5d3ce9.js",
     "isEntry": true,
     "src": "node_modules/nuxt/dist/app/entry.js"
   },
@@ -406,25 +400,25 @@
   "pages/[...slug].vue": {
     "resourceType": "script",
     "module": true,
-    "file": "_...slug_.829fa85c.js",
+    "file": "_...slug_.3840b4b9.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/[...slug].vue"
   },
-  "virtual:nuxt:/home/bredfern/Documents/projects/bredfern.github.io/.nuxt/error-component.mjs": {
+  "virtual:nuxt:/home/bredfern/Documents/bredfern.github.io/.nuxt/error-component.mjs": {
     "resourceType": "script",
     "module": true,
     "dynamicImports": [
       "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
       "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
     ],
-    "file": "error-component.7ec3ba30.js",
+    "file": "error-component.bff3c503.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
-    "src": "virtual:nuxt:/home/bredfern/Documents/projects/bredfern.github.io/.nuxt/error-component.mjs"
+    "src": "virtual:nuxt:/home/bredfern/Documents/bredfern.github.io/.nuxt/error-component.mjs"
   }
 }

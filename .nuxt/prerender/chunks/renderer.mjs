@@ -1,49 +1,50 @@
-import { createRenderer } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { eventHandler, setResponseStatus, getQuery, createError, appendResponseHeader } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/h3/dist/index.mjs';
-import { stringify, uneval } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/devalue/index.js';
-import { joinURL, withoutTrailingSlash } from 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/ufo/dist/index.mjs';
+import { createRenderer } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { eventHandler, setResponseStatus, getQuery, createError } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/h3/dist/index.mjs';
+import { stringify, uneval } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/devalue/index.js';
+import { renderToString } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/vue/server-renderer/index.mjs';
 import { u as useNitroApp, a as useRuntimeConfig, g as getRouteRules } from './nitro/nitro-prerenderer.mjs';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/node-fetch-native/dist/polyfill.mjs';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/ofetch/dist/node.mjs';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/destr/dist/index.mjs';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/unenv/runtime/fetch/index.mjs';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/hookable/dist/index.mjs';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/scule/dist/index.mjs';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/klona/dist/index.mjs';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/defu/dist/defu.mjs';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/ohash/dist/index.mjs';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/unstorage/dist/index.mjs';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/unstorage/drivers/fs.mjs';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/radix3/dist/index.mjs';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/pathe/dist/index.mjs';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/unified/index.js';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/mdast-util-to-string/index.js';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/micromark/lib/preprocess.js';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/micromark/lib/postprocess.js';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/unist-util-stringify-position/index.js';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/micromark-util-character/index.js';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/micromark-util-chunked/index.js';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/micromark-util-resolve-all/index.js';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/remark-emoji/index.js';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/rehype-slug/index.js';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/remark-squeeze-paragraphs/index.js';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/rehype-external-links/index.js';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/remark-gfm/index.js';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/rehype-sort-attribute-values/index.js';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/rehype-sort-attributes/index.js';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/rehype-raw/index.js';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/remark-mdc/dist/index.mjs';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/remark-parse/index.js';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/remark-rehype/index.js';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/mdast-util-to-hast/index.js';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/detab/index.js';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/unist-builder/index.js';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/mdurl/index.js';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/slugify/slugify.js';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/unist-util-position/index.js';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/unist-util-visit/index.js';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/shiki-es/dist/shiki.node.mjs';
-import 'file:///home/bredfern/Documents/projects/bredfern.github.io/node_modules/unenv/runtime/npm/consola.mjs';
+import { joinURL } from 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/ufo/dist/index.mjs';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/node-fetch-native/dist/polyfill.mjs';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/ofetch/dist/node.mjs';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/destr/dist/index.mjs';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/unenv/runtime/fetch/index.mjs';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/hookable/dist/index.mjs';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/scule/dist/index.mjs';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/klona/dist/index.mjs';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/defu/dist/defu.mjs';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/ohash/dist/index.mjs';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/unstorage/dist/index.mjs';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/unstorage/drivers/fs.mjs';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/radix3/dist/index.mjs';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/pathe/dist/index.mjs';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/unified/index.js';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/mdast-util-to-string/index.js';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/micromark/lib/preprocess.js';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/micromark/lib/postprocess.js';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/unist-util-stringify-position/index.js';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/micromark-util-character/index.js';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/micromark-util-chunked/index.js';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/micromark-util-resolve-all/index.js';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/remark-emoji/index.js';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/rehype-slug/index.js';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/remark-squeeze-paragraphs/index.js';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/rehype-external-links/index.js';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/remark-gfm/index.js';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/rehype-sort-attribute-values/index.js';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/rehype-sort-attributes/index.js';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/rehype-raw/index.js';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/remark-mdc/dist/index.mjs';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/remark-parse/index.js';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/remark-rehype/index.js';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/mdast-util-to-hast/index.js';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/detab/index.js';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/unist-builder/index.js';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/mdurl/index.js';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/slugify/slugify.js';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/unist-util-position/index.js';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/unist-util-visit/index.js';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/shiki-es/dist/shiki.node.mjs';
+import 'file:///home/bredfern/Documents/bredfern.github.io/node_modules/unenv/runtime/npm/consola.mjs';
 
 function defineRenderHandler(handler) {
   return eventHandler(async (event) => {
@@ -92,7 +93,29 @@ globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;
 const getClientManifest = () => import('./app/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
 const getStaticRenderedHead = () => import('./rollup/_virtual_head-static.mjs').then((r) => r.default || r);
+const getServerEntry = () => import('./app/server.mjs').then((r) => r.default || r);
 const getSSRStyles = lazyCachedFunction(() => import('./app/styles.mjs').then((r) => r.default || r));
+const getSSRRenderer = lazyCachedFunction(async () => {
+  const manifest = await getClientManifest();
+  if (!manifest) {
+    throw new Error("client.manifest is not available");
+  }
+  const createSSRApp = await getServerEntry();
+  if (!createSSRApp) {
+    throw new Error("Server bundle is not available");
+  }
+  const options = {
+    manifest,
+    renderToString: renderToString$1,
+    buildAssetsURL
+  };
+  const renderer = createRenderer(createSSRApp, options);
+  async function renderToString$1(input, context) {
+    const html = await renderToString(input, context);
+    return `<${appRootTag} id="${appRootId}">${html}</${appRootTag}>`;
+  }
+  return renderer;
+});
 const getSPARenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
   const options = {
@@ -123,8 +146,9 @@ const getSPARenderer = lazyCachedFunction(async () => {
     renderToString
   };
 });
-const PAYLOAD_CACHE = /* @__PURE__ */ new Map() ;
+const PAYLOAD_CACHE = null;
 const PAYLOAD_URL_RE = /\/_payload(\.[a-zA-Z0-9]+)?.json(\?.*)?$/ ;
+const PRERENDER_NO_SSR_ROUTES = /* @__PURE__ */ new Set(["/index.html", "/200.html", "/404.html"]);
 const renderer = defineRenderHandler(async (event) => {
   const nitroApp = useNitroApp();
   const ssrError = event.node.req.url?.startsWith("/__nuxt_error") ? getQuery(event) : null;
@@ -152,7 +176,7 @@ const renderer = defineRenderHandler(async (event) => {
     url,
     event,
     runtimeConfig: useRuntimeConfig(),
-    noSSR: !!true   ,
+    noSSR: event.context.nuxt?.noSSR || routeOptions.ssr === false || (PRERENDER_NO_SSR_ROUTES.has(url) ),
     error: !!ssrError,
     nuxt: void 0,
     /* NuxtApp */
@@ -160,12 +184,10 @@ const renderer = defineRenderHandler(async (event) => {
     _payloadReducers: {},
     islandContext
   };
-  const _PAYLOAD_EXTRACTION = !ssrContext.noSSR && !islandContext;
-  const payloadURL = _PAYLOAD_EXTRACTION ? joinURL(useRuntimeConfig().app.baseURL, url, "_payload.json" ) : void 0;
   {
     ssrContext.payload.prerenderedAt = Date.now();
   }
-  const renderer = await getSPARenderer() ;
+  const renderer = ssrContext.noSSR ? await getSPARenderer() : await getSSRRenderer();
   const _rendered = await renderer.renderToString(ssrContext).catch(async (error) => {
     const _err = !ssrError && ssrContext.payload?.error || error;
     await ssrContext.nuxt?.hooks.callHook("app:error", _err);
@@ -188,19 +210,15 @@ const renderer = defineRenderHandler(async (event) => {
     }
     return response2;
   }
-  if (_PAYLOAD_EXTRACTION) {
-    appendResponseHeader(event, "x-nitro-prerender", joinURL(url, "_payload.json" ));
-    PAYLOAD_CACHE.set(withoutTrailingSlash(url), renderPayloadResponse(ssrContext));
-  }
   const renderedMeta = await ssrContext.renderMeta?.() ?? {};
-  const inlinedStyles = Boolean(islandContext) ? await renderInlineStyles(ssrContext.modules ?? ssrContext._registeredComponents ?? []) : "";
+  const inlinedStyles = await renderInlineStyles(ssrContext.modules ?? ssrContext._registeredComponents ?? []) ;
   const NO_SCRIPTS = routeOptions.experimentalNoScripts;
   const htmlContext = {
     island: Boolean(islandContext),
     htmlAttrs: normalizeChunks([renderedMeta.htmlAttrs]),
     head: normalizeChunks([
       renderedMeta.headTags,
-      _PAYLOAD_EXTRACTION ? `<link rel="preload" as="fetch" crossorigin="anonymous" href="${payloadURL}">` : null ,
+      null ,
       NO_SCRIPTS ? null : _rendered.renderResourceHints(),
       _rendered.renderStyles(),
       inlinedStyles,
@@ -213,7 +231,7 @@ const renderer = defineRenderHandler(async (event) => {
     ]),
     body: [_rendered.html],
     bodyAppend: normalizeChunks([
-      NO_SCRIPTS ? void 0 : _PAYLOAD_EXTRACTION ? renderPayloadJsonScript({ id: "__NUXT_DATA__", ssrContext, data: splitPayload(ssrContext).initial, src: payloadURL })  : renderPayloadJsonScript({ id: "__NUXT_DATA__", ssrContext, data: ssrContext.payload }) ,
+      NO_SCRIPTS ? void 0 : renderPayloadJsonScript({ id: "__NUXT_DATA__", ssrContext, data: ssrContext.payload }) ,
       routeOptions.experimentalNoScripts ? void 0 : _rendered.renderScripts(),
       // Note: bodyScripts may contain tags other than <script>
       renderedMeta.bodyScripts
@@ -286,7 +304,7 @@ function renderPayloadJsonScript(opts) {
   const attrs = [
     'type="application/json"',
     `id="${opts.id}"`,
-    `data-ssr="${!(true )}"`,
+    `data-ssr="${!(opts.ssrContext.noSSR)}"`,
     opts.src ? `data-src="${opts.src}"` : ""
   ].filter(Boolean);
   const contents = opts.data ? stringify(opts.data, opts.ssrContext._payloadReducers) : "";
