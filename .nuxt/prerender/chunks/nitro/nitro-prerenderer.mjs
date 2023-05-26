@@ -50,7 +50,7 @@ const appConfig = defuFn(inlineAppConfig);
 
 const _inlineRuntimeConfig = {
   "app": {
-    "baseURL": "/",
+    "baseURL": "/bredfern.github.io/",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
@@ -71,7 +71,7 @@ const _inlineRuntimeConfig = {
     "content": {
       "locales": [],
       "defaultLocale": "",
-      "integrity": 1685039880875,
+      "integrity": 1685066110797,
       "experimental": {
         "stripQueryParameters": false,
         "clientDB": false,
@@ -3815,7 +3815,7 @@ const handlers = [
   { route: '/api/_content/query/:qid/**:params', handler: _5IIdB8, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query/:qid', handler: _5IIdB8, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query', handler: _5IIdB8, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/cache.1685039880875.json', handler: _mAmXNc, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/cache.1685066110797.json', handler: _mAmXNc, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation/:qid/**:params', handler: _Wv1NRz, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation/:qid', handler: _Wv1NRz, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/navigation', handler: _Wv1NRz, lazy: false, middleware: false, method: "get" },

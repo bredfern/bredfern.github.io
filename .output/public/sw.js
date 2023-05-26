@@ -1,1 +1,0 @@
-self.importScripts('/server/index.mjs');

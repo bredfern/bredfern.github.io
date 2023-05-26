@@ -1,1 +1,0 @@
-import{B as o,C as c,Q as s,o as _,R as n}from"./entry.ea5d3ce9.js";const t={},a={class:"prose"};function r(f,m){const e=n;return _(),c("main",a,[s(e)])}const l=o(t,[["render",r]]);export{l as default};
