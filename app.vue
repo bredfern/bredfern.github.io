@@ -28,6 +28,7 @@ export default {
     <div class="hero-content flex-col lg:flex-row" style="background-color: azure;">
       <img src="/images/redfern.jpg" class="max-w-xs rounded-lg shadow-2xl" />
       <div>
+      <h1 class="card-title">Brian Redfern</h1>
         <p class="py-6"><ContentDoc /></p>
       </div>
     </div>
