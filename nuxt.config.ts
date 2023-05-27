@@ -9,7 +9,9 @@ export default defineNuxtConfig({
   stylelint: {
       "lintOnStart": false
   },
-
+  app: {
+    baseURL: '/' // baseURL: '/<repository>/'
+  },
   ssr: true,
   devtools: {
     enabled: true
