@@ -6,39 +6,15 @@
     <meta name="description" content="The website of artist/musican Brian Redfern.">
     <title>Brian Redfern</title>
     <link rel="icon" href="/favicon.ico">
-      <style>
-    body {
-        background: #000 }
-    section {
-        background: #8B0000;
-        color: #fff;
-        border-radius: 1em;
-        padding: 1em;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%) }
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto }
-  h1 {
-    font-size:4rem;
-  }
-  a, a:active, a:visited {
-    color: white;
-  }
-  /* Keep the translations off to the side */
-  #translations {position: absolute; top: 0; right: 0; padding: 0.5em;
-      font-size: small; background: hsla(0,0%,100%,0.9); margin: 0 1em}
-  #translations * {font-size: 100%; margin: 0}
-  #translations ul {padding-left: 1em}
-     </style>
+    <link rel="stylesheet" type="text/css" href="site.css">
    </head>
+   <body>
     <section>
-    <h1>Brian Redfern</h1>
-    <p>{% block content %} {% endblock %}
-  </section>
+      <h1>Brian Redfern</h1>
+      <div>
+        <img src="/redfern-large.webp" width="200" height="200" srcset="redfern-small.webp 480w redfern-large 1080w" sizes="50vw" alt="me">
+      </div>
+      <div>{% block content %} {% endblock %}</div>
+    </section>
   </body>
 </html>
