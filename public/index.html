@@ -5,28 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Brian Redfern</title>
     <link rel="icon" href="/favicon.ico">
-    <link href="/bootstrap.min.css" rel="stylesheet">
-    <link href="/site.css" rel="stylesheet">
-    <script src="/site.js"></script>
-  </head>
-  <body class="d-flex h-100 text-center text-bg-dark">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-
-      <header class="mb-auto">
-        <div>
-          <h3 class="float-md-start mb-0">Brian Redfern</h3>
-          <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a class="nav-link fw-bold py-1 px-0" href="mailto:brianwredfern@gmail.com">contact</a>
-          </nav>
-        </div>
-      </header>
-    
-      <main class="px-3">
-        
-<p class="lead">
-<img src="/images/redfern.jpg" class="img-fluid my-pic" alt="redfern">
-</p>
-<h1>Hello World</h1>
+      <style>
+    body {
+        background: black }
+    section {
+        background: red;
+        color: white;
+        border-radius: 1em;
+        padding: 1em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+  h1 {
+    font-size:2.8rem;
+  }
+  a, a:active, a:visited {
+    color: white;
+  }
+  /* Keep the translations off to the side */
+  #translations {position: absolute; top: 0; right: 0; padding: 0.5em;
+      font-size: small; background: hsla(0,0%,100%,0.9); margin: 0 1em}
+  #translations * {font-size: 100%; margin: 0}
+  #translations ul {padding-left: 1em}
+     </style>
+   </head>
+    <section>
+    <p>
+<h1>Brian Redfern</h1>
+<p><img src="redfern.webp" alt="me"></p>
 <p>
 I am a designer, developer and musician.
 </p>
@@ -37,12 +49,6 @@ Check out my music  <a href="https://hyperfollow.com/brianredfern">links page</a
 Take a look at my  <a href="https://github.com/bredfern">Github page</a>.
 </p>
 
-      </main>
-    
-      <footer class="mt-auto text-white-50">
-        <p>All Rights Reserved Copyright <span id="date_display"></span></p>
-      </footer>
-
-    </div>
+  </section>
   </body>
 </html>
