@@ -12,7 +12,11 @@
     <section>
       <h1>Brian Redfern</h1>
       <div>
-        <img src="/redfern-large.webp" width="200" height="200" srcset="redfern-small.webp 480w redfern-large 1080w" sizes="50vw" alt="me">
+        <picture>
+          <source media="(min-width:650px)" srcset="/redfern-large.webp">
+          <source media="(min-width:465px)" srcset="/redfern-small.webp">
+          <img src="/redfern-large.webp" alt="My Face" style="width:auto;">
+        </picture>
       </div>
       <div>{% block content %} {% endblock %}</div>
     </section>
