@@ -2,6 +2,8 @@ body {
   padding-top: 0.6rem;
   background: #000;
   background-image: url('/bg.webp');
+  background-position: top;
+  background-repeat: no-repeat;
   background-size:cover;
   -webkit-animation: slidein 100s;
   animation: slidein 100s;
@@ -51,10 +53,10 @@ p {
 
 @-webkit-keyframes slidein {
   from {background-position: top; background-size:3000px; }
-  to {background-position: -100px 0px;background-size:2750px;}
+  to {background-position: -100px 0;background-size:2750px;}
 }
 
 @keyframes slidein {
   from {background-position: top;background-size:3000px; }
-  to {background-position: -100px 0px;background-size:2750px;}
+  to {background-position: -100px 0;background-size:2750px;}
 }
