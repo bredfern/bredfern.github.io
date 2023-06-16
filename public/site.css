@@ -9,6 +9,26 @@ body {
   -ms-animation: color_change 1s infinite alternate;
   -o-animation: color_change 1s infinite alternate;
   animation: color_change 1s infinite alternate;
+  @-webkit-keyframes color_change {
+	from { background-color: blue; }
+	to { background-color: red; }
+}
+@-moz-keyframes color_change {
+	from { background-color: blue; }
+	to { background-color: red; }
+}
+@-ms-keyframes color_change {
+	from { background-color: blue; }
+	to { background-color: red; }
+}
+@-o-keyframes color_change {
+	from { background-color: blue; }
+	to { background-color: red; }
+}
+@keyframes color_change {
+	from { background-color: blue; }
+	to { background-color: red; }
+}
 }
 
 section {
