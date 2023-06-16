@@ -1,7 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
-
-/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
-/* Animations */
 @-webkit-keyframes bg-scrolling-reverse {
   100% {
     background-position: 50px 50px;
