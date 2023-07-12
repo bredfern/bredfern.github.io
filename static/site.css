@@ -39,18 +39,19 @@ body {
 }
 
 header {
-  background-color: rgb(255, 0, 0);
-  color: #ffffff;
+  background-color: #000;
+  color: #fff;
   padding: 15px;
 }
 
 a, a:visited, a:active {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 
 a:hover {
-  color: rgb(255, 0, 0);
+  text-decoration: underline;
+  color: #fff;
 }
 
 picture {
@@ -61,7 +62,6 @@ picture {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  opacity: 0.7;
 }
 
 .menu li {
@@ -73,21 +73,20 @@ picture {
 }
 
 .menu li:hover {
-  background-color: rgb(255, 0, 0);
+  background-color: #444444;
 }
 
 .aside {
   background-color: #000;
-  padding: 15px;
-  opacity: 0.7;
-  color: #ffffff;
+  padding: 1rem;
+  color: #fff;
   text-align: center;
   font-size: 14px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 footer {
-  background-color: rgb(255, 0, 0);
+  background-color: #000;
   color: #ffffff;
   text-align: center;
   font-size: 1rem;
