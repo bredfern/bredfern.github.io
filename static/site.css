@@ -3,7 +3,8 @@
 }
 
 html {
-  font-family: 'Ysabeau Infant', sans-serif;
+  font-family: 'Garamond', serif;
+  Brush Script MT
   font-size: 120%;
 }
 
@@ -60,7 +61,7 @@ a:hover {
 }
 
 h1, h2, h3, h5, h5 {
-  font-family: 'Metal Mania', cursive;
+  font-family: 'Brush Script MT', cursive;
 }
 
 .menu ul {
