@@ -27,6 +27,10 @@ body {
   animation-timing-function: linear;
 }
 
+.centered {
+  text-align: center;
+}
+
 .row::after {
   content: "";
   clear: both;
