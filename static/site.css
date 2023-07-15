@@ -51,21 +51,25 @@ header {
 }
 
 a, a:visited, a:active {
-  color: rgb(255,255,255);
+  color: rgb(150,3,25);
   text-decoration: none;
 }
 
-a:hover {
+a:hover, .menu li:hover  {
   text-decoration: underline;
-  color: rgb(255,255,255);
+  color: rgb(0,0,0);
+  background: rgb(192,192,192);
 }
 
 h1, h2, h3, h5, h5 {
   font-family: 'Brush Script MT', cursive;
 }
 
-.menu ul {
+ul {
   list-style-type: none;
+}
+
+.menu ul {
   margin: 0;
   padding: 0;
 }
@@ -73,10 +77,6 @@ h1, h2, h3, h5, h5 {
 .menu li {
   padding: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-.menu li:hover {
-  background-color: rgb(68, 68, 68);
 }
 
 .aside {
@@ -87,8 +87,8 @@ h1, h2, h3, h5, h5 {
 
 .menu li, .aside {
   box-shadow: 0 0.063rem 0.188rem rgba(0,0,0,0.12), 0 0.063rem 0.125rem rgba(0,0,0,0.24);
-  color: rgb(255,255,255);
-  background-color: rgb(0,0,0);
+  color: rgb(0,0,0);
+  background-color: rgb(255,255,255);
 }
 
 footer {
