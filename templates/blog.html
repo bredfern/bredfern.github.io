@@ -7,7 +7,7 @@
 <ul>
   <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
   {% for page in section.pages %}
-  <li>{{ page.date }} - <a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+  <li><p>{{ page.date }} - <a href="{{ page.permalink | safe }}">{{ page.title }}</a></p></li>
   {% endfor %}
 </ul>
 {% endblock content %}
