@@ -51,13 +51,12 @@ header {
 }
 
 a, a:visited, a:active {
-  color: rgb(150,3,25);
+  color: rgb(0,0,0);
   text-decoration: none;
 }
 
 a:hover, .menu li:hover  {
-  text-decoration: underline;
-  color: rgb(0,0,0);
+  color: rgb(150,3,25);
   background: rgb(192,192,192);
 }
 
