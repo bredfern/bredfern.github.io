@@ -3,8 +3,6 @@ title = "Waiting and Waiting"
 date = 2020-03-22
 +++
 
-Waiting
-
 A gambler without
 
 A cause to find excepted

@@ -3,8 +3,6 @@ title="Steal Your Face"
 date="2023-07-21"
 +++
 
-# Steal Your Face
-
 What are some of the issues that are driving the current writer and actor's strikes?
 
 AI is developing far faster than people like Biden can realise. Since the issues created by AI largely do not effect the class of retired people represented by Washington nothing is being done.

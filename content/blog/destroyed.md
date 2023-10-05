@@ -3,8 +3,6 @@ title = "Destroyed LA"
 date = 2020-08-05
 +++
 
-Find Something New
-
 Its estimated that unemployment in Los Angeles is over 80%. Yet the powers that be can only pay themselves billions of our money to create a crappy website telling people to “go find something new.” Excuse me when there are between 20-80 million who need a job and none available what is there to find?
 
 Somehow they assume that having been given a 60% cut in their income suddenly jobs will magically present themselves to all those laid off and the economy will instantly recover.

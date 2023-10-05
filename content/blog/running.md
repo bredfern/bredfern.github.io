@@ -3,8 +3,6 @@ title = "Running in Place"
 date = 2020-04-26
 +++
 
-Running in Place
-
 The vulture wings high
 
 As coyote takes a break

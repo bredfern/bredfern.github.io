@@ -3,8 +3,6 @@ title = "Genesis Passing"
 date = 2020-03-16
 +++
 
-Goodbye to a genius
-
 Back in 2017 I was able to see one of her last Psychic TV shows. Compared to say the Rolling Stones it was a small venue but the music was amazing and the light show and video.
 
 Now she’s gone, cancer taken her in the end.
