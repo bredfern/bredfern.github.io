@@ -1,6 +1,6 @@
 
-$font-stack: 'Garamond', serif;
-$font-title: 'Brush Script MT', cursive;
+$font-stack: "Verdana", "Geneva", sans-serif;
+$font-title: monospace;
 
 $back-color: rgb(255,255,255);
 $fore-color: rgb(0,0,0);
@@ -87,7 +87,7 @@ ul {
 }
 
 .aside {
-  padding: 1rem;
+  padding: 0.25rem;
   text-align: center;
   font-size: 1rem;
 }
