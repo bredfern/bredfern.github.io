@@ -59,6 +59,10 @@ header {
   margin: 0;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
 a, a:visited, a:active {
   color: $fore-color;
   text-decoration: none;
@@ -126,6 +130,12 @@ footer {
   [class*="col-"] {
     width: 100%;
   }
+}
+
+audio {
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+    width: 12.5rem;
+    height: 1.5rem;
 }
 
 @-webkit-keyframes bg-scrolling-reverse {
