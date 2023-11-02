@@ -1,8 +1,10 @@
 +++
-title = "Bee Long"
-date = 2023-10-04
+title = "Fretless Etude 1"
+date = 2023-10-30
 +++
 
-This is one of a series of pieces I am working on using minimal electronic music tools, hydrogen, lmms and the SCL scala file format that enables microtuning within lmms.
+I created my own fretless guitar similar to how Jaco Pastorious created his own fretless bass.
 
-{{audio(url="https://ia800502.us.archive.org/11/items/beelong/beelong.mp3")}}
+I have been playing fingerstyle nylon guitar since I started studying it in 1988.
+
+{{audio(url="https://ia800508.us.archive.org/0/items/fretless_etude/fretless_etude.mp3")}}
