@@ -1,6 +1,6 @@
 +++
-title = "Midnight Mastadon"
-date = 2023-11-13
+title = "Ragtime Devil"
+date = 2023-11-20
 +++
 
 A slow jazz/ragtime song inspired by the film [The Skeleton Key](https://www.imdb.com/title/tt0397101/).
