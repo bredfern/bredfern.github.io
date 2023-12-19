@@ -61,7 +61,6 @@ header {
 
 h1 {
   font-size: 2rem;
-  margin-left: 40px;
 }
 
 a, a:visited, a:active {
@@ -71,6 +70,7 @@ a, a:visited, a:active {
 
 a:hover {
   text-decoration: underline;
+  font-weight: bold;
 }
 
 h1, h2, h3, h5, h5 {
@@ -92,8 +92,15 @@ ul {
 }
 
 .aside {
-  padding: 1rem;
-  font-size: 0.8rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.5rem;
+  font-size: 100%;
+}
+
+.aside h2 {
+  text-align: center;
 }
 
 .menu li, .aside {

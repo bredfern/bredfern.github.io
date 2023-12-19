@@ -1,6 +1,6 @@
 +++
 title = "Android Native"
-date = 2020-03-21
+date = 2023-12-18
 +++
 
 For the kind of app I want to create its a tension between whether I should go android native, try using flutter or use browser technology.
