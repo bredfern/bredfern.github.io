@@ -1,9 +1,8 @@
 +++
-title = "Conifer"
-date = 2023-11-12
+title = "Mist"
+date = 2024-01-02
 +++
 
-A duet between slid guitar and quarter toned sazcaster.
+Three copies of myself on guitar going off.
 
-{{bandcamp(track="3824876371")}}
-
+{{bandcamp(track="2337837167")}}
