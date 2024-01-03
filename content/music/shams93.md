@@ -1,5 +1,5 @@
 +++
-title = "Shams 93 Live in Culver City 2012"
+title = "Shams 93 Live 2012"
 date = 2023-11-10
 +++
 
