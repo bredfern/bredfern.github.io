@@ -67,62 +67,65 @@
 </div>
 <div>
 <h1 class="title">
-  Contact
+  Tom Has Gone to Hilo
 </h1>
-<div class="form-container">
-  <form name="submit-to-google-sheet">
-    <input name="email" type="email" placeholder="Email" required>
-    <input name="name" type="text" placeholder="Name">
-    <textarea name="message" placeholder="Your Message"></textarea>
-    <button type="submit">Subscribe</button>
-  </form>
+<p class="subtitle"><strong>2023-12-28</strong></p>
+<p>Ai generated reggae music series.</p>
+<h2 id="a-wanderer">A Wanderer</h2>
+<p>
+<audio controls crossorigin="anonymous">
+	<source src="http://archive.org/download/toms-gone-to-hilo&#x2F;A Wanderer.mp3" type="audio/mpeg" />
+</audio>
+</p>
+<h2 id="blow-the-wind">Blow the Wind</h2>
+<p>
+<audio controls crossorigin="anonymous">
+	<source src="http://archive.org/download/toms-gone-to-hilo&#x2F;Blow the Wind Westerly.mp3" type="audio/mpeg" />
+</audio>
+</p>
+<h2 id="fire-in-nature">Fire in Nature</h2>
+<p>
+<audio controls crossorigin="anonymous">
+	<source src="http://archive.org/download/toms-gone-to-hilo&#x2F;Fire in Nature.mp3" type="audio/mpeg" />
+</audio>
+</p>
+<h2 id="in-the-places">In the Places</h2>
+<p>
+<audio controls crossorigin="anonymous">
+	<source src="http://archive.org/download/toms-gone-to-hilo&#x2F;In the Places.mp3" type="audio/mpeg" />
+</audio>
+</p>
+<h2 id="oh-peter">Oh Peter</h2>
+<p>
+<audio controls crossorigin="anonymous">
+	<source src="http://archive.org/download/toms-gone-to-hilo&#x2F;Oh Peter.mp3" type="audio/mpeg" />
+</audio>
+</p>
+<h2 id="silver-and-myrr">Silver and Myrr</h2>
+<p>
+<audio controls crossorigin="anonymous">
+	<source src="http://archive.org/download/toms-gone-to-hilo&#x2F;Silver and Myrr.mp3" type="audio/mpeg" />
+</audio>
+</p>
+<h2 id="the-island-lass">The Island Lass</h2>
+<p>
+<audio controls crossorigin="anonymous">
+	<source src="http://archive.org/download/toms-gone-to-hilo&#x2F;The Island Lass.mp3" type="audio/mpeg" />
+</audio>
+</p>
+<h2 id="tom-s-gone-to-hilo">Tom's Gone to Hilo</h2>
+<p>
+<audio controls crossorigin="anonymous">
+	<source src="http://archive.org/download/toms-gone-to-hilo&#x2F;Tom&#x27;s Gone to Hilo.mp3" type="audio/mpeg" />
+</audio>
+</p>
+<h2 id="the-wellerman">The Wellerman</h2>
+<p>
+<audio controls crossorigin="anonymous">
+	<source src="http://archive.org/download/toms-gone-to-hilo&#x2F;Wellermon.mp3" type="audio/mpeg" />
+</audio>
+</p>
 
-  <div class="loading js-loading is-hidden">
-    <div class="loading-spinner">
-      <svg><circle cx="25" cy="25" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg>
-    </div>
-  </div>
-
-  <p class="js-success-message is-hidden">Success!</p>
-  <p class="js-error-message is-hidden">Error!</p>
-</div>
-
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzYfLRwISoDoLPLgO4Er5VH-8blCzHQT-8iSViZp5XffZ4_5afiUID9958cI477gubeEg/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const loading = document.querySelector('.js-loading')
-  const successMessage = document.querySelector('.js-success-message')
-  const errorMessage = document.querySelector('.js-error-message')
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    showLoadingIndicator()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => showSuccessMessage(response))
-      .catch(error => showErrorMessage(error))
-  })
-
-  function showLoadingIndicator () {
-    form.classList.add('is-hidden')
-    loading.classList.remove('is-hidden')
-  }
-
-  function showSuccessMessage (response) {
-    console.log('Success!', response)
-    setTimeout(() => {
-      successMessage.classList.remove('is-hidden')
-      loading.classList.add('is-hidden')
-    }, 500)
-  }
-
-  function showErrorMessage (error) {
-    console.error('Error!', error.message)
-    setTimeout(() => {
-      errorMessage.classList.remove('is-hidden')
-      loading.classList.add('is-hidden')
-    }, 500)
-  }
-</script>
 </div>
 </div>
 <div class="col-3 right">
