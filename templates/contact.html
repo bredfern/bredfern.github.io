@@ -7,8 +7,8 @@
 <div class="form-container">
   <form name="submit-to-google-sheet">
     <input name="email" type="email" placeholder="Email" required>
-    <input name="firstName" type="text" placeholder="First Name">
-    <input name="lastName" type="text" placeholder="Last Name">
+    <input name="name" type="text" placeholder="Name">
+    <textarea name="message" placeholder="Your Message"></textarea>
     <button type="submit">Subscribe</button>
   </form>
 
@@ -21,9 +21,6 @@
   <p class="js-success-message is-hidden">Success!</p>
   <p class="js-error-message is-hidden">Error!</p>
 </div>
-
-<a href="https://docs.google.com/spreadsheets/d/16vDPkBwtMNNMzgbmKfxfOEqGZhtfJha097ZKB23dZdc/edit?usp=sharing" target="_blank">View the Google Sheet</a>
-<a href="https://github.com/jamiewilson/form-to-google-sheets" target="_blank">View on GitHub</a>
 
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbzYfLRwISoDoLPLgO4Er5VH-8blCzHQT-8iSViZp5XffZ4_5afiUID9958cI477gubeEg/exec'
