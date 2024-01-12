@@ -38,16 +38,6 @@ body {
   line-height: 1.5;
 }
 
-.centered {
-  text-align: center;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: block;
-}
-
 [class*="col-"] {
   float: left;
   padding: 1rem;
@@ -185,4 +175,35 @@ audio {
   0% {
     background-position: 3.125rem 3.125rem;
   }
+}
+
+.centered {
+  text-align: center;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.is-hidden {
+  display: none;
+}
+
+input, textarea {
+  width: 100%;
+}
+
+textarea {
+  margin-top: 2px;
+  height: 4rem;
+}
+
+button {
+  width: 100%;
+  background: black;
+  color: white;
+  height: 2rem;
+  font-size: 100%;
 }
