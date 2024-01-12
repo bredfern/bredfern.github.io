@@ -81,6 +81,14 @@
         <loc>https://brianredfern.com/music/</loc>
     </url>
     <url>
+        <loc>https://brianredfern.com/music/blow/</loc>
+        <lastmod>2023-12-09</lastmod>
+    </url>
+    <url>
+        <loc>https://brianredfern.com/music/fire/</loc>
+        <lastmod>2023-12-08</lastmod>
+    </url>
+    <url>
         <loc>https://brianredfern.com/music/fretless-etude/</loc>
         <lastmod>2023-11-04</lastmod>
     </url>
@@ -93,6 +101,10 @@
         <lastmod>2023-12-28</lastmod>
     </url>
     <url>
+        <loc>https://brianredfern.com/music/lass/</loc>
+        <lastmod>2023-12-28</lastmod>
+    </url>
+    <url>
         <loc>https://brianredfern.com/music/nightbird/</loc>
         <lastmod>2008-08-12</lastmod>
     </url>
@@ -101,11 +113,31 @@
         <lastmod>2024-01-03</lastmod>
     </url>
     <url>
+        <loc>https://brianredfern.com/music/peter/</loc>
+        <lastmod>2023-12-24</lastmod>
+    </url>
+    <url>
+        <loc>https://brianredfern.com/music/places/</loc>
+        <lastmod>2023-09-28</lastmod>
+    </url>
+    <url>
         <loc>https://brianredfern.com/music/sheen/</loc>
         <lastmod>2024-01-02</lastmod>
     </url>
     <url>
+        <loc>https://brianredfern.com/music/silver/</loc>
+        <lastmod>2023-07-28</lastmod>
+    </url>
+    <url>
         <loc>https://brianredfern.com/music/spaces/</loc>
         <lastmod>2024-01-02</lastmod>
+    </url>
+    <url>
+        <loc>https://brianredfern.com/music/wanderer/</loc>
+        <lastmod>2023-12-20</lastmod>
+    </url>
+    <url>
+        <loc>https://brianredfern.com/music/wellerman/</loc>
+        <lastmod>2023-12-28</lastmod>
     </url>
 </urlset>
