@@ -45,7 +45,8 @@ body {
 header {
   background-color: $fore-color;
   color: $back-color;
-  padding: 1rem;
+  padding: 0;
+  padding-left: 2px;
   margin: 0;
 }
 
