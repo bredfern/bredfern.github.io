@@ -137,8 +137,8 @@ footer {
 
 audio {
     filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
-    width: 12.5rem;
-    height: 1.5rem;
+    width: 100%;
+    height: 6.5rem;
 }
 
 @-webkit-keyframes bg-scrolling-reverse {
