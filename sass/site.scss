@@ -46,8 +46,9 @@ header {
   background-color: $fore-color;
   color: $back-color;
   padding: 0;
-  padding-left: 2px;
+  padding-left: 0.125rem;
   margin: 0;
+  height: 3.125rem;
 }
 
 #logo {
@@ -56,33 +57,34 @@ header {
 }
 
 #linkedin {
-  width:30px;
-  height: 40px;
-  margin-right: 2px;
+  width: 2.188rem;
+  height: 2.188rem;
+  margin-right: 0.125rem;
 }
 
 #linkedin-cont {
   float: right;
+  padding: 0.25rem;
 }
 
 #github-cont {
   float: right;
-  padding: 3px;
+  padding: 0.188rem;
   background: #fff;
-  margin-top:6px;
-  margin-right: 4px;
-  border-radius: 30px;
+  margin-top: 0.375rem;
+  margin-right: 0.25rem;
+  border-radius: 1.875rem;
 }
 
 #github {
-  width: 30px;
-  height: 20px;
+  width: 1.875rem;
+  height: 1.25rem;
 }
 
 h1 {
   font-size: 2rem;
   float: left;
-  margin-left: 4px;
+  margin-left: 0.125rem;
 }
 
 a, a:visited, a:active {
