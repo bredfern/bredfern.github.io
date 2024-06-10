@@ -48,13 +48,13 @@
 <header>
   <h1 style="float: left; margin-left: 4px;">Brian Redfern</h1>
   <a href="https://linkedin.com/in/bredfern">
-  <picture style="float: right;">
-    <img src="/linkedin-logo.svg" alt="linkedin" style="width: 40px; height: 40px; margin-right: 2px">
+  <picture id="linkedin-cont">
+    <img src="/linkedin-logo.svg" alt="linkedin" id="linkedin">
   </picture>
   </a>
   <a href="https://github.com/bredfern">
-   <picture style="float: right; background: #fff; margin-right: 2px; padding-top: 4px;">
-    <img src="/github-logo.svg" alt="linkedin" style="width: 40px; height: 30px">
+   <picture id="github-cont">
+    <img src="/github-logo.svg" alt="github" id="github">
   </picture>
   </a>
 </header>
@@ -104,8 +104,9 @@ Name:<br>
 E-mail:<br>
 <input type="text" name="mail"><br>
 Comment:<br>
-<input type="text" name="comment" size="50"><br><br>
-<input type="submit" value="Send"><br><br>
+<textarea id="comment" name="comment" rows="5" cols="33">
+</textarea>
+<input type="submit" value="Send"><br>
 </form>
 </div>
 </div>

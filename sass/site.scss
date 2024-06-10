@@ -55,6 +55,28 @@ header {
   height: 8rem;
 }
 
+#linkedin {
+  width: 40px;
+  height: 40px;
+  margin-right: 2px;
+}
+
+#linkedin-cont {
+  float: right;
+}
+
+#github-cont {
+  float: right;
+  background: #fff;
+  margin-right: 2px;
+  padding-top: 4px;
+}
+
+#github {
+  width: 40px;
+  height: 30px;
+}
+
 h1 {
   font-size: 2rem;
 }
@@ -96,7 +118,7 @@ ul {
   font-size: 100%;
 }
 
-.aside h2 {
+.aside h3 {
   text-align: center;
 }
 
