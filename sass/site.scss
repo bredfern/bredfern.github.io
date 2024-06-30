@@ -99,7 +99,7 @@ a, a:visited, a:active {
 
 a:hover {
   text-decoration: none;
-  color: $back-color;
+  color: red;
   font-weight: bold;
 }
 
@@ -122,10 +122,7 @@ ul {
 }
 
 .aside {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.5rem;
+  padding: 2rem;
   font-size: 100%;
 }
 
