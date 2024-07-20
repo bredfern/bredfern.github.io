@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title> - Blog Posts</title>
+    <link rel="self" type="application/atom+xml" href="https://bredfern.github.io/blog/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-01-03T00:00:00+00:00</updated>
+    <id>https://bredfern.github.io/blog/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Om Rama</title>
+        <published>2024-01-03T00:00:00+00:00</published>
+        <updated>2024-01-03T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/om-rama/"/>
+        <id>https://bredfern.github.io/blog/om-rama/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/om-rama/">&lt;p&gt;Electronic dreamscape.
+&lt;audio controls crossorigin=&quot;anonymous&quot;&gt;
+	&lt;source src=&quot;http:&#x2F;&#x2F;archive.org&#x2F;download&#x2F;om-rama&amp;#x2F;om-rama_2023-10-24_14-02.mp3&quot; type=&quot;audio&#x2F;mpeg&quot; &#x2F;&gt;
+&lt;&#x2F;audio&gt;
+&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Sheen</title>
+        <published>2024-01-02T00:00:00+00:00</published>
+        <updated>2024-01-02T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/sheen/"/>
+        <id>https://bredfern.github.io/blog/sheen/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/sheen/">&lt;p&gt;Made of samples of my 606 and myself playing 8 string guitar.
+&lt;audio controls crossorigin=&quot;anonymous&quot;&gt;
+	&lt;source src=&quot;http:&#x2F;&#x2F;archive.org&#x2F;download&#x2F;sheen_202401&amp;#x2F;sheen.mp3&quot; type=&quot;audio&#x2F;mpeg&quot; &#x2F;&gt;
+&lt;&#x2F;audio&gt;
+&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Spaces</title>
+        <published>2024-01-02T00:00:00+00:00</published>
+        <updated>2024-01-02T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/spaces/"/>
+        <id>https://bredfern.github.io/blog/spaces/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/spaces/">&lt;p&gt;Ambient music.
+&lt;audio controls crossorigin=&quot;anonymous&quot;&gt;
+	&lt;source src=&quot;http:&#x2F;&#x2F;archive.org&#x2F;download&#x2F;spaces_202401&amp;#x2F;spaces.mp3&quot; type=&quot;audio&#x2F;mpeg&quot; &#x2F;&gt;
+&lt;&#x2F;audio&gt;
+&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Android Native</title>
+        <published>2023-12-18T00:00:00+00:00</published>
+        <updated>2023-12-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/android-native/"/>
+        <id>https://bredfern.github.io/blog/android-native/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/android-native/">&lt;p&gt;For the kind of app I want to create its a tension between whether I should go android native, try using flutter or use browser technology.&lt;&#x2F;p&gt;
+&lt;p&gt;Looking at what a nightmare it is to keep up with api changes it may not be worth it.&lt;&#x2F;p&gt;
+&lt;p&gt;Its hard to tell whether the web will be killed, if apps will be killed and the browser killed and computing made illegal.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Garganta</title>
+        <published>2023-11-09T00:00:00+00:00</published>
+        <updated>2023-11-09T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/garganta/"/>
+        <id>https://bredfern.github.io/blog/garganta/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/garganta/">&lt;p&gt;Weird electronicas.
+&lt;audio controls crossorigin=&quot;anonymous&quot;&gt;
+	&lt;source src=&quot;http:&#x2F;&#x2F;archive.org&#x2F;download&#x2F;garganta_202401&amp;#x2F;garganta.mp3&quot; type=&quot;audio&#x2F;mpeg&quot; &#x2F;&gt;
+&lt;&#x2F;audio&gt;
+&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Fretless Etude</title>
+        <published>2023-11-04T00:00:00+00:00</published>
+        <updated>2023-11-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/fretless-etude/"/>
+        <id>https://bredfern.github.io/blog/fretless-etude/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/fretless-etude/">&lt;p&gt;Improvisation on fretless classical guitar.
+&lt;audio controls crossorigin=&quot;anonymous&quot;&gt;
+	&lt;source src=&quot;http:&#x2F;&#x2F;archive.org&#x2F;download&#x2F;fretless_etude&amp;#x2F;fretless_etude.mp3&quot; type=&quot;audio&#x2F;mpeg&quot; &#x2F;&gt;
+&lt;&#x2F;audio&gt;
+&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Why Not Web Fonts?</title>
+        <published>2023-10-05T00:00:00+00:00</published>
+        <updated>2023-10-05T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/why-no-webfonts/"/>
+        <id>https://bredfern.github.io/blog/why-no-webfonts/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/why-no-webfonts/">&lt;p&gt;So there are many web apis that are really meant for web application development rather than web site development.&lt;&#x2F;p&gt;
+&lt;p&gt;One of those is the web font api, which is great for application design whether its a PWA or other platforms that use web UI for their front end like Tauri.&lt;&#x2F;p&gt;
+&lt;p&gt;So when you deliver an app with Tauri the fonts are baked in, there is no cost for those fonts. They come embedded or with a PWA they get cached offline so there is no performance penalty.&lt;&#x2F;p&gt;
+&lt;p&gt;When it comes to blogs and web page publishing there is a penalty in complexity and also requires more bandwidth to send your message to the world, With classic html fonts that are build into the browser. While they may be insufficient for web application front end UI needs they are the best option for blogs and other one to many messaging platforms.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Pain</title>
+        <published>2023-08-30T00:00:00+00:00</published>
+        <updated>2023-08-30T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/pain/"/>
+        <id>https://bredfern.github.io/blog/pain/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/pain/">&lt;p&gt;On the one hand being severed from healthcare access to punish me for being 50+ is some brutal pain, its not easy to find work until I can complete my certifications for the medical field.&lt;&#x2F;p&gt;
+&lt;p&gt;There is a massive shortage of nurses, but it takes years to create more nurses while at the same time the pandemic is not over its mutating in potentially dangerous ways.&lt;&#x2F;p&gt;
+&lt;p&gt;War actually makes a great petri dish for pandemic to enable super mutation in warzones.&lt;&#x2F;p&gt;
+&lt;p&gt;The planet will die if we cannot stop fighting and do something about climate that is substantial when mostly we have been making symbolic change.&lt;&#x2F;p&gt;
+&lt;p&gt;However as we change we need a new policy, right now a human life is worth about $13.&lt;&#x2F;p&gt;
+&lt;p&gt;The irony of the US laws on abortion is that here we say we treasure the foetus but as soon as its born the powers that be are fine for it to be starved to death within days of birth.&lt;&#x2F;p&gt;
+&lt;p&gt;Right now when Ai takes away your entire career the Government has no help to offer, not even foodstamps, although with 95% cuts to food stamps it would seem 99.9% of people are being tagged for extintion.&lt;&#x2F;p&gt;
+&lt;p&gt;The risk isn&#x27;t Ai getting out of control. The risk is that under US culture if a corporation doesn&#x27;t want you, you can either starve to death or wind up in prison.&lt;&#x2F;p&gt;
+&lt;p&gt;Ai is already being used to wipe out entire categories of work. The Fed claims the labor market has never been tighter, but this is either a lie or a total failure on their part. I think its total failure - they cannot tell the difference between an Ai generated ad that is a fraud designed to steal personal information with an actual legit job ad.&lt;&#x2F;p&gt;
+&lt;p&gt;These days as a job seeker its best to stick to applying to jobs listed directly on company websites. Job scams abound.&lt;&#x2F;p&gt;
+&lt;p&gt;The unfortunate reality is that not only have we not recovered from the pandemic, the pandemic hasn&#x27;t actually ended.&lt;&#x2F;p&gt;
+&lt;p&gt;The drive to put &quot;butts in seats&quot; is costing a great deal in terms of causing even worse air quality issues.&lt;&#x2F;p&gt;
+&lt;p&gt;Most people cannot conceptualize logarithmic phenomena, they think this warming is simply linear, that enough carbon credits can create the PR needed to keep people from worrying.&lt;&#x2F;p&gt;
+&lt;p&gt;But just like you cannot wish away a virus PR does nothing to insure the security of the food supply.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Steal Your Face</title>
+        <published>2023-07-21T00:00:00+00:00</published>
+        <updated>2023-07-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/steal-your-face/"/>
+        <id>https://bredfern.github.io/blog/steal-your-face/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/steal-your-face/">&lt;p&gt;What are some of the issues that are driving the current writer and actor&#x27;s strikes?&lt;&#x2F;p&gt;
+&lt;p&gt;AI is developing far faster than people like Biden can realise. Since the issues created by AI largely do not effect the class of retired people represented by Washington nothing is being done.&lt;&#x2F;p&gt;
+&lt;p&gt;When you lose your job to AI if you are over 50 they can deny you food stamps until you can find another job, which could literally starve people to death.&lt;&#x2F;p&gt;
+&lt;p&gt;The studios claim once they shoot an actor their image is their forever and they want to see the residuals given out dropped to nearly nothing.&lt;&#x2F;p&gt;
+&lt;p&gt;The killer thing with AI is they can take an actor who&#x27;s done 5 films and use the film material from past work to then generate new works in the future with 0 compensation for the actor impacted.&lt;&#x2F;p&gt;
+&lt;p&gt;In some countries this impact could be negligable but in the US where all resources are setup as a vicious fight to the death for crumbs from the table the result will be people being starved to death because there is no more work they can do.&lt;&#x2F;p&gt;
+&lt;p&gt;The republicans would love to end medicare, medicaid, end all healthcare for working people so they can save more money to &quot;party.&quot;&lt;&#x2F;p&gt;
+&lt;p&gt;Human life at one point was about 1 million dollars - worth less than most homes but worth something.&lt;&#x2F;p&gt;
+&lt;p&gt;With the rise of AI human life drops down to a worth of around $14.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Many Millions Later</title>
+        <published>2021-05-06T00:00:00+00:00</published>
+        <updated>2021-05-06T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/millions/"/>
+        <id>https://bredfern.github.io/blog/millions/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/millions/">&lt;p&gt;So many dead even as things slow down here its hard to feel safe when it continues to explode elsewhere.&lt;&#x2F;p&gt;
+&lt;p&gt;Its easy to become consumed with anxiety even if you are relatively secure and protected.&lt;&#x2F;p&gt;
+&lt;p&gt;Even with the pandemic diminishing you have to wonder what new strain from another country could trigger a new surge?&lt;&#x2F;p&gt;
+&lt;p&gt;Things will never be “normal” again, after so much radical dislocation since 2008 nothing has been “normal” for a very, very long time.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Stumbling Mountain</title>
+        <published>2021-03-21T00:00:00+00:00</published>
+        <updated>2021-03-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/stumbling/"/>
+        <id>https://bredfern.github.io/blog/stumbling/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/stumbling/">&lt;p&gt;Stumbling up the airplane steps&lt;&#x2F;p&gt;
+&lt;p&gt;A Fragile white head&lt;&#x2F;p&gt;
+&lt;p&gt;World hurtles toward decay.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Destroyed LA</title>
+        <published>2020-08-05T00:00:00+00:00</published>
+        <updated>2020-08-05T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/destroyed/"/>
+        <id>https://bredfern.github.io/blog/destroyed/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/destroyed/">&lt;p&gt;Its estimated that unemployment in Los Angeles is over 80%. Yet the powers that be can only pay themselves billions of our money to create a crappy website telling people to “go find something new.” Excuse me when there are between 20-80 million who need a job and none available what is there to find?&lt;&#x2F;p&gt;
+&lt;p&gt;Somehow they assume that having been given a 60% cut in their income suddenly jobs will magically present themselves to all those laid off and the economy will instantly recover.&lt;&#x2F;p&gt;
+&lt;p&gt;They assume the lack of jobs is due to people refusing to work rather than employers refusing to hire. How is it so many intelligent people in the US live in poverty while a wealthy elite can barely rub 2 brain cells together to save their collective lives?&lt;&#x2F;p&gt;
+&lt;p&gt;In a sense the wealthy have managed to reverse the process of evolution where in the US the least fit are the most successful. Any error in judgement on their part is bailed out by the government with billions or even trillions in “free money” for those about to lose their shirt for their own poor judgement.&lt;&#x2F;p&gt;
+&lt;p&gt;The combined systems of unfair taxation and the indentured servitude program behind higher education have create a perfect storm of poverty.&lt;&#x2F;p&gt;
+&lt;p&gt;As a society we decided that work is worthless and the lives of working people are also completely without value. The powers that be are hard at work to “reform” lawsuits to shield the wealthy owners of people from any sort of liability from violating the safety and health of their workers and customers.&lt;&#x2F;p&gt;
+&lt;p&gt;At the same time that the vast majority of Americans in large cities are being severely thrown under a bus both parties are still spending trillions on the so called “defense industry.”&lt;&#x2F;p&gt;
+&lt;p&gt;When you allow almost 200,000 people to die in a short amount of time due to sheer complacency what is the point of continuing to spend all the available resources on police and soldiers who ultimately kill our own people.&lt;&#x2F;p&gt;
+&lt;p&gt;We are one of the few countries in the world where are own people are considered the enemy of the state and the state has very few friends, they consider perhaps only 1⁄2 of 1% of the country to be “real Americans.”&lt;&#x2F;p&gt;
+&lt;p&gt;There seems to be nothing we can do, it seems to be inevitable that we will have a dictatorship and slavery for 99.99% of the population here using technology to exert absolute control over everyone at all times, even in our dreams.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Running in Place</title>
+        <published>2020-04-26T00:00:00+00:00</published>
+        <updated>2020-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/running/"/>
+        <id>https://bredfern.github.io/blog/running/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/running/">&lt;p&gt;The vulture wings high&lt;&#x2F;p&gt;
+&lt;p&gt;As coyote takes a break&lt;&#x2F;p&gt;
+&lt;p&gt;Sly coyote smiles&lt;&#x2F;p&gt;
+&lt;p&gt;Fooled the man to eat the bat&lt;&#x2F;p&gt;
+&lt;p&gt;Now all the beaches are his&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Staying Distant</title>
+        <published>2020-04-01T00:00:00+00:00</published>
+        <updated>2020-04-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/distant/"/>
+        <id>https://bredfern.github.io/blog/distant/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/distant/">&lt;p&gt;I hear him the dog&lt;&#x2F;p&gt;
+&lt;p&gt;Across the street yelping, his&lt;&#x2F;p&gt;
+&lt;p&gt;Owner yells again&lt;&#x2F;p&gt;
+&lt;p&gt;I hide behind the trees or&lt;&#x2F;p&gt;
+&lt;p&gt;Brush green fingers push the wind&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Raining</title>
+        <published>2020-03-23T00:00:00+00:00</published>
+        <updated>2020-03-23T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/raining/"/>
+        <id>https://bredfern.github.io/blog/raining/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/raining/">&lt;p&gt;Sun blinking through clouds&lt;&#x2F;p&gt;
+&lt;p&gt;First it comes in then it goes&lt;&#x2F;p&gt;
+&lt;p&gt;This breath at last goes&lt;&#x2F;p&gt;
+&lt;p&gt;To rest old bones for the good&lt;&#x2F;p&gt;
+&lt;p&gt;From rain soaked hills behind us&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Waiting and Waiting</title>
+        <published>2020-03-22T00:00:00+00:00</published>
+        <updated>2020-03-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/waiting-again/"/>
+        <id>https://bredfern.github.io/blog/waiting-again/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/waiting-again/">&lt;p&gt;A gambler without&lt;&#x2F;p&gt;
+&lt;p&gt;A cause to find excepted&lt;&#x2F;p&gt;
+&lt;p&gt;Catch the falling knife&lt;&#x2F;p&gt;
+&lt;p&gt;Look at those fingers on you&lt;&#x2F;p&gt;
+&lt;p&gt;Look at those toes on you&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Goodbye Dad</title>
+        <published>2020-03-21T00:00:00+00:00</published>
+        <updated>2020-03-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/dad/"/>
+        <id>https://bredfern.github.io/blog/dad/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/dad/">&lt;p&gt;My father was born in 1941, right at the start of world world 2. He passed on 3&#x2F;21&#x2F;2020 at 645pm.&lt;&#x2F;p&gt;
+&lt;p&gt;He was able to meet Charlie Mingus as the president of his university jazz club only to see the whole band get food poisoned by Johns Hopkins staff at the time.&lt;&#x2F;p&gt;
+&lt;p&gt;Was it intentional food poisoning? Most likely Mingus would have thought it was, his music wasn’t exactly popular anywhere south of NYC.&lt;&#x2F;p&gt;
+&lt;p&gt;My dad was in that tiny generation in between ww2 vets and the boomers. He was drafted before we got into Vietnam and served out his time in Germany rather than Indochina. He was a court reporter for the army at that time.&lt;&#x2F;p&gt;
+&lt;p&gt;My favorite time, when we had a major power outage and he couldn’t go to work, extra time to bring out the old dungeons and dragons, my dad was an amazing dungeon master.&lt;&#x2F;p&gt;
+&lt;p&gt;He worked his whole adult life for the army corps of engineers. He got a master’s in public policy and even though he was a life long republican became a big fan of Obama until he was unable to be a fan of anything besides the tv shows shown over and over on the tv at the home. He believed in data driven government, analytics and using science rather than violence to solve problems.&lt;&#x2F;p&gt;
+&lt;p&gt;He’s not dying from the virus, he developed dementia around 10 years ago. Which is becoming more common especially in polluted southern california. Its a long slow death now he is finally coming to an end to being imprisoned in a broken body and his spirit can find freedom and the ecstacy of the union with OM. But we will miss him badly we have been missing him the whole time as he went into decline.&lt;&#x2F;p&gt;
+&lt;p&gt;He always loved music, had one of the best vinyl collections outside of say somebody like Richard Branson who was rich and in the industry. Sadly his collection degraded from lack of play after he got his career going.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Sinister Sneeze</title>
+        <published>2020-03-18T00:00:00+00:00</published>
+        <updated>2020-03-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/sneeze/"/>
+        <id>https://bredfern.github.io/blog/sneeze/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/sneeze/">&lt;p&gt;An ocean trash boat&lt;&#x2F;p&gt;
+&lt;p&gt;Endless waste of human life&lt;&#x2F;p&gt;
+&lt;p&gt;Wires in human flesh&lt;&#x2F;p&gt;
+&lt;p&gt;Souls that whisked along the train&lt;&#x2F;p&gt;
+&lt;p&gt;Souls laid out without a name&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Song of Birds</title>
+        <published>2020-03-18T00:00:00+00:00</published>
+        <updated>2020-03-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/song/"/>
+        <id>https://bredfern.github.io/blog/song/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/song/">&lt;p&gt;Staying in place is easy for a writer, its our natural inclination not to go out.&lt;&#x2F;p&gt;
+&lt;p&gt;Its a strange world where suddenly Howard Hughs is a major role model but its a real thing.&lt;&#x2F;p&gt;
+&lt;p&gt;But more about that in a music review.&lt;&#x2F;p&gt;
+&lt;p&gt;For now we sit here waiting to hear of my dad’s passing, my mom completely torutured but what can one do?&lt;&#x2F;p&gt;
+&lt;p&gt;We never know how long we have here, my friend lost his son and nephew to a car accident they were only 14. In many ways we make this place a lot more dangerous than it has to be in order for a few to benefit.&lt;&#x2F;p&gt;
+&lt;p&gt;Here we can hardly stand a medical emergency yet the powers that be still seek war and confrontation. When can we have peace and cooperation with a focus on happiness, kindness and compassion?&lt;&#x2F;p&gt;
+&lt;p&gt;Now I just focus on two things, what can I do to help and what can I learn while I have a lot of time to sit and read.&lt;&#x2F;p&gt;
+&lt;p&gt;Try to clear my mind and make every action a meditation. While I’m completely freaked out of course but its important to acknowledge the fear give it its due but then put it away.&lt;&#x2F;p&gt;
+&lt;p&gt;This is a great time to study online we have many great resources, I always like to point out khan academy because they’re free and open to anyone.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Waiting for the Tsumani</title>
+        <published>2020-03-17T00:00:00+00:00</published>
+        <updated>2020-03-17T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/waiting/"/>
+        <id>https://bredfern.github.io/blog/waiting/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/waiting/">&lt;p&gt;The old cliche comes to mind - the calm before the storm.&lt;&#x2F;p&gt;
+&lt;p&gt;People get impatient and want to see their friends but its the worst time to go out.&lt;&#x2F;p&gt;
+&lt;p&gt;For trees to survive a fire there simply has to be enough space between them.&lt;&#x2F;p&gt;
+&lt;p&gt;Some employers are allowing workers to work remote however the majority hold onto the outdated notion that remote work is ineffective and only “butts in seats” mean people are working.&lt;&#x2F;p&gt;
+&lt;p&gt;Elon Musk underestimates the danger just because you are good at making money it doesn’t make one a medical expert.&lt;&#x2F;p&gt;
+&lt;p&gt;However often CEOs believe that their monetary skills somehow translate to every other area of life, including medical decisions.&lt;&#x2F;p&gt;
+&lt;p&gt;That’s why this so called relief package has no paid medical leave for working people. No extended unemployment for those who just lost jobs that took them 6 months to find.&lt;&#x2F;p&gt;
+&lt;p&gt;A large portion of the population are being forced to work onsite despite the danger. But for the CEO these people are absolutely disposible. They can always find more where they came from.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Genesis Passing</title>
+        <published>2020-03-16T00:00:00+00:00</published>
+        <updated>2020-03-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/genesis-passed/"/>
+        <id>https://bredfern.github.io/blog/genesis-passed/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/genesis-passed/">&lt;p&gt;Back in 2017 I was able to see one of her last Psychic TV shows. Compared to say the Rolling Stones it was a small venue but the music was amazing and the light show and video.&lt;&#x2F;p&gt;
+&lt;p&gt;Now she’s gone, cancer taken her in the end.&lt;&#x2F;p&gt;
+&lt;p&gt;Ultimately all of us have a beginnging and end to a particular incarnation.&lt;&#x2F;p&gt;
+&lt;p&gt;We don’t know how many will fall to this pandemic for example.&lt;&#x2F;p&gt;
+&lt;p&gt;Now we don’t even know what will happen to music going forward.&lt;&#x2F;p&gt;
+&lt;p&gt;Bands and artists made their living off lives shows.&lt;&#x2F;p&gt;
+&lt;p&gt;When they get too sick like Genesis did they no longer have that income coming in and often have to live off the largess of fans.&lt;&#x2F;p&gt;
+&lt;p&gt;Its sad that all people whether they’re senators or artists have access to healthcare.&lt;&#x2F;p&gt;
+&lt;p&gt;But at the same time we all have a start and end to our incarnations barring the Singularity and some kind of brain dump into a machine.&lt;&#x2F;p&gt;
+&lt;p&gt;But could such a “Singularity” be a fate worse than death?&lt;&#x2F;p&gt;
+&lt;p&gt;Its hard to begin to describe the cultural impact of this artist and writer.&lt;&#x2F;p&gt;
+&lt;p&gt;Her Topy Bible is a good starting point.&lt;&#x2F;p&gt;
+&lt;p&gt;She also has an artist page on Spotify.&lt;&#x2F;p&gt;
+&lt;p&gt;So it Begins.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Start of Covid</title>
+        <published>2020-03-15T00:00:00+00:00</published>
+        <updated>2020-03-15T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/covid-intro/"/>
+        <id>https://bredfern.github.io/blog/covid-intro/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/covid-intro/">&lt;p&gt;Having been thrown out of work found myself home watching that very stable genius downplay the disaster pretnding somehow positive thinking alone could work by a miracle to disperse the plaugue.&lt;&#x2F;p&gt;
+&lt;p&gt;Its possible it is an exaggerated threat or its possible its not until it hits its a guessing game of terror.&lt;&#x2F;p&gt;
+&lt;p&gt;The silence in the streets is a testament to how little people trust the powers that be. The stores empty out but people will have to keep showing up for work.&lt;&#x2F;p&gt;
+&lt;p&gt;While schools have been closed there has been no order to work remote, only some companies such as Google and Amazon have asked IT staff to work remote.&lt;&#x2F;p&gt;
+&lt;p&gt;However other staff in other companies cannot do their work remote it has to be done onsite.&lt;&#x2F;p&gt;
+&lt;p&gt;Hopefully the news is being at least somewhat truthful and most working people are not at risk.&lt;&#x2F;p&gt;
+&lt;p&gt;Ultimately most business isn’t willing to lose 2 weeks to prevent mass illness. However you may see labor walkouts if you see deaths from this and it turns out to be wors than the news had promised.&lt;&#x2F;p&gt;
+&lt;p&gt;You see people clearing out the entire inventory at markets if things get too bad it won’t be safe to go to the market.&lt;&#x2F;p&gt;
+&lt;p&gt;The we hear Genesis P-orridge passed away and wondering whether its related, certainly people currently battling cancer would be prone to any illness.&lt;&#x2F;p&gt;
+&lt;p&gt;But more on Genesis for that art’s own tribute.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Night Bird</title>
+        <published>2008-08-12T00:00:00+00:00</published>
+        <updated>2008-08-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/nightbird/"/>
+        <id>https://bredfern.github.io/blog/nightbird/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/nightbird/">&lt;p&gt;Night Bird is a song with my voice and solo oud, inspired by the poet Rumi.
+&lt;audio controls crossorigin=&quot;anonymous&quot;&gt;
+	&lt;source src=&quot;http:&#x2F;&#x2F;archive.org&#x2F;download&#x2F;NightBird&amp;#x2F;NightBird.mp3&quot; type=&quot;audio&#x2F;mpeg&quot; &#x2F;&gt;
+&lt;&#x2F;audio&gt;
+&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
