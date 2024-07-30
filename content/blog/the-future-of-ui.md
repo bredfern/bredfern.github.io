@@ -1,6 +1,6 @@
 +++
 title = "The Future of UI"
-date = 2024-07-300
+date = 2024-07-30
 +++
 
 Well, is there a future for UI? Ui Design assumes that we are designing for humans. While CEOs speak in baited breath about the wonders of AI, even though some demos are exaggerated the technology is already good enough to make a major impact.
