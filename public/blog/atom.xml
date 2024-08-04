@@ -22,11 +22,37 @@
         <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/al-farabi/"/>
         <id>https://bredfern.github.io/blog/al-farabi/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/al-farabi/">&lt;p&gt;Music using the intonations and tunings developed by the maestro Al Farabi.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://bredfern.github.io/blog/al-farabi/">&lt;p&gt;Digital modular synth music using the intonations and tunings developed by the maestro Al Farabi using the Bespoke Synth software on Manjaro Linux.&lt;&#x2F;p&gt;
 &lt;iframe
-  src=&quot;https:&#x2F;&#x2F;bandcamp.com&#x2F;EmbeddedPlayer&#x2F;album=249540736&#x2F;size=large&#x2F;bgcol=ffffff&#x2F;linkcol=0687f5&#x2F;tracklist=true&#x2F;transparent=true&#x2F;&quot; seamless&gt;
+  src=&quot;https:&#x2F;&#x2F;bandcamp.com&#x2F;EmbeddedPlayer&#x2F;album=249540736&#x2F;size=large&#x2F;artwork=big&#x2F;bgcol=ffffff&#x2F;linkcol=0687f5&#x2F;tracklist=true&#x2F;transparent=true&#x2F;&quot; seamless&gt;
   &lt;a href=&quot;https:&#x2F;&#x2F;brianredfern.bandcamp.com&#x2F;&quot;&gt;
-    Follow me on Bandcamp to hear more.
+    Follow me on Bandcamp.
+  &lt;&#x2F;a&gt;
+&lt;&#x2F;iframe&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Extravaganza</title>
+        <published>2024-08-04T00:00:00+00:00</published>
+        <updated>2024-08-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/extravaganza/"/>
+        <id>https://bredfern.github.io/blog/extravaganza/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/extravaganza/">&lt;p&gt;My live band where I played guitar from 1991-1995, Los Hermanos de Jazz, this is our record from 1991.&lt;&#x2F;p&gt;
+&lt;iframe
+  src=&quot;https:&#x2F;&#x2F;bandcamp.com&#x2F;EmbeddedPlayer&#x2F;album=821144709&#x2F;size=large&#x2F;artwork=big&#x2F;bgcol=ffffff&#x2F;linkcol=0687f5&#x2F;tracklist=true&#x2F;transparent=true&#x2F;&quot; seamless&gt;
+  &lt;a href=&quot;https:&#x2F;&#x2F;brianredfern.bandcamp.com&#x2F;&quot;&gt;
+    Follow me on Bandcamp.
   &lt;&#x2F;a&gt;
 &lt;&#x2F;iframe&gt;
 </content>
@@ -55,9 +81,9 @@
         
     </entry>
     <entry xml:lang="en">
-        <title>Om Rama</title>
-        <published>2024-01-03T00:00:00+00:00</published>
-        <updated>2024-01-03T00:00:00+00:00</updated>
+        <title>Thelema</title>
+        <published>2024-07-28T00:00:00+00:00</published>
+        <updated>2024-07-28T00:00:00+00:00</updated>
         
         <author>
           <name>
@@ -67,21 +93,23 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/om-rama/"/>
-        <id>https://bredfern.github.io/blog/om-rama/</id>
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/thelema/"/>
+        <id>https://bredfern.github.io/blog/thelema/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/om-rama/">&lt;p&gt;Electronic dreamscape.
-&lt;audio controls crossorigin=&quot;anonymous&quot;&gt;
-	&lt;source src=&quot;http:&#x2F;&#x2F;archive.org&#x2F;download&#x2F;om-rama&amp;#x2F;om-rama_2023-10-24_14-02.mp3&quot; type=&quot;audio&#x2F;mpeg&quot; &#x2F;&gt;
-&lt;&#x2F;audio&gt;
-&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://bredfern.github.io/blog/thelema/">&lt;p&gt;Live Improv on Bespoke Synth with all tunings from Ancient Greece.&lt;&#x2F;p&gt;
+&lt;iframe
+  src=&quot;https:&#x2F;&#x2F;bandcamp.com&#x2F;EmbeddedPlayer&#x2F;album=18946346&#x2F;size=large&#x2F;artwork=big&#x2F;bgcol=ffffff&#x2F;linkcol=0687f5&#x2F;tracklist=true&#x2F;transparent=true&#x2F;&quot; seamless&gt;
+  &lt;a href=&quot;https:&#x2F;&#x2F;brianredfern.bandcamp.com&#x2F;&quot;&gt;
+    Follow me on Bandcamp.
+  &lt;&#x2F;a&gt;
+&lt;&#x2F;iframe&gt;
 </content>
         
     </entry>
     <entry xml:lang="en">
-        <title>Sheen</title>
-        <published>2024-01-02T00:00:00+00:00</published>
-        <updated>2024-01-02T00:00:00+00:00</updated>
+        <title>Los Hermanos de Jazz Live</title>
+        <published>2024-07-20T00:00:00+00:00</published>
+        <updated>2024-07-20T00:00:00+00:00</updated>
         
         <author>
           <name>
@@ -91,21 +119,23 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/sheen/"/>
-        <id>https://bredfern.github.io/blog/sheen/</id>
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/hermanos-live/"/>
+        <id>https://bredfern.github.io/blog/hermanos-live/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/sheen/">&lt;p&gt;Made of samples of my 606 and myself playing 8 string guitar.
-&lt;audio controls crossorigin=&quot;anonymous&quot;&gt;
-	&lt;source src=&quot;http:&#x2F;&#x2F;archive.org&#x2F;download&#x2F;sheen_202401&amp;#x2F;sheen.mp3&quot; type=&quot;audio&#x2F;mpeg&quot; &#x2F;&gt;
-&lt;&#x2F;audio&gt;
-&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://bredfern.github.io/blog/hermanos-live/">&lt;p&gt;Live performances of my 90s group where I was one of two guitarists.&lt;&#x2F;p&gt;
+&lt;iframe
+  src=&quot;https:&#x2F;&#x2F;bandcamp.com&#x2F;EmbeddedPlayer&#x2F;album=765204145&#x2F;size=large&#x2F;artwork=big&#x2F;bgcol=ffffff&#x2F;linkcol=0687f5&#x2F;tracklist=true&#x2F;transparent=true&#x2F;&quot; seamless&gt;
+  &lt;a href=&quot;https:&#x2F;&#x2F;brianredfern.bandcamp.com&#x2F;&quot;&gt;
+    Follow me on Bandcamp.
+  &lt;&#x2F;a&gt;
+&lt;&#x2F;iframe&gt;
 </content>
         
     </entry>
     <entry xml:lang="en">
-        <title>Spaces</title>
-        <published>2024-01-02T00:00:00+00:00</published>
-        <updated>2024-01-02T00:00:00+00:00</updated>
+        <title>Bartok Was a Weird Guy</title>
+        <published>2024-07-16T00:00:00+00:00</published>
+        <updated>2024-07-16T00:00:00+00:00</updated>
         
         <author>
           <name>
@@ -115,14 +145,42 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/spaces/"/>
-        <id>https://bredfern.github.io/blog/spaces/</id>
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/bartok/"/>
+        <id>https://bredfern.github.io/blog/bartok/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/spaces/">&lt;p&gt;Ambient music.
-&lt;audio controls crossorigin=&quot;anonymous&quot;&gt;
-	&lt;source src=&quot;http:&#x2F;&#x2F;archive.org&#x2F;download&#x2F;spaces_202401&amp;#x2F;spaces.mp3&quot; type=&quot;audio&#x2F;mpeg&quot; &#x2F;&gt;
-&lt;&#x2F;audio&gt;
-&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://bredfern.github.io/blog/bartok/">&lt;p&gt;Live electronic improve with Bespoke Synth.&lt;&#x2F;p&gt;
+&lt;iframe
+  src=&quot;https:&#x2F;&#x2F;bandcamp.com&#x2F;EmbeddedPlayer&#x2F;album=1402335544&#x2F;size=large&#x2F;artwork=big&#x2F;bgcol=ffffff&#x2F;linkcol=0687f5&#x2F;tracklist=true&#x2F;transparent=true&#x2F;&quot; seamless&gt;
+  &lt;a href=&quot;https:&#x2F;&#x2F;brianredfern.bandcamp.com&#x2F;&quot;&gt;
+    Follow me on Bandcamp.
+  &lt;&#x2F;a&gt;
+&lt;&#x2F;iframe&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Hawk Tua</title>
+        <published>2024-07-04T00:00:00+00:00</published>
+        <updated>2024-07-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/hawk-tua/"/>
+        <id>https://bredfern.github.io/blog/hawk-tua/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/hawk-tua/">&lt;p&gt;Digital modular synth music using BespokeSynth dedicated to the Hawk Tua Girl.&lt;&#x2F;p&gt;
+&lt;iframe
+  src=&quot;https:&#x2F;&#x2F;bandcamp.com&#x2F;EmbeddedPlayer&#x2F;album=249540736&#x2F;size=large&#x2F;artwork=big&#x2F;bgcol=ffffff&#x2F;linkcol=0687f5&#x2F;tracklist=true&#x2F;transparent=true&#x2F;&quot; seamless&gt;
+  &lt;a href=&quot;https:&#x2F;&#x2F;brianredfern.bandcamp.com&#x2F;&quot;&gt;
+    Follow me on Bandcamp.
+  &lt;&#x2F;a&gt;
+&lt;&#x2F;iframe&gt;
 </content>
         
     </entry>
@@ -145,54 +203,6 @@
         <content type="html" xml:base="https://bredfern.github.io/blog/android-native/">&lt;p&gt;For the kind of app I want to create its a tension between whether I should go android native, try using flutter or use browser technology.&lt;&#x2F;p&gt;
 &lt;p&gt;Looking at what a nightmare it is to keep up with api changes it may not be worth it.&lt;&#x2F;p&gt;
 &lt;p&gt;Its hard to tell whether the web will be killed, if apps will be killed and the browser killed and computing made illegal.&lt;&#x2F;p&gt;
-</content>
-        
-    </entry>
-    <entry xml:lang="en">
-        <title>Garganta</title>
-        <published>2023-11-09T00:00:00+00:00</published>
-        <updated>2023-11-09T00:00:00+00:00</updated>
-        
-        <author>
-          <name>
-            
-              Unknown
-            
-          </name>
-        </author>
-        
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/garganta/"/>
-        <id>https://bredfern.github.io/blog/garganta/</id>
-        
-        <content type="html" xml:base="https://bredfern.github.io/blog/garganta/">&lt;p&gt;Weird electronicas.
-&lt;audio controls crossorigin=&quot;anonymous&quot;&gt;
-	&lt;source src=&quot;http:&#x2F;&#x2F;archive.org&#x2F;download&#x2F;garganta_202401&amp;#x2F;garganta.mp3&quot; type=&quot;audio&#x2F;mpeg&quot; &#x2F;&gt;
-&lt;&#x2F;audio&gt;
-&lt;&#x2F;p&gt;
-</content>
-        
-    </entry>
-    <entry xml:lang="en">
-        <title>Fretless Etude</title>
-        <published>2023-11-04T00:00:00+00:00</published>
-        <updated>2023-11-04T00:00:00+00:00</updated>
-        
-        <author>
-          <name>
-            
-              Unknown
-            
-          </name>
-        </author>
-        
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/fretless-etude/"/>
-        <id>https://bredfern.github.io/blog/fretless-etude/</id>
-        
-        <content type="html" xml:base="https://bredfern.github.io/blog/fretless-etude/">&lt;p&gt;Improvisation on fretless classical guitar.
-&lt;audio controls crossorigin=&quot;anonymous&quot;&gt;
-	&lt;source src=&quot;http:&#x2F;&#x2F;archive.org&#x2F;download&#x2F;fretless_etude&amp;#x2F;fretless_etude.mp3&quot; type=&quot;audio&#x2F;mpeg&quot; &#x2F;&gt;
-&lt;&#x2F;audio&gt;
-&lt;&#x2F;p&gt;
 </content>
         
     </entry>
@@ -615,30 +625,6 @@
 &lt;p&gt;You see people clearing out the entire inventory at markets if things get too bad it won’t be safe to go to the market.&lt;&#x2F;p&gt;
 &lt;p&gt;The we hear Genesis P-orridge passed away and wondering whether its related, certainly people currently battling cancer would be prone to any illness.&lt;&#x2F;p&gt;
 &lt;p&gt;But more on Genesis for that art’s own tribute.&lt;&#x2F;p&gt;
-</content>
-        
-    </entry>
-    <entry xml:lang="en">
-        <title>Night Bird</title>
-        <published>2008-08-12T00:00:00+00:00</published>
-        <updated>2008-08-12T00:00:00+00:00</updated>
-        
-        <author>
-          <name>
-            
-              Unknown
-            
-          </name>
-        </author>
-        
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/nightbird/"/>
-        <id>https://bredfern.github.io/blog/nightbird/</id>
-        
-        <content type="html" xml:base="https://bredfern.github.io/blog/nightbird/">&lt;p&gt;Night Bird is a song with my voice and solo oud, inspired by the poet Rumi.
-&lt;audio controls crossorigin=&quot;anonymous&quot;&gt;
-	&lt;source src=&quot;http:&#x2F;&#x2F;archive.org&#x2F;download&#x2F;NightBird&amp;#x2F;NightBird.mp3&quot; type=&quot;audio&#x2F;mpeg&quot; &#x2F;&gt;
-&lt;&#x2F;audio&gt;
-&lt;&#x2F;p&gt;
 </content>
         
     </entry>
