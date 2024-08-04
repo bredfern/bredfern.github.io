@@ -22,7 +22,13 @@
         <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/al-farabi/"/>
         <id>https://bredfern.github.io/blog/al-farabi/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/al-farabi/">&lt;p&gt;{{bandcamp(content-id=&quot;249540736&quot;)}}&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://bredfern.github.io/blog/al-farabi/">&lt;p&gt;Music using the intonations and tunings developed by the maestro Al Farabi.&lt;&#x2F;p&gt;
+&lt;iframe
+  src=&quot;https:&#x2F;&#x2F;bandcamp.com&#x2F;EmbeddedPlayer&#x2F;album=249540736&#x2F;size=large&#x2F;bgcol=ffffff&#x2F;linkcol=0687f5&#x2F;tracklist=true&#x2F;transparent=true&#x2F;&quot; seamless&gt;
+  &lt;a href=&quot;https:&#x2F;&#x2F;brianredfern.bandcamp.com&#x2F;&quot;&gt;
+    Follow me on Bandcamp to hear more.
+  &lt;&#x2F;a&gt;
+&lt;&#x2F;iframe&gt;
 </content>
         
     </entry>
