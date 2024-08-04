@@ -54,8 +54,7 @@
 <ul>
 <li><a href="/" class="menu-item">Home</a></li>
 <li><a href="/blog" class="menu-item">Blog</a></li>
-<li><a href="https://github.com/bredfern" class="menu-item">Projects</a></li>
-<li><a href="https://linkedin.com/in/bredfern" class="menu-item">Resume</a></li>
+<li><a href="https://github.com/bredfern" class="menu-item" target="new">Github</a></li>
 </ul>
 </div>
 <div class="col-6">
@@ -79,9 +78,14 @@
 <div class="col-3 right">
 <div class="aside">
 <h2>Contact Me</h2>
-<p>If you would like to reach me, you can
-contact me on <a href="https://linkedin.com/in/bredfern">Linkedin</a>
-or <a href="https://github.com/bredfern">Github</a>.
+<form id="my-form" action="https://formspree.io/f/xdkngbel" method="POST">
+  <label>Email:</label>
+  <input type="email" name="email" />
+  <label>Message:</label>
+  <input type="text" name="message" />
+  <button id="my-form-button">Submit</button>
+  <p id="my-form-status"></p>
+</form>
 </div>
 </div>
 </div>
@@ -90,5 +94,6 @@ or <a href="https://github.com/bredfern">Github</a>.
 <footer>
 <p>&#169; 2024 Brian Redfern</p>
 </footer>
+<script src="/contact.js" defer></script>
 </body>
 </html>
