@@ -1,9 +1,9 @@
-const form = document.getElementById("my-form");
+const form = document.getElementById("contact-form");
   
 async function handleSubmit(event) {
     event.preventDefault();
     
-    const status = document.getElementById("my-form-status");
+    const status = document.getElementById("contact-form-status");
     const data = new FormData(event.target);
     
     fetch(event.target.action, {
