@@ -59,6 +59,26 @@
         
     </entry>
     <entry xml:lang="en">
+        <title>Linux App</title>
+        <published>2024-08-04T00:00:00+00:00</published>
+        <updated>2024-08-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/linux-app/"/>
+        <id>https://bredfern.github.io/blog/linux-app/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/linux-app/">&lt;p&gt;So for pro level audio software its still necessary to use native, but in my case I am looking at python and kde. Learning QML, have python bindings to a bunch of interesting audio libraries so for now focussing on making something cool on linux and then working on android for the same thing but monotized.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
         <title>The Future of UI</title>
         <published>2024-07-30T00:00:00+00:00</published>
         <updated>2024-07-30T00:00:00+00:00</updated>
