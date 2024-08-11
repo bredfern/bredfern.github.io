@@ -37,6 +37,7 @@ body {
   line-height: 1.5;
 }
 
+/* BACKWARD COMPATIBLE GRID ISH THINGIE */
 [class*="col-"] {
   float: left;
   padding: 1rem;
@@ -59,34 +60,6 @@ h1 {
 #logo {
   width: 50%;
   height: 10rem;
-}
-
-#linkedin {
-  width: 1.5rem;
-  height: 2rem;
-}
-
-#linkedin-cont {
-  float: right;
-  margin-top: 0;
-  padding: 0;
-  margin-left: 0.175rem;
-}
-
-#github-cont {
-  float: right;
-  padding: 0.05rem;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0.2rem;
-  margin-top: 0.25rem;
-  background: #fff;
-  width: 1.4rem;
-}
-
-#github {
-  width: 1rem;
-  height: 1rem;
 }
 
 a, a:visited, a:active {
@@ -229,7 +202,7 @@ audio {
 }
 
 input[type=text], input[type=email], button {
-  width: 90%;
+  width: 100%;
   padding: 4px 20px;
   margin: 8px 0;
   box-sizing: border-box;
