@@ -199,15 +199,12 @@ iframe {
 header {
   background-color: $fore-color;
   color: $back-color;
-  padding: 0.1rem;
-
+  padding: 0.25rem;
   grid-area: header;
-  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 
 nav {
   grid-area: nav;
