@@ -174,11 +174,11 @@ iframe {
   "nav content side"
   "footer footer footer";
 
-  grid-template-columns: 10rem 1fr 10rem;
+  grid-template-columns: 13rem 1fr 13rem;
   grid-template-rows: auto 1fr auto;
   grid-gap: 1ren;
 
-  height: auto;
+  min-height: 100vh;
 }
 
 .aside {
@@ -259,9 +259,9 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows:
     auto /* Header */
-    minmax(10rem, auto) /* Nav */
+    minmax(13rem, auto) /* Nav */
     1fr /* Content */
-    minmax(10rem, auto) /* Sidebar */
+    minmax(13rem, auto) /* Sidebar */
     auto; /* Footer */
   }
 
