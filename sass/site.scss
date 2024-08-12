@@ -16,9 +16,8 @@ html {
 
 body {
   margin: 0;
-  min-height: 100vh;
-  /*display: flex;
-  flex-direction: column;*/
+  display: flex;
+  flex-direction: column;
   padding: 0;
   /*  Generate tiny png square img 50x50 */
   background: $png-square;
@@ -69,8 +68,7 @@ h1, h2, h3, h5, h5 {
 h1 {
   font-size: 2rem;
   float: left;
-  margin-left: 0.125rem;
-  margin-bottom: 50;
+  margin-left: 0.5rem;
 }
 
 ul {
@@ -168,16 +166,13 @@ iframe {
 
 .container {
   display: grid;
-
   grid-template-areas:
   "header header header"
   "nav content side"
   "footer footer footer";
-
   grid-template-columns: 13rem 1fr 13rem;
   grid-template-rows: auto 1fr auto;
   grid-gap: 1ren;
-
   min-height: 100vh;
 }
 
@@ -204,6 +199,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 4rem;
 }
 
 nav {
