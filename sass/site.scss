@@ -99,9 +99,6 @@ ul li {
   background-color: $back-color;
 }
 
-
-
-
 @-webkit-keyframes bg-scrolling-reverse {
   100% {
     background-position: 3.125rem 3.125rem;
@@ -177,7 +174,7 @@ iframe {
   "nav content side"
   "footer footer footer";
 
-  grid-template-columns: 5rem 1fr 5rem;
+  grid-template-columns: 10rem 1fr 10rem;
   grid-template-rows: auto 1fr auto;
   grid-gap: 1ren;
 
@@ -265,9 +262,9 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows:
     auto /* Header */
-    minmax(5rem, auto) /* Nav */
+    minmax(10rem, auto) /* Nav */
     1fr /* Content */
-    minmax(5rem, auto) /* Sidebar */
+    minmax(10rem, auto) /* Sidebar */
     auto; /* Footer */
   }
 
