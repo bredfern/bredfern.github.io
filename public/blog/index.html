@@ -5,29 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="The website of artist/musican/developer Brian Redfern.">
 <meta name="keywords" content="artist, writer, web developer, full stack, vanilla javascript, react, guitar, clarinet">
+<link rel="shortcut icon" href="/favicon.ico">
 <title>The website of musican/developer Brian Redfern.</title>
 <link rel="stylesheet" type="text/css" rel="preload" as="style" href="/site.css">
 </head>
 <body>
-<header>
-  <h1>Brian Redfern</h1>
-</header>
-<section>
-<div class="row">
-<div class="col-3 menu">
-<ul>
-<li><a href="/" class="menu-item">Home</a></li>
-<li><a href="/blog" class="menu-item">Blog</a></li>
-<li><a href="https://mastodon.sdf.org/@redfern" target="new">Mastadon</a></li>
-</ul>
-</div>
-<div class="col-6">
-<div class="centered">
-<picture>
-  <img src="/redfern.svg" id="logo" alt="Brian Redfern">
-</picture>
-</div>
-<div>
+<div class="container">
+  <header>
+    <h1><a href="/" id="heading">Brian Redfern</a></h1>
+  </header>
+  <nav>
+    <div class="menu">
+      <ul>
+        <li><a href="/blog" class="menu-item">Blog</a></li>
+        <li><a href="https://mastodon.sdf.org/@redfern" target="new">Mastadon</a></li>
+        <li><a href="https://github.com/bredfern" target="new">Github</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="centered">
+      <picture>
+        <img src="/redfern.svg" id="logo" alt="Brian Redfern">
+      </picture>
+    </div>
+    <div>
+      
 <h2 class="title">
   Blog Posts
 </h2>
@@ -44,27 +47,26 @@
       <a class="next" href="https:&#x2F;&#x2F;bredfern.github.io&#x2F;blog&#x2F;page&#x2F;2&#x2F;">Next ›</a>
   
 </nav>
+
+    </div>
+  </main>
+  <aside>
+    <div class="aside-content">
+      <h2>Contact Me</h2>
+      <form id="contact-form" action="https://formspree.io/f/xdkngbel" method="POST">
+        <label for="email">Email:</label>
+        <input type="email" name="email">
+        <label for="message">Message:</label>
+        <textarea name="message"></textarea>
+        <p><button id="contact-form-button">Submit</button></p>
+        <p id="contact-form-status"></p>
+      </form>
+    </div>
+  </aside>
+  <footer class="centered">
+    &#169; 2024 Brian Redfern
+  </footer>
 </div>
-</div>
-<div class="col-3 right">
-<div class="aside">
-<h2>Contact Me</h2>
-<form id="contact-form" action="https://formspree.io/f/xdkngbel" method="POST">
-  <label>Email:</label>
-  <input type="email" name="email">
-  <label>Message:</label>
-  <input type="text" name="message">
-  <button id="contact-form-button">Submit</button>
-  <p id="contact-form-status"></p>
-</form>
-</div>
-</div>
-</div>
-</div>
-</section>
-<footer>
-<p>&#169; 2024 Brian Redfern</p>
-</footer>
 <script src="/contact.js" defer></script>
 </body>
 </html>
