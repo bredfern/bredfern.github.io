@@ -7,16 +7,8 @@
         <loc>https://bredfern.github.io/blog/</loc>
     </url>
     <url>
-        <loc>https://bredfern.github.io/blog/al-farabi/</loc>
-        <lastmod>2024-08-04</lastmod>
-    </url>
-    <url>
         <loc>https://bredfern.github.io/blog/android-native/</loc>
         <lastmod>2023-12-18</lastmod>
-    </url>
-    <url>
-        <loc>https://bredfern.github.io/blog/bartok/</loc>
-        <lastmod>2024-07-16</lastmod>
     </url>
     <url>
         <loc>https://bredfern.github.io/blog/covid-intro/</loc>
@@ -35,20 +27,8 @@
         <lastmod>2020-04-01</lastmod>
     </url>
     <url>
-        <loc>https://bredfern.github.io/blog/extravaganza/</loc>
-        <lastmod>2024-08-04</lastmod>
-    </url>
-    <url>
         <loc>https://bredfern.github.io/blog/genesis-passed/</loc>
         <lastmod>2020-03-16</lastmod>
-    </url>
-    <url>
-        <loc>https://bredfern.github.io/blog/hawk-tua/</loc>
-        <lastmod>2024-07-04</lastmod>
-    </url>
-    <url>
-        <loc>https://bredfern.github.io/blog/hermanos-live/</loc>
-        <lastmod>2024-07-20</lastmod>
     </url>
     <url>
         <loc>https://bredfern.github.io/blog/linux-app/</loc>
@@ -84,12 +64,6 @@
         <loc>https://bredfern.github.io/blog/page/7/</loc>
     </url>
     <url>
-        <loc>https://bredfern.github.io/blog/page/8/</loc>
-    </url>
-    <url>
-        <loc>https://bredfern.github.io/blog/page/9/</loc>
-    </url>
-    <url>
         <loc>https://bredfern.github.io/blog/pain/</loc>
         <lastmod>2023-08-30</lastmod>
     </url>
@@ -110,10 +84,6 @@
         <lastmod>2020-03-18</lastmod>
     </url>
     <url>
-        <loc>https://bredfern.github.io/blog/song/</loc>
-        <lastmod>2020-03-18</lastmod>
-    </url>
-    <url>
         <loc>https://bredfern.github.io/blog/steal-your-face/</loc>
         <lastmod>2023-07-21</lastmod>
     </url>
@@ -126,10 +96,6 @@
         <lastmod>2024-07-30</lastmod>
     </url>
     <url>
-        <loc>https://bredfern.github.io/blog/thelema/</loc>
-        <lastmod>2024-07-28</lastmod>
-    </url>
-    <url>
         <loc>https://bredfern.github.io/blog/waiting-again/</loc>
         <lastmod>2020-03-22</lastmod>
     </url>
@@ -140,5 +106,36 @@
     <url>
         <loc>https://bredfern.github.io/blog/why-no-webfonts/</loc>
         <lastmod>2023-10-05</lastmod>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/songs/</loc>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/songs/al-farabi/</loc>
+        <lastmod>2024-08-04</lastmod>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/songs/bartok/</loc>
+        <lastmod>2024-07-16</lastmod>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/songs/extravaganza/</loc>
+        <lastmod>2024-08-04</lastmod>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/songs/hawk-tua/</loc>
+        <lastmod>2024-07-04</lastmod>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/songs/hermanos-live/</loc>
+        <lastmod>2024-07-20</lastmod>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/songs/song/</loc>
+        <lastmod>2020-03-18</lastmod>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/songs/thelema/</loc>
+        <lastmod>2024-07-28</lastmod>
     </url>
 </urlset>

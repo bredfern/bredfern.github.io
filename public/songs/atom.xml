@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title> - My Music</title>
+    <link rel="self" type="application/atom+xml" href="https://bredfern.github.io/songs/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://bredfern.github.io/songs/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-08-04T00:00:00+00:00</updated>
+    <id>https://bredfern.github.io/songs/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Al Farabi Goes to Hollywood</title>
+        <published>2024-08-04T00:00:00+00:00</published>
+        <updated>2024-08-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/songs/al-farabi/"/>
+        <id>https://bredfern.github.io/songs/al-farabi/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/songs/al-farabi/">&lt;p&gt;Digital modular synth music using the intonations and tunings developed by the maestro Al Farabi using the Bespoke Synth software on Manjaro Linux.&lt;&#x2F;p&gt;
+&lt;iframe
+  src=&quot;https:&#x2F;&#x2F;bandcamp.com&#x2F;EmbeddedPlayer&#x2F;album=249540736&#x2F;size=large&#x2F;artwork=small&#x2F;bgcol=ffffff&#x2F;linkcol=0687f5&#x2F;tracklist=true&#x2F;transparent=true&#x2F;&quot; seamless&gt;
+  &lt;a href=&quot;https:&#x2F;&#x2F;brianredfern.bandcamp.com&#x2F;&quot;&gt;
+    Follow me on Bandcamp.
+  &lt;&#x2F;a&gt;
+&lt;&#x2F;iframe&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Extravaganza</title>
+        <published>2024-08-04T00:00:00+00:00</published>
+        <updated>2024-08-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/songs/extravaganza/"/>
+        <id>https://bredfern.github.io/songs/extravaganza/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/songs/extravaganza/">&lt;p&gt;My live band where I played guitar from 1991-1995, Los Hermanos de Jazz, this is our record from 1991.&lt;&#x2F;p&gt;
+&lt;iframe
+  src=&quot;https:&#x2F;&#x2F;bandcamp.com&#x2F;EmbeddedPlayer&#x2F;album=821144709&#x2F;size=large&#x2F;artwork=small&#x2F;bgcol=ffffff&#x2F;linkcol=0687f5&#x2F;tracklist=true&#x2F;transparent=true&#x2F;&quot; seamless&gt;
+  &lt;a href=&quot;https:&#x2F;&#x2F;brianredfern.bandcamp.com&#x2F;&quot;&gt;
+    Follow me on Bandcamp.
+  &lt;&#x2F;a&gt;
+&lt;&#x2F;iframe&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Thelema</title>
+        <published>2024-07-28T00:00:00+00:00</published>
+        <updated>2024-07-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/songs/thelema/"/>
+        <id>https://bredfern.github.io/songs/thelema/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/songs/thelema/">&lt;p&gt;Live Improv on Bespoke Synth with all tunings from Ancient Greece.&lt;&#x2F;p&gt;
+&lt;iframe
+  src=&quot;https:&#x2F;&#x2F;bandcamp.com&#x2F;EmbeddedPlayer&#x2F;album=18946346&#x2F;size=large&#x2F;artwork=small&#x2F;bgcol=ffffff&#x2F;linkcol=0687f5&#x2F;tracklist=true&#x2F;transparent=true&#x2F;&quot; seamless&gt;
+  &lt;a href=&quot;https:&#x2F;&#x2F;brianredfern.bandcamp.com&#x2F;&quot;&gt;
+    Follow me on Bandcamp.
+  &lt;&#x2F;a&gt;
+&lt;&#x2F;iframe&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Los Hermanos de Jazz Live</title>
+        <published>2024-07-20T00:00:00+00:00</published>
+        <updated>2024-07-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/songs/hermanos-live/"/>
+        <id>https://bredfern.github.io/songs/hermanos-live/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/songs/hermanos-live/">&lt;p&gt;Live performances of my 90s group where I was one of two guitarists.&lt;&#x2F;p&gt;
+&lt;iframe
+  src=&quot;https:&#x2F;&#x2F;bandcamp.com&#x2F;EmbeddedPlayer&#x2F;album=765204145&#x2F;size=large&#x2F;artwork=small&#x2F;bgcol=ffffff&#x2F;linkcol=0687f5&#x2F;tracklist=true&#x2F;transparent=true&#x2F;&quot; seamless&gt;
+  &lt;a href=&quot;https:&#x2F;&#x2F;brianredfern.bandcamp.com&#x2F;&quot;&gt;
+    Follow me on Bandcamp.
+  &lt;&#x2F;a&gt;
+&lt;&#x2F;iframe&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Bartok Was a Weird Guy</title>
+        <published>2024-07-16T00:00:00+00:00</published>
+        <updated>2024-07-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/songs/bartok/"/>
+        <id>https://bredfern.github.io/songs/bartok/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/songs/bartok/">&lt;p&gt;Live electronic improve with Bespoke Synth.&lt;&#x2F;p&gt;
+&lt;iframe
+  src=&quot;https:&#x2F;&#x2F;bandcamp.com&#x2F;EmbeddedPlayer&#x2F;album=1402335544&#x2F;size=large&#x2F;artwork=small&#x2F;bgcol=ffffff&#x2F;linkcol=0687f5&#x2F;tracklist=true&#x2F;transparent=true&#x2F;&quot; seamless&gt;
+  &lt;a href=&quot;https:&#x2F;&#x2F;brianredfern.bandcamp.com&#x2F;&quot;&gt;
+    Follow me on Bandcamp.
+  &lt;&#x2F;a&gt;
+&lt;&#x2F;iframe&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Hawk Tua</title>
+        <published>2024-07-04T00:00:00+00:00</published>
+        <updated>2024-07-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/songs/hawk-tua/"/>
+        <id>https://bredfern.github.io/songs/hawk-tua/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/songs/hawk-tua/">&lt;p&gt;Digital modular synth music using BespokeSynth dedicated to the Hawk Tua Girl.&lt;&#x2F;p&gt;
+&lt;iframe
+  src=&quot;https:&#x2F;&#x2F;bandcamp.com&#x2F;EmbeddedPlayer&#x2F;album=249540736&#x2F;size=large&#x2F;artwork=small&#x2F;bgcol=ffffff&#x2F;linkcol=0687f5&#x2F;tracklist=true&#x2F;transparent=true&#x2F;&quot; seamless&gt;
+  &lt;a href=&quot;https:&#x2F;&#x2F;brianredfern.bandcamp.com&#x2F;&quot;&gt;
+    Follow me on Bandcamp.
+  &lt;&#x2F;a&gt;
+&lt;&#x2F;iframe&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Song of Birds</title>
+        <published>2020-03-18T00:00:00+00:00</published>
+        <updated>2020-03-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/songs/song/"/>
+        <id>https://bredfern.github.io/songs/song/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/songs/song/">&lt;p&gt;Staying in place is easy for a writer, its our natural inclination not to go out.&lt;&#x2F;p&gt;
+&lt;p&gt;Its a strange world where suddenly Howard Hughs is a major role model but its a real thing.&lt;&#x2F;p&gt;
+&lt;p&gt;But more about that in a music review.&lt;&#x2F;p&gt;
+&lt;p&gt;For now we sit here waiting to hear of my dad’s passing, my mom completely torutured but what can one do?&lt;&#x2F;p&gt;
+&lt;p&gt;We never know how long we have here, my friend lost his son and nephew to a car accident they were only 14. In many ways we make this place a lot more dangerous than it has to be in order for a few to benefit.&lt;&#x2F;p&gt;
+&lt;p&gt;Here we can hardly stand a medical emergency yet the powers that be still seek war and confrontation. When can we have peace and cooperation with a focus on happiness, kindness and compassion?&lt;&#x2F;p&gt;
+&lt;p&gt;Now I just focus on two things, what can I do to help and what can I learn while I have a lot of time to sit and read.&lt;&#x2F;p&gt;
+&lt;p&gt;Try to clear my mind and make every action a meditation. While I’m completely freaked out of course but its important to acknowledge the fear give it its due but then put it away.&lt;&#x2F;p&gt;
+&lt;p&gt;This is a great time to study online we have many great resources, I always like to point out khan academy because they’re free and open to anyone.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
