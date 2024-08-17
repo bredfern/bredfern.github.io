@@ -255,9 +255,9 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows:
     auto /* Header */
-    minmax(13rem, auto) /* Nav */
+    minmax(20rem, auto) /* Nav */
     1fr /* Content */
-    minmax(13rem, auto) /* Sidebar */
+    minmax(20rem, auto) /* Sidebar */
     auto; /* Footer */
   }
 
