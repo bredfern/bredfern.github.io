@@ -19,8 +19,28 @@
         <lastmod>2024-07-16</lastmod>
     </url>
     <url>
+        <loc>https://bredfern.github.io/blog/covid-intro/</loc>
+        <lastmod>2020-03-15</lastmod>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/blog/dad/</loc>
+        <lastmod>2020-03-21</lastmod>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/blog/destroyed/</loc>
+        <lastmod>2020-08-05</lastmod>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/blog/distant/</loc>
+        <lastmod>2020-04-01</lastmod>
+    </url>
+    <url>
         <loc>https://bredfern.github.io/blog/extravaganza/</loc>
         <lastmod>2024-08-04</lastmod>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/blog/genesis-passed/</loc>
+        <lastmod>2020-03-16</lastmod>
     </url>
     <url>
         <loc>https://bredfern.github.io/blog/hawk-tua/</loc>
@@ -35,6 +55,14 @@
         <lastmod>2024-08-04</lastmod>
     </url>
     <url>
+        <loc>https://bredfern.github.io/blog/love/</loc>
+        <lastmod>2024-08-15</lastmod>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/blog/millions/</loc>
+        <lastmod>2021-05-06</lastmod>
+    </url>
+    <url>
         <loc>https://bredfern.github.io/blog/page/1/</loc>
     </url>
     <url>
@@ -47,12 +75,63 @@
         <loc>https://bredfern.github.io/blog/page/4/</loc>
     </url>
     <url>
+        <loc>https://bredfern.github.io/blog/page/5/</loc>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/blog/page/6/</loc>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/blog/page/7/</loc>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/blog/page/8/</loc>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/blog/page/9/</loc>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/blog/pain/</loc>
+        <lastmod>2023-08-30</lastmod>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/blog/raining/</loc>
+        <lastmod>2020-03-23</lastmod>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/blog/running/</loc>
+        <lastmod>2020-04-26</lastmod>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/blog/sneeze/</loc>
+        <lastmod>2020-03-18</lastmod>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/blog/song/</loc>
+        <lastmod>2020-03-18</lastmod>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/blog/steal-your-face/</loc>
+        <lastmod>2023-07-21</lastmod>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/blog/stumbling/</loc>
+        <lastmod>2021-03-21</lastmod>
+    </url>
+    <url>
         <loc>https://bredfern.github.io/blog/the-future-of-ui/</loc>
         <lastmod>2024-07-30</lastmod>
     </url>
     <url>
         <loc>https://bredfern.github.io/blog/thelema/</loc>
         <lastmod>2024-07-28</lastmod>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/blog/waiting-again/</loc>
+        <lastmod>2020-03-22</lastmod>
+    </url>
+    <url>
+        <loc>https://bredfern.github.io/blog/waiting/</loc>
+        <lastmod>2020-03-17</lastmod>
     </url>
     <url>
         <loc>https://bredfern.github.io/blog/why-no-webfonts/</loc>

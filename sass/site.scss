@@ -161,7 +161,7 @@ input[type=text], textarea, input[type=email], button {
 iframe {
   border: 0;
   width: 100%;
-  height: 29.5rem;
+  height: 30rem;
 }
 
 .container {
@@ -170,7 +170,7 @@ iframe {
   "header header header"
   "nav content side"
   "footer footer footer";
-  grid-template-columns: 13rem 1fr 13rem;
+  grid-template-columns: 20rem 1fr 20rem;
   grid-template-rows: auto 1fr auto;
   grid-gap: 1ren;
   min-height: 100vh;
