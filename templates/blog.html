@@ -3,7 +3,7 @@
 {% for page in paginator.pages %}
 <p>
     {{ page.date }} -
-    <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+    <a href="{{ page.permalink | safe }}" class="blk">{{ page.title }}</a>
 </p>
 <hr />
 {% endfor %}
