@@ -3,7 +3,7 @@ $font-title: monospace;
 
 $back-color: rgb(50, 72, 155);
 $fore-color: rgb(255, 255, 255);
-
+$black-text: rgb(0, 0, 0);
 $png-square: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC")
     repeat 0 0;
 
@@ -55,8 +55,16 @@ a:active {
     text-decoration: underline;
 }
 
+a.blk,
+a:visited.blk,
+a:active.blk {
+    color: #000;
+    text-decoration: none;
+}
+
 .menu-item {
     text-decoration: none;
+    color: $fore-color;
 }
 
 a:hover {
@@ -158,6 +166,11 @@ ul li {
     content: "";
     clear: both;
     display: block;
+}
+
+.blk {
+    color: $black-text;
+    text-decoration: none;
 }
 
 .is-hidden {

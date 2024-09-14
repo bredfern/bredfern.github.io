@@ -24,12 +24,6 @@
         
         <content type="html" xml:base="https://bredfern.github.io/songs/begone/">&lt;p&gt;Digital modular synth music using the intonations and tunings developed by the maestro Al Farabi using the Bespoke Synth software on Manjaro Linux.&lt;&#x2F;p&gt;
 &lt;iframe
-  src=&quot;https:&#x2F;&#x2F;bandcamp.com&#x2F;EmbeddedPlayer&#x2F;album=249540736&#x2F;size=large&#x2F;artwork=small&#x2F;bgcol=ffffff&#x2F;linkcol=0687f5&#x2F;tracklist=true&#x2F;transparent=true&#x2F;&quot; seamless&gt;
-  &lt;a href=&quot;https:&#x2F;&#x2F;brianredfern.bandcamp.com&#x2F;&quot;&gt;
-    Follow me on Bandcamp.
-  &lt;&#x2F;a&gt;
-&lt;&#x2F;iframe&gt;
-&lt;iframe
     src=&quot;https:&#x2F;&#x2F;archive.org&#x2F;embed&#x2F;begone_2024-09-12_21-47&quot;
     width=&quot;500&quot;
     height=&quot;60&quot;
