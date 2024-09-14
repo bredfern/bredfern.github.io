@@ -1,45 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="h-100">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="The website of artist/musican/developer Brian Redfern.">
-<meta name="keywords" content="artist, writer, web developer, full stack, vanilla javascript, react, guitar, clarinet">
-<link rel="shortcut icon" href="/favicon.ico">
-<title>The website of musican/developer Brian Redfern.</title>
-<link rel="stylesheet" type="text/css" rel="preload" as="style" href="/site.css">
-</head>
-<body>
-<div class="container">
-  <header>
-    <h1><a href="/" id="heading">Brian Redfern</a></h1>
-  </header>
-  <nav>
-    <div class="menu">
-      <ul>
-        <li><a href="/blog" class="menu-item">Blog</a></li>
-        <li><a href="/songs">Songs</a></li>
-        <li><a href="https://github.com/bredfern" target="new">Github</a></li>
-      </ul>
-    </div>
-  </nav>
-  <main>
-    <div class="centered">
-      <picture>
-        <a href="/"><img src="/redfern.svg" id="logo" alt="Brian Redfern"></a>
-      </picture>
-    </div>
-    <div>
-      
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <title>The website of musican/developer Brian Redfern.</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            rel="preload"
+            as="style"
+            href="/site.css"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1><a href="/" id="heading">Brian Redfern</a></h1>
+            </header>
+            <nav>
+                <div class="menu">
+                    <ul>
+                        <li><a href="/blog" class="menu-item">Blog</a></li>
+                        <li><a href="/songs" class="menu-item">Music</a></li>
+                        <li>
+                            <a
+                                href="https://linkedin.com/in/bredfern"
+                                class="menu-item"
+                                target="new"
+                                >Linkedin</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://github.com/bredfern"
+                                class="menu-item"
+                                target="new"
+                                >Github</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main>
+                <div class="centered">
+                    <picture>
+                        <a href="/"
+                            ><img
+                                src="/redfern.svg"
+                                id="logo"
+                                alt="Brian Redfern"
+                        /></a>
+                    </picture>
+                </div>
+                <div>
 <h2 class="title">
   Blog Posts
 </h2>
 
+  <p>2023-10-05 - <a href="https://bredfern.github.io/blog/why-no-webfonts/">Why Not Web Fonts?</a></p><hr>
+
   <p>2023-08-30 - <a href="https://bredfern.github.io/blog/pain/">Pain</a></p><hr>
 
   <p>2023-07-21 - <a href="https://bredfern.github.io/blog/steal-your-face/">Steal Your Face</a></p><hr>
-
-  <p>2021-05-06 - <a href="https://bredfern.github.io/blog/millions/">Many Millions Later</a></p><hr>
 
 <nav class="pagination">
   
@@ -49,26 +72,28 @@
       <a class="next" href="https:&#x2F;&#x2F;bredfern.github.io&#x2F;blog&#x2F;page&#x2F;4&#x2F;">Next ›</a>
   
 </nav>
-
-    </div>
-  </main>
-  <aside>
-    <div class="aside-content">
-      <h2>Contact Me</h2>
-      <form id="contact-form" action="https://formspree.io/f/xdkngbel" method="POST">
-        <label for="email">Email:</label>
-        <input type="email" name="email">
-        <label for="message">Message:</label>
-        <textarea name="message"></textarea>
-        <p><button id="contact-form-button">Submit</button></p>
-        <p id="contact-form-status"></p>
-      </form>
-    </div>
-  </aside>
-  <footer class="centered">
-    &#169; 2024 Brian Redfern
-  </footer>
 </div>
-<script src="/contact.js" defer></script>
-</body>
+            </main>
+            <aside>
+                <div class="aside-content">
+                    <h3>Contact Me</h3>
+                    <hr />
+                    <form
+                        id="contact-form"
+                        action="https://formspree.io/f/xdkngbel"
+                        method="POST"
+                    >
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" />
+                        <label for="message">Message:</label>
+                        <textarea name="message"></textarea>
+                        <p><button id="contact-form-button">Submit</button></p>
+                        <p id="contact-form-status"></p>
+                    </form>
+                </div>
+            </aside>
+            <footer class="centered">&#169; 2024 Brian Redfern</footer>
+        </div>
+        <script src="/contact.js" defer></script>
+    </body>
 </html>

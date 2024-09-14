@@ -4,8 +4,56 @@
     <link rel="self" type="application/atom+xml" href="https://bredfern.github.io/blog/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2024-08-17T00:00:00+00:00</updated>
+    <updated>2024-09-24T00:00:00+00:00</updated>
     <id>https://bredfern.github.io/blog/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Linux Low Latency Audio</title>
+        <published>2024-09-24T00:00:00+00:00</published>
+        <updated>2024-09-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/linux-low-latency/"/>
+        <id>https://bredfern.github.io/blog/linux-low-latency/</id>
+        
+        <content type="html" xml:base="https://bredfern.github.io/blog/linux-low-latency/">&lt;p&gt;Over time its become a lot easier to setup Linux for pro audio uses.&lt;&#x2F;p&gt;
+&lt;p&gt;Now in a few short steps we can rapidly modify any modern Linux system for pro audio.&lt;&#x2F;p&gt;
+&lt;p&gt;Rather than compiling a realtime kernel, today we can setup PAM to enable high quality,
+low latency audio.&lt;&#x2F;p&gt;
+&lt;p&gt;To begin with we&#x27;re going to check how the power management is working. These days you&#x27;re not
+going to need to change any settings as long as this command line call shows &quot;performance&quot; as
+the result when your laptop is plugged in.&lt;&#x2F;p&gt;
+&lt;p&gt;echo -n performance | sudo tee &#x2F;sys&#x2F;devices&#x2F;system&#x2F;cpu&#x2F;cpu*&#x2F;cpufreq&#x2F;scaling_governor&lt;&#x2F;p&gt;
+&lt;p&gt;Next we have to configure PAM for it to give us low latency audio.&lt;&#x2F;p&gt;
+&lt;p&gt;Open up this file under your favorite text editor using sudo:
+&#x2F;etc&#x2F;security&#x2F;limits.conf or &#x2F;etc&#x2F;security&#x2F;limits.d&#x2F;audio.conf&lt;&#x2F;p&gt;
+&lt;p&gt;Then paste this in:
+@audio - rtprio 90       # maximum realtime priority
+@audio - memlock unlimited  # maximum locked-in-memory address space (KB)&lt;&#x2F;p&gt;
+&lt;p&gt;This enables PAM, now we&#x27;ll make another couple small tweaks and we&#x27;ll be ready to
+reboot into low latency.&lt;&#x2F;p&gt;
+&lt;p&gt;Next we add a setting to &#x2F;etc&#x2F;sysctl.conf most likely this file will be empty and we
+will add:
+vm.swappiness = 10&lt;&#x2F;p&gt;
+&lt;p&gt;This is especially important for users of lower end hardware, where swap has a bigger
+impact on latency.&lt;&#x2F;p&gt;
+&lt;p&gt;For our final setting we need to add our user we intend to use for pro audio to the
+audio group:&lt;&#x2F;p&gt;
+&lt;p&gt;sudo usermod -a -G audio &lt;username&gt;
+Where &lt;username&gt; is the username of your pro audio user.&lt;&#x2F;p&gt;
+&lt;p&gt;To add yourself (where you&#x27;re the only user) you can run this:
+sudo usermod -a -G audio $USER&lt;&#x2F;p&gt;
+&lt;p&gt;And that&#x27;s it, reboot and you&#x27;ll have great audio performance and quality, no need for tricky
+custom kernels.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>The Great Slowdown</title>
         <published>2024-08-17T00:00:00+00:00</published>
