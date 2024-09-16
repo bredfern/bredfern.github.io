@@ -185,7 +185,9 @@ button {
     box-sizing: border-box;
     display: block;
 }
-
+textarea {
+    height: 5rem;
+}
 iframe {
     border: 0;
     width: 100%;
