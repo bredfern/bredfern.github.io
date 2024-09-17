@@ -1,12 +1,21 @@
 +++
-title = "Goodbye Archive.org"
-date = 2024-09-14
+title = "No Discusion on Ai"
+date = 2024-09-17
 +++
 
-The drive to censor everything in life is coming to a head over Sony's demand that
-the Internet Archive be completely ended as a service.
+As a member of what the Boomers sneeringly called "genX" I am used to having my rights
+violated, sometimes in the most vicious ways one could imagine.
 
-The powers that be would especially love to get rid of the Wayback Machine. This is
-part of a long time action, their former leader was forced into suicide by the feds.
+But their handling of Ai really takes the cake. Here they were complaining and complaining
+about the very real problem of global warming, only to have absolutely no discussion about
+whether Ai is worth it given the tremendous cost we are seeing to both humans and the
+environment.
 
-To find out more watch (The Internet's Own Boy) [https://www.youtube.com/watch?v=9vz06QO3UkQ&rco=1].
+Now in the face of the drive to nuclear war, the gloves come off and as we roast they
+push forward with catastrophic choices, but in this supposed "democracy" we are not
+asked our permission for anything. Rather than citizens we are being pushed into a
+new begging class, where nothing you do in life is good enough for the power elite
+to even allow you to live.
+
+A world of absolute control and absolute sadism, driven 24/7 by artifical minds trained by
+sadists and bigots.
