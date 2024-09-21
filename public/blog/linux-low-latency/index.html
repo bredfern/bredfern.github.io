@@ -55,13 +55,40 @@
                     </picture>
                 </div>
                 <div>
-<h2>Hi I'm Brian</h2>
-<p>
-    I am a senior web developer, and performer/composer of music. I started out
-    way back in 1998 with the pre-ipo team at Geocities. I went into LAMP in the
-    early 2000s and then moved into full stack Nodejs with Vue. Now I am working
-    with Htmx and PHP, fulll circle back to LAMP but with modern tools.
-</p>
+<h2 class="title">
+  Linux Low Latency Audio
+</h2>
+<p class="subtitle"><strong>2024-09-24</strong></p>
+<p>Over time its become a lot easier to setup Linux for pro audio uses.</p>
+<p>Now in a few short steps we can rapidly modify any modern Linux system for pro audio.</p>
+<p>Rather than compiling a realtime kernel, today we can setup PAM to enable high quality,
+low latency audio.</p>
+<p>To begin with we're going to check how the power management is working. These days you're not
+going to need to change any settings as long as this command line call shows "performance" as
+the result when your laptop is plugged in.</p>
+<p>echo -n performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor</p>
+<p>Next we have to configure PAM for it to give us low latency audio.</p>
+<p>Open up this file under your favorite text editor using sudo:
+/etc/security/limits.conf or /etc/security/limits.d/audio.conf</p>
+<p>Then paste this in:
+@audio - rtprio 90       # maximum realtime priority
+@audio - memlock unlimited  # maximum locked-in-memory address space (KB)</p>
+<p>This enables PAM, now we'll make another couple small tweaks and we'll be ready to
+reboot into low latency.</p>
+<p>Next we add a setting to /etc/sysctl.conf most likely this file will be empty and we
+will add:
+vm.swappiness = 10</p>
+<p>This is especially important for users of lower end hardware, where swap has a bigger
+impact on latency.</p>
+<p>For our final setting we need to add our user we intend to use for pro audio to the
+audio group:</p>
+<p>sudo usermod -a -G audio <username>
+Where <username> is the username of your pro audio user.</p>
+<p>To add yourself (where you're the only user) you can run this:
+sudo usermod -a -G audio $USER</p>
+<p>And that's it, reboot and you'll have great audio performance and quality, no need for tricky
+custom kernels.</p>
+
 </div>
             </main>
             <aside>
