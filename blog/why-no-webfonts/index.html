@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <title>The website of musican/developer Brian Redfern.</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            rel="preload"
+            as="style"
+            href="/site.css"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1><a href="/" id="heading">Brian Redfern</a></h1>
+            </header>
+            <nav>
+                <div class="menu">
+                    <ul>
+                        <li><a href="/blog" class="menu-item">Blog</a></li>
+                        <li><a href="/songs" class="menu-item">Music</a></li>
+                        <li>
+                            <a
+                                href="https://linkedin.com/in/bredfern"
+                                class="menu-item"
+                                target="new"
+                                >Linkedin</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://github.com/bredfern"
+                                class="menu-item"
+                                target="new"
+                                >Github</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main>
+                <div class="centered">
+                    <picture>
+                        <a href="/"
+                            ><img
+                                src="/redfern.svg"
+                                id="logo"
+                                alt="Brian Redfern"
+                        /></a>
+                    </picture>
+                </div>
+                <div>
+<h2 class="title">
+  Why Not Web Fonts?
+</h2>
+<p class="subtitle"><strong>2023-10-05</strong></p>
+<p>So there are many web apis that are really meant for web application development rather than web site development.</p>
+<p>One of those is the web font api, which is great for application design whether its a PWA or other platforms that use web UI for their front end like Tauri.</p>
+<p>So when you deliver an app with Tauri the fonts are baked in, there is no cost for those fonts. They come embedded or with a PWA they get cached offline so there is no performance penalty.</p>
+<p>When it comes to blogs and web page publishing there is a penalty in complexity and also requires more bandwidth to send your message to the world, With classic html fonts that are build into the browser. While they may be insufficient for web application front end UI needs they are the best option for blogs and other one to many messaging platforms.</p>
+
+</div>
+            </main>
+            <aside>
+                <div class="aside-content">
+                    <h3>Contact Me</h3>
+                    <hr />
+                    <form
+                        id="contact-form"
+                        action="https://formspree.io/f/xdkngbel"
+                        method="POST"
+                    >
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" />
+                        <label for="message">Message:</label>
+                        <textarea name="message"></textarea>
+                        <p><button id="contact-form-button">Submit</button></p>
+                        <p id="contact-form-status"></p>
+                    </form>
+                </div>
+            </aside>
+            <footer class="centered">&#169; 2024 Brian Redfern</footer>
+        </div>
+        <script src="/contact.js" defer></script>
+    </body>
+</html>
