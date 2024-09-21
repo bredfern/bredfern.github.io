@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: https://redfern.work/sitemap.xml
+Sitemap: https://bredfern.github.io/sitemap.xml
