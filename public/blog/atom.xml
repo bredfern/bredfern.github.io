@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title> - Blog Posts</title>
-    <link rel="self" type="application/atom+xml" href="https://bredfern.github.io/blog/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/"/>
+    <link rel="self" type="application/atom+xml" href="https://redfern.work/blog/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://redfern.work/blog/"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2024-09-24T00:00:00+00:00</updated>
-    <id>https://bredfern.github.io/blog/atom.xml</id>
+    <id>https://redfern.work/blog/atom.xml</id>
     <entry xml:lang="en">
         <title>Linux Low Latency Audio</title>
         <published>2024-09-24T00:00:00+00:00</published>
@@ -19,10 +19,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/linux-low-latency/"/>
-        <id>https://bredfern.github.io/blog/linux-low-latency/</id>
+        <link rel="alternate" type="text/html" href="https://redfern.work/blog/linux-low-latency/"/>
+        <id>https://redfern.work/blog/linux-low-latency/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/linux-low-latency/">&lt;p&gt;Over time its become a lot easier to setup Linux for pro audio uses.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://redfern.work/blog/linux-low-latency/">&lt;p&gt;Over time its become a lot easier to setup Linux for pro audio uses.&lt;&#x2F;p&gt;
 &lt;p&gt;Now in a few short steps we can rapidly modify any modern Linux system for pro audio.&lt;&#x2F;p&gt;
 &lt;p&gt;Rather than compiling a realtime kernel, today we can setup PAM to enable high quality,
 low latency audio.&lt;&#x2F;p&gt;
@@ -67,10 +67,10 @@ custom kernels.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/dead-economy/"/>
-        <id>https://bredfern.github.io/blog/dead-economy/</id>
+        <link rel="alternate" type="text/html" href="https://redfern.work/blog/dead-economy/"/>
+        <id>https://redfern.work/blog/dead-economy/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/dead-economy/">&lt;p&gt;While the Fed are moving on interest rates, the wild card here is the Ai totally wiping out the entire white collar sector of the economy.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://redfern.work/blog/dead-economy/">&lt;p&gt;While the Fed are moving on interest rates, the wild card here is the Ai totally wiping out the entire white collar sector of the economy.&lt;&#x2F;p&gt;
 &lt;p&gt;Never been on welfare before but its been two years now with no way to find any work.&lt;&#x2F;p&gt;
 &lt;p&gt;There is no opportunity economy when humans are kicked out of it.&lt;&#x2F;p&gt;
 </content>
@@ -89,10 +89,10 @@ custom kernels.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/archive/"/>
-        <id>https://bredfern.github.io/blog/archive/</id>
+        <link rel="alternate" type="text/html" href="https://redfern.work/blog/archive/"/>
+        <id>https://redfern.work/blog/archive/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/archive/">&lt;p&gt;As a member of what the Boomers sneeringly called &quot;genX&quot; I am used to having my rights
+        <content type="html" xml:base="https://redfern.work/blog/archive/">&lt;p&gt;As a member of what the Boomers sneeringly called &quot;genX&quot; I am used to having my rights
 violated, sometimes in the most vicious ways one could imagine.&lt;&#x2F;p&gt;
 &lt;p&gt;But their handling of Ai really takes the cake. Here they were complaining and complaining
 about the very real problem of global warming, only to have absolutely no discussion about
@@ -121,10 +121,10 @@ sadists and bigots.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/slow/"/>
-        <id>https://bredfern.github.io/blog/slow/</id>
+        <link rel="alternate" type="text/html" href="https://redfern.work/blog/slow/"/>
+        <id>https://redfern.work/blog/slow/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/slow/">&lt;p&gt;Its been two years since the economy has been able to provide for humans in Southern California.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://redfern.work/blog/slow/">&lt;p&gt;Its been two years since the economy has been able to provide for humans in Southern California.&lt;&#x2F;p&gt;
 &lt;p&gt;There&#x27;s an assumption made that war is good for the economy - blow things up then pay your own companies to rebuild them.&lt;&#x2F;p&gt;
 &lt;p&gt;I have heard Senators claim this war in Ukraine is a &quot;great investment,&quot; as if they are discussing real estate rather tha fragile and innocent human lives to be wiped out for money for a few.&lt;&#x2F;p&gt;
 &lt;p&gt;If we land in a nuclear war, what of this &quot;investment&quot; then?&lt;&#x2F;p&gt;
@@ -145,10 +145,10 @@ sadists and bigots.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/love/"/>
-        <id>https://bredfern.github.io/blog/love/</id>
+        <link rel="alternate" type="text/html" href="https://redfern.work/blog/love/"/>
+        <id>https://redfern.work/blog/love/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/love/">&lt;p&gt;For those bad days,
+        <content type="html" xml:base="https://redfern.work/blog/love/">&lt;p&gt;For those bad days,
 You keep them from getting worse
 Like the autostop on the blind table saw.&lt;&#x2F;p&gt;
 </content>
@@ -167,10 +167,10 @@ Like the autostop on the blind table saw.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/linux-app/"/>
-        <id>https://bredfern.github.io/blog/linux-app/</id>
+        <link rel="alternate" type="text/html" href="https://redfern.work/blog/linux-app/"/>
+        <id>https://redfern.work/blog/linux-app/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/linux-app/">&lt;p&gt;So for pro level audio software its still necessary to use native, but in my case I am looking at python and kde. Learning QML, have python bindings to a bunch of interesting audio libraries so for now focussing on making something cool on linux and then working on android for the same thing but monotized.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://redfern.work/blog/linux-app/">&lt;p&gt;So for pro level audio software its still necessary to use native, but in my case I am looking at python and kde. Learning QML, have python bindings to a bunch of interesting audio libraries so for now focussing on making something cool on linux and then working on android for the same thing but monotized.&lt;&#x2F;p&gt;
 </content>
         
     </entry>
@@ -187,10 +187,10 @@ Like the autostop on the blind table saw.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/the-future-of-ui/"/>
-        <id>https://bredfern.github.io/blog/the-future-of-ui/</id>
+        <link rel="alternate" type="text/html" href="https://redfern.work/blog/the-future-of-ui/"/>
+        <id>https://redfern.work/blog/the-future-of-ui/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/the-future-of-ui/">&lt;p&gt;Well, is there a future for UI? Ui Design assumes that we are designing for humans. While CEOs speak in baited breath about the wonders of AI, even though some demos are exaggerated the technology is already good enough to make a major impact.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://redfern.work/blog/the-future-of-ui/">&lt;p&gt;Well, is there a future for UI? Ui Design assumes that we are designing for humans. While CEOs speak in baited breath about the wonders of AI, even though some demos are exaggerated the technology is already good enough to make a major impact.&lt;&#x2F;p&gt;
 &lt;p&gt;Regardless I&#x27;m making software meant for human use until humans are eliminated. At that point I won&#x27;t care.&lt;&#x2F;p&gt;
 &lt;p&gt;One side wants ww3, the other wants a civil war, while the tech bros are eliminating any economic need for most human beings.&lt;&#x2F;p&gt;
 </content>
@@ -209,10 +209,10 @@ Like the autostop on the blind table saw.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/android-native/"/>
-        <id>https://bredfern.github.io/blog/android-native/</id>
+        <link rel="alternate" type="text/html" href="https://redfern.work/blog/android-native/"/>
+        <id>https://redfern.work/blog/android-native/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/android-native/">&lt;p&gt;For the kind of app I want to create its a tension between whether I should go android native, try using flutter or use browser technology.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://redfern.work/blog/android-native/">&lt;p&gt;For the kind of app I want to create its a tension between whether I should go android native, try using flutter or use browser technology.&lt;&#x2F;p&gt;
 &lt;p&gt;Looking at what a nightmare it is to keep up with api changes it may not be worth it.&lt;&#x2F;p&gt;
 &lt;p&gt;Its hard to tell whether the web will be killed, if apps will be killed and the browser killed and computing made illegal.&lt;&#x2F;p&gt;
 </content>
@@ -231,10 +231,10 @@ Like the autostop on the blind table saw.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/why-no-webfonts/"/>
-        <id>https://bredfern.github.io/blog/why-no-webfonts/</id>
+        <link rel="alternate" type="text/html" href="https://redfern.work/blog/why-no-webfonts/"/>
+        <id>https://redfern.work/blog/why-no-webfonts/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/why-no-webfonts/">&lt;p&gt;So there are many web apis that are really meant for web application development rather than web site development.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://redfern.work/blog/why-no-webfonts/">&lt;p&gt;So there are many web apis that are really meant for web application development rather than web site development.&lt;&#x2F;p&gt;
 &lt;p&gt;One of those is the web font api, which is great for application design whether its a PWA or other platforms that use web UI for their front end like Tauri.&lt;&#x2F;p&gt;
 &lt;p&gt;So when you deliver an app with Tauri the fonts are baked in, there is no cost for those fonts. They come embedded or with a PWA they get cached offline so there is no performance penalty.&lt;&#x2F;p&gt;
 &lt;p&gt;When it comes to blogs and web page publishing there is a penalty in complexity and also requires more bandwidth to send your message to the world, With classic html fonts that are build into the browser. While they may be insufficient for web application front end UI needs they are the best option for blogs and other one to many messaging platforms.&lt;&#x2F;p&gt;
@@ -254,10 +254,10 @@ Like the autostop on the blind table saw.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/pain/"/>
-        <id>https://bredfern.github.io/blog/pain/</id>
+        <link rel="alternate" type="text/html" href="https://redfern.work/blog/pain/"/>
+        <id>https://redfern.work/blog/pain/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/pain/">&lt;p&gt;On the one hand being severed from healthcare access to punish me for being 50+ is some brutal pain, its not easy to find work until I can complete my certifications for the medical field.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://redfern.work/blog/pain/">&lt;p&gt;On the one hand being severed from healthcare access to punish me for being 50+ is some brutal pain, its not easy to find work until I can complete my certifications for the medical field.&lt;&#x2F;p&gt;
 &lt;p&gt;There is a massive shortage of nurses, but it takes years to create more nurses while at the same time the pandemic is not over its mutating in potentially dangerous ways.&lt;&#x2F;p&gt;
 &lt;p&gt;War actually makes a great petri dish for pandemic to enable super mutation in warzones.&lt;&#x2F;p&gt;
 &lt;p&gt;The planet will die if we cannot stop fighting and do something about climate that is substantial when mostly we have been making symbolic change.&lt;&#x2F;p&gt;
@@ -287,10 +287,10 @@ Like the autostop on the blind table saw.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/steal-your-face/"/>
-        <id>https://bredfern.github.io/blog/steal-your-face/</id>
+        <link rel="alternate" type="text/html" href="https://redfern.work/blog/steal-your-face/"/>
+        <id>https://redfern.work/blog/steal-your-face/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/steal-your-face/">&lt;p&gt;What are some of the issues that are driving the current writer and actor&#x27;s strikes?&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://redfern.work/blog/steal-your-face/">&lt;p&gt;What are some of the issues that are driving the current writer and actor&#x27;s strikes?&lt;&#x2F;p&gt;
 &lt;p&gt;AI is developing far faster than people like Biden can realise. Since the issues created by AI largely do not effect the class of retired people represented by Washington nothing is being done.&lt;&#x2F;p&gt;
 &lt;p&gt;When you lose your job to AI if you are over 50 they can deny you food stamps until you can find another job, which could literally starve people to death.&lt;&#x2F;p&gt;
 &lt;p&gt;The studios claim once they shoot an actor their image is their forever and they want to see the residuals given out dropped to nearly nothing.&lt;&#x2F;p&gt;
@@ -315,10 +315,10 @@ Like the autostop on the blind table saw.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/millions/"/>
-        <id>https://bredfern.github.io/blog/millions/</id>
+        <link rel="alternate" type="text/html" href="https://redfern.work/blog/millions/"/>
+        <id>https://redfern.work/blog/millions/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/millions/">&lt;p&gt;So many dead even as things slow down here its hard to feel safe when it continues to explode elsewhere.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://redfern.work/blog/millions/">&lt;p&gt;So many dead even as things slow down here its hard to feel safe when it continues to explode elsewhere.&lt;&#x2F;p&gt;
 &lt;p&gt;Its easy to become consumed with anxiety even if you are relatively secure and protected.&lt;&#x2F;p&gt;
 &lt;p&gt;Even with the pandemic diminishing you have to wonder what new strain from another country could trigger a new surge?&lt;&#x2F;p&gt;
 &lt;p&gt;Things will never be “normal” again, after so much radical dislocation since 2008 nothing has been “normal” for a very, very long time.&lt;&#x2F;p&gt;
@@ -338,10 +338,10 @@ Like the autostop on the blind table saw.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/stumbling/"/>
-        <id>https://bredfern.github.io/blog/stumbling/</id>
+        <link rel="alternate" type="text/html" href="https://redfern.work/blog/stumbling/"/>
+        <id>https://redfern.work/blog/stumbling/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/stumbling/">&lt;p&gt;Stumbling up the airplane steps&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://redfern.work/blog/stumbling/">&lt;p&gt;Stumbling up the airplane steps&lt;&#x2F;p&gt;
 &lt;p&gt;A Fragile white head&lt;&#x2F;p&gt;
 &lt;p&gt;World hurtles toward decay.&lt;&#x2F;p&gt;
 </content>
@@ -360,10 +360,10 @@ Like the autostop on the blind table saw.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/destroyed/"/>
-        <id>https://bredfern.github.io/blog/destroyed/</id>
+        <link rel="alternate" type="text/html" href="https://redfern.work/blog/destroyed/"/>
+        <id>https://redfern.work/blog/destroyed/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/destroyed/">&lt;p&gt;Its estimated that unemployment in Los Angeles is over 80%. Yet the powers that be can only pay themselves billions of our money to create a crappy website telling people to “go find something new.” Excuse me when there are between 20-80 million who need a job and none available what is there to find?&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://redfern.work/blog/destroyed/">&lt;p&gt;Its estimated that unemployment in Los Angeles is over 80%. Yet the powers that be can only pay themselves billions of our money to create a crappy website telling people to “go find something new.” Excuse me when there are between 20-80 million who need a job and none available what is there to find?&lt;&#x2F;p&gt;
 &lt;p&gt;Somehow they assume that having been given a 60% cut in their income suddenly jobs will magically present themselves to all those laid off and the economy will instantly recover.&lt;&#x2F;p&gt;
 &lt;p&gt;They assume the lack of jobs is due to people refusing to work rather than employers refusing to hire. How is it so many intelligent people in the US live in poverty while a wealthy elite can barely rub 2 brain cells together to save their collective lives?&lt;&#x2F;p&gt;
 &lt;p&gt;In a sense the wealthy have managed to reverse the process of evolution where in the US the least fit are the most successful. Any error in judgement on their part is bailed out by the government with billions or even trillions in “free money” for those about to lose their shirt for their own poor judgement.&lt;&#x2F;p&gt;
@@ -389,10 +389,10 @@ Like the autostop on the blind table saw.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/running/"/>
-        <id>https://bredfern.github.io/blog/running/</id>
+        <link rel="alternate" type="text/html" href="https://redfern.work/blog/running/"/>
+        <id>https://redfern.work/blog/running/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/running/">&lt;p&gt;The vulture wings high&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://redfern.work/blog/running/">&lt;p&gt;The vulture wings high&lt;&#x2F;p&gt;
 &lt;p&gt;As coyote takes a break&lt;&#x2F;p&gt;
 &lt;p&gt;Sly coyote smiles&lt;&#x2F;p&gt;
 &lt;p&gt;Fooled the man to eat the bat&lt;&#x2F;p&gt;
@@ -413,10 +413,10 @@ Like the autostop on the blind table saw.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/distant/"/>
-        <id>https://bredfern.github.io/blog/distant/</id>
+        <link rel="alternate" type="text/html" href="https://redfern.work/blog/distant/"/>
+        <id>https://redfern.work/blog/distant/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/distant/">&lt;p&gt;I hear him the dog&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://redfern.work/blog/distant/">&lt;p&gt;I hear him the dog&lt;&#x2F;p&gt;
 &lt;p&gt;Across the street yelping, his&lt;&#x2F;p&gt;
 &lt;p&gt;Owner yells again&lt;&#x2F;p&gt;
 &lt;p&gt;I hide behind the trees or&lt;&#x2F;p&gt;
@@ -437,10 +437,10 @@ Like the autostop on the blind table saw.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/raining/"/>
-        <id>https://bredfern.github.io/blog/raining/</id>
+        <link rel="alternate" type="text/html" href="https://redfern.work/blog/raining/"/>
+        <id>https://redfern.work/blog/raining/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/raining/">&lt;p&gt;Sun blinking through clouds&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://redfern.work/blog/raining/">&lt;p&gt;Sun blinking through clouds&lt;&#x2F;p&gt;
 &lt;p&gt;First it comes in then it goes&lt;&#x2F;p&gt;
 &lt;p&gt;This breath at last goes&lt;&#x2F;p&gt;
 &lt;p&gt;To rest old bones for the good&lt;&#x2F;p&gt;
@@ -461,10 +461,10 @@ Like the autostop on the blind table saw.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/waiting-again/"/>
-        <id>https://bredfern.github.io/blog/waiting-again/</id>
+        <link rel="alternate" type="text/html" href="https://redfern.work/blog/waiting-again/"/>
+        <id>https://redfern.work/blog/waiting-again/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/waiting-again/">&lt;p&gt;A gambler without&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://redfern.work/blog/waiting-again/">&lt;p&gt;A gambler without&lt;&#x2F;p&gt;
 &lt;p&gt;A cause to find excepted&lt;&#x2F;p&gt;
 &lt;p&gt;Catch the falling knife&lt;&#x2F;p&gt;
 &lt;p&gt;Look at those fingers on you&lt;&#x2F;p&gt;
@@ -485,10 +485,10 @@ Like the autostop on the blind table saw.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/dad/"/>
-        <id>https://bredfern.github.io/blog/dad/</id>
+        <link rel="alternate" type="text/html" href="https://redfern.work/blog/dad/"/>
+        <id>https://redfern.work/blog/dad/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/dad/">&lt;p&gt;My father was born in 1941, right at the start of world world 2. He passed on 3&#x2F;21&#x2F;2020 at 645pm.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://redfern.work/blog/dad/">&lt;p&gt;My father was born in 1941, right at the start of world world 2. He passed on 3&#x2F;21&#x2F;2020 at 645pm.&lt;&#x2F;p&gt;
 &lt;p&gt;He was able to meet Charlie Mingus as the president of his university jazz club only to see the whole band get food poisoned by Johns Hopkins staff at the time.&lt;&#x2F;p&gt;
 &lt;p&gt;Was it intentional food poisoning? Most likely Mingus would have thought it was, his music wasn’t exactly popular anywhere south of NYC.&lt;&#x2F;p&gt;
 &lt;p&gt;My dad was in that tiny generation in between ww2 vets and the boomers. He was drafted before we got into Vietnam and served out his time in Germany rather than Indochina. He was a court reporter for the army at that time.&lt;&#x2F;p&gt;
@@ -512,10 +512,10 @@ Like the autostop on the blind table saw.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/sneeze/"/>
-        <id>https://bredfern.github.io/blog/sneeze/</id>
+        <link rel="alternate" type="text/html" href="https://redfern.work/blog/sneeze/"/>
+        <id>https://redfern.work/blog/sneeze/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/sneeze/">&lt;p&gt;An ocean trash boat&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://redfern.work/blog/sneeze/">&lt;p&gt;An ocean trash boat&lt;&#x2F;p&gt;
 &lt;p&gt;Endless waste of human life&lt;&#x2F;p&gt;
 &lt;p&gt;Wires in human flesh&lt;&#x2F;p&gt;
 &lt;p&gt;Souls that whisked along the train&lt;&#x2F;p&gt;
@@ -536,10 +536,10 @@ Like the autostop on the blind table saw.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/waiting/"/>
-        <id>https://bredfern.github.io/blog/waiting/</id>
+        <link rel="alternate" type="text/html" href="https://redfern.work/blog/waiting/"/>
+        <id>https://redfern.work/blog/waiting/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/waiting/">&lt;p&gt;The old cliche comes to mind - the calm before the storm.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://redfern.work/blog/waiting/">&lt;p&gt;The old cliche comes to mind - the calm before the storm.&lt;&#x2F;p&gt;
 &lt;p&gt;People get impatient and want to see their friends but its the worst time to go out.&lt;&#x2F;p&gt;
 &lt;p&gt;For trees to survive a fire there simply has to be enough space between them.&lt;&#x2F;p&gt;
 &lt;p&gt;Some employers are allowing workers to work remote however the majority hold onto the outdated notion that remote work is ineffective and only “butts in seats” mean people are working.&lt;&#x2F;p&gt;
@@ -563,10 +563,10 @@ Like the autostop on the blind table saw.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/genesis-passed/"/>
-        <id>https://bredfern.github.io/blog/genesis-passed/</id>
+        <link rel="alternate" type="text/html" href="https://redfern.work/blog/genesis-passed/"/>
+        <id>https://redfern.work/blog/genesis-passed/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/genesis-passed/">&lt;p&gt;Back in 2017 I was able to see one of her last Psychic TV shows. Compared to say the Rolling Stones it was a small venue but the music was amazing and the light show and video.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://redfern.work/blog/genesis-passed/">&lt;p&gt;Back in 2017 I was able to see one of her last Psychic TV shows. Compared to say the Rolling Stones it was a small venue but the music was amazing and the light show and video.&lt;&#x2F;p&gt;
 &lt;p&gt;Now she’s gone, cancer taken her in the end.&lt;&#x2F;p&gt;
 &lt;p&gt;Ultimately all of us have a beginnging and end to a particular incarnation.&lt;&#x2F;p&gt;
 &lt;p&gt;We don’t know how many will fall to this pandemic for example.&lt;&#x2F;p&gt;
@@ -596,10 +596,10 @@ Like the autostop on the blind table saw.&lt;&#x2F;p&gt;
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/covid-intro/"/>
-        <id>https://bredfern.github.io/blog/covid-intro/</id>
+        <link rel="alternate" type="text/html" href="https://redfern.work/blog/covid-intro/"/>
+        <id>https://redfern.work/blog/covid-intro/</id>
         
-        <content type="html" xml:base="https://bredfern.github.io/blog/covid-intro/">&lt;p&gt;Having been thrown out of work found myself home watching that very stable genius downplay the disaster pretnding somehow positive thinking alone could work by a miracle to disperse the plaugue.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://redfern.work/blog/covid-intro/">&lt;p&gt;Having been thrown out of work found myself home watching that very stable genius downplay the disaster pretnding somehow positive thinking alone could work by a miracle to disperse the plaugue.&lt;&#x2F;p&gt;
 &lt;p&gt;Its possible it is an exaggerated threat or its possible its not until it hits its a guessing game of terror.&lt;&#x2F;p&gt;
 &lt;p&gt;The silence in the streets is a testament to how little people trust the powers that be. The stores empty out but people will have to keep showing up for work.&lt;&#x2F;p&gt;
 &lt;p&gt;While schools have been closed there has been no order to work remote, only some companies such as Google and Amazon have asked IT staff to work remote.&lt;&#x2F;p&gt;
