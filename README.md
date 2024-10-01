@@ -1,6 +1,3 @@
-# My Site 
+# My Site
 
-Built with [zola] (https://www.getzola.org/).
-
-This is my blog and personal site, I do volunteer work on various linux desktop projects.
-
+This is my personal landing page, its designed to look cool but use less than 24k in assets.
