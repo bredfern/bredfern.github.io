@@ -1,33 +1,18 @@
-const form = document.getElementById("contact-form");
-  
-async function handleSubmit(event) {
-    event.preventDefault();
-    
-    const status = document.getElementById("contact-form-status");
-    const data = new FormData(event.target);
-    
-    fetch(event.target.action, {
-      method: form.method,
-      body: data,
-      headers: {
-          'Accept': 'application/json'
-      }
-    }).then(response => {
-      if (response.ok) {
-        status.innerHTML = "Thanks for your submission!";
-        form.reset()
-      } else {
-        response.json().then(data => {
-          if (Object.hasOwn(data, 'errors')) {
-            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-          } else {
-            status.innerHTML = "Oops! There was a problem submitting your form"
-          }
-        })
-      }
-    }).catch(error => {
-      status.innerHTML = "Oops! There was a problem submitting your form"
-    });
+function handleSubmit(event) {
+  event.preventDefault();
+
+  const status = document.getElementById("contact-form-status");
+  const email = document.getElementById("email").val();
+  const message = $("#contact textarea").val();
+
+  window.location.href = `mailto:brianwredfern@gmail.com?subject=Thesubject${email}&body=${body}`;
+  status.innerHTML = "Thanks for saying hello!";
+  form.reset();
 }
 
-form.addEventListener("submit", handleSubmit);
+function startup() {
+  const btn = document.getElementById("contact-form-button");
+  btn.addEventListener("click", handleSubmit);
+}
+
+document.addEventListener("DOMContentLoaded", startup);

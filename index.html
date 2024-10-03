@@ -16,13 +16,27 @@
     <body>
         <div class="container">
             <header>
-                <h1><a href="/" id="heading">Brian Redfern</a></h1>
+                <h1>Brian Redfern</h1>
             </header>
             <nav>
                 <div class="menu">
                     <ul>
-                        <li><a href="https://linkedin.com/in/bredfern" target="new" class="menu-item">Linkedin</a></li>
-                        <li><a href="https://brianredfern.bandcamp.com" target="new" class="menu-item">Bandcamp</a></li>
+                        <li>
+                            <a
+                                href="https://linkedin.com/in/bredfern"
+                                target="new"
+                                class="menu-item"
+                                >Linkedin</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://brianredfern.bandcamp.com"
+                                target="new"
+                                class="menu-item"
+                                >Bandcamp</a
+                            >
+                        </li>
                         <li>
                             <a
                                 href="https://github.com/bredfern"
@@ -37,35 +51,32 @@
             <main>
                 <div class="centered">
                     <picture>
-                        <a href="/"
-                            ><img
-                                src="/redfern.svg"
-                                id="logo"
-                                alt="Brian Redfern"
-                        /></a>
+                        <img src="/redfern.svg" id="logo" alt="Brian Redfern" />
                     </picture>
                 </div>
                 <div>
-<h2>Hi I'm Brian</h2>
-<p>
-    I am a senior web developer, and performer/composer of music. I started out
-    way back in 1998 with the pre-ipo team at Geocities. I went into LAMP in the
-    early 2000s and then moved into full stack Nodejs with Vue. Now I am working
-    with Htmx and PHP, fulll circle back to LAMP but with modern tools.
-</p>
-</div>
+                    <h2>Hi I'm Brian</h2>
+                    <p>
+                        I am a senior web developer, and performer/composer of
+                        music. I started out way back in 1998 with the pre-ipo
+                        team at Geocities. I went into LAMP in the early 2000s
+                        and then moved into full stack Nodejs with Vue. Now I am
+                        working with Htmx and PHP, fulll circle back to LAMP but
+                        with modern tools.
+                    </p>
+                    <p>
+                        When I am not working I make electro-acoustic ambient
+                        music and play guitar and bass.
+                    </p>
+                </div>
             </main>
             <aside>
                 <div class="aside-content">
                     <h3>Contact Me</h3>
                     <hr />
-                    <form
-                        id="contact-form"
-                        action="https://formspree.io/f/xdkngbel"
-                        method="POST"
-                    >
+                    <form id="contact">
                         <label for="email">Email:</label>
-                        <input type="email" name="email" />
+                        <input type="email" id="email" name="email" />
                         <label for="message">Message:</label>
                         <textarea name="message"></textarea>
                         <p><button id="contact-form-button">Submit</button></p>
