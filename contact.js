@@ -7,7 +7,6 @@ function handleSubmit(event) {
 
   window.location.href = `mailto:brianwredfern@gmail.com?subject=Thesubject${email}&body=${message}}`;
   status.innerHTML = "Thanks for saying hello!";
-  form.reset();
 }
 
 function startup() {
