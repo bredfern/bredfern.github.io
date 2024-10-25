@@ -229,10 +229,11 @@ footer {
         grid-template-rows: auto minmax(18rem, auto) 1fr minmax(18rem, auto) auto;
     }
     #logo {
-        margin-top: -8rem;
+        margin-top: -18rem;
     }
     nav,
     aside {
         margin: 0;
     }
+
 }
