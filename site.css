@@ -264,7 +264,7 @@ footer {
 	place-content: center;
 	padding: .5em;
 	color: #ededed;
-	font: clamp(1em, 2vw + 2vh, 2em) sans-serif;
+	font: clamp(0.25em, 2vw + 2vh, 2em) sans-serif;
 	text-align: center;
 	text-transform: uppercase;
 	text-wrap: balance
