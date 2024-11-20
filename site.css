@@ -1,27 +1,12 @@
+
 * {
     box-sizing: border-box;
 }
+
 html {
     font-family: "Avenir Next", "Avenir", sans-serif;
 }
-body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC")
-        repeat 0 0;
-    -webkit-animation: bg-scrolling-reverse 0.92s infinite;
-    -moz-animation: bg-scrolling-reverse 0.92s infinite;
-    -o-animation: bg-scrolling-reverse 0.92s infinite;
-    animation: bg-scrolling-reverse 0.92s infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-    -o-animation-timing-function: linear;
-    animation-timing-function: linear;
-    line-height: 1.5;
-    font-size: 100%;
-}
+
 
 #heading {
     color: #fff;
@@ -59,71 +44,7 @@ h1 {
     float: left;
     margin-left: 0.5rem;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-ul li {
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-.aside-content {
-    padding: 0.6rem;
-    padding-top: 0.1rem;
-    font-size: 100%;
-}
-.aside-content h3 {
-    text-align: center;
-}
-.menu li,
-.aside-content {
-    box-shadow:
-        0 0.063rem 0.188rem #fff,
-        0 0.063rem 0.125rem #fff;
-    color: #fff;
-    background-color: #000;
-}
-@-webkit-keyframes bg-scrolling-reverse {
-    100% {
-        background-position: 3.125rem 3.125rem;
-    }
-}
-@-moz-keyframes bg-scrolling-reverse {
-    100% {
-        background-position: 3.125rem 3.125rem;
-    }
-}
-@-o-keyframes bg-scrolling-reverse {
-    100% {
-        background-position: 3.125rem 3.125rem;
-    }
-}
-@keyframes bg-scrolling-reverse {
-    100% {
-        background-position: 3.125rem 3.125rem;
-    }
-}
-@-webkit-keyframes bg-scrolling {
-    0% {
-        background-position: 3.125rem 3.125rem;
-    }
-}
-@-moz-keyframes bg-scrolling {
-    0% {
-        background-position: 3.125rem 3.125rem;
-    }
-}
-@-o-keyframes bg-scrolling {
-    0% {
-        background-position: 3.125rem 3.125rem;
-    }
-}
-@keyframes bg-scrolling {
-    0% {
-        background-position: 3.125rem 3.125rem;
-    }
-}
+
 .centered {
     text-align: center;
 }
@@ -228,8 +149,8 @@ footer {
         grid-template-columns: 1fr;
         grid-template-rows: auto minmax(18rem, auto) 1fr minmax(18rem, auto) auto;
     }
-    #logo {
-        margin-top: -8rem;
+    .card {
+        margin-top: -18rem;
     }
     nav,
     aside {
@@ -307,5 +228,6 @@ body {
 			50%/ cover #212121;
 	/* darken image (multiplying its RGB channels with 
 	 * those of background-color) for better text contrast */
-	background-blend-mode: multiply
+	background-blend-mode: multiply;
+	color: #fff;
 }
