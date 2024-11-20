@@ -3,20 +3,40 @@
     box-sizing: border-box;
 }
 
-html {
-    font-family: "Avenir Next", "Avenir", sans-serif;
+
+/* prettifying and layout stuff, not needed for card glow part */
+html, body, div { display: grid }
+
+html { min-height: 100%; font-family: "Avenir Next", "Avenir", sans-serif; }
+
+body {
+	background: /* just to illustrate card transparency */
+		url(https://images.unsplash.com/photo-1729824346255-52a8f898fe84?w=1400) 
+			50%/ cover #212121;
+	/* darken image (multiplying its RGB channels with 
+	 * those of background-color) for better text contrast */
+	background-blend-mode: multiply;
+	color: #fff;
 }
 
+#content {
+max-width: 80%;
+margin-left: auto;
+margin-right: auto;
+}
 
 #heading {
     color: #fff;
     text-decoration: none;
 }
+
 a,
 a:visited,
 a:active {
     color: #fff;
+    text-decoration: none;
 }
+
 a.blk,
 a:visited.blk,
 a:active.blk {
@@ -39,11 +59,13 @@ h1 {
 .centered {
     text-align: center;
 }
+
 .row::after {
     content: "";
     clear: both;
     display: block;
 }
+
 .blk {
     color: #000;
     text-decoration: none;
@@ -54,6 +76,7 @@ iframe {
     width: 100%;
     height: 30rem;
 }
+
 .container {
     display: grid;
     grid-template-areas: "header header header" "nav content side" "footer footer footer";
@@ -61,6 +84,10 @@ iframe {
     grid-template-rows: auto 1fr auto;
     grid-gap: 1ren;
     min-height: 100vh;
+}
+
+.icon {
+    margin-right: 0.25rem;
 }
 
 header {
@@ -77,7 +104,7 @@ header {
 nav {
     float: right;     
     position: absolute;
-    margin-left: 84%;
+    margin-left: 89%;
     margin-right: 0;
      
 }
@@ -119,8 +146,8 @@ footer {
         margin-top: -18rem;
     }
     nav {
-   width: 14rem;
-   margin-left: 10rem;
+        width: 14rem;
+        margin-left: 17.5rem;
     }
 }
 
@@ -182,23 +209,4 @@ footer {
 @keyframes a { to { --a: 1turn } }
 
 
-/* prettifying and layout stuff, not needed for card glow part */
-html, body, div { display: grid }
 
-html { min-height: 100% }
-
-body {
-	background: /* just to illustrate card transparency */
-		url(https://images.unsplash.com/photo-1729824346255-52a8f898fe84?w=1400) 
-			50%/ cover #212121;
-	/* darken image (multiplying its RGB channels with 
-	 * those of background-color) for better text contrast */
-	background-blend-mode: multiply;
-	color: #fff;
-}
-
-#content {
-max-width: 80%;
-margin-left: auto;
-margin-right: auto;
-}
