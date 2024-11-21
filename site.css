@@ -4,11 +4,6 @@
 }
 
 
-/* prettifying and layout stuff, not needed for card glow part */
-html, body, div { 
-    display: grid 
-}
-
 html { 
     min-height: 100%;
     padding: 0;
@@ -17,15 +12,14 @@ html {
 }
 
 body {
-	background: #000; 
-	color: #fff;
-	padding: 0;
-	margin: 0;
-	width: 100%;
+    background: #000; 
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 #content {
-    background: transparent;
     max-width: 20rem;
     margin-left: auto;
     margin-right: auto;
@@ -46,59 +40,42 @@ a:active.blk {
 }
 
 a:hover {
-    text-decoration: none;
-    color: red;
-    font-weight: bold;
+	text-decoration: none;
+	color: red;
+	font-weight: bold;
 }
 
 .container {
-    display: grid;
-    grid-template-areas: "header" "nav" "content" "side" "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto minmax(18rem, auto) 1fr minmax(18rem, auto) auto;
-    grid-gap: 0.5rem;
-    min-height: 100vh;
+	width: 100%;
+	min-height: 100vh;
 }
 
 .icon {
-    margin-right: 0.25rem;
+	margin-right: 0.25rem;
 }
 
 h1 {
-    font-size: 3rem;
-    position: absolute;
-    top: -2rem;
-    left: 1rem;
-    display: inline;
-    background-color: transparent;
+	font-size: 3rem;
+	display: inline;
 }
 
 header {
-    background-color: red;
-    color: #fff;
-    padding: 0.25rem;
-    width: 100%;
-    height: 4rem;
+    	background-color: red;
+    	color: #fff;
+    	padding: 0.25rem;
+    	height: 4rem;
+    	width: 100%;
 }
 
 nav {
-   width: 10rem;
-   position: absolute;
-left: auto;
-right: 0;
-   padding: 0;
-   top: 1rem;
-   background-color: transparent;
+	position: absolute;
+	right:  0.25rem;
+	top: 1rem;
+	left: auto;
 }
 
-main {
-    grid-area: content;
-    height: auto;
-    padding: 0.6rem;
-}
 
 footer {
-    grid-area: footer;
     padding: 0.6rem;
     margin: 0;
     bottom: 0;
@@ -110,15 +87,6 @@ footer {
 }
 
 @media (max-width: 48rem) {
-    .container {
-        grid-template-areas: "header" "nav" "content" "side" "footer";
-        grid-template-columns: 1fr;
-        grid-template-rows: auto minmax(18rem, auto) 1fr minmax(18rem, auto) auto;
-    }
-    
-    .card {
-        margin-top: -17rem;
-    }
     
     #content {
 	width: 100%;
@@ -135,6 +103,7 @@ footer {
 }
 
 .card {
+	margin-top: 4rem;
 	/* hide outer part of glow */
 	overflow: hidden;
 	/* needed for absolutely positioned pseudo */
