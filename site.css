@@ -17,10 +17,7 @@ html {
 }
 
 body {
-background: url(https://images.unsplash.com/photo-1729824346255-52a8f898fe84?w=1400) 50%/ cover #212121;
-	/* darken image (multiplying its RGB channels with 
-	 * those of background-color) for better text contrast */
-	background-blend-mode: multiply;
+	background: #000; 
 	color: #fff;
 	padding: 0;
 	margin: 0;
@@ -28,6 +25,7 @@ background: url(https://images.unsplash.com/photo-1729824346255-52a8f898fe84?w=1
 }
 
 #content {
+    background: transparent;
     max-width: 20rem;
     margin-left: auto;
     margin-right: auto;
@@ -56,9 +54,9 @@ a:hover {
 .container {
     display: grid;
     grid-template-areas: "header header header" "nav content side" "footer footer footer";
-    grid-template-columns: 0rem 1fr 0rem;
+    grid-template-columns: 4rem 1fr 4rem;
     grid-template-rows: auto 1fr auto;
-    grid-gap: 1ren;
+    grid-gap: 0.5rem;
     min-height: 100vh;
 }
 
