@@ -72,6 +72,7 @@ h1 {
     top: -2rem;
     left: 1rem;
     display: inline;
+    background-color: transparent;
 }
 
 header {
@@ -89,6 +90,7 @@ left: auto;
 right: 0;
    padding: 0;
    top: 1rem;
+   background-color: transparent;
 }
 
 main {
