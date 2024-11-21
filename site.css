@@ -5,29 +5,32 @@
 
 
 /* prettifying and layout stuff, not needed for card glow part */
-html, body, div { display: grid }
+html, body, div { 
+    display: grid 
+}
 
-html { min-height: 100%; font-family: "Avenir Next", "Avenir", sans-serif; }
+html { 
+    min-height: 100%;
+    padding: 0;
+    margin: 0; 
+    font-family: "Avenir Next", "Avenir", sans-serif; 
+}
 
 body {
-	background: /* just to illustrate card transparency */
-		url(https://images.unsplash.com/photo-1729824346255-52a8f898fe84?w=1400) 
-			50%/ cover #212121;
+background: url(https://images.unsplash.com/photo-1729824346255-52a8f898fe84?w=1400) 50%/ cover #212121;
 	/* darken image (multiplying its RGB channels with 
 	 * those of background-color) for better text contrast */
 	background-blend-mode: multiply;
 	color: #fff;
+	padding: 0;
+	margin: 0;
+	width: 100%;
 }
 
 #content {
-max-width: 60%;
-margin-left: auto;
-margin-right: auto;
-}
-
-#heading {
-    color: #fff;
-    text-decoration: none;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a,
@@ -50,33 +53,6 @@ a:hover {
     font-weight: bold;
 }
 
-h1 {
-    font-size: 2rem;
-    float: left;
-    margin-left: 0.5rem;
-}
-
-.centered {
-    text-align: center;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
-.blk {
-    color: #000;
-    text-decoration: none;
-}
-
-iframe {
-    border: 0;
-    width: 100%;
-    height: 30rem;
-}
-
 .container {
     display: grid;
     grid-template-areas: "header header header" "nav content side" "footer footer footer";
@@ -90,23 +66,29 @@ iframe {
     margin-right: 0.25rem;
 }
 
+h1 {
+    font-size: 3rem;
+    position: absolute;
+    top: -2rem;
+    left: 1rem;
+    display: inline;
+}
+
 header {
     background-color: red;
     color: #fff;
     padding: 0.25rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 4rem;
     width: 100%;
+    height: 4rem;
 }
 
 nav {
-    float: right;     
-    position: absolute;
-    margin-left: 89%;
-    margin-right: 0;
-     
+   width: 10rem;
+   position: absolute;
+left: auto;
+right: 0;
+   padding: 0;
+   top: 1rem;
 }
 
 main {
@@ -118,6 +100,7 @@ main {
 footer {
     grid-area: footer;
     padding: 0.6rem;
+    margin: 0;
     bottom: 0;
     width: 100%;
     background-color: red;
@@ -125,29 +108,20 @@ footer {
     text-align: center;
     position:absolute;
 }
-.centered {
-    text-align: center;
-}
-.row::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-.is-hidden {
-    display: none;
-}
+
 @media (max-width: 48rem) {
     .container {
         grid-template-areas: "header" "nav" "content" "side" "footer";
         grid-template-columns: 1fr;
         grid-template-rows: auto minmax(18rem, auto) 1fr minmax(18rem, auto) auto;
     }
+    
     .card {
-        margin-top: -18rem;
+        margin-top: -17rem;
     }
-    nav {
-        width: 14rem;
-        margin-left: 17.5rem;
+    
+    #content {
+	width: 100%;
     }
 }
 
