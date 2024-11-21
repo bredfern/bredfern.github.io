@@ -53,9 +53,9 @@ a:hover {
 
 .container {
     display: grid;
-    grid-template-areas: "header header header" "nav content side" "footer footer footer";
-    grid-template-columns: 4rem 1fr 4rem;
-    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header" "nav" "content" "side" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(18rem, auto) 1fr minmax(18rem, auto) auto;
     grid-gap: 0.5rem;
     min-height: 100vh;
 }
