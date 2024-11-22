@@ -32,15 +32,21 @@ a:active {
     text-decoration: none;
 }
 
+#logo {
+	width: 300px;
+    height: 258px;
+	border: none;
+}
+
 a.blk,
 a:visited.blk,
 a:active.blk {
-    color: rgba(21, 255, 0, 0.315);
+    color: rgba(255, 0, 0, 0.315);
     text-decoration: none;
 }
 
 a:hover {
-	color: #029356;
+	color: hsl(0, 97%, 29%);
 }
 
 .container {
@@ -50,6 +56,8 @@ a:hover {
 
 .icon {
 	margin-right: 0.25rem;
+	width: 30px;
+	height: 30px;
 }
 
 h1 {
