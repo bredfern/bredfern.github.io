@@ -52,6 +52,10 @@ a:hover {
 	height: 30px;
 }
 
+.no-decor {
+	text-decoration: none;
+}
+
 h1 {
 	font-size: 3rem;
 	display: inline;
