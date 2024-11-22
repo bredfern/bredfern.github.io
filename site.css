@@ -28,19 +28,19 @@ body {
 a,
 a:visited,
 a:active {
-    color: red;
+    color: rgba(21, 255, 0, 0.315);
     text-decoration: none;
 }
 
 a.blk,
 a:visited.blk,
 a:active.blk {
-    color: red;
+    color: rgba(21, 255, 0, 0.315);
     text-decoration: none;
 }
 
 a:hover {
-	color: rgb(25, 0, 255);
+	color: #029356;
 }
 
 .container {
