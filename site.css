@@ -103,6 +103,7 @@ footer {
 }
 
 .card {
+	background-color: #000;
 	margin-top: 2rem;
 	/* hide outer part of glow */
 	overflow: hidden;
