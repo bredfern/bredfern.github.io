@@ -142,7 +142,7 @@ footer {
 		/* adjust gradient as needed, I just used a random palette */
 		conic-gradient(from var(--a), #669900, #000000, #7dee66, 
 				#00993b, #224b00, #027408, #f0f7f000, 
-				#8cff7d, #116805, #1eff00, #669900) 1;
+				#8cff7d, #116805, #1eff00, #000000) 1;
 	/* blur this pseudo */
 	filter: blur(.75em);
 	/* tweak animation duration as necessary */
