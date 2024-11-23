@@ -82,6 +82,7 @@ footer {
     padding: 0.6rem;
     margin: 0;
     bottom: 0;
+    height: auto;
     width: 100%;
     background-color: #029356;
     color: #000;
