@@ -154,5 +154,7 @@ footer {
 /* animate --a from its initial-value 0deg to 1turn */
 @keyframes a { to { --a: 1turn } }
 
-
+#player {
+  background-color: #029356;
+}
 
