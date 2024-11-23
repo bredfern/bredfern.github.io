@@ -35,7 +35,7 @@ a:active {
 #logo {
 	width: 80%;
         height: 80%;
-	border: dashed 0.5rem #ff0000;
+	border: dashed 0.5rem #000;
 }
 
 a:hover {
