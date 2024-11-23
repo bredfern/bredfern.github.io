@@ -112,7 +112,7 @@ footer {
 	/* needed for absolutely positioned pseudo */
 	position: relative;
 	/* adjust width as needed IF it's even necessary to set */
-	width: Min(12.5em, 80vmin);
+	width: Min(10.5em, 80vmin);
 	/* adjust aspect-ratio OR height IF height not given by content */
 	aspect-ratio: 1;
 	/* round outer card corners */
