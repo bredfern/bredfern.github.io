@@ -140,9 +140,9 @@ footer {
 	border: solid 1.25em;
 	border-image: 
 		/* adjust gradient as needed, I just used a random palette */
-		conic-gradient(from var(--a), #669900, #99cc33, #ccee66, 
-				#8f9900, #224b00, #ffdc3d, #f0f7f000, 
-				#8cff7d, #1eff00, #ffcc00, #669900) 1;
+		conic-gradient(from var(--a), #669900, #000000, #7dee66, 
+				#00993b, #224b00, #027408, #f0f7f000, 
+				#8cff7d, #116805, #1eff00, #669900) 1;
 	/* blur this pseudo */
 	filter: blur(.75em);
 	/* tweak animation duration as necessary */
