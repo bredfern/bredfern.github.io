@@ -20,7 +20,11 @@
     <body>
         <div class="container">
             <header>
-                <h1>Brian Redfern</h1> 
+              <picture>
+                <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f980/512.webp" type="image/webp">
+                <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f980/512.gif" alt="🦀" width="40" height="40">
+              </picture>
+	      <h1><a href="/">Brian Redfern</a></h1> 
                 <nav>
                     <a href="https://github.com/bredfern" class="no-decor">
                         <picture>
@@ -39,27 +43,75 @@
                     </a>
                 </nav>
             </header>
-            <main>
-                <div class="centered card">
-                    <picture>
-                        <img src="/assets/redfern.svg" id="logo" alt="Brian Redfern" />
-                    </picture>
-                    
-                </div>
-                <div id="content">
-                    <h2>Hi I'm Brian</h2>
-                    <p>
-		                I am a web designer/developer and a musician. 
-                        See my <a href="https://github.com/bredfern">github</a>.
-                        <a href="https://hermetic.com/anthology/profile/brian-redfern/index">Listen</a> 
-                        to my music on <a href="https://hermetic.com">Hermetic.com </a>.
-                    </p>
-		    <p>
-                      Currently learning rust although who knows if ai will do that as well?
-		    </p>
-                </div>
-            </main>
-            <footer class="centered">&#169; 2025 Brian Redfern</footer>
-        </div>
-    </body>
+            <main>                
+               <div id="content">
+
+                 <div class="tabset">
+  <!-- Tab 1 -->
+  <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+  <label for="tab1">About</label>
+  <!-- Tab 2 -->
+  <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+  <label for="tab2">Projects</label>
+  <!-- Tab 3 -->
+  <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+  <label for="tab3">Music</label>
+  
+  <div class="tab-panels">
+    <section id="marzen" class="tab-panel">
+      <h2>About</h2>
+      <p>
+      I am an LA based web developer, I have worked with many large companies over the years as a web developer using various technologies, php, c#, python, nodejs.
+      </p>
+      <p>
+      Currently I am learning rust looking at a move from web development to embedded device rust development (bare metal).
+      </p>
+      <p>
+      I had an unusual journey into software. As a grad student at CalArts I was interested in live performance online.
+      </p>
+      <p>
+	My first language was Java, I taught myself in order to use it to generate digital art and enable me to live stream on the web.
+        Today java is still at the core of many live stream tools such as the Red5 server and many others.
+      </p>
+      <p>
+       My first job out of CalArts was with Geocities on their pre-ipo team.
+      </p>
+    </section>
+    <section id="rauchbier" class="tab-panel">
+      <h2>Projects</h2>
+      <p>
+	Most recently I have been upgrading my skills working heavily on learning Rust, hopefully to get good enough to start making some major controbutions to free software projects written in Rust.
+      </p>
+      <p>
+	In the past I wrote java for Disney and have a cool Imagineering pin from my time with them.
+      </p>
+      <p>
+        Before the pandemic I got into webrtc and worked on a number of webrtc programs.
+      </p>
+      <p>
+	I have worked with many databases over the years, MS SQL Server, Oracle, Mysql, Postgresql, Mongodb, and now I am digging into sqlite hoping to work on the project to rewrite sqlite in Rust.
+      </p>
+    </section>
+    <section id="dunkles" class="tab-panel">
+      <h2>Music</h2>
+      <p>
+        I first got into muusic playing with my college band, LHDJ. In the late 90s I was playing guitar for jazz trumpet and composer Wadada Leo Smith's Nda Kulture ensemble.
+      </p>
+      <p>
+	I use linux and open source software to make my music. I used lmms for this exmaple, you can download the lmms project file or play the music below to hear it.
+      </p>
+      <p>
+        <figure>
+  <figcaption>Listen to my song :</figcaption>
+  <audio controls src="/assets/radish.mp3"></audio>
+  <a href="/assets/radish.mmpz"> Download lmms project file </a>
+</figure>
+      </p>
+    </section>
+  </div> 
+</div> 
+</main>
+<footer class="centered">&#169; 2025 Brian Redfern</footer>
+</div>
+</body>
 </html>

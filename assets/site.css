@@ -18,7 +18,93 @@ body {
     width: 100%;
 }
 
+/*
+ CSS for the main interaction
+*/
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+/*
+ Styling
+*/
+
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px 25px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tabset > label::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 22px;
+  height: 4px;
+  background: #8d8d8d;
+}
+
+input:focus-visible + label {
+  outline: 2px solid #000;
+  border-radius: 3px;
+}
+
+.tabset > label:hover,
+.tabset > input:focus + label,
+.tabset > input:checked + label {
+  color: #029356;
+}
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+  background: #029356;
+}
+
+.tabset > input:checked + label {
+  border-color: #029356;
+  border-bottom: 1px solid #000;
+  margin-bottom: -1px;
+}
+
+.tab-panel {
+  padding: 30px 0;
+}
+
+/*
+ Demo purposes only
+*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.tabset {
+  max-width: 65em;
+}
+
 #content {
+    padding: 1rem;
     max-width: 40rem;
     margin-left: auto;
     margin-right: auto;
@@ -52,7 +138,7 @@ a:hover {
 	height: 1.875rem;
 }
 
-.no-decor {
+.no-decor, h1 a {
 	text-decoration: none;
 }
 
@@ -64,8 +150,8 @@ h1 {
 header {
     	background-color: #029356;
     	color: #000;
-    	padding: 0.25rem;
     	height: auto;
+	padding-top: 1.32rem;
     	width: 100%;
 }
 
@@ -75,6 +161,7 @@ nav {
 	top: 0.5rem;
 	left: auto;
 }
+
 
 
 footer {
