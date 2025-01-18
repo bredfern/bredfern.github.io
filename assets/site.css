@@ -150,7 +150,8 @@ h1 {
 header {
     	background-color: #029356;
     	color: #000;
-    	height: 4rem;
+    	height: auto;
+      padding: 4rem;
     	width: 100%;
 }
 
