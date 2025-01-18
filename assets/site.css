@@ -143,7 +143,7 @@ a:hover {
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 2.2rem;
 	display: inline;
 }
 
@@ -151,7 +151,6 @@ header {
     	background-color: #029356;
     	color: #000;
     	height: 4rem;
-	padding-top: 1.32rem;
     	width: 100%;
 }
 
