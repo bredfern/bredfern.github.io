@@ -1,1 +1,38 @@
-<svg width="600" height="530" xmlns="http://www.w3.org/2000/svg"><path d="M136 44c66 50 138 151 164 205 26-54 98-155 164-205 48-36 126-64 126 25 0 18-10 149-16 170-21 74-96 93-163 81 117 20 147 86 82 153-122 125-176-32-189-72-3-8-4-11-4-8 0-3-1 0-4 8-13 40-67 197-189 72-65-67-35-133 82-153-67 12-142-7-163-81-6-21-16-152-16-170 0-89 78-61 126-25z" fill="#1185fe"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="600"
+   height="530"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="bsky-icon.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.509434"
+     inkscape:cx="299.78125"
+     inkscape:cy="265"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <path
+     d="M136 44c66 50 138 151 164 205 26-54 98-155 164-205 48-36 126-64 126 25 0 18-10 149-16 170-21 74-96 93-163 81 117 20 147 86 82 153-122 125-176-32-189-72-3-8-4-11-4-8 0-3-1 0-4 8-13 40-67 197-189 72-65-67-35-133 82-153-67 12-142-7-163-81-6-21-16-152-16-170 0-89 78-61 126-25z"
+     fill="#1185fe"
+     id="path1"
+     style="fill:#000000" />
+</svg>
