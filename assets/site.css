@@ -152,6 +152,7 @@ header {
     	color: #000;
     	height: auto;
       padding: 1rem;
+      padding-bottom: 0;
     	width: 100%;
 }
 
