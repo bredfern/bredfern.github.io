@@ -8,7 +8,9 @@
             content="Brian Redfern links to my code and music."
         />
         <link rel="shortcut icon" href="/assets/favicon.ico" />
-        <title>The website of web developer Brian Redfern.</title>
+
+        <TITLE>THE
+	  website of artist Brian Redfern.</title>
         <link
             rel="stylesheet"
             type="text/css"
@@ -74,13 +76,11 @@
 	In the past I wrote java for Disney and have a cool Imagineering pin from my time with them.
       </p>
       <p>
-        Before and during the pandemic I got into webrtc and worked on a number of webrtc programs.
+        Before the pandemic I got into webrtc and worked on a number of webrtc programs.
       </p>
       <p>
 	I have worked with many databases over the years, MS SQL Server, Oracle, Mysql, Postgresql, Mongodb, and now I am digging into sqlite hoping to work on the project to rewrite sqlite in Rust.
       </p>
-      <p>
-      Now its quite difficult to find or do work of any kind. This should be good news - here comes paradise right? But instead we find ourselves slipping into a vicious post-capital system that looks more like the economy of Stalin's russia rather than the economy of the go go 80s.
     </section>
     <section id="dunkles" class="tab-panel">
       <h2>Music</h2>
