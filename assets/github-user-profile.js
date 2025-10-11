@@ -154,7 +154,7 @@ class GithubUserProfile extends HTMLElement {
                 .profile-header { display: flex; align-items: center; margin-bottom: 15px; }
                 .avatar { width: 70px; height: 70px; border-radius: 50%; margin-right: 15px; border: 2px solid #b9e192 }
                 h2 { margin: 0; font-size: 1.5em; color: #000; }
-                .login-name { margin: 0; color: #b9e192; font-size: 0.9em; }
+                .login-name { margin: 0; color: #000; font-size: 0.9em; }
                 .bio { font-style: italic; margin: 10px 0; padding-bottom: 15px; border-bottom: 1px solid #b9e192 }
                 .stats { background-color: #b9e192; display: flex; justify-content: space-around; margin: 15px 0; padding: 10px 0; border-top: 1px solid #b9e192 border-bottom: 1px solid #b9e192; }
                 .stat-item { text-align: center; }
@@ -181,6 +181,7 @@ class GithubUserProfile extends HTMLElement {
                     border: 1px solid #b9e192
                     border-radius: 6px;
                     padding: 10px;
+                    color: #000;
                     margin-bottom: 10px;
                     background-color: #fcfcfc;
                     transition: box-shadow 0.2s;
@@ -190,20 +191,20 @@ class GithubUserProfile extends HTMLElement {
                 }
                 .repo-name {
                     font-weight: 600;
-                    color: #029356;
+                    color: #000;
                     text-decoration: none;
                     font-size: 1.1em;
                 }
                 .repo-description {
                     font-size: 0.9em;
-                    color: #029356;
+                    color: #000;
                     margin: 5px 0;
                 }
                 .repo-meta {
                     display: flex;
                     gap: 15px;
                     font-size: 0.8em;
-                    color: #029356;
+                    color: #000;
                     margin-top: 8px;
                 }
                 .repo-meta span {
@@ -212,7 +213,7 @@ class GithubUserProfile extends HTMLElement {
                 }
                 .repo-meta .language {
                     font-weight: 500;
-                    color: #029356;
+                    color: #000;
                 }
             </style>
             <div class="profile-container">
