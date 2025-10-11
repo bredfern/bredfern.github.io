@@ -282,7 +282,7 @@ input[type="range"]::-ms-fill-upper {
             <h1 class="neon-text">🎶 My Songs 🎶</h1>
             <canvas id="visualizer-canvas" width="400" height="80"></canvas>
             <label for="seek-slider" class="slider-label">Seek</label> <input type="range" id="seek-slider" class="neon-text" min="0" value="0">
-            <audio id="audio-player" preload="auto" autoplay="false" crossOrigin="anonymous"></audio>
+            <audio id="audio-player" autoplay="false" crossOrigin="anonymous"></audio>
             <label for="volume-slider" class="slider-label">Volume</label> <input id="volume-slider" type="range" class="neon-text" min="0" max="1" step="0.01" value="1">
             <button id="play-pause-btn">Play</button>
             <div id="current-track-info">Ready to play...</div>
