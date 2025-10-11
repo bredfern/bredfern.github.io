@@ -181,7 +181,7 @@ class GithubUserProfile extends HTMLElement {
                     padding: 10px;
                     color: #000;
                     margin-bottom: 10px;
-                    background-color: #fcfcfc;
+                    background-color: #b9e192;
                     transition: box-shadow 0.2s;
                 }
                 .repo-item:hover {

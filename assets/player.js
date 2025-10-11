@@ -127,7 +127,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     margin-right: auto;
 }
 
-hudio {
+audio {
     width: 100%;
     margin-bottom: 5px;
 }
@@ -197,7 +197,8 @@ hudio {
     background-color: #b9e192;
     color: #000;
     border: none;
-    font-size: 140%;
+    font-size: 110%;
+    font-weight: bold;
     padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;
@@ -283,7 +284,7 @@ input[type="range"]::-ms-fill-upper {
             <label for="seek-slider" class="slider-label">Seek</label> <input type="range" id="seek-slider" class="neon-text" min="0" value="0">
             <audio id="audio-player" preload="auto" crossOrigin="anonymous"></audio>
             <label for="volume-slider" class="slider-label">Volume</label> <input id="volume-slider" type="range" class="neon-text" min="0" max="1" step="0.01" value="1">
-            <button id="play-pause-btn"><strong>Play</strong></button>
+            <button id="play-pause-btn">Play</button>
             <div id="current-track-info">Ready to play...</div>
             <ul id="playlist-list"></ul>
           </div>
