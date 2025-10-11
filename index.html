@@ -8,7 +8,7 @@
             content="Brian Redfern links to my code and music."
         />
         <link rel="shortcut icon" href="/assets/favicon.ico" />
-        <title>The website of web developer Brian Redfern.</title>
+        <title>The website of web developer/composer/artist Brian Redfern.</title>
         <link
             rel="stylesheet"
             type="text/css"
@@ -47,43 +47,34 @@
                  <div class="tabset">
   <!-- Tab 1 -->
   <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
-  <label for="tab1">Home</label>
+  <label for="tab1">Music</label>
   <!-- Tab 2 -->
   <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
   <label for="tab2">Projects</label>
   <!-- Tab 3 -->
   <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
-  <label for="tab3">Music</label>
+  <label for="tab3">About</label>
   
   <div class="tab-panels">
     <section id="marzen" class="tab-panel">
-      <h2>Intro</h2>
-      <p>
-      I am an LA based web developer, I have worked with many large companies over the years as a web developer using various technologies, php, c#, python, nodejs.
-      </p>
-      <p>
-       I started out way back in the 90s and have continued with all the changes in the browser. Before html5 I did some cool things with flash but html5 is far better than flash. 
-      </p>
+        <audio-playlist-player
+                playlist='[
+                "https://ia800600.us.archive.org/25/items/mrabortion/boxeded_2025-10-07_15-32.mp3",
+                "https://ia800600.us.archive.org/25/items/mrabortion/honchos_2025-10-08_11-50.mp3",
+                "https://dn720701.ca.archive.org/0/items/mockasaurus/2025-09-24_13h03m44s.mp3",
+                "https://dn720701.ca.archive.org/0/items/mockasaurus/2025-10-07_18h06m46s.mp3",
+                "https://dn720701.ca.archive.org/0/items/mockasaurus/charnali_2025-09-17_21-01.mp3",
+                "https://ia801008.us.archive.org/23/items/mockasaurus/charnali_2025-09-23_21-42.mp3",
+                "https://dn720701.ca.archive.org/0/items/mockasaurus/charnali_2025-09-23_22-49.mp3",
+                "https://ia600600.us.archive.org/25/items/mrabortion/2025-10-07_18h06m46s.mp3"
+            ]'
+        ></audio-playlist-player>
     </section>
     <section id="rauchbier" class="tab-panel">
-      <h2>Projects</h2>
-      <p>
-	Most recently I have been upgrading my skills working heavily on learning Rust, hopefully to get good enough to start making some major controbutions to free software projects written in Rust.
-      </p>
-      <p>
-	In the past I wrote java for Disney and have a cool Imagineering pin from my time with them.
-      </p>
-      <p>
-        Before and during the pandemic I got into webrtc and worked on a number of webrtc programs.
-      </p>
-      <p>
-	I have worked with many databases over the years, MS SQL Server, Oracle, Mysql, Postgresql, Mongodb, and now I am digging into sqlite hoping to work on the project to rewrite sqlite in Rust.
-      </p>
-      <p>
-      Now its quite difficult to find or do work of any kind. This should be good news - here comes paradise right? But instead we find ourselves slipping into a vicious post-capital system that looks more like the economy of Stalin's russia rather than the economy of the go go 80s.
+      <github-user-profile></github-user-profile>
     </section>
     <section id="dunkles" class="tab-panel">
-      <h2>Music</h2>
+      <h2>About</h2>
       <p>
         I first got into music playing with my college band, LHDJ. In the late 90s I was playing guitar for jazz trumpet and composer Wadada Leo Smith's Nda Kulture ensemble.
       </p>
@@ -100,5 +91,7 @@
 </main>
 <footer class="centered">&#169; 2025 Brian Redfern</footer>
 </div>
+<script src="/assets/player.js" defer></script>
+<script src="/assets/github-user-profile.js" defer></script>
 </body>
 </html>
