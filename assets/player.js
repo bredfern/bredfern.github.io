@@ -394,7 +394,7 @@ input[type="range"]::-ms-fill-upper {
       status = "Now Playing";
     }
 
-    this.currentTrackInfo.textContent = `${status}: ${trackName.substring(0, 14)}`;
+    this.currentTrackInfo.textContent = `${status}: ${trackName.substring(0, 13)}`;
   }
 
   updatePlaylistActiveState() {
