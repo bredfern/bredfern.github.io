@@ -127,7 +127,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     margin-right: auto;
 }
 
-audio {
+hudio {
     width: 100%;
     margin-bottom: 5px;
 }
@@ -146,7 +146,7 @@ audio {
     text-align: center;
     margin: 15px;
     font-weight: bold;
-    color: #b9e192;
+    color: #000000;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -180,7 +180,7 @@ audio {
 
 #playlist-list li.active {
     background-color: #029356;
-    color: #b9e192;
+    color: #000000;
     font-weight: bold;
 }
 
@@ -197,7 +197,7 @@ audio {
     background-color: #b9e192;
     color: #000;
     border: none;
-    font-size: 100%;
+    font-size: 140%;
     padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;
@@ -271,7 +271,7 @@ input[type="range"]::-ms-fill-upper {
 }
 
 .slider-label {
-  color: #b9e192;
+  color: #000000;
   font-size 120%;
 }
 
