@@ -177,7 +177,7 @@ audio {
 }
 
 #playlist-list li:hover {
-    background-color: #b9e192;
+    background-color: #ffffff;
 }
 
 #playlist-list li.active {
