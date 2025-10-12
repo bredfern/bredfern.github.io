@@ -42,8 +42,8 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.playPauseBtn = this.shadowRoot.querySelector("#play-pause-btn");
     this.canvas = this.shadowRoot.querySelector("#visualizer-canvas");
     this.canvasCtx = this.canvas.getContext("2d");
-    this.canvasCtx.font ="72px sans-serif";
-    this.canvasCtx.fillText("🎶M", 150, 50);
+    this.canvasCtx.font ="48px sans-serif";
+    this.canvasCtx.fillText("🎶", 150, 50);
 
     // Event listeners
     this.audioPlayer.addEventListener("ended", this.playNext.bind(this));
@@ -325,7 +325,7 @@ input[type="range"]::-moz-range-track {
       this.animationFrameId = null;
     }
     this.updateTrackInfo();
-    this.canvasCtx.font ="72px sans-serif";
+    this.canvasCtx.font ="48px sans-serif";
     this.canvasCtx.fillText("🎶", 150, 50);
   }
 
