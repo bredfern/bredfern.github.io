@@ -43,7 +43,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.canvas = this.shadowRoot.querySelector("#visualizer-canvas");
     this.canvasCtx = this.canvas.getContext("2d");
     this.canvasCtx.font ="36px sans-serif";
-    this.canvasCtx.fillText("🎶Music", 100, 50);
+    this.canvasCtx.fillText("🎶Music", 120, 50);
 
     // Event listeners
     this.audioPlayer.addEventListener("ended", this.playNext.bind(this));
