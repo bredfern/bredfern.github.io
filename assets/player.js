@@ -121,10 +121,15 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.shadowRoot.innerHTML = `
 <style>
 :host {
-    display: block;
-    max-width: 640px;
-    padding: 20px;
-    font-family: "Gill Sans", sans-serif;
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  padding: 20px;
+  max-width: 640px; /* Increased max-width for repos */
+  margin: 20px auto;
+  margin-top: 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  background-color: #029356;
+  border-radius: 8px;
 }
 
 .player-container {
