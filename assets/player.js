@@ -37,7 +37,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     
     this.fontSettings = "62px sans-serif";
     this.fontContent = "🎶";
-    this.fontLeft = 175;
+    this.fontLeft = 170;
     this.fontTop = 65;
 
 
