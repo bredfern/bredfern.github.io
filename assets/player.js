@@ -36,7 +36,9 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.seekSlider = this.shadowRoot.querySelector("#seek-slider");
     
     this.fontSettings = "48px sans-serif";
-    this.fontContent = "🎶, 160, 60";
+    this.fontContent = "🎶";
+    this.fontLeft = 160;
+    this.fontTop = 60;
 
 
     this.currentTrackInfo = this.shadowRoot.querySelector(
@@ -47,7 +49,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.canvas = this.shadowRoot.querySelector("#visualizer-canvas");
     this.canvasCtx = this.canvas.getContext("2d");
     this.canvasCtx.font = this.fontSettings;
-    this.canvasCtx.fillText(this.fontContent);
+    this.canvasCtx.fillText(this.fontContent, this.fontLeft, this.fontiTop);
 
     // Event listeners
     this.audioPlayer.addEventListener("ended", this.playNext.bind(this));
@@ -330,7 +332,7 @@ input[type="range"]::-moz-range-track {
     }
     this.updateTrackInfo();
     this.canvasCtx.font = this.fontSettings;
-    this.canvasCtx.fillText(this.fontContent);
+    this.canvasCtx.fillText(this.fontContent, this.fontLeft, this.fontTop);
   }
 
   getTrackName(url) {
