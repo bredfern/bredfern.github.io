@@ -249,6 +249,11 @@ footer {
     border-radius: 8px;
 }
 
+#about-content {
+	background-color: #b9e192;
+	text-align: left;
+}
+
 /* animate --a from its initial-value 0deg to 1turn */
 @keyframes a { to { --a: 1turn } }
 
