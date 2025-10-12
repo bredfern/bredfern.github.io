@@ -231,6 +231,7 @@ label {
         overflow: hidden;
         width: 100%;
         height: 20px;
+        margin-top: -10px;
         -webkit-appearance: none;
         background-color: #000000;
     }
