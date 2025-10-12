@@ -123,6 +123,7 @@ class AudioPlaylistPlayer extends HTMLElement {
 :host {
     display: block;
     max-width: 640px;
+    padding: 20px;
     font-family: "Gill Sans", sans-serif;
 }
 
@@ -227,34 +228,72 @@ label {
     background: transparent;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    input[type='range'] {
-        overflow: hidden;
-        width: 100%;
-        height: 20px;
-        margin-top: -14px;
-        -webkit-appearance: none;
-        background-color: #000000;
-    }
-
-    input[type='range']::-webkit-slider-runnable-track {
-        -webkit-appearance: none;
-        background-color: #b9c192;
-        height: 1px;
-    }
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
 }
-/** FF*/
-input[type="range"]::-moz-range-progress {
-  background-color: #000000;
-}
-input[type="range"]::-moz-range-track {
-  background-color:  #b9e192;
-}
-
 
 .slider-label {
   color: #000000;
   font-size 120%;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #367ebd;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
 }
 
         </style>
