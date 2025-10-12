@@ -1,64 +1,56 @@
 <!doctype html>
 <html lang="en" class="h-100">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-            name="description"
-            content="Brian Redfern links to my code and music."
-        />
-        <link rel="shortcut icon" href="/assets/favicon.ico" />
-        <title>The website of web developer/composer/artist Brian Redfern.</title>
-        <link
-            rel="stylesheet"
-            type="text/css"
-            rel="preload"
-            as="style"
-            href="assets/site.css"
-        />
-    </head>
-    <body>
-        <div class="container">
-            <header>
-              <span>
-                <img src="/assets/redfern.svg" width="40" height="40" alt="logo">
-              </span>
-              <h1><a href="/" class="glow-text">Brian Redfern</a></h1> 
-              <nav>
-                <a href="https://github.com/bredfern" class="no-decor">
-                  <picture>
-                    <img src="/assets/github-icon.svg" class="icon" alt="github" />
-                  </picture>
-                </a>
-                <a href="https://bsky.app/profile/bredfern.bsky.social" class="no-decor">
-                  <picture>
-                    <img src="/assets/bsky-icon.svg"  class="icon" alt="bluesky" />
-                  </picture>
-                </a>
-                <a href="mailto:brianwredfern@gmail.com" class="no-decor">
-                  <picture>
-                    <img src="/assets/email-icon.svg" class="icon" alt="email" />
-                  </picture>
-                </a>
-                </nav>
-            </header>
-            <main>                
-               <div id="content">
-                 <div class="tabset">
-  <!-- Tab 1 -->
-  <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
-  <label for="tab1">Music</label>
-  <!-- Tab 2 -->
-  <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
-  <label for="tab2">Projects</label>
-  <!-- Tab 3 -->
-  <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
-  <label for="tab3">About</label>
-  
-  <div class="tab-panels">
-    <section id="marzen" class="tab-panel">
-        <audio-playlist-player
-                playlist='[
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Brian Redfern links to my code and music." />
+  <link rel="shortcut icon" href="/assets/favicon.ico" />
+  <title>The website of web developer/composer/artist Brian Redfern.</title>
+  <link rel="stylesheet" type="text/css" rel="preload" as="style" href="assets/site.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <span>
+        <img src="/assets/redfern.svg" width="40" height="40" alt="logo">
+      </span>
+      <h1><a href="/" class="glow-text">Brian Redfern</a></h1>
+      <nav>
+        <a href="https://github.com/bredfern" class="no-decor">
+          <picture>
+            <img src="/assets/github-icon.svg" class="icon" alt="github" />
+          </picture>
+        </a>
+        <a href="https://bsky.app/profile/bredfern.bsky.social" class="no-decor">
+          <picture>
+            <img src="/assets/bsky-icon.svg" class="icon" alt="bluesky" />
+          </picture>
+        </a>
+        <a href="mailto:brianwredfern@gmail.com" class="no-decor">
+          <picture>
+            <img src="/assets/email-icon.svg" class="icon" alt="email" />
+          </picture>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <div id="content">
+        <div class="tabset">
+          <!-- Tab 1 -->
+          <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+          <label for="tab1">Music</label>
+          <!-- Tab 2 -->
+          <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+          <label for="tab2">Projects</label>
+          <!-- Tab 3 -->
+          <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+          <label for="tab3">About</label>
+
+          <div class="tab-panels">
+            <section id="marzen" class="tab-panel">
+              <audio-playlist-player playlist='[
                 "/assets/buzzsaw.mp3",
                 "https://archive.org/download/mockasaurus/oud.mp3",
                 "https://archive.org/download/kingdomofflac/rude.mp3",
@@ -335,37 +327,39 @@
 "https://archive.org/download/begone_2024-09-12_21-47/wikideath_2024-09-12_16-27.mp3",
 "https://archive.org/download/begone_2024-09-12_21-47/worms_2024-09-12_20-26.mp3",
 "https://archive.org/download/wolves_202403/wolves.mp3"                                                                                 
-            ]'
-        ></audio-playlist-player>
-    </section>
-    <section id="rauchbier" class="tab-panel">
-      <github-user-profile></github-user-profile>
-    </section>
-    <section id="dunkles" class="tab-panel">
-      <h2 class="glow-text">About</h2>
-      <p>
-       I wrote my first piece of software in 1988, when I was a kid in chemistry class, 
-       trying to memorize all the formulas seemed daunting so I wrote my own primitive database/ search engine in BASIC.
-      </p>
-      <p>
-        At the same time I was studying classical guitar and wound up being a professional musician and dj to pay my way through school.
-      </p>
-      <p>
-        After school, I worked for a number of well known companies as a LAMP developer. Geocities/Yahoo, Disney, Sony, La County Museum of Art and many more.
-      </p>
-      <p>
-	      As you can hear on the home page I still make music. I use linux and open source software to make my music. However because its largely guitar based you might not know but I like to say so because Ardour is often much better than its competition. 
-      </p>
-      <p>
-      You can hear my music on my <a href="https://www.youtube.com/@redfernguitar" target="new">youtube channel</a>.
-      </p>
-    </section>
-  </div> 
-</div> 
-</main>
-<footer class="centered">&#169; 2025 Brian Redfern</footer>
-</div>
-<script src="/assets/player.js" defer></script>
-<script src="/assets/github-user-profile.js" defer></script>
+            ]'></audio-playlist-player>
+            </section>
+            <section id="rauchbier" class="tab-panel">
+              <github-user-profile></github-user-profile>
+            </section>
+            <section id="dunkles" class="tab-panel">
+              <h2 class="glow-text">About</h2>
+              <p>
+                I wrote my first piece of software in 1988, when I was a kid in chemistry class,
+                trying to memorize all the formulas seemed daunting so I wrote my own primitive database/ search engine
+                in BASIC.
+              </p>
+              <p>
+                At the same time I was studying classical guitar and wound up being a professional musician and dj to
+                pay my way through school.
+              </p>
+              <p>
+                After school, I worked for a number of well known companies as a LAMP developer. Geocities/Yahoo,
+                Disney, Sony, La County Museum of Art and many more.
+              </p>
+              <p>
+                As you can hear on the home page I still make music. I use linux and open source software to make my
+                music. However because its largely guitar based you might not know but I like to say so because Ardour
+                is often much better than its competition.
+              </p>
+            </section>
+          </div>
+        </div>
+    </main>
+    <footer class="centered">&#169; 2025 Brian Redfern</footer>
+  </div>
+  <script src="/assets/player.js" defer></script>
+  <script src="/assets/github-user-profile.js" defer></script>
 </body>
+
 </html>

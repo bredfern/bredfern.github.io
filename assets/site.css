@@ -239,6 +239,16 @@ footer {
 	content: ''
 }
 
+
+#dunkles {
+    gap: 10px;
+    width: 90%;
+    text-align: center;
+    background-color: #029356;
+    padding: 15px;
+    border-radius: 8px;
+}
+
 /* animate --a from its initial-value 0deg to 1turn */
 @keyframes a { to { --a: 1turn } }
 
