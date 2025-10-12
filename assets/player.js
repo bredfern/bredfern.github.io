@@ -230,19 +230,20 @@ label {
     input[type='range'] {
         overflow: hidden;
         width: 100%;
+        height: 4px;
         -webkit-appearance: none;
         background-color: #000000;
     }
 
     input[type='range']::-webkit-slider-runnable-track {
         -webkit-appearance: none;
-        background-color: #ffffff;
+        background-color: #b9c192;
         height: 1px;
     }
 }
 /** FF*/
 input[type="range"]::-moz-range-progress {
-  background-color: #000;
+  background-color: #000000;
 }
 input[type="range"]::-moz-range-track {
   background-color:  #b9e192;
