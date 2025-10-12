@@ -230,7 +230,7 @@ label {
     input[type='range'] {
         overflow: hidden;
         width: 100%;
-        height: 4px;
+        height: 20px;
         -webkit-appearance: none;
         background-color: #000000;
     }
