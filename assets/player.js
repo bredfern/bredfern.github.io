@@ -122,6 +122,7 @@ class AudioPlaylistPlayer extends HTMLElement {
 <style>
 :host {
     display: block;
+    width: 640px;
     font-family: "Gill Sans", sans-serif;
 }
 
