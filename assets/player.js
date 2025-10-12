@@ -42,8 +42,8 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.playPauseBtn = this.shadowRoot.querySelector("#play-pause-btn");
     this.canvas = this.shadowRoot.querySelector("#visualizer-canvas");
     this.canvasCtx = this.canvas.getContext("2d");
-    this.canvasCtx.font = "28px serif";
-    this.canvasCtx.fillText("Press Play to Listen", 80, 50);
+    this.canvasCtx.font = "28px";
+    this.canvasCtx.fillText("Caution - Strange Music", 80, 50);
 
     // Event listeners
     this.audioPlayer.addEventListener("ended", this.playNext.bind(this));
