@@ -72,10 +72,10 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.playPauseBtn.addEventListener("click", () => {
       if (this.audioPlayer.paused) {
         this.audioPlayer.play();
-        this.playPauseBtn.textContent = "Pause";
+        this.playPauseBtn.textContent = "▶︎‖";
       } else {
         this.audioPlayer.pause();
-        this.playPauseBtn.textContent = "Play";
+        this.playPauseBtn.textContent = "<strong>▶︎‖</strong>";
       }
     });
 
