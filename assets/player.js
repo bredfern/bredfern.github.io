@@ -236,7 +236,7 @@ label {
 
     input[type='range']::-webkit-slider-runnable-track {
         -webkit-appearance: none;
-        background-color: #ffffff;
+        background-color: transparent;
     }
 }
 /** FF*/
