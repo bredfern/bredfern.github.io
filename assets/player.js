@@ -138,7 +138,7 @@ audio {
     height: 80px;
     border-radius: 4px;
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 14px;
     margin-top: 0;
     background-color: #b9e192;
 }
@@ -159,9 +159,10 @@ audio {
     padding: 20px;
     max-height: 200px;
     overflow-y: auto;
-    border-top: 1px solid #b9e192;
+    background: #b9e192;
+    border-top: 1px solid #000000;
     margin-top: 15px;
-    width: 90%;
+    width: 100%;
     text-align: left;
 }
 
