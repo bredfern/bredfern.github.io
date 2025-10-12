@@ -42,8 +42,8 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.playPauseBtn = this.shadowRoot.querySelector("#play-pause-btn");
     this.canvas = this.shadowRoot.querySelector("#visualizer-canvas");
     this.canvasCtx = this.canvas.getContext("2d");
-    this.canvasCtx.font = "128px";
-    this.canvasCtx.fillText("🎶", 80, 50);
+    this.canvasCtx.font = 72px";
+    this.canvasCtx.fillText("🎶My Compositions", 80, 50);
 
     // Event listeners
     this.audioPlayer.addEventListener("ended", this.playNext.bind(this));
@@ -72,11 +72,11 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.playPauseBtn.addEventListener("click", () => {
       if (this.audioPlayer.paused) {
         this.audioPlayer.play();
-        this.playPauseBtn.style.color = "black";
+        this.playPauseBtn.style.color = "#000000";
         
       } else {
         this.audioPlayer.pause();
-        this.playPauseBtn.style.color = "red";
+        this.playPauseBtn.style.color = "#ffffff";
       }
     });
 
