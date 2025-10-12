@@ -34,6 +34,9 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.audioPlayer = this.shadowRoot.querySelector("#audio-player");
     this.playlistList = this.shadowRoot.querySelector("#playlist-list");
     this.seekSlider = this.shadowRoot.querySelector("#seek-slider");
+    this.fontSettings = "48px sans-serif";
+    this.fontContent = ""🎶", 160, 60";
+
 
     this.currentTrackInfo = this.shadowRoot.querySelector(
       "#current-track-info",
@@ -42,8 +45,8 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.playPauseBtn = this.shadowRoot.querySelector("#play-pause-btn");
     this.canvas = this.shadowRoot.querySelector("#visualizer-canvas");
     this.canvasCtx = this.canvas.getContext("2d");
-    this.canvasCtx.font ="48px sans-serif";
-    this.canvasCtx.fillText("🎶", 150, 50);
+    this.canvasCtx.font = this.fontSettings;
+    this.canvasCtx.fillText(this.fontContent);
 
     // Event listeners
     this.audioPlayer.addEventListener("ended", this.playNext.bind(this));
@@ -53,7 +56,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.audioPlayer.addEventListener("playing", () => this.startVisualizer());
     
     this.audioPlayer.addEventListener('timeupdate', () => {
-      this.seekSlider.value = this.audioPlayer.currentTime;
+        this.seekSlider.value = this.audioPlayer.currentTime;
     });
 
     this.audioPlayer.onloadedmetadata = () => {
@@ -325,8 +328,8 @@ input[type="range"]::-moz-range-track {
       this.animationFrameId = null;
     }
     this.updateTrackInfo();
-    this.canvasCtx.font ="48px sans-serif";
-    this.canvasCtx.fillText("🎶", 150, 50);
+    this.canvasCtx.font = this.fontSettings;
+    this.canvasCtx.fillText(this.fontContent);
   }
 
   getTrackName(url) {
