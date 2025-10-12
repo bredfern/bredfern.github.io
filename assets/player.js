@@ -332,6 +332,8 @@ input[type="range"]::-ms-fill-upper {
       this.animationFrameId = null;
     }
     this.updateTrackInfo();
+    this.canvasCtx.font ="36px sans-serif";
+    this.canvasCtx.fillText("🎶Music", 120, 50);
   }
 
   getTrackName(url) {
