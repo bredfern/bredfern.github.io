@@ -252,6 +252,8 @@ footer {
 #about-content {
 	background-color: #b9e192;
 	text-align: left;
+  padding: 20px;
+  font-size: 100%;
 }
 
 /* animate --a from its initial-value 0deg to 1turn */
