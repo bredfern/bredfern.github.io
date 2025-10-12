@@ -211,24 +211,7 @@ audio {
 #seek-slider, #volume-slider {
     width: 100%;
     margin-bottom: 10px;
-    background: #000;
-}
-
-.neon-text {
-    font-size: 2rem;
-    margin-top: 0;
-    color: #000;
-    text-shadow: 0 0 5px #b9e192, 0 0 10px #b9e192, 0 0 20px #b9e192, 0 0 40px #b9e192, 0 0 80px #b9e192;
-    animation: glow 1.5s infinite alternate;
-}
-
-@keyframes glow {
-    0% {
-        text-shadow: 0 0 5px #029356, 0 0 10px #029356, 0 0 20px #029356, 0 0 40px #029356, 0 0 80px #029356;
-    }
-    100% {
-        text-shadow: 0 0 10px #000, 0 0 20px #000 0 0 40px #000, 0 0 80px #000, 0 0 160px #000;
-    }
+    background: transparent;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
