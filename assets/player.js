@@ -231,13 +231,11 @@ label {
         overflow: hidden;
         width: 100%;
         -webkit-appearance: none;
-        background-color: #000;
+        background-color: #000000;
     }
 
     input[type='range']::-webkit-slider-runnable-track {
-        height: 20px;
         -webkit-appearance: none;
-        margin-top: 0;
         background-color: #ffffff;
     }
 }
