@@ -237,19 +237,9 @@ label {
     input[type='range']::-webkit-slider-runnable-track {
         height: 20px;
         -webkit-appearance: none;
-        margin-top: -1px;
-        background-color: #000;
+        margin-top: 0;
+        background-color: #ffffff;
     }
-
-    input[type='range']::-webkit-slider-thumb {
-        width: 20px;
-        -webkit-appearance: none;
-        height: 40px;
-        cursor: ew-resize;
-        background: #b9e192;
-        box-shadow: -80px 0 0 80px #000;
-    }
-
 }
 /** FF*/
 input[type="range"]::-moz-range-progress {
