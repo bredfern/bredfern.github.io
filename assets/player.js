@@ -42,7 +42,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.playPauseBtn = this.shadowRoot.querySelector("#play-pause-btn");
     this.canvas = this.shadowRoot.querySelector("#visualizer-canvas");
     this.canvasCtx = this.canvas.getContext("2d");
-    this.canvasCtx.font ="72px sans-serif";
+    this.canvasCtx.font ="36px sans-serif";
     this.canvasCtx.fillText("🎶Brian Redfern Compositions", 80, 50);
 
     // Event listeners
