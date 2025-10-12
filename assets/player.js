@@ -37,8 +37,8 @@ class AudioPlaylistPlayer extends HTMLElement {
     
     this.fontSettings = "62px sans-serif";
     this.fontContent = "🎶";
-    this.fontLeft = 170;
-    this.fontTop = 65;
+    this.fontLeft = 160;
+    this.fontTop = 60;
 
 
     this.currentTrackInfo = this.shadowRoot.querySelector(
