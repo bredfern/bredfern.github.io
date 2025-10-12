@@ -326,7 +326,7 @@ input[type="range"]::-moz-range-track {
     }
     this.updateTrackInfo();
     this.canvasCtx.font ="36px sans-serif";
-    this.canvasCtx.fillText("🎶Music", 120, 50);
+    this.canvasCtx.fillText("🎶🎶🎶🎶🎶🎶", 120, 50);
   }
 
   getTrackName(url) {
