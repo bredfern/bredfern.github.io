@@ -110,6 +110,9 @@ input:focus-visible + label {
     margin-right: auto;
 }
 
+.about-header { display: flex; align-items: center; margin-bottom: 15px; }
+.avatar { width: 70px; height: 70px; border-radius: 50%; margin-right: 15px; border: 2px solid #b9e192 }
+
 a,
 a:visited,
 a:active {
