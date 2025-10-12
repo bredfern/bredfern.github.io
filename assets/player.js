@@ -325,8 +325,8 @@ input[type="range"]::-moz-range-track {
       this.animationFrameId = null;
     }
     this.updateTrackInfo();
-    this.canvasCtx.font ="36px sans-serif";
-    this.canvasCtx.fillText("🎶🎶🎶🎶🎶🎶", 120, 50);
+    this.canvasCtx.font ="72px sans-serif";
+    this.canvasCtx.fillText("🎶", 150, 50);
   }
 
   getTrackName(url) {
