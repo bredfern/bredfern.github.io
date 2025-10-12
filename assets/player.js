@@ -135,7 +135,6 @@ audio {
 
 #visualizer-canvas {
     width: 100%;
-    height: 80px;
     border-radius: 4px;
     display: block;
     margin-bottom: 14px;
@@ -168,7 +167,7 @@ audio {
 
 #playlist-list li {
     padding: 10px;
-    border-bottom: 1px solid #b9e192;
+    border-bottom: 1px solid #000000;
     cursor: pointer;
     transition: background-color 0.2s;
     white-space: nowrap;
@@ -199,7 +198,7 @@ audio {
     background-color: #b9e192;
     color: #000;
     border: none;
-    font-size: 110%;
+    font-size: 120%;
     font-weight: bold;
     padding: 8px 15px;
     border-radius: 5px;
@@ -253,13 +252,7 @@ input[type="range"]::-moz-range-progress {
 input[type="range"]::-moz-range-track {
   background-color:  #b9e192;
 }
-/* IE*/
-input[type="range"]::-ms-fill-lower {
-  background-color: #000;
-}
-input[type="range"]::-ms-fill-upper {
-  background-color: #000;
-}
+
 
 .slider-label {
   color: #000000;
