@@ -170,7 +170,6 @@ class AudioPlaylistPlayer extends HTMLElement {
     background: #b9e192;
     border-top: 1px solid #000000;
     margin-top: 15px;
-    width: 90%;
     text-align: left;
 }
 
