@@ -136,7 +136,6 @@ class AudioPlaylistPlayer extends HTMLElement {
     padding: 0;
     margin-top: 0;
     width: 100%;
-    max-width: 640px;
     margin-left: auto;
     margin-right: auto;
 }
