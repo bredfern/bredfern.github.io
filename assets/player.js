@@ -260,7 +260,7 @@ input[type=range]::-webkit-slider-thumb {
   background: #ffffff;
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: -4px;
+  margin-top: -6px;
 }
 input[type=range]:focus::-webkit-slider-runnable-track {
   background: #ffffff;
