@@ -119,11 +119,11 @@ class AudioPlaylistPlayer extends HTMLElement {
   // Defines the HTML structure and CSS
   render() {
     this.shadowRoot.innerHTML = `
-<style>
-:host {
-  display: block;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  padding: 20px;
+      <style>
+        :host {
+          display: block;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+          padding: 20px;
   max-width: 640px; /* Increased max-width for repos */
   margin: 20px auto;
   margin-top: 0;
