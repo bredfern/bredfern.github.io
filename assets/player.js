@@ -141,17 +141,13 @@ class AudioPlaylistPlayer extends HTMLElement {
     margin-right: auto;
 }
 
-audio {
-    width: 100%;
-    margin-bottom: 5px;
-}
-
 #visualizer-canvas {
     width: 100%;
     border-radius: 4px;
     display: block;
     margin-bottom: 14px;
     margin-top: 0;
+    height: 120px;
     background-color: #b9e192;
 }
 
