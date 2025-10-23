@@ -34,7 +34,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.audioPlayer = this.shadowRoot.querySelector("#audio-player");
     this.playlistList = this.shadowRoot.querySelector("#playlist-list");
     this.seekSlider = this.shadowRoot.querySelector("#seek-slider");
-    
+
     this.fontSettings = "62px sans-serif";
     this.fontContent = "🎶";
     this.fontLeft = 160;
@@ -44,7 +44,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.currentTrackInfo = this.shadowRoot.querySelector(
       "#current-track-info",
     );
-    this.volumeSlider = this.shadowRoot.querySelector("#volume-slider"); 
+    this.volumeSlider = this.shadowRoot.querySelector("#volume-slider");
     this.playPauseBtn = this.shadowRoot.querySelector("#play-pause-btn");
     this.canvas = this.shadowRoot.querySelector("#visualizer-canvas");
     this.canvasCtx = this.canvas.getContext("2d");
@@ -54,32 +54,32 @@ class AudioPlaylistPlayer extends HTMLElement {
     // Event listeners
     this.audioPlayer.addEventListener("ended", this.playNext.bind(this));
     this.audioPlayer.addEventListener("pause", () => this.stopVisualizer());
-    
+
     // The visualizer is started when the 'playing' event fires
     this.audioPlayer.addEventListener("playing", () => this.startVisualizer());
-    
+
     this.audioPlayer.addEventListener('timeupdate', () => {
-        this.seekSlider.value = this.audioPlayer.currentTime;
+      this.seekSlider.value = this.audioPlayer.currentTime;
     });
 
     this.audioPlayer.onloadedmetadata = () => {
-        this.seekSlider.max = this.audioPlayer.duration;
+      this.seekSlider.max = this.audioPlayer.duration;
     };
 
 
     this.seekSlider.onchange = () => {
-        this.audioPlayer.currentTime = this.seekSlider.value;
+      this.audioPlayer.currentTime = this.seekSlider.value;
     };
 
     this.volumeSlider.onchange = () => {
-        this.audioPlayer.volume = this.volumeSlider.value;
+      this.audioPlayer.volume = this.volumeSlider.value;
     }
 
     this.playPauseBtn.addEventListener("click", () => {
       if (this.audioPlayer.paused) {
         this.audioPlayer.play();
         this.playPauseBtn.style.color = "#000000";
-        
+
       } else {
         this.audioPlayer.pause();
         this.playPauseBtn.style.color = "#ffffff";
@@ -120,16 +120,16 @@ class AudioPlaylistPlayer extends HTMLElement {
   render() {
     this.shadowRoot.innerHTML = `
       <style>
-:host {
-  display: block;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  padding: 20px;
-  max-width: 640px; /* Increased max-width for repos */
-  margin: 20px auto;
-  margin-top: 0;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-  background-color: #029356;
-  border-radius: 8px;
+ :host {
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    padding: 20px;
+    margin: 20px auto;
+    margin-top: 40px;
+    width: 100%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    background-color: #029356;
+    border-radius: 8px;
 }
 .player-container {
 }
@@ -190,7 +190,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     gap: 10px;
     text-align: center;
     background-color: #029356;
-    padding: 15px;
+    padding: 5px;
     border-radius: 8px;
 }
 
