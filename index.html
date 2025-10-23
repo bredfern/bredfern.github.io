@@ -40,16 +40,20 @@
     <main>
       <div id="content">
         <div class="tabset">
-          <input type="radio" name="tabset" id="tab1" aria-controls="zimbler" checked>
-          <label for="tab1">Home</label>
-          <!-- Tab 1 -->
-          <input type="radio" name="tabset" id="tab2" aria-controls="marzen">
-          <label for="tab2">Music</label>
-          <!-- Tab 2 -->
-          <input type="radio" name="tabset" id="tab3" aria-controls="rauchbier">
-          <label for="tab3">Projects</label>
+
+           <!-- Tab 1 -->
+  <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+  <label for="tab1">Home</label>
+  <!-- Tab 2 -->
+  <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+  <label for="tab2">Music</label>
+  <!-- Tab 3 -->
+  <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+  <label for="tab3">Projects</label>
+
+       
           <div class="tab-panels">
-             <section id="zimbler" class="tab-panel">
+             <section id="marzen" class="tab-panel">
               <h2>Hi, My Name Is Brian</h2>
               <p>
                 I am a long time web developer, I started my own development business while still a student
@@ -71,11 +75,8 @@
                 the sound and music compiler <a href="https://csound.com/" target="new">Csound.
               </p>
              </section>
-          </div>
-          <div class="tab-panels">
-            <section id="marzen" class="tab-panel">
-              <audio-playlist-player playlist='[
-              "https://archive.org/download/goatlandia/fored_2025-09-19_19-33.mp3",
+            <section id="rauchbier" class="tab-panel">
+              <audio-playlist-player playlist='["https://archive.org/download/goatlandia/fored_2025-09-19_19-33.mp3",
               "https://archive.org/download/goatlandia/francine_2025-09-19_19-40.mp3",
               "https://archive.org/download/goatlandia/guarded_2025-09-19_19-43.mp3",
               "https://archive.org/download/goatlandia/hafiize_2025-09-19_19-47.mp3",
@@ -103,26 +104,10 @@
               "https://archive.org/download/driedghosts/hjeer_2025-09-26_15-03.mp3",
               "https://archive.org/download/driedghosts/oscaro_2025-09-26_16-00.mp3",
               "https://archive.org/download/driedghosts/punkin_2025-09-19_17-40.mp3",
-              "https://archive.org/download/driedghosts/wamoos_2025-09-26_11-48.mp3",
-              "https://archive.org/download/bones_2025-09-16_13-16/bones_2025-09-16_13-16.mp3",
-              "https://archive.org/download/bones_2025-09-16_13-16/buskin_2025-08-26_17-36.mp3",
-              "https://archive.org/download/bones_2025-09-16_13-16/buskin_2025-09-15_18-37.mp3",
-              "https://archive.org/download/chemicaltruth/bozon_2025-09-06_21-43.mp3",
-              "https://archive.org/download/chemicaltruth/bvag_2025-09-06_21-50.mp3",
-              "https://archive.org/download/chemicaltruth/bvag_2025-09-13_15-48.mp3",
-              "https://archive.org/download/chemicaltruth/catechesis_2025-09-08_21-11.mp3",
-              "https://archive.org/download/chemicaltruth/francine_2025-09-06_12-42.mp3",
-              "https://archive.org/download/chemicaltruth/guarded_2025-09-13_15-03.mp3",
-              "https://archive.org/download/chemicaltruth/hooted_2025-09-09_18-05.mp3",
-              "https://archive.org/download/begone_2024-09-12_21-47/begone_2024-09-12_21-47.mp3",
-              "https://archive.org/download/begone_2024-09-12_21-47/dr-benzo_2024-09-12_14-10.mp3",
-              "https://archive.org/download/begone_2024-09-12_21-47/ranjiare_2024-09-12_21-36.mp3",
-              "https://archive.org/download/begone_2024-09-12_21-47/rocksalt_2024-09-11_14-56.mp3",
-              "https://archive.org/download/begone_2024-09-12_21-47/wikideath_2024-09-12_16-27.mp3",
-              "https://archive.org/download/begone_2024-09-12_21-47/worms_2024-09-12_20-26.mp3"]'>
-              </audio-playlist-player>
+              "https://archive.org/download/driedghosts/wamoos_2025-09-26_11-48.mp3"]'>
+            </audio-playlist-player>
             </section>
-            <section id="rauchbier" class="tab-panel">
+            <section id="dunkles" class="tab-panel">
               <github-user-profile></github-user-profile>
             </section>
           </div>
