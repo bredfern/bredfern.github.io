@@ -140,7 +140,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     margin-top: 0;
     margin-left, margin-right: 0;
     height: 120px;
-    background-color: #fff;
+    background-color: #b9e192;
 }
 
 #current-track-info {
