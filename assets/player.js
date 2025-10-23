@@ -125,8 +125,6 @@ class AudioPlaylistPlayer extends HTMLElement {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     padding: 20px;
     margin: 20px auto;
-    margin-top: 40px;
-    width: 100%;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
     background-color: #029356;
     border-radius: 8px;
@@ -142,7 +140,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     margin-top: 0;
     margin-left, margin-right: 0;
     height: 120px;
-    background-color: #b9e192;
+    background-color: #fff;
 }
 
 #current-track-info {

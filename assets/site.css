@@ -242,10 +242,11 @@ footer {
 
 #dunkles {
     gap: 10px;
-    width: 90%;
+    margin-top: 20px;
+    width: 100%;
     text-align: center;
     background-color: #029356;
-    padding: 15px;
+    padding: 0;
     border-radius: 8px;
 }
 
