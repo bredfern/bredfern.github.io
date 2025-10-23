@@ -90,9 +90,6 @@ input:focus-visible + label {
   padding: 30px 0;
 }
 
-/*
- Demo purposes only
-*/
 *,
 *:before,
 *:after {
