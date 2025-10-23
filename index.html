@@ -40,13 +40,33 @@
     <main>
       <div id="content">
         <div class="tabset">
+          <input type="radio" name="tabset" id="tab1" aria-controls="zimbler" checked>
+          <label for="tab1">Home</label>
           <!-- Tab 1 -->
           <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
           <label for="tab1">Music</label>
           <!-- Tab 2 -->
           <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
           <label for="tab2">Projects</label>
-
+          <div class="tab-panels">
+             <section id="zimbler" class="tab-panel">
+              <h2>Hello World</h2>
+              <p>
+                I am a long time web developer, I started my own development business while still a student
+                in 1995. Since then I have been working on the web nonstop.
+              </p>
+              <p>
+                Ai has become an intersting challenge. Ultimately it works better when turning an engineer
+                into a cyborg than trying to automate everything.
+              </p>
+              <p>
+                My own experiments with vibe coding are enabling me to build what might be a valuable enough
+                music tool to enable me to actually charge people to use it, although I am keeping the price
+                super low, which is also enabled by vibe coding because overall I am able to deliver a new software
+                product in record time as a cyborg coder.
+              </p>
+             </section>
+          </div>
           <div class="tab-panels">
             <section id="marzen" class="tab-panel">
               <audio-playlist-player playlist='["https://archive.org/download/mockasaurus/charnali_2025-09-17_21-01.mp3",
