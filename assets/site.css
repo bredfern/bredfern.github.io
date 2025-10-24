@@ -101,7 +101,7 @@ input:focus-visible + label {
 }
 
 #content {
-    padding: 0.1rem;
+    padding: 0.25rem;
     max-width: 40rem;
     margin-left: auto;
     margin-right: auto;
@@ -152,7 +152,7 @@ header {
     	color: #000;
     	height: auto;
       padding: 10px;
-      padding-bottom: 2px;
+      padding-bottom: 0.25rem; 
     	width: 100%;
 }
 
