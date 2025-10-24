@@ -261,7 +261,6 @@ footer {
 @keyframes a { to { --a: 1turn } }
 
 .glow-text {
-    font-size: 2rem;
     color: #000;
     text-shadow: 0 0 5px #b9e192, 0 0 10px #b9e192, 0 0 20px #b9e192, 0 0 40px #b9e192, 0 0 80px #b9e192;
     animation: glow 1.5s infinite alternate;
