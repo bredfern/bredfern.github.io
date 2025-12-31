@@ -82,7 +82,7 @@ class AudioPlaylistPlayer extends HTMLElement {
 
       } else {
         this.audioPlayer.pause();
-        this.playPauseBtn.style.color = "#ffffff";
+        this.playPauseBtn.style.color = "#7e7b7bff";
       }
     });
 
@@ -126,7 +126,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     padding: 20px;
     margin: 20px auto;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-    background-color: #8b9c95ff;
+    background-color: #9d9e9eff;
     border-radius: 8px;
 }
 .player-container {
@@ -140,7 +140,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     margin-top: 0;
     margin-left, margin-right: 0;
     height: 120px;
-    background-color: #e9ebe7ff;
+    background-color: #bebebeff;
 }
 
 #current-track-info {
@@ -158,7 +158,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     padding: 20px;
     max-height: 200px;
     overflow-y: auto;
-    background: #e4e6e2ff;
+    background: #b5b6b4ff;
     border-top: 1px solid #000000;
     margin-top: 0.75rem;
     text-align: left;
@@ -193,7 +193,7 @@ class AudioPlaylistPlayer extends HTMLElement {
 }
 
 #play-pause-btn {
-    background-color: #e7e9e5ff;
+    background-color: #80817fff;
     color: #000;
     border: none;
     font-size: 120%;
