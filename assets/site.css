@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background: #b9e192;
+    background: #ffffff;
     color: #000;
     padding: 0;
     margin: 0;
@@ -77,11 +77,11 @@ input:focus-visible + label {
 .tabset > label:hover::after,
 .tabset > input:focus + label::after,
 .tabset > input:checked + label::after {
-  background: #029356;
+  background: #8aa399;
 }
 
 .tabset > input:checked + label {
-  border-color: #029356;
+  border-color: #949695;
   border-bottom: 1px solid #000;
   margin-bottom: -1px;
 }
@@ -90,9 +90,6 @@ input:focus-visible + label {
   padding: 30px 0;
 }
 
-/*
- Demo purposes only
-*/
 *,
 *:before,
 *:after {
@@ -148,7 +145,7 @@ h1 {
 }
 
 header {
-    	background-color: #029356;
+    	background-color: #cecece;
     	color: #000;
     	height: auto;
       padding: 0.15rem;
@@ -170,7 +167,7 @@ footer {
     bottom: 0;
     height: auto;
     width: 100%;
-    background-color: #029356;
+    background-color: #cecece;
     color: #000;
     text-align: center;
     position: fixed;

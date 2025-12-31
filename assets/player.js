@@ -126,7 +126,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     padding: 20px;
     margin: 20px auto;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-    background-color: #029356;
+    background-color: #8b9c95ff;
     border-radius: 8px;
 }
 .player-container {
@@ -140,7 +140,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     margin-top: 0;
     margin-left, margin-right: 0;
     height: 120px;
-    background-color: #b9e192;
+    background-color: #e9ebe7ff;
 }
 
 #current-track-info {
@@ -158,7 +158,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     padding: 20px;
     max-height: 200px;
     overflow-y: auto;
-    background: #b9e192;
+    background: #e4e6e2ff;
     border-top: 1px solid #000000;
     margin-top: 0.75rem;
     text-align: left;
@@ -179,7 +179,7 @@ class AudioPlaylistPlayer extends HTMLElement {
 }
 
 #playlist-list li.active {
-    background-color: #029356;
+    background-color: #858d8aff;
     color: #000000;
     font-weight: bold;
 }
@@ -187,13 +187,13 @@ class AudioPlaylistPlayer extends HTMLElement {
 #custom-audio-player {
     gap: 10px;
     text-align: center;
-    background-color: #029356;
+    background-color: #909291ff;
     padding: 5px;
     border-radius: 8px;
 }
 
 #play-pause-btn {
-    background-color: #b9e192;
+    background-color: #e7e9e5ff;
     color: #000;
     border: none;
     font-size: 120%;
@@ -259,7 +259,7 @@ input[type=range]::-moz-range-track {
   height: 8.4px;
   cursor: pointer;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  background: #b9e192;
+  background: #e2e4e0ff;
   border-radius: 1.3px;
   border: 0.2px solid #010101;
 }
