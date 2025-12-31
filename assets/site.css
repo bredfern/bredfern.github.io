@@ -7,8 +7,7 @@ html {
     min-height: 100%;
     padding: 0;
     margin: 0; 
-    font-family: "Avenir Next", "Avenir", sans-serif;
-    font-size: 100%;
+    font-family: "Avenir Next", "Avenir", sans-serif; 
 }
 
 body {
@@ -19,10 +18,81 @@ body {
     width: 100%;
 }
 
-.tab-panel {
-  padding: 30px;
+/*
+ CSS for the main interaction
+*/
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
 }
 
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+/*
+ Styling
+*/
+
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px 25px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tabset > label::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 22px;
+  height: 4px;
+  background: #8d8d8d;
+}
+
+input:focus-visible + label {
+  outline: 2px solid #000;
+  border-radius: 3px;
+}
+
+.tabset > label:hover,
+.tabset > input:focus + label,
+.tabset > input:checked + label {
+  color: #000;
+}
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+  background: #029356;
+}
+
+.tabset > input:checked + label {
+  border-color: #029356;
+  border-bottom: 1px solid #000;
+  margin-bottom: -1px;
+}
+
+.tab-panel {
+  padding: 30px 0;
+}
+
+/*
+ Demo purposes only
+*/
 *,
 *:before,
 *:after {
@@ -34,14 +104,11 @@ body {
 }
 
 #content {
-    padding: 0.25rem;
+    padding: 1rem;
     max-width: 40rem;
     margin-left: auto;
     margin-right: auto;
 }
-
-.about-header { display: flex; align-items: center; margin-bottom: 15px; }
-.avatar { width: 70px; height: 70px; border-radius: 50%; margin-right: 15px; border: 2px solid #b9e192 }
 
 a,
 a:visited,
@@ -85,7 +152,7 @@ header {
     	color: #000;
     	height: auto;
       padding: 10px;
-      padding-bottom: 0.25rem; 
+      padding-bottom: 2px;
     	width: 100%;
 }
 
@@ -95,6 +162,8 @@ nav {
 	top: 0.5rem;
 	left: auto;
 }
+
+
 
 footer {
     padding: 0.6rem;
@@ -135,8 +204,7 @@ footer {
 	/* adjust width as needed IF it's even necessary to set */
 	width: Min(10.5em, 80vmin);
 	/* adjust aspect-ratio OR height IF height not given by content */
-	height: 5rem;
-  aspect-ratio: 1;
+	aspect-ratio: 1;
 	/* round outer card corners */
 	border-radius: .5em;
 	
@@ -144,7 +212,7 @@ footer {
 	place-self: center;
 	place-content: center;
 	padding: .5em;
-  color: #ededed;
+	color: #ededed;
 	font: clamp(0.25em, 2vw + 2vh, 2em) sans-serif;
 	text-align: center;
 	text-transform: uppercase;
@@ -173,39 +241,7 @@ footer {
 	content: ''
 }
 
-
-#dunkles {
-    gap: 10px;
-    margin-top: 4px;
-    width: 100%;
-    text-align: center;
-    background-color: #029356;
-    padding: 0;
-    border-radius: 8px;
-}
-
-#about-content {
-	background-color: #b9e192;
-	text-align: left;
-  padding: 20px;
-  font-size: 100%;
-}
-
 /* animate --a from its initial-value 0deg to 1turn */
 @keyframes a { to { --a: 1turn } }
 
-.glow-text {
-    color: #000;
-    text-shadow: 0 0 5px #b9e192, 0 0 10px #b9e192, 0 0 20px #b9e192, 0 0 40px #b9e192, 0 0 80px #b9e192;
-    animation: glow 1.5s infinite alternate;
-}
-
-@keyframes glow {
-    0% {
-        text-shadow: 0 0 5px #029356, 0 0 10px #029356, 0 0 20px #029356, 0 0 40px #029356, 0 0 80px #029356;
-    }
-    100% {
-        text-shadow: 0 0 10px #000, 0 0 20px #000 0 0 40px #000, 0 0 80px #000, 0 0 160px #000;
-    }
-}
 

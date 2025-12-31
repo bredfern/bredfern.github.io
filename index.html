@@ -20,7 +20,10 @@
     <body>
         <div class="container">
             <header>
-              <h1 class="glow-text"><a href="/">Brian Redfern</a></h1> 
+              <span>
+                <img src="/assets/redfern.svg" width="40" height="40" alt="logo">
+              </span>
+              <h1><a href="/">Brian Redfern</a></h1>
               <nav>
                 <a href="https://github.com/bredfern" class="no-decor">
                   <picture>
@@ -39,17 +42,63 @@
                 </a>
                 </nav>
             </header>
-            <main>                
+            <main>
                <div id="content">
                  <div class="tabset">
+  <!-- Tab 1 -->
+  <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+  <label for="tab1">Home</label>
+  <!-- Tab 2 -->
+  <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+  <label for="tab2">Projects</label>
+  <!-- Tab 3 -->
+  <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+  <label for="tab3">Music</label>
+
+  <div class="tab-panels">
+    <section id="marzen" class="tab-panel">
+    <h2>Home</h2>
+      <p>
+       I wrote my first piece of software in 1988, when I was a kid in chemistry class,
+       trying to memorize all the formulas seemed daunting so I wrote my own primitive database/ search engine in BASIC.
+      </p>
+      <p>
+        At the same time I was studying classical guitar and wound up being a professional musician and dj to pay my way through school.
+      </p>
+      <p>
+        After school, I worked for a number of well known companies as a LAMP developer. Geocities/Yahoo, Disney, Sony, La County Museum of Art and many more.
+      </p>
+      <p>
+	      As you can hear on the home page I still make music. I use linux and open source software to make my music. However because its largely guitar based you might not know but I like to say so because Ardour is often much better than its competition.
+      </p>
+      <p>
+      You can hear my music on my <a href="https://www.youtube.com/@redfernguitar" target="new">youtube channel</a>.
+      </p>
+
+    </section>
     <section id="rauchbier" class="tab-panel">
       <github-user-profile></github-user-profile>
     </section>
-  </div> 
-</div> 
+    <section id="dunkles" class="tab-panel">
+      <audio-playlist-player
+                playlist='[
+                "https://ia800600.us.archive.org/25/items/mrabortion/boxeded_2025-10-07_15-32.mp3",
+                "https://ia800600.us.archive.org/25/items/mrabortion/honchos_2025-10-08_11-50.mp3",
+                "https://dn720701.ca.archive.org/0/items/mockasaurus/2025-09-24_13h03m44s.mp3",
+                "https://dn720701.ca.archive.org/0/items/mockasaurus/2025-10-07_18h06m46s.mp3",
+                "https://dn720701.ca.archive.org/0/items/mockasaurus/charnali_2025-09-17_21-01.mp3",
+                "https://ia801008.us.archive.org/23/items/mockasaurus/charnali_2025-09-23_21-42.mp3",
+                "https://dn720701.ca.archive.org/0/items/mockasaurus/charnali_2025-09-23_22-49.mp3",
+                "https://ia600600.us.archive.org/25/items/mrabortion/2025-10-07_18h06m46s.mp3"
+            ]'
+        ></audio-playlist-player>
+    </section>
+  </div>
+</div>
 </main>
 <footer class="centered">&#169; 2025 Brian Redfern</footer>
 </div>
+<script src="/assets/player.js" defer></script>
 <script src="/assets/github-user-profile.js" defer></script>
 </body>
 </html>
