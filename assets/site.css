@@ -151,8 +151,7 @@ header {
     	background-color: #029356;
     	color: #000;
     	height: auto;
-      padding: 10px;
-      padding-bottom: 2px;
+      padding: 0.15rem;
     	width: 100%;
 }
 
