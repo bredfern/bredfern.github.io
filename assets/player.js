@@ -82,7 +82,7 @@ class AudioPlaylistPlayer extends HTMLElement {
 
       } else {
         this.audioPlayer.pause();
-        this.playPauseBtn.style.color = "#7e7b7bff";
+        this.playPauseBtn.style.color = "#b6b5b5ff";
       }
     });
 
