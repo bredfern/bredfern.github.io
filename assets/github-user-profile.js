@@ -159,7 +159,7 @@ class GithubUserProfile extends HTMLElement {
                 .stat-item strong { display: block; font-size: 1.1em; color: #000; }
                 .stat-item span { color: ##b9e192; font-size: 0.8em; }
                 .details p { margin: 5px 0; font-size: 0.9em; }
-                .github-link { display: block; text-align: center; margin-top: 15px; padding: 8px 15px; background-color: #e3e6e1ff; color: #000; text-decoration: none; border-radius: 4px; font-weight: 500; font-size: 0.9em; transition: background-color 0.2s; }
+                .github-link { display: block; text-align: center; margin-top: 15px; padding: 8px 15px; background-color: #fff; color: #000; text-decoration: none; border-radius: 4px; font-weight: 500; font-size: 0.9em; transition: background-color 0.2s; }
                 .github-link:hover { background-color: #000000ff; }
                 
                 /* REPOSITORY STYLES (New) */
@@ -215,7 +215,7 @@ class GithubUserProfile extends HTMLElement {
                 }
             </style>
             <div class="profile-container">
-                </div>
+            </div>
         `;
     }
 }
