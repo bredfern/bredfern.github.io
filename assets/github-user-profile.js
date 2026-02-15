@@ -137,7 +137,7 @@ class GithubUserProfile extends HTMLElement {
                     margin: 20px auto;
                     margin-top: 0;
                     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-                    background-color: lightgray;
+                    background-color: transparent;
                     border-radius: 8px;
                 }
                 .profile-container {
@@ -154,12 +154,12 @@ class GithubUserProfile extends HTMLElement {
                 h2 { margin: 0; font-size: 1.5em; color: #000; }
                 .login-name { margin: 0; color: #000; font-size: 0.9em; }
                 .bio { font-style: italic; margin: 10px 0; padding-bottom: 15px; border-bottom: 1px solid #e1e4dfff }
-                .stats { background-color: #dfe2dcff; display: flex; justify-content: space-around; margin: 15px 0; padding: 10px 0; border-top: 1px solid #eaebeaff border-bottom: 1px solid #e3e4e3ff; }
+                .stats { background-color: #fff; display: flex; justify-content: space-around; margin: 15px 0; padding: 10px 0; border-top: 1px solid #eaebeaff border-bottom: 1px solid #e3e4e3ff; }
                 .stat-item { text-align: center; }
                 .stat-item strong { display: block; font-size: 1.1em; color: #000; }
                 .stat-item span { color: ##b9e192; font-size: 0.8em; }
                 .details p { margin: 5px 0; font-size: 0.9em; }
-                .github-link { display: block; text-align: center; margin-top: 15px; padding: 8px 15px; background-color: #dfe2dcff; color: #000; text-decoration: none; border-radius: 4px; font-weight: 500; font-size: 0.9em; transition: background-color 0.2s; }
+                .github-link { display: block; text-align: center; margin-top: 15px; padding: 8px 15px; background-color: #fff; color: #000; text-decoration: none; border-radius: 4px; font-weight: 500; font-size: 0.9em; transition: background-color 0.2s; }
                 .github-link:hover { background-color: gray; }
                 /* REPOSITORY STYLES (New) */
                 .repos-heading {
@@ -180,7 +180,7 @@ class GithubUserProfile extends HTMLElement {
                     padding: 10px;
                     color: #000;
                     margin-bottom: 10px;
-                    background-color: #dddfdcff;
+                    background-color: #fff;
                     transition: box-shadow 0.2s;
                 }
                 .repo-item:hover {
