@@ -133,6 +133,7 @@ a:hover {
 	margin-right: 0.25rem;
 	width: 1rem;
 	height: 1rem;
+	margin-bottom: 0.15rem;
 }
 
 .no-decor, h1 a {
@@ -140,7 +141,7 @@ a:hover {
 }
 
 h1 {
-	font-size: 1rem;
+	font-size: 1.25rem;
 	display: inline;
 }
 
@@ -148,7 +149,7 @@ header {
     	background-color: #cecece;
     	color: #000;
     	height: auto;
-      padding: 0.15rem;
+        padding: 0.15rem;
     	width: 100%;
 }
 
