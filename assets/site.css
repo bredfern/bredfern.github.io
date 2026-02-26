@@ -131,8 +131,8 @@ a:hover {
 
 .icon {
 	margin-right: 0.25rem;
-	width: 1rem;
-	height: 1rem;
+	width: 1.25rem;
+	height: 1.25rem;
 	margin-bottom: 0.15rem;
 }
 
@@ -141,7 +141,7 @@ a:hover {
 }
 
 h1 {
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 	display: inline;
 }
 
