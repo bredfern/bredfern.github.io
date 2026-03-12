@@ -132,7 +132,7 @@ a:hover {
 .icon {
 	width: 1rem;
 	height: 1rem;
-	margin: 0.5rem;
+	margin-top: 0.5rem;
 }
 
 .no-decor, h1 a {
