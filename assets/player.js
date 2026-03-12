@@ -78,11 +78,11 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.playPauseBtn.addEventListener("click", () => {
       if (this.audioPlayer.paused) {
         this.audioPlayer.play();
-        this.playPauseBtn.style.color = "#000000";
+        this.playPauseBtn.style.color = "#000";
         
       } else {
         this.audioPlayer.pause();
-        this.playPauseBtn.style.color = "#ffffff";
+        this.playPauseBtn.style.color = "#cecece";
       }
     });
 
@@ -128,7 +128,7 @@ class AudioPlaylistPlayer extends HTMLElement {
   margin: 20px auto;
   margin-top: 0;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-  background-color: #029356;
+  background-color: #cecece;
   border-radius: 8px;
 }
 
@@ -147,7 +147,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     margin-bottom: 14px;
     margin-top: 0;
     height: 120px;
-    background-color: #b9e192;
+    background-color: #fff;
 }
 
 #current-track-info {
@@ -163,11 +163,11 @@ class AudioPlaylistPlayer extends HTMLElement {
 
 #playlist-list {
     list-style: none;
-    width: 100%;
+    width: 90%;
     padding: 20px;
     max-height: 200px;
     overflow-y: auto;
-    background: #b9e192;
+    background: #fff;
     border-top: 1px solid #000000;
     margin-top: 15px;
     text-align: left;
@@ -188,7 +188,7 @@ class AudioPlaylistPlayer extends HTMLElement {
 }
 
 #playlist-list li.active {
-    background-color: #029356;
+    background-color: #cecece;
     color: #000000;
     font-weight: bold;
 }
@@ -197,13 +197,13 @@ class AudioPlaylistPlayer extends HTMLElement {
     gap: 10px;
     width: 90%;
     text-align: center;
-    background-color: #029356;
+    background-color: #cecece;
     padding: 15px;
     border-radius: 8px;
 }
 
 #play-pause-btn {
-    background-color: #b9e192;
+    background-color: #fff;
     color: #000;
     border: none;
     font-size: 120%;
@@ -307,7 +307,7 @@ input[type=range]::-moz-range-thumb {
     const HEIGHT = this.canvas.height;
     const bufferLength = this.dataArray.length;
 
-    this.canvasCtx.fillStyle = "#b9e192";
+    this.canvasCtx.fillStyle = "#fff";
     this.canvasCtx.fillRect(0, 0, WIDTH, HEIGHT);
 
     let barWidth = (WIDTH / bufferLength) * 2.5;
