@@ -163,7 +163,16 @@ class GithubUserProfile extends HTMLElement {
                     font-size: 0.9em;
                 }
                 .bio { font-style: italic; margin: 10px 0; padding-bottom: 15px; border-bottom: 1px solid #cecece }
-                .stats { background-color: #fff; display: flex; justify-content: space-around; margin: 15px 0; padding: 10px 0; border-top: 1px solid #cecece border-bottom: 1px solid #cecece #e3e4e3ff; }
+                .stats {
+                    background-color: #fff;
+                    display: flex;
+                    justify-content: space-around;
+                    margin: 15px 0;
+                    padding: 10px 0;
+                    border-top: 1px solid #cecece;
+                    border-bottom: 1px solid #cecece;
+
+                }
                 .stat-item { text-align: center; }
                 .stat-item strong { display: block; font-size: 1.1em; color: #000; }
                 .stat-item span { color: #b9e192; font-size: 0.8em; }
