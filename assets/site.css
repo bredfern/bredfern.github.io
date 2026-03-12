@@ -134,6 +134,7 @@ a:hover {
 	height: 1rem;
 	margin-top: 0.5rem;
 	margin-right: 0.25rem;
+	display: inline;
 }
 
 .no-decor, h1 a {
