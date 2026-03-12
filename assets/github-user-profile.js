@@ -42,7 +42,7 @@ class GithubUserProfile extends HTMLElement {
             const userData = await userResponse.json();
 
             // 2. Fetch User Repositories (Projects)
-            const reposResponse = await fetch(`https://api.github.com/users/${this.username}/repos?sort=updated&per_page=15`); // Get 10 most recently updated repos
+            const reposResponse = await fetch(`https://api.github.com/users/${this.username}/repos?sort=updated&per_page=5`); // Get 10 most recently updated repos
             
             if (!reposResponse.ok) {
                 throw new Error(`HTTP error! Status: ${reposResponse.status} fetching repository data.`);
