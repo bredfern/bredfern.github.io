@@ -156,6 +156,8 @@ nav {
 	position: absolute;
 	right:  0.15rem;
 	left: auto;
+	top: 0;
+	bottom: 0.15rem;
 }
 
 footer {
