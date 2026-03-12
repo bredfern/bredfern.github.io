@@ -143,7 +143,6 @@ class GithubUserProfile extends HTMLElement {
                 }
                 .profile-container {
                     color: #000;
-                    border: solid 0.5rem #000;
                 }
                 .profile-container.error {
                     color: #cb2431;
