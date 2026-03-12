@@ -139,7 +139,7 @@ class GithubUserProfile extends HTMLElement {
                     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
                     background-color: transparent;
                     border-radius: 8px;
-                    border: solid 0.15rem #cecece;
+                    border: solid 1px #cecece;
                 }
                 .profile-container {
                     color: #000;
@@ -151,17 +151,17 @@ class GithubUserProfile extends HTMLElement {
                 }
                 /* PROFILE STYLES (Kept from before) */
                 .profile-header { display: flex; align-items: center; margin-bottom: 15px; }
-                .avatar { width: 70px; height: 70px; border-radius: 50%; margin-right: 15px; border: 2px solid #dedfddff }
+                .avatar { width: 70px; height: 70px; border-radius: 50%; margin-right: 15px; border: 2px solid #cecece }
                 h2 { margin: 0; font-size: 1.5em; color: #000; }
                 .login-name { margin: 0; color: #000; font-size: 0.9em; }
                 .bio { font-style: italic; margin: 10px 0; padding-bottom: 15px; border-bottom: 1px solid #e1e4dfff }
-                .stats { background-color: #fff; display: flex; justify-content: space-around; margin: 15px 0; padding: 10px 0; border-top: 1px solid #eaebeaff border-bottom: 1px solid #e3e4e3ff; }
+                .stats { background-color: #fff; display: flex; justify-content: space-around; margin: 15px 0; padding: 10px 0; border-top: 1px solid #cecece border-bottom: 1px solid #cecece #e3e4e3ff; }
                 .stat-item { text-align: center; }
                 .stat-item strong { display: block; font-size: 1.1em; color: #000; }
-                .stat-item span { color: ##b9e192; font-size: 0.8em; }
+                .stat-item span { color: #b9e192; font-size: 0.8em; }
                 .details p { margin: 5px 0; font-size: 0.9em; }
                 .github-link { display: block; text-align: center; margin-top: 15px; padding: 8px 15px; background-color: #fff; color: #000; text-decoration: none; border-radius: 4px; font-weight: 500; font-size: 0.9em; transition: background-color 0.2s; }
-                .github-link:hover { background-color: gray; }
+                .github-link:hover { background-color: #cecece; }
                 /* REPOSITORY STYLES (New) */
                 .repos-heading {
                     font-size: 1.2em;
