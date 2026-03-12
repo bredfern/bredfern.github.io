@@ -116,7 +116,7 @@ a:active {
 
 #logo {
 	width: 90%;
-        height: 90%;
+	height: 90%;
 	border: dashed 0.5rem #000;
 }
 
@@ -133,6 +133,7 @@ a:hover {
 	margin-right: 0.25rem;
 	width: 1rem;
 	height: 1rem;
+	display: inline;
 }
 
 .no-decor, h1 a {
