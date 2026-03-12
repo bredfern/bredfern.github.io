@@ -42,7 +42,7 @@ class GithubUserProfile extends HTMLElement {
             const userData = await userResponse.json();
 
             // 2. Fetch User Repositories (Projects)
-            const reposResponse = await fetch(`https://api.github.com/users/${this.username}/repos?sort=updated&per_page=5`); // Get 10 most recently updated repos
+            const reposResponse = await fetch(`https://api.github.com/users/${this.username}/repos?sort=updated&per_page=15`); // Get 10 most recently updated repos
             
             if (!reposResponse.ok) {
                 throw new Error(`HTTP error! Status: ${reposResponse.status} fetching repository data.`);
@@ -152,9 +152,17 @@ class GithubUserProfile extends HTMLElement {
                 /* PROFILE STYLES (Kept from before) */
                 .profile-header { display: flex; align-items: center; margin-bottom: 15px; }
                 .avatar { width: 70px; height: 70px; border-radius: 50%; margin-right: 15px; border: 2px solid #cecece }
-                h2 { margin: 0; font-size: 1.5em; color: #000; }
-                .login-name { margin: 0; color: #000; font-size: 0.9em; }
-                .bio { font-style: italic; margin: 10px 0; padding-bottom: 15px; border-bottom: 1px solid #e1e4dfff }
+                h2 {
+                    margin: 0;
+                    font-size: 1.5em;
+                    color: #000;
+                }
+                .login-name {
+                    margin: 0;
+                    color: #000;
+                    font-size: 0.9em;
+                }
+                .bio { font-style: italic; margin: 10px 0; padding-bottom: 15px; border-bottom: 1px solid #cecece }
                 .stats { background-color: #fff; display: flex; justify-content: space-around; margin: 15px 0; padding: 10px 0; border-top: 1px solid #cecece border-bottom: 1px solid #cecece #e3e4e3ff; }
                 .stat-item { text-align: center; }
                 .stat-item strong { display: block; font-size: 1.1em; color: #000; }
@@ -167,7 +175,7 @@ class GithubUserProfile extends HTMLElement {
                     font-size: 1.2em;
                     margin-top: 25px;
                     padding-top: 15px;
-                    border-top: 1px solid #000;
+                    border-top: 1px solid #cecece;
                     color: #000;
                 }
                 .repos-list {
