@@ -123,13 +123,13 @@ class AudioPlaylistPlayer extends HTMLElement {
 :host {
   display: block;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  padding: 6px;
+  padding: 0.25rem;
   max-width: 640px; /* Increased max-width for repos */
-  margin: 20px auto;
+  margin: 0.5rem auto;
   margin-top: 0;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.19rem 0.5rem rgba(0, 0, 0, 0.05);
   background-color: #cecece;
-  border-radius: 8px;
+  border-radius: 0.25rem;
 }
 
 .player-container {
@@ -142,17 +142,17 @@ class AudioPlaylistPlayer extends HTMLElement {
 
 #visualizer-canvas {
     width: 100%;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     display: block;
-    margin-bottom: 14px;
+    margin-bottom: 0.5rem;
     margin-top: 0;
-    height: 120px;
-    background-color: #fff;
+    height: 7.5rem;
+    background-color: #ffffff;
 }
 
 #current-track-info {
     text-align: center;
-    margin: 15px;
+    margin: 0.5rem;
     font-weight: bold;
     color: #000000;
     white-space: nowrap;
@@ -164,18 +164,18 @@ class AudioPlaylistPlayer extends HTMLElement {
 #playlist-list {
     list-style: none;
     width: 90%;
-    padding: 20px;
-    max-height: 200px;
+    padding: 0.5rem;
+    max-height: 12.5rem;
     overflow-y: auto;
-    background: #fff;
-    border-top: 1px solid #000000;
-    margin-top: 15px;
+    background: #ffffff;
+    border-top: 0.1rem solid #000000;
+    margin-top: 0.5rem;
     text-align: left;
 }
 
 #playlist-list li {
-    padding: 10px;
-    border-bottom: 1px solid #000000;
+    padding: 0.25rem;
+    border-bottom: 0.1rem solid #000000;
     cursor: pointer;
     transition: background-color 0.2s;
     white-space: nowrap;
@@ -194,37 +194,37 @@ class AudioPlaylistPlayer extends HTMLElement {
 }
 
 #custom-audio-player {
-    gap: 10px;
+    gap: 0.25rem;
     width: 90%;
     text-align: center;
     background-color: #cecece;
-    padding: 15px;
-    border-radius: 8px;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
 
 #play-pause-btn {
-    background-color: #fff;
-    color: #000;
+    background-color: #ffffff;
+    color: #000000;
     border: none;
     font-size: 120%;
     font-weight: bold;
-    padding: 8px 15px;
-    border-radius: 5px;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25remx;
     cursor: pointer;
     width: auto;
     height: 60px;
-    margin-top: 10px;
+    margin-top: 0.5rem;
     width: 100%;
 }
 
 label {
-    color: #000;
+    color: #000000;
     font-weight: bold;
 }
 
 #seek-slider, #volume-slider {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 0.25rem;
     background: transparent;
 }
 
@@ -235,7 +235,7 @@ label {
 
 input[type=range] {
   -webkit-appearance: none;
-  margin: 18px 0;
+  margin: 0.5rem 0;
   width: 100%;
 }
 input[type=range]:focus {
@@ -243,42 +243,42 @@ input[type=range]:focus {
 }
 input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
-  height: 1px;
+  height: 0.1rem;
   cursor: pointer;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0 0 0.1rem #0d0d0d;
   background: #000000;
-  border-radius: 1.3px;
-  border: 0.2px solid #010101;
+  border-radius: 0.25rem;
+  border: 0.1rem solid #010101;
 }
 input[type=range]::-webkit-slider-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 16px;
-  width: 16px;
-  border-radius: 3px;
+  box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0 0 0.1rem #0d0d0d;
+  border: 0.1rem solid #000000;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 0.25rem;
   background: #ffffff;
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: -8px;
+  margin-top: -0.5rem;
 }
 input[type=range]:focus::-webkit-slider-runnable-track {
   background: #ffffff;
 }
 input[type=range]::-moz-range-track {
   width: 100%;
-  height: 8.4px;
+  height: 0.5rem;
   cursor: pointer;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0 0 0.1rem #0d0d0d;
   background: #b9e192;
-  border-radius: 1.3px;
-  border: 0.2px solid #010101;
+  border-radius: 0.25rem;
+  border: 0.1rem solid #010101;
 }
 input[type=range]::-moz-range-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 16px;
-  width: 16px;
-  border-radius: 3px;
+  box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0 0 0.1rem #0d0d0d;
+  border: 0.1rem solid #000000;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 0.25rem;
   background: #ffffff;
   cursor: pointer;
 }
