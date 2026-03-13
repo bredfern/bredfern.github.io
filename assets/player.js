@@ -191,7 +191,6 @@ class AudioPlaylistPlayer extends HTMLElement {
 
 #custom-audio-player {
     gap: 0.25rem;
-    width: 90%;
     text-align: center;
     background-color: #cecece;
     padding: 0.5rem;
@@ -220,7 +219,7 @@ label {
 
 #seek-slider, #volume-slider {
     width: 100%;
-    margin-bottom: 0.25rem;
+    margin-bottom: 1rem;
     background: transparent;
 }
 
