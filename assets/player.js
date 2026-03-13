@@ -377,8 +377,8 @@ input[type=range]::-moz-range-thumb {
     //    "Playback blocked by browser (user interaction required):",
     //    error.message,
       //);
-    this.stopVisualizer();
-    });
+    //this.stopVisualizer();
+    //});
 
     this.updatePlaylistActiveState();
     this.updateTrackInfo();
