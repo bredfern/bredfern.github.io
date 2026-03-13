@@ -371,14 +371,8 @@ input[type=range]::-moz-range-thumb {
     const url = this.playlist[this.currentTrackIndex];
 
     this.audioPlayer.src = url;
-    // Note: Playing may still fail if the browser requires user interaction first.
-    //this.audioPlayer.play().catch((error) => {
-    //  console.warn(
-    //    "Playback blocked by browser (user interaction required):",
-    //    error.message,
-      //);
-    //this.stopVisualizer();
-    //});
+    this.audioPlayer.pause();
+    this.stopVisualizer();
 
     this.updatePlaylistActiveState();
     this.updateTrackInfo();
