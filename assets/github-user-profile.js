@@ -132,34 +132,34 @@ class GithubUserProfile extends HTMLElement {
                 :host {
                     display: block;
                     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-                    padding: 20px;
-                    max-width: 640px; /* Increased max-width for repos */
-                    margin: 20px auto;
-                    margin-top: 0;
-                    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+                    padding: 1.25rem;
+                    max-width: 40rem;
+                    margin: 1.25rem auto;
+                    margin-top: 0.7rem;
+                    box-shadow: 0 0.2rem  rgba(0, 0, 0, 0.05);
                     background-color: transparent;
-                    border-radius: 8px;
-                    border: solid 1px #cecece;
+                    border-radius: 0.25rem;
+                    border: solid 0.1rem #cecece;
                 }
                 .profile-container {
-                    color: #000;
+                    color: #000000;
                 }
                 .profile-container.error {
                     color: #cb2431;
-                    border-left: 5px solid #cb2431;
-                    padding-left: 15px;
+                    border-left: 0.3rem solid #cb2431;
+                    padding-left: 1rem;
                 }
                 /* PROFILE STYLES (Kept from before) */
-                .profile-header { display: flex; align-items: center; margin-bottom: 15px; }
-                .avatar { width: 70px; height: 70px; border-radius: 50%; margin-right: 15px; border: 2px solid #cecece }
+                .profile-header { display: flex; align-items: center; margin-bottom: 0.5rem; }
+                .avatar { width: 4rem; height: 4rem; border-radius: 50%; margin-right: 0.5rem; border: 0.1rem solid #cecece }
                 h2 {
                     margin: 0;
                     font-size: 1.5em;
-                    color: #000;
+                    color: #000000;
                 }
                 .login-name {
                     margin: 0;
-                    color: #000;
+                    color: #000000;
                     font-size: 0.9em;
                 }
                 .bio { font-style: italic; margin: 10px 0; padding-bottom: 15px; border-bottom: 1px solid #cecece }
@@ -167,24 +167,48 @@ class GithubUserProfile extends HTMLElement {
                     background-color: #fff;
                     display: flex;
                     justify-content: space-around;
-                    margin: 15px 0;
-                    padding: 10px 0;
-                    border-top: 1px solid #cecece;
-                    border-bottom: 1px solid #cecece;
+                    margin: 1rem 0;
+                    padding: 1rem 0;
+                    border-top: 0.1rem solid #cecece;
+                    border-bottom: 0.1rem solid #cecece;
 
                 }
-                .stat-item { text-align: center; }
-                .stat-item strong { display: block; font-size: 1.1em; color: #000; }
-                .stat-item span { font-size: 0.8em; }
-                .details p { margin: 5px 0; font-size: 0.9em; }
-                .github-link { display: block; text-align: center; margin-top: 15px; padding: 8px 15px; background-color: #fff; color: #000; text-decoration: none; border-radius: 4px; font-weight: 500; font-size: 0.9em; transition: background-color 0.2s; }
+                .stat-item { 
+                  text-align: center; 
+                }
+                .stat-item strong { 
+                  display: block; 
+                  font-size: 1.1em; 
+                  color: #00000; 
+                }
+                .stat-item span { 
+                  font-size: 0.8em; 
+                }
+                .details p { 
+                  margin: 0.25rem 0; 
+                  font-size: 0.9em; 
+                }
+                .github-link { 
+                  display: block; 
+                  text-align: center; 
+                  margin-top: 0.5rem; 
+                  padding: 0.25rem 0.5rem; 
+                  background-color: #ffffff; 
+                  color: #000000; 
+                  text-decoration: none; 
+                  border-radius: 0.25rem; 
+                  font-weight: 500; 
+                  font-size: 0.9em; 
+                  transition: 
+                  background-color 0.2s; 
+                }
                 .github-link:hover { background-color: #cecece; }
                 /* REPOSITORY STYLES (New) */
                 .repos-heading {
                     font-size: 1.2em;
-                    margin-top: 25px;
-                    padding-top: 15px;
-                    border-top: 1px solid #cecece;
+                    margin-top: 0.5rem;
+                    padding-top: 0.25rem;
+                    border-top: 0.1rem solid #cecece;
                     color: #000;
                 }
                 .repos-list {
@@ -193,34 +217,34 @@ class GithubUserProfile extends HTMLElement {
                     margin: 0;
                 }
                 .repo-item {
-                    border: 1px solid #e0e2ddff
-                    border-radius: 6px;
-                    padding: 10px;
-                    color: #000;
-                    margin-bottom: 10px;
-                    background-color: #fff;
+                    border: 0.1rem solid #e0e2ddff
+                    border-radius: 0.25rem;
+                    padding: 0.25rem;
+                    color: #000000;
+                    margin-bottom: 0.25rem;
+                    background-color: #ffffff;
                     transition: box-shadow 0.2s;
                 }
                 .repo-item:hover {
-                    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+                    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
                 }
                 .repo-name {
                     font-weight: 600;
-                    color: #000;
+                    color: #000000;
                     text-decoration: none;
                     font-size: 1.1em;
                 }
                 .repo-description {
                     font-size: 0.9em;
-                    color: #000;
-                    margin: 5px 0;
+                    color: #000000;
+                    margin: 0.25rem 0;
                 }
                 .repo-meta {
                     display: flex;
-                    gap: 15px;
+                    gap: 0.25rem;
                     font-size: 0.8em;
-                    color: #000;
-                    margin-top: 8px;
+                    color: #000000;
+                    margin-top: 0.25rem;
                 }
                 .repo-meta span {
                     display: flex;
@@ -228,7 +252,7 @@ class GithubUserProfile extends HTMLElement {
                 }
                 .repo-meta .language {
                     font-weight: 500;
-                    color: #000;
+                    color: #000000;
                 }
             </style>
             <div class="profile-container">
