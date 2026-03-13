@@ -126,7 +126,6 @@ class AudioPlaylistPlayer extends HTMLElement {
   padding: 0.25rem;
   width: 100%; /* Increased max-width for repos */
   box-shadow: 0 0.19rem 0.5rem rgba(0, 0, 0, 0.05);
-  background-color: #cecece;
   border-radius: 0.25rem;
 }
 
