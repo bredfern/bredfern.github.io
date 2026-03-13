@@ -253,7 +253,7 @@ input[type=range]::-webkit-slider-runnable-track {
 input[type=range]::-webkit-slider-thumb {
   box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0 0 0.1rem #0d0d0d;
   border: 0.1rem solid #000000;
-  height: 0.5rem;
+  height: 1rem;
   width: 0.5rem;
   border-radius: 0.25rem;
   background: #ffffff;
@@ -276,7 +276,7 @@ input[type=range]::-moz-range-track {
 input[type=range]::-moz-range-thumb {
   box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0 0 0.1rem #0d0d0d;
   border: 0.1rem solid #000000;
-  height: 0.5rem;
+  height: 1rem;
   width: 0.5rem;
   border-radius: 0.25rem;
   background: #ffffff;
