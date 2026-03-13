@@ -125,8 +125,6 @@ class AudioPlaylistPlayer extends HTMLElement {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   padding: 0.25rem;
   max-width: 640px; /* Increased max-width for repos */
-  margin: 0.5rem auto;
-  margin-top: 0;
   box-shadow: 0 0.19rem 0.5rem rgba(0, 0, 0, 0.05);
   background-color: #cecece;
   border-radius: 0.25rem;
