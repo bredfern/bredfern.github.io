@@ -212,7 +212,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     border-radius: 0.25remx;
     cursor: pointer;
     width: auto;
-    height: 60px;
+    height: 3rem;
     margin-top: 0.5rem;
     width: 100%;
 }
