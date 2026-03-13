@@ -117,6 +117,7 @@ a:active {
 #logo {
 	border: none;
 	width: 32%;
+  margin-left: 0.5rem;
 }
 
 a:hover {
