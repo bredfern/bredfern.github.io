@@ -50,10 +50,11 @@
   <div class="tab-panels">
     <section id="marzen" class="tab-panel">
       <p>
-      I am a senior full stack web developer. If you can read the source to this site, you will notice that I put some different webcomponent based examples righ on my page here, now I do get dinged a little bit by lighthouse for not compiling
+      I am a9 senior full stack web developer. I put some different webcomponent based examples righ on my page here, now I do get dinged a little bit by lighthouse for not compiling
       my javascript but it makes it easier to walk people through the code or let them "view source" than to use Vite to compile the js. I use Vite for my other projects so I am certainly
       familiar with javascript build and compression tools.
       </p>
+      <p>While I have experience with both vue and react, at this point with the maturity of es6 javascript there are fewer reasons to use these huge framerworks. Two last pieces are slowly working their way into 
       <p>
       When I started out I was designing with photoshop. Those were the old days when people demanded hideous things like image based sites and flash based sites. Today is really a paradise of
       compatability and browser capability compared to the old days of Html 1.1 and Javascrip 1.0, when Microsoft unleashed a special hell onto the world of the web that they called "dynamic html".

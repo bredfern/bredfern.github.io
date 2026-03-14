@@ -41,9 +41,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.fontTop = 60;
 
 
-    this.currentTrackInfo = this.shadowRoot.querySelector(
-      "#current-track-info",
-    );
+    this.currentTrackInfo = this.shadowRoot.querySelector("#current-track-info");
     this.volumeSlider = this.shadowRoot.querySelector("#volume-slider"); 
     this.playPauseBtn = this.shadowRoot.querySelector("#play-pause-btn");
     this.canvas = this.shadowRoot.querySelector("#visualizer-canvas");
@@ -124,7 +122,7 @@ class AudioPlaylistPlayer extends HTMLElement {
 <style>
 :host {
   display: block;
-  padding: 0.25rem;
+  padding: 0.5rem;
   width: 100%; /* Increased max-width for repos */
   box-shadow: 0 0.19rem 0.5rem rgba(0, 0, 0, 0.05);
   border-radius: 0.25rem;
@@ -266,7 +264,7 @@ input[type=range]::-moz-range-track {
   height: 0.5rem;
   cursor: pointer;
   box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0 0 0.1rem #0d0d0d;
-  background: #b9e192;
+  background: #ffffff;
   border-radius: 0.25rem;
   border: 0.1rem solid #010101;
 }
@@ -280,21 +278,21 @@ input[type=range]::-moz-range-thumb {
   cursor: pointer;
 }
 
-        </style>
-        <div class="player-container">
-          <div id="custom-audio-player">
-            <canvas id="visualizer-canvas" width="400" height="80"></canvas>
-            <label for="seek-slider" class="slider-label">Seek</label> 
-            <input type="range" id="seek-slider" class="neon-text" min="0" value="0">
-            <audio id="audio-player" autoplay="false" crossOrigin="anonymous"></audio>
-            <label for="volume-slider" class="slider-label">Volume</label> 
-            <input id="volume-slider" type="range" class="neon-text" min="0" max="1" step="0.01" value="1">
-            <button id="play-pause-btn">▶︎‖</button>
-            <div id="current-track-info">Ready to play...</div>
-            <ul id="playlist-list"></ul>
-          </div>
-        </div>
-    `;
+</style>
+<div class="player-container">
+ <div id="custom-audio-player">
+   <canvas id="visualizer-canvas" width="400" height="80"></canvas>
+   <label for="seek-slider" class="slider-label">Seek</label> 
+   <input type="range" id="seek-slider" class="neon-text" min="0" value="0">
+   <audio id="audio-player" autoplay="false" crossOrigin="anonymous"></audio>
+   <label for="volume-slider" class="slider-label">Volume</label> 
+   <input id="volume-slider" type="range" class="neon-text" min="0" max="1" step="0.01" value="1">
+   <button id="play-pause-btn">▶︎‖</button>
+   <div id="current-track-info">Ready to play...</div>
+   <ul id="playlist-list"></ul>
+ </div>
+</div>
+  `;
   }
 
   draw() {
@@ -306,7 +304,7 @@ input[type=range]::-moz-range-thumb {
     const HEIGHT = this.canvas.height;
     const bufferLength = this.dataArray.length;
 
-    this.canvasCtx.fillStyle = "#fff";
+    this.canvasCtx.fillStyle = "#ffffff";
     this.canvasCtx.fillRect(0, 0, WIDTH, HEIGHT);
 
     let barWidth = (WIDTH / bufferLength) * 2.5;
@@ -378,6 +376,8 @@ input[type=range]::-moz-range-thumb {
         );
         this.stopVisualizer();
       });
+    } else {
+	this.audioPlayer.pause();
     }
     this.updatePlaylistActiveState();
     this.updateTrackInfo();

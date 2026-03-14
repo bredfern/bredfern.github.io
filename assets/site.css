@@ -101,53 +101,52 @@ input:focus-visible + label {
 }
 
 #content {
-    padding: 1rem;
-    max-width: 40rem;
-    margin-left: auto;
-    margin-right: auto;
+  padding: 1rem;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a,
 a:visited,
 a:active {
-	color: #000;
-    text-decoration: underline;
+  color: #000;
+  text-decoration: underline;
 }
 
 #logo {
-	border: none;
-	width: 8rem;
+  border: none;
+  width: 8rem;
 }
 
 a:hover {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .container {
-	width: 100%;
-	min-height: 100vh;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .icon {
-	width: 1.5rem;
-	height: 1.5rem;
-	margin-top: 0.5rem;
-	margin-right: 0.25rem;
-	display: inline;
+  width: 2rem;
+  margin-top: 0.5rem;
+  margin-right: 0.25rem;
+  display: inline;
 }
 
 .no-decor, h1 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 header {
-	background-color: #cecece;
-	color: #000;
-	height: 3.25rem;
-	padding: 0;
-	display: flex;
-	align-items: center;
-	width: 100%;
+  background-color: #cecece;
+  color: #000;
+  height: 3.25rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 nav {
@@ -175,15 +174,6 @@ footer {
     #content {
 	width: 100%;
     }
-}
-
-@property --a { /* must register --a to animate it */
-	syntax: '<angle>';
-	initial-value: 0deg;
-	/* used only on pseudo, nowhere to be inherited, 
-	 * better perf if set false, see 
-	 * https://www.bram.us/2024/10/03/benchmarking-the-performance-of-css-property/ */
-	inherits: false
 }
 
 .card {
