@@ -101,7 +101,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     if (!this.audioContext) {
       this.audioContext = new (window.AudioContext ||
         window.webkitAudioContext)();
-
+      this.audioPlayer.pause();
       this.analyser = this.audioContext.createAnalyser();
       this.analyser.fftSize = 256;
       const bufferLength = this.analyser.frequencyBinCount;
@@ -282,9 +282,11 @@ input[type=range]::-moz-range-thumb {
         <div class="player-container">
           <div id="custom-audio-player">
             <canvas id="visualizer-canvas" width="400" height="80"></canvas>
-            <label for="seek-slider" class="slider-label">Seek</label> <input type="range" id="seek-slider" class="neon-text" min="0" value="0">
+            <label for="seek-slider" class="slider-label">Seek</label> 
+            <input type="range" id="seek-slider" class="neon-text" min="0" value="0">
             <audio id="audio-player" autoplay="false" crossOrigin="anonymous"></audio>
-            <label for="volume-slider" class="slider-label">Volume</label> <input id="volume-slider" type="range" class="neon-text" min="0" max="1" step="0.01" value="1">
+            <label for="volume-slider" class="slider-label">Volume</label> 
+            <input id="volume-slider" type="range" class="neon-text" min="0" max="1" step="0.01" value="1">
             <button id="play-pause-btn">▶︎‖</button>
             <div id="current-track-info">Ready to play...</div>
             <ul id="playlist-list"></ul>
