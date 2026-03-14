@@ -102,6 +102,8 @@ class AudioPlaylistPlayer extends HTMLElement {
       this.audioContext = new (window.AudioContext ||
         window.webkitAudioContext)();
       this.audioPlayer.pause();
+      this.playPauseBtn.style.color = "#000000";
+
       this.analyser = this.audioContext.createAnalyser();
       this.analyser.fftSize = 256;
       const bufferLength = this.analyser.frequencyBinCount;
