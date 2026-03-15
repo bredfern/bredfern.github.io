@@ -116,6 +116,136 @@ class AudioPlaylistPlayer extends HTMLElement {
     }
   }
 
+
+  draw() {
+    this.animationFrameId = requestAnimationFrame(this.draw.bind(this));
+
+    this.analyser.getByteFrequencyData(this.dataArray);
+
+    const WIDTH = this.canvas.width;
+    const HEIGHT = this.canvas.height;
+    const bufferLength = this.dataArray.length;
+
+    this.canvasCtx.fillStyle = "#ffffff";
+    this.canvasCtx.fillRect(0, 0, WIDTH, HEIGHT);
+
+    let barWidth = (WIDTH / bufferLength) * 2.5;
+    let barHeight;
+    let x = 0;
+
+    for (let i = 0; i < bufferLength; i++) {
+      barHeight = (this.dataArray[i] / 255) * HEIGHT;
+
+      const r = barHeight + 10 * (i / bufferLength);
+      const g = 100 * (i / bufferLength);
+      const b = 20;
+
+      this.canvasCtx.fillStyle = `rgb(${r},${g},${b})`;
+      this.canvasCtx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
+
+      x += barWidth + 1;
+    }
+  }
+
+  startVisualizer() {
+    this.initAudioContext();
+    // Browsers often suspend the AudioContext until the user interacts.
+    if (this.audioContext.state === "suspended") {
+      this.audioContext
+        .resume()
+        .catch((e) => console.error("AudioContext resume failed:", e));
+    }
+
+    if (!this.animationFrameId) {
+      this.draw();
+    }
+    this.updateTrackInfo();
+  }
+
+  stopVisualizer() {
+    if (this.animationFrameId) {
+      cancelAnimationFrame(this.animationFrameId);
+      this.animationFrameId = null;
+    }
+    this.updateTrackInfo();
+    this.canvasCtx.font = this.fontSettings;
+    this.canvasCtx.fillText(this.fontContent, this.fontLeft, this.fontTop);
+  }
+
+  getTrackName(url) {
+    const parts = url.split("/");
+    let name = parts[parts.length - 1];
+    name = name.substring(0, name.lastIndexOf("."));
+    return name.replace(/_/g, " ").replace(/-/g, "/");
+  }
+
+  loadTrack(index) {
+    if (index < 0 || index >= this.playlist.length) {
+      this.stopVisualizer();
+      this.currentTrackInfo.textContent = "Playlist Finished.";
+      return;
+    }
+
+    this.currentTrackIndex = index;
+    const url = this.playlist[this.currentTrackIndex];
+    this.audioPlayer.src = url;
+    // Note: Playing may still fail if the browser requires user interaction first.
+    if (navigator.userActivation.isActive === true) {
+      this.audioPlayer.play().catch((error) => {
+        console.warn(
+          "Playback blocked by browser (user interaction required):",
+          error.message,
+        );
+        this.stopVisualizer();
+      });
+    } xs
+	this.audioPlayer.pause();
+        this.playPauseBtn.style.color = "#cecece";
+    this.updatePlaylistActiveState();
+    this.updateTrackInfo();
+  }
+
+  playNext() {
+    this.loadTrack(this.currentTrackIndex + 1);
+  }
+
+  updateTrackInfo() {
+    const trackName = this.getTrackName(this.playlist[this.currentTrackIndex]);
+    let status = "Ready to play";
+
+    if (this.audioPlayer.paused && this.audioPlayer.currentTime > 0) {
+      status = "Paused";
+    } else if (this.audioPlayer.stopped) {
+      status = "Stopped";
+    } else if (this.audioPlayer.seeking || this.audioPlayer.waiting) {
+      status = "Loading";
+    } else {
+      status = "Now Playing";
+    }
+
+    this.currentTrackInfo.textContent = `${status}: ${trackName.substring(0, 13)}`;
+  }
+
+  updatePlaylistActiveState() {
+    this.shadowRoot
+      .querySelectorAll("#playlist-list li")
+      .forEach((item, idx) => {
+        item.classList.toggle("active", idx === this.currentTrackIndex);
+      });
+  }
+
+  buildPlaylistUI() {
+    this.playlistList.innerHTML = "";
+    this.playlist.forEach((url, index) => {
+      const listItem = document.createElement("li");
+      listItem.textContent = this.getTrackName(url);
+      listItem.addEventListener("click", () => {
+        this.loadTrack(index);
+      });
+      this.playlistList.appendChild(listItem);
+    });
+  }
+
   // Defines the HTML structure and CSS
   render() {
     this.shadowRoot.innerHTML = `
@@ -294,135 +424,5 @@ input[type=range]::-moz-range-thumb {
 </div>
   `;
   }
-
-  draw() {
-    this.animationFrameId = requestAnimationFrame(this.draw.bind(this));
-
-    this.analyser.getByteFrequencyData(this.dataArray);
-
-    const WIDTH = this.canvas.width;
-    const HEIGHT = this.canvas.height;
-    const bufferLength = this.dataArray.length;
-
-    this.canvasCtx.fillStyle = "#ffffff";
-    this.canvasCtx.fillRect(0, 0, WIDTH, HEIGHT);
-
-    let barWidth = (WIDTH / bufferLength) * 2.5;
-    let barHeight;
-    let x = 0;
-
-    for (let i = 0; i < bufferLength; i++) {
-      barHeight = (this.dataArray[i] / 255) * HEIGHT;
-
-      const r = barHeight + 10 * (i / bufferLength);
-      const g = 100 * (i / bufferLength);
-      const b = 20;
-
-      this.canvasCtx.fillStyle = `rgb(${r},${g},${b})`;
-      this.canvasCtx.fillRect(x, HEIGHT - barHeight, barWidth, barHeight);
-
-      x += barWidth + 1;
-    }
-  }
-
-  startVisualizer() {
-    this.initAudioContext();
-    // Browsers often suspend the AudioContext until the user interacts.
-    if (this.audioContext.state === "suspended") {
-      this.audioContext
-        .resume()
-        .catch((e) => console.error("AudioContext resume failed:", e));
-    }
-
-    if (!this.animationFrameId) {
-      this.draw();
-    }
-    this.updateTrackInfo();
-  }
-
-  stopVisualizer() {
-    if (this.animationFrameId) {
-      cancelAnimationFrame(this.animationFrameId);
-      this.animationFrameId = null;
-    }
-    this.updateTrackInfo();
-    this.canvasCtx.font = this.fontSettings;
-    this.canvasCtx.fillText(this.fontContent, this.fontLeft, this.fontTop);
-  }
-
-  getTrackName(url) {
-    const parts = url.split("/");
-    let name = parts[parts.length - 1];
-    name = name.substring(0, name.lastIndexOf("."));
-    return name.replace(/_/g, " ").replace(/-/g, "/");
-  }
-
-  loadTrack(index) {
-    if (index < 0 || index >= this.playlist.length) {
-      this.stopVisualizer();
-      this.currentTrackInfo.textContent = "Playlist Finished.";
-      return;
-    }
-
-    this.currentTrackIndex = index;
-    const url = this.playlist[this.currentTrackIndex];
-    this.audioPlayer.src = url;
-    // Note: Playing may still fail if the browser requires user interaction first.
-    if (navigator.userActivation.isActive === true) {
-      this.audioPlayer.play().catch((error) => {
-        console.warn(
-          "Playback blocked by browser (user interaction required):",
-          error.message,
-        );
-        this.stopVisualizer();
-      });
-    } xs
-	this.audioPlayer.pause();
-        this.playPauseBtn.style.color = "#cecece";
-    this.updatePlaylistActiveState();
-    this.updateTrackInfo();
-  }
-
-  playNext() {
-    this.loadTrack(this.currentTrackIndex + 1);
-  }
-
-  updateTrackInfo() {
-    const trackName = this.getTrackName(this.playlist[this.currentTrackIndex]);
-    let status = "Ready to play";
-
-    if (this.audioPlayer.paused && this.audioPlayer.currentTime > 0) {
-      status = "Paused";
-    } else if (this.audioPlayer.stopped) {
-      status = "Stopped";
-    } else if (this.audioPlayer.seeking || this.audioPlayer.waiting) {
-      status = "Loading";
-    } else {
-      status = "Now Playing";
-    }
-
-    this.currentTrackInfo.textContent = `${status}: ${trackName.substring(0, 13)}`;
-  }
-
-  updatePlaylistActiveState() {
-    this.shadowRoot
-      .querySelectorAll("#playlist-list li")
-      .forEach((item, idx) => {
-        item.classList.toggle("active", idx === this.currentTrackIndex);
-      });
-  }
-
-  buildPlaylistUI() {
-    this.playlistList.innerHTML = "";
-    this.playlist.forEach((url, index) => {
-      const listItem = document.createElement("li");
-      listItem.textContent = this.getTrackName(url);
-      listItem.addEventListener("click", () => {
-        this.loadTrack(index);
-      });
-      this.playlistList.appendChild(listItem);
-    });
-  }
 }
-
 customElements.define("audio-playlist-player", AudioPlaylistPlayer);
