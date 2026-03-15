@@ -99,7 +99,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     if (!this.audioContext) {
       this.audioContext = new (window.AudioContext ||
         window.webkitAudioContext)();
-      this.audioPlayer.pause();
+      this.audioPlayer.paused === true;
       this.playPauseBtn.style.color = "#000000";
 
       this.analyser = this.audioContext.createAnalyser();
@@ -198,9 +198,10 @@ class AudioPlaylistPlayer extends HTMLElement {
         );
         this.stopVisualizer();
       });
-    } xs
-	this.audioPlayer.pause();
-        this.playPauseBtn.style.color = "#cecece";
+    }
+
+    this.audioPlayer.paused === true;
+    this.playPauseBtn.style.color = "#cecece";
     this.updatePlaylistActiveState();
     this.updateTrackInfo();
   }
