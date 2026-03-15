@@ -376,7 +376,9 @@ input[type=range]::-moz-range-thumb {
         );
         this.stopVisualizer();
       });
-    }
+    } xs
+	this.audioPlayer.pause();
+        this.playPauseBtn.style.color = "#cecece";
     this.updatePlaylistActiveState();
     this.updateTrackInfo();
   }
@@ -391,7 +393,7 @@ input[type=range]::-moz-range-thumb {
 
     if (this.audioPlayer.paused && this.audioPlayer.currentTime > 0) {
       status = "Paused";
-    } else if (this.audioPlayer.paused) {
+    } else if (this.audioPlayer.stopped) {
       status = "Stopped";
     } else if (this.audioPlayer.seeking || this.audioPlayer.waiting) {
       status = "Loading";
