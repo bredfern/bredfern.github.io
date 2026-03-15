@@ -159,7 +159,7 @@ class AudioPlaylistPlayer extends HTMLElement {
 
 #playlist-list {
     list-style: none;
-    width: 100%;
+    width: auto;
     padding: 0.5rem;
     max-height: 12.5rem;
     overflow-y: auto;
