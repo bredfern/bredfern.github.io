@@ -36,7 +36,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.seekSlider = this.shadowRoot.querySelector("#seek-slider");
     
     this.fontSettings = "62px sans-serif";
-    this.fontContent = "🎶";
+    this.fontContent = "";
     this.fontLeft = 160;
     this.fontTop = 60;
 
