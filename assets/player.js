@@ -76,7 +76,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.playPauseBtn.addEventListener("click", () => {
       if (this.audioPlayer.paused) {
         this.audioPlayer.play();
-        this.playPauseBtn.style.color = "#000";
+        this.playPauseBtn.style.color = "#000000";
         
       } else {
         this.audioPlayer.pause();
@@ -97,10 +97,9 @@ class AudioPlaylistPlayer extends HTMLElement {
 
   initAudioContext() {
     if (!this.audioContext) {
-      this.audioContext = new (window.AudioContext ||
-        window.webkitAudioContext)();
+      this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
       this.audioPlayer.paused === true;
-      this.playPauseBtn.style.color = "#000000";
+      this.playPauseBtn.style.color = "#cecece";
 
       this.analyser = this.audioContext.createAnalyser();
       this.analyser.fftSize = 256;
@@ -221,7 +220,11 @@ class AudioPlaylistPlayer extends HTMLElement {
     } else if (this.audioPlayer.seeking || this.audioPlayer.waiting) {
       status = "Loading";
     } else {
-      status = "Now Playing";
+	if (navigator.userActivation.isActive === true) {
+	    status = "Now Playing";
+	} else {
+	    status = "Paused";
+	}
     }
 
     this.currentTrackInfo.textContent = `${status}: ${trackName.substring(0, 13)}`;
