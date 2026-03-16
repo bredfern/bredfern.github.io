@@ -198,7 +198,7 @@ class AudioPlaylistPlayer extends HTMLElement {
         this.stopVisualizer();
       });
     } else {
-      this.audioPlayer.paused = true;
+      this.audioPlayer.pause();
       this.playPauseBtn.color = "#cecece";
     }
 
