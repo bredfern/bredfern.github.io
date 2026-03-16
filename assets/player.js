@@ -99,7 +99,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     if (!this.audioContext) {
       this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
       //this.audioPlayer.pause();
-      //this.playPauseBtn.style.color = "#cecece";
+      this.playPauseBtn.style.color = "#cecece";
 
       this.analyser = this.audioContext.createAnalyser();
       this.analyser.fftSize = 256;
