@@ -189,7 +189,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     const url = this.playlist[this.currentTrackIndex];
     this.audioPlayer.src = url;
     // Note: Playing may still fail if the browser requires user interaction first.
-    if (navigator.userActivation.isActive === true) {
+    if (navigator.userActivation.isActive) {
       this.audioPlayer.play().catch((error) => {
         console.warn(
           "Playback blocked by browser (user interaction required):",
