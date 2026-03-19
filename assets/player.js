@@ -188,20 +188,13 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.currentTrackIndex = index;
     const url = this.playlist[this.currentTrackIndex];
     this.audioPlayer.src = url;
-    // Note: Playing may still fail if the browser requires user interaction first.
-
-      this.audioPlayer.play().catch((error) => {
-        console.warn(
-          "Playback blocked by browser (user interaction required):",
-          error.message,
-        );
-        this.stopVisualizer();
-      });
-  
+    // Note: Playing may still fail if the browser requires user interaction first.      
+      if (navigator.userActivation.isActive) {
       this.audioPlayer.play();
       this.playPauseBtn.color = "#e2e2e2";
       this.updatePlaylistActiveState();
       this.updateTrackInfo();
+      }
   }
 
   playNext() {
