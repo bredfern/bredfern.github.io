@@ -198,12 +198,10 @@ class AudioPlaylistPlayer extends HTMLElement {
         this.stopVisualizer();
       });
   
-      this.audioPlayer.pause();
-      this.playPauseBtn.color = "#000000";
-    
-
-    this.updatePlaylistActiveState();
-    this.updateTrackInfo();
+      this.audioPlayer.play();
+      this.playPauseBtn.color = "#e2e2e2";
+      this.updatePlaylistActiveState();
+      this.updateTrackInfo();
   }
 
   playNext() {
