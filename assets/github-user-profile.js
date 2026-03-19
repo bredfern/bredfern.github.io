@@ -170,7 +170,6 @@ class GithubUserProfile extends HTMLElement {
                     margin: 1rem 0;
                     padding: 1rem 0;
                     border-top: 0.1rem solid #cecece;
-                    border-bottom: 0.1rem solid #cecece;
 
                 }
                 .stat-item { 
