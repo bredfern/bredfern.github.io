@@ -169,8 +169,6 @@ class GithubUserProfile extends HTMLElement {
                     justify-content: space-around;
                     margin: 1rem 0;
                     padding: 1rem 0;
-                    border-top: 0.1rem solid #cecece;
-
                 }
                 .stat-item { 
                   text-align: center; 
