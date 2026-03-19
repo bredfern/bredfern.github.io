@@ -192,9 +192,9 @@ class AudioPlaylistPlayer extends HTMLElement {
       if (navigator.userActivation.isActive) {
       this.audioPlayer.play();
       this.playPauseBtn.color = "#e2e2e2";
+      }
       this.updatePlaylistActiveState();
       this.updateTrackInfo();
-      }
   }
 
   playNext() {
@@ -231,7 +231,7 @@ class AudioPlaylistPlayer extends HTMLElement {
   }
 
   buildPlaylistUI() {
-    this.playlistList.innerHTML = "";
+    this.playlistList.innerHTML = "Press Play".;
     this.playlist.forEach((url, index) => {
       const listItem = document.createElement("li");
       listItem.textContent = this.getTrackName(url);
