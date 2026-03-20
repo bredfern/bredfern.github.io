@@ -215,7 +215,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     } else if (this.audioPlayer.seeking || this.audioPlayer.waiting) {
       status = "Loading";
     } else {
-      status = "Now Playing";
+      status = "Paused";
     }
 
     this.currentTrackInfo.textContent = `${status}: ${trackName.substring(0, 13)}`;
