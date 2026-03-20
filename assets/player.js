@@ -212,11 +212,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     } else if (this.audioPlayer.seeking || this.audioPlayer.waiting) {
       status = "Loading";
     } else {
-	if (navigator.userActivation.isActive === true) {
-	    status = "Now Playing";
-	} else {
-	    status = "Paused";
-	}
+      status = "Now Playing";
     }
 
     this.currentTrackInfo.textContent = `${status}: ${trackName.substring(0, 13)}`;
