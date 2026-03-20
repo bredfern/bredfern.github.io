@@ -98,7 +98,7 @@ class AudioPlaylistPlayer extends HTMLElement {
   initAudioContext() {
     if (!this.audioContext) {
       this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
-      //this.audioPlayer.pause();
+
       this.playPauseBtn.style.color = "#cecece";
 
       this.analyser = this.audioContext.createAnalyser();
@@ -190,8 +190,8 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.audioPlayer.src = url;
     // Note: Playing may still fail if the browser requires user interaction first.      
       if (navigator.userActivation.isActive) {
-      this.audioPlayer.play();
-      this.playPauseBtn.color = "#000000";
+      	this.audioPlayer.play();
+      	this.playPauseBtn.color = "#000000";
       } else {
       	this.audioPlayer.pause();
 	this.playPauseBtn.color = "#e2e2e2";
