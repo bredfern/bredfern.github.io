@@ -191,7 +191,10 @@ class AudioPlaylistPlayer extends HTMLElement {
     // Note: Playing may still fail if the browser requires user interaction first.      
       if (navigator.userActivation.isActive) {
       this.audioPlayer.play();
-      this.playPauseBtn.color = "#e2e2e2";
+      this.playPauseBtn.color = "#000000";
+      } else {
+      	this.audioPlayer.pause();
+	this.playPauseBtn.color = "#e2e2e2";
       }
       this.updatePlaylistActiveState();
       this.updateTrackInfo();
