@@ -99,8 +99,6 @@ class AudioPlaylistPlayer extends HTMLElement {
     if (!this.audioContext) {
       this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
 
-      this.playPauseBtn.style.color = "#cecece";
-
       this.analyser = this.audioContext.createAnalyser();
       this.analyser.fftSize = 256;
       const bufferLength = this.analyser.frequencyBinCount;
@@ -216,9 +214,13 @@ class AudioPlaylistPlayer extends HTMLElement {
       status = "Loading";
     } else {
       if (navigator.userActivation.isActive) {
-	    status = "Now Playing";
+	this.playPauseBtn.style.color = "#000000";
+	status = "Now Playing";
+	
       } else {
-	    status = "Paused";
+	status = "Paused";
+	this.playPauseBtn.style.color = "#cecece";
+	  
       }
     }
 
@@ -272,7 +274,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     margin-bottom: 0.5rem;
     margin-top: 0;
     height: 7.5rem;
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 #current-track-info {
