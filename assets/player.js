@@ -231,7 +231,7 @@ class AudioPlaylistPlayer extends HTMLElement {
   }
 
   buildPlaylistUI() {
-    this.playlistList.innerHTML = "Press Play".;
+    this.playlistList.innerHTML = "Press Play";
     this.playlist.forEach((url, index) => {
       const listItem = document.createElement("li");
       listItem.textContent = this.getTrackName(url);
