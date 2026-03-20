@@ -36,7 +36,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.seekSlider = this.shadowRoot.querySelector("#seek-slider");
     
     this.fontSettings = "62px sans-serif";
-    this.fontContent = "";
+    this.fontContent = "Press Play";
     this.fontLeft = 160;
     this.fontTop = 60;
 
@@ -125,7 +125,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     const HEIGHT = this.canvas.height;
     const bufferLength = this.dataArray.length;
 
-    this.canvasCtx.fillStyle = "yellow";
+    this.canvasCtx.fillStyle = "red";
     this.canvasCtx.fillRect(0, 0, WIDTH, HEIGHT);
 
     let barWidth = (WIDTH / bufferLength) * 2.5;
