@@ -125,7 +125,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     const HEIGHT = this.canvas.height;
     const bufferLength = this.dataArray.length;
 
-    this.canvasCtx.fillStyle = "#ffffff";
+    this.canvasCtx.fillStyle = "red";
     this.canvasCtx.fillRect(0, 0, WIDTH, HEIGHT);
 
     let barWidth = (WIDTH / bufferLength) * 2.5;
@@ -231,7 +231,7 @@ class AudioPlaylistPlayer extends HTMLElement {
   }
 
   buildPlaylistUI() {
-    this.playlistList.innerHTML = "Press Play";
+    this.playlistList.innerHTML = "";
     this.playlist.forEach((url, index) => {
       const listItem = document.createElement("li");
       listItem.textContent = this.getTrackName(url);
