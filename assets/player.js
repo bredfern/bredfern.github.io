@@ -36,10 +36,9 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.seekSlider = this.shadowRoot.querySelector("#seek-slider");
     
     this.fontSettings = "62px sans-serif";
-    this.fontContent = "HI";
+    this.fontContent = "";
     this.fontLeft = 160;
     this.fontTop = 60;
-
 
     this.currentTrackInfo = this.shadowRoot.querySelector("#current-track-info");
     this.volumeSlider = this.shadowRoot.querySelector("#volume-slider"); 
@@ -125,7 +124,7 @@ class AudioPlaylistPlayer extends HTMLElement {
 
     this.canvasCtx.fillStyle = "rgb(241, 16, 16)";
     this.canvasCtx.fillRect(0, 0, WIDTH, HEIGHT);
-
+    this.fontContent = "Press Play";
     let barWidth = (WIDTH / bufferLength) * 2.5;
     let barHeight;
     let x = 0;
@@ -417,7 +416,7 @@ input[type=range]::-moz-range-thumb {
 </style>
 <div class="player-container">
  <div id="custom-audio-player">
-   <canvas id="visualizer-canvas" width="400" height="80">Press Play to Start</canvas>
+   <canvas id="visualizer-canvas" width="400" height="80"></canvas>
    <label for="seek-slider" class="slider-label">Seek</label> 
    <input type="range" id="seek-slider" class="neon-text" min="0" value="0">
    <audio id="audio-player" autoplay="false" crossOrigin="anonymous"></audio>
