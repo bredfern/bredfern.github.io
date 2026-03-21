@@ -5,6 +5,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.currentTrackIndex = 0;
     this.playlist = [];
     this.fontContent = "Player";
+
     // Web Audio API properties
     this.audioContext = null;
     this.analyser = null;
@@ -33,7 +34,6 @@ class AudioPlaylistPlayer extends HTMLElement {
 
     this.audioPlayer = this.shadowRoot.querySelector("#audio-player");
     this.playlistList = this.shadowRoot.querySelector("#playlist-list");
-    this.seekSlider = this.shadowRoot.querySelector("#seek-slider");
     this.currentTrackInfo = this.shadowRoot.querySelector("#current-track-info");
     this.volumeSlider = this.shadowRoot.querySelector("#volume-slider"); 
     this.playPauseBtn = this.shadowRoot.querySelector("#play-pause-btn");
@@ -46,19 +46,6 @@ class AudioPlaylistPlayer extends HTMLElement {
     
     // The visualizer is started when the 'playing' event fires
     this.audioPlayer.addEventListener("playing", () => this.startVisualizer());
-    
-    this.audioPlayer.addEventListener('timeupdate', () => {
-        this.seekSlider.value = this.audioPlayer.currentTime;
-    });
-
-    this.audioPlayer.onloadedmetadata = () => {
-        this.seekSlider.max = this.audioPlayer.duration;
-    };
-
-
-    this.seekSlider.onchange = () => {
-        this.audioPlayer.currentTime = this.seekSlider.value;
-    };
 
     this.volumeSlider.onchange = () => {
         this.audioPlayer.volume = this.volumeSlider.value;
@@ -179,10 +166,12 @@ class AudioPlaylistPlayer extends HTMLElement {
     // Note: Playing may still fail if the browser requires user interaction first.      
       if (navigator.userActivation.isActive) {
       	this.audioPlayer.play();
-      	this.playPauseBtn.color = "#000000";
+      	this.playPauseBtn.innerHTML ='';
+        this.playPauseBtn.innerHTML = "‖";
       } else {
       	this.audioPlayer.pause();
-	      this.playPauseBtn.color = "#e2e2e2";
+	      this.playPauseBtn.innerHTML ='';
+        this.playPauseBtn.innerHTML = "▶︎";
       }
       this.updatePlaylistActiveState();
       this.updateTrackInfo();
@@ -204,11 +193,13 @@ class AudioPlaylistPlayer extends HTMLElement {
       status = "Loading";
     } else {
       if (navigator.userActivation.isActive) {
-	      this.playPauseBtn.style.color = "#000000";
 	      status = "Now Playing";
+        this.playPauseBtn.innerHTML ='';
+        this.playPauseBtn.innerHTML = "‖";
       } else {
 	      status = "Paused";
-	      this.playPauseBtn.style.color = "#cecece";
+        this.playPauseBtn.innerHTML ='';
+        this.playPauseBtn.innerHTML = "▶︎";
       }
     }
     this.currentTrackInfo.textContent = `${status}: ${trackName.substring(0, 13)}`;
@@ -271,7 +262,7 @@ class AudioPlaylistPlayer extends HTMLElement {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-
+  
 #current-track-info {
     text-align: center;
     margin: 0.5rem;
@@ -343,7 +334,7 @@ label {
     font-weight: bold;
 }
 
-#seek-slider, #volume-slider {
+#volume-slider {
     width: 100%;
     margin-bottom: 1rem;
     background: transparent;
@@ -408,12 +399,10 @@ input[type=range]::-moz-range-thumb {
 <div class="player-container">
  <div id="custom-audio-player">
    <canvas id="visualizer-canvas" width="400" height="80"></canvas>
-   <label for="seek-slider" class="slider-label">Seek</label> 
-   <input type="range" id="seek-slider" class="neon-text" min="0" value="0">
    <audio id="audio-player" autoplay="false" crossOrigin="anonymous"></audio>
    <label for="volume-slider" class="slider-label">Volume</label> 
    <input id="volume-slider" type="range" class="neon-text" min="0" max="1" step="0.01" value="1">
-   <button id="play-pause-btn">▶︎‖</button>
+   <button id="play-pause-btn">Click to Start</button>
    <div id="current-track-info">Ready to play...</div>
    <ul id="playlist-list"></ul>
  </div>
