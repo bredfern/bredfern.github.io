@@ -123,7 +123,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     const HEIGHT = this.canvas.height;
     const bufferLength = this.dataArray.length;
 
-    this.canvasCtx.fillStyle = "#cecece";
+    this.canvasCtx.fillStyle = "rgb(241, 16, 16)";
     this.canvasCtx.fillRect(0, 0, WIDTH, HEIGHT);
 
     let barWidth = (WIDTH / bufferLength) * 2.5;
@@ -192,7 +192,7 @@ class AudioPlaylistPlayer extends HTMLElement {
       	this.playPauseBtn.color = "#000000";
       } else {
       	this.audioPlayer.pause();
-	this.playPauseBtn.color = "#e2e2e2";
+	      this.playPauseBtn.color = "#e2e2e2";
       }
       this.updatePlaylistActiveState();
       this.updateTrackInfo();
@@ -214,16 +214,13 @@ class AudioPlaylistPlayer extends HTMLElement {
       status = "Loading";
     } else {
       if (navigator.userActivation.isActive) {
-	this.playPauseBtn.style.color = "#000000";
-	status = "Now Playing";
-	
+	      this.playPauseBtn.style.color = "#000000";
+	      status = "Now Playing";
       } else {
-	status = "Paused";
-	this.playPauseBtn.style.color = "#cecece";
-	  
+	      status = "Paused";
+	      this.playPauseBtn.style.color = "#cecece";
       }
     }
-
     this.currentTrackInfo.textContent = `${status}: ${trackName.substring(0, 13)}`;
   }
 
@@ -274,7 +271,15 @@ class AudioPlaylistPlayer extends HTMLElement {
     margin-bottom: 0.5rem;
     margin-top: 0;
     height: 7.5rem;
-    background-color: #ffffff;
+    background: linear-gradient(-45deg, #ff6b6b, #f7d794, #1dd1a1, #54a0ff);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 #current-track-info {
