@@ -261,7 +261,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     margin-bottom: 0.5rem;
     margin-top: 0;
     height: 7.5rem;
-    background: linear-gradient(-45deg, #A9A9A9, #DCDCDC, #F0FFF0, #D3D3D3);
+    background: linear-gradient(-45deg, #A9A9A9, #DCDCDC, #FFFFFF, #D3D3D3);
     background-size: 400% 400%;
     animation: gradientMove 15s ease infinite;
 }
