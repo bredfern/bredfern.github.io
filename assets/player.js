@@ -34,19 +34,11 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.audioPlayer = this.shadowRoot.querySelector("#audio-player");
     this.playlistList = this.shadowRoot.querySelector("#playlist-list");
     this.seekSlider = this.shadowRoot.querySelector("#seek-slider");
-    
-    this.fontSettings = "62px sans-serif";
-    this.fontContent = "";
-    this.fontLeft = 160;
-    this.fontTop = 60;
-
     this.currentTrackInfo = this.shadowRoot.querySelector("#current-track-info");
     this.volumeSlider = this.shadowRoot.querySelector("#volume-slider"); 
     this.playPauseBtn = this.shadowRoot.querySelector("#play-pause-btn");
     this.canvas = this.shadowRoot.querySelector("#visualizer-canvas");
     this.canvasCtx = this.canvas.getContext("2d");
-    this.canvasCtx.font = this.fontSettings;
-    this.canvasCtx.fillText(this.fontContent, this.fontLeft, this.fontiTop);
 
     // Event listeners
     this.audioPlayer.addEventListener("ended", this.playNext.bind(this));
@@ -122,7 +114,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     const HEIGHT = this.canvas.height;
     const bufferLength = this.dataArray.length;
 
-    this.canvasCtx.fillStyle = "rgb(241, 16, 16)";
+    this.canvasCtx.fillStyle = "#ffffff";
     this.canvasCtx.fillRect(0, 0, WIDTH, HEIGHT);
     let barWidth = (WIDTH / bufferLength) * 2.5;
     let barHeight;
