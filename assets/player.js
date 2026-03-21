@@ -417,7 +417,7 @@ input[type=range]::-moz-range-thumb {
 </style>
 <div class="player-container">
  <div id="custom-audio-player">
-   <canvas id="visualizer-canvas" width="400" height="80"></canvas>
+   <canvas id="visualizer-canvas" width="400" height="80">Press Play to Start</canvas>
    <label for="seek-slider" class="slider-label">Seek</label> 
    <input type="range" id="seek-slider" class="neon-text" min="0" value="0">
    <audio id="audio-player" autoplay="false" crossOrigin="anonymous"></audio>
