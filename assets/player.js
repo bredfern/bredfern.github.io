@@ -4,7 +4,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.attachShadow({ mode: "open" });
     this.currentTrackIndex = 0;
     this.playlist = [];
-
+    this.fontContent = "Player";
     // Web Audio API properties
     this.audioContext = null;
     this.analyser = null;
@@ -124,7 +124,6 @@ class AudioPlaylistPlayer extends HTMLElement {
 
     this.canvasCtx.fillStyle = "rgb(241, 16, 16)";
     this.canvasCtx.fillRect(0, 0, WIDTH, HEIGHT);
-    this.fontContent = "Press Play";
     let barWidth = (WIDTH / bufferLength) * 2.5;
     let barHeight;
     let x = 0;
