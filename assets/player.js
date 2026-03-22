@@ -399,7 +399,7 @@ input[type=range]::-moz-range-thumb {
 <div class="player-container">
  <div id="custom-audio-player">
    <canvas id="visualizer-canvas" width="400" height="80"></canvas>
-   <audio id="audio-player" autoplay="false" crossOrigin="anonymous"></audio>
+   <audio id="audio-player"></audio>
    <label for="volume-slider" class="slider-label">Volume</label> 
    <input id="volume-slider" type="range" class="neon-text" min="0" max="1" step="0.01" value="1">
    <button id="play-pause-btn">Click to Start</button>
