@@ -139,6 +139,7 @@ a:hover {
     display: inline;
     width: 2rem;
     height: auto;
+    margin-right: 0.875rem;
 }
 
 nav {
