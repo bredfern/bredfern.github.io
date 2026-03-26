@@ -134,9 +134,9 @@ class UltraGallery extends HTMLElement {
     this.shadowRoot.innerHTML = `
       <style>
         :host { display: block; background: #cecece; color: white; padding: 0.25rem 0; font-family: system-ui; border-radius: 1rem}
-        .gallery-container { perspective: 2000px; height: auto; display: flex; align-items: center; justify-content: center; }
-        .stage { width: 440px; height: 320px; position: relative; transform-style: preserve-3d; transition: transform 1s cubic-bezier(0.2, 0, 0, 1); }
-        ::slotted(*) { width: 440px; height: 320px; border-radius: 20px; object-fit: cover; }
+        .gallery-container { perspective: 2000px; height: 21rem; display: flex; align-items: center; justify-content: center; }
+        .stage { width: 440px; height: 290px; position: relative; transform-style: preserve-3d; transition: transform 1s cubic-bezier(0.2, 0, 0, 1); }
+        ::slotted(*) { width: 440px; height: 260px; margin-top: 1rem; border-radius: 20px; object-fit: cover; }
         
         /* Lightbox Styles */
         .lightbox {
@@ -150,7 +150,7 @@ class UltraGallery extends HTMLElement {
         .lightbox.active .lightbox-content { transform: scale(1); }
         .lightbox-content ::slotted(*), .lightbox-content * { width: auto; max-height: 80vh; border-radius: 12px; box-shadow: 0 0 50px rgba(255,255,255,0.1); }
         
-        .dots-container { display: flex; justify-content: center; gap: 12px; margin-top: 30px; }
+        .dots-container { display: flex; justify-content: center; gap: 12px; margin-top: 0.25rem; }
         .dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.3); cursor: pointer; transition: 0.3s; }
         .dot.active { background: #fff; width: 24px; border-radius: 10px; }
       </style>
@@ -159,7 +159,6 @@ class UltraGallery extends HTMLElement {
       </div>
       <div class="dots-container"></div>
       <div class="lightbox"><div class="lightbox-content"></div></div>
-      <br>
     `;
   }
 }
