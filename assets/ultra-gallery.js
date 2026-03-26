@@ -118,7 +118,7 @@ class UltraGallery extends HTMLElement {
       <style>
         :host {
           display: block;
-          background: #050505;
+          background: transparent;
           color: white;
           padding: 80px 0;
           --accent: #0071e3;
