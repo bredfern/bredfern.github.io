@@ -120,7 +120,7 @@ class UltraGallery extends HTMLElement {
           display: block;
           background: transparent;
           color: white;
-          padding: 0.5rem 0;
+          padding: 0.1rem 0;
           --accent: #0071e3;
         }
         .gallery-container {
@@ -131,7 +131,7 @@ class UltraGallery extends HTMLElement {
           justify-content: center;
         }
         .stage {
-          width: 15rem;
+          width: 25rem;
           height: 20rem;
           position: relative;
           transform-style: preserve-3d;
