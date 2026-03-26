@@ -147,8 +147,8 @@ class UltraGallery extends HTMLElement {
         .dots-container {
           display: flex;
           justify-content: center;
-          gap: 0.75rem;
-          margin-top: 0.5rem;
+          gap: 0;
+          margin-top: 0.25rem;
         }
         .dot {
           width: 0.5rem;
