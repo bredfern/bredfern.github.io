@@ -139,12 +139,12 @@ a:hover {
     display: inline;
     width: 1.6rem;
     height: auto;
-    margin-right: 0.875rem;
+    margin-right: 0.805rem;
 }
 
 nav {
   position: absolute;
-  right: 0;
+  right: 0.5rem;
   top: 2rem;
 }
 
