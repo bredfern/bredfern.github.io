@@ -41,15 +41,14 @@
             <main>
                <div id="content">
                  <div class="tabset">
-  <!-- Tab 1 -->
   <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
   <label for="tab1">Home</label>
-  <!-- Tab 2 -->
   <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
   <label for="tab2">Code</label>
-  <!-- Tab 3 -->
   <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
-  <label for="tab3">Portfolio</label>
+  <label for="tab3">Art</label>
+   <input type="radio" name="tabset" id="tab4" aria-controls="punkies">
+  <label for="tab4">Music</label>
 
   <div class="tab-panels">
     <section id="marzen" class="tab-panel">
@@ -78,11 +77,20 @@
 </ultra-gallery>
 
     </section>
+    <section id="punkies" class="tab-panel">
+<audio-playlist-player playlist='[
+"/assets/jeruduo.mp3",
+"/assets/roadx.mp3",
+"/assets/mrr.mp3",
+"/assets/vorst.mp3"
+]'></audio-playlist-player>
+    </section>
   </div>
 </div>
 </main>
 <footer class="centered">&#169; 2026 Brian Redfern</footer>
 </div>
+<script src="/assets/player.js" defer></script>
 <script src="/assets/ultra-gallery.js" defer></script>
 <script src="/assets/github-user-profile.js" defer></script>
 </body>
