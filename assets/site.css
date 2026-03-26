@@ -16,10 +16,10 @@ body {
     margin: 0;
     width: 100%;
     font-family: "Nunito Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
     "wdth" 100,
     "YTLC" 500;
 }
@@ -28,12 +28,12 @@ body {
  CSS for the main interaction
 */
 .tabset > input[type="radio"] {
-  position: absolute;
-  left: -200vw;
+    position: absolute;
+    left: -200vw;
 }
 
 .tabset .tab-panel {
-  display: none;
+    display: none;
 }
 
 .tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
@@ -42,7 +42,7 @@ body {
 .tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
 .tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
 .tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
-  display: block;
+    display: block;
 }
 
 /*
@@ -50,67 +50,67 @@ body {
 */
 
 .tabset > label {
-  position: relative;
-  display: inline-block;
-  padding: 0.9rem 0.9rem 1.5rem;
-  border: 0.06rem solid transparent;
-  border-bottom: 0;
-  cursor: pointer;
-  font-weight: 600;
+    position: relative;
+    display: inline-block;
+    padding: 0.9rem 0.9rem 1.5rem;
+    border: 0.06rem solid transparent;
+    border-bottom: 0;
+    cursor: pointer;
+    font-weight: 600;
 }
 
 .tabset > label::after {
-  content: "";
-  position: absolute;
-  left: 0.9rem;
-  bottom: 10px;
-  width: 22px;
-  height: 4px;
-  background: #8d8d8d;
+    content: "";
+    position: absolute;
+    left: 0.9rem;
+    bottom: 10px;
+    width: 22px;
+    height: 4px;
+    background: #8d8d8d;
 }
 
 input:focus-visible + label {
-  outline: 2px solid #000;
-  border-radius: 3px;
+    outline: 2px solid #000;
+    border-radius: 3px;
 }
 
 .tabset > label:hover,
 .tabset > input:focus + label,
 .tabset > input:checked + label {
-  color: #000;
+    color: #000;
 }
 
 .tabset > label:hover::after,
 .tabset > input:focus + label::after,
 .tabset > input:checked + label::after {
-  background: #8aa399;
+    background: #8aa399;
 }
 
 .tabset > input:checked + label {
-  border-color: #949695;
-  border-bottom: 0.06rem solid #000;
-  margin-bottom: -0.06rem;
+    border-color: #949695;
+    border-bottom: 0.06rem solid #000;
+    margin-bottom: -0.06rem;
 }
 
 .tab-panel {
-  padding: 10px 0;
+    padding: 10px 0;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .tabset {
-  max-width: 65em;
+    max-width: 65em;
 }
 
 #content {
-  padding: 1rem;
-  max-width: 40rem;
-  margin-left: auto;
-  margin-right: auto;
+    padding: 1rem;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a,
@@ -137,7 +137,7 @@ a:hover {
 
 .icon {
     display: inline;
-    width: 2rem;
+    width: 1.6rem;
     height: auto;
     margin-right: 0.875rem;
 }
@@ -145,7 +145,7 @@ a:hover {
 nav {
   position: absolute;
   right: 0;
-  top: 1rem;
+  top: 2rem;
 }
 
 .no-decor, h1 a {
