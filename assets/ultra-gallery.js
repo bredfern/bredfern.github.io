@@ -120,39 +120,39 @@ class UltraGallery extends HTMLElement {
           display: block;
           background: transparent;
           color: white;
-          padding: 80px 0;
+          padding: 0.5rem 0;
           --accent: #0071e3;
         }
         .gallery-container {
-          perspective: 2000px;
-          height: 450px;
+          perspective: 125rem;
+          height: 28rem;
           display: flex;
           align-items: center;
           justify-content: center;
         }
         .stage {
-          width: 240px;
-          height: 320px;
+          width: 15rem;
+          height: 20rem;
           position: relative;
           transform-style: preserve-3d;
           transition: transform 1s cubic-bezier(0.2, 0, 0, 1);
         }
         ::slotted(*) {
-          width: 240px;
-          height: 320px;
-          border-radius: 18px;
+          width: 15rem;
+          height: 20rem;
+          border-radius: 1.125rem;
           object-fit: cover;
-          box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+          box-shadow: 0 1.25rem 2.5rem rgba(0,0,0,0.5);
         }
         .dots-container {
           display: flex;
           justify-content: center;
-          gap: 12px;
-          margin-top: 40px;
+          gap: 0.75rem;
+          margin-top: 0.5rem;
         }
         .dot {
-          width: 8px;
-          height: 8px;
+          width: 0.5rem;
+          height: 0.5rem;
           border-radius: 50%;
           background: rgba(255,255,255,0.2);
           cursor: pointer;
@@ -160,8 +160,8 @@ class UltraGallery extends HTMLElement {
         }
         .dot.active {
           background: white;
-          width: 24px;
-          border-radius: 10px;
+          width: 1.5rem;
+          border-radius: 0.625rem;
         }
       </style>
       <div class="gallery-container">
