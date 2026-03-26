@@ -134,7 +134,7 @@ class UltraGallery extends HTMLElement {
     this.shadowRoot.innerHTML = `
       <style>
         :host { display: block; background: #cecece; color: white; padding: 0.25rem 0; font-family: system-ui; border-radius: 1rem}
-        .gallery-container { perspective: 2000px; height: 500px; display: flex; align-items: center; justify-content: center; }
+        .gallery-container { perspective: 2000px; height: 400px; display: flex; align-items: center; justify-content: center; }
         .stage { width: 440px; height: 320px; position: relative; transform-style: preserve-3d; transition: transform 1s cubic-bezier(0.2, 0, 0, 1); }
         ::slotted(*) { width: 440px; height: 320px; border-radius: 20px; object-fit: cover; }
         
