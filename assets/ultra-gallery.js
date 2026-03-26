@@ -131,14 +131,14 @@ class UltraGallery extends HTMLElement {
           justify-content: center;
         }
         .stage {
-          width: 25rem;
+          width: 100%;
           height: 20rem;
           position: relative;
           transform-style: preserve-3d;
           transition: transform 1s cubic-bezier(0.2, 0, 0, 1);
         }
         ::slotted(*) {
-          width: 15rem;
+          width: 100%;
           height: 20rem;
           border-radius: 1.125rem;
           object-fit: cover;
