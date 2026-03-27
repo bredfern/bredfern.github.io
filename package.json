@@ -17,11 +17,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
+    "preview": "vite preview"
   },
-  "dependencies": {
-    "http-server": "^14.1.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "vite": "^8.0.3"
   }
