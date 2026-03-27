@@ -104,6 +104,7 @@ class AudioPlaylistPlayer extends HTMLElement {
 
     this.canvasCtx.fillStyle = "#ffffff";
     this.canvasCtx.fillRect(0, 0, WIDTH, HEIGHT);
+  
     let barWidth = (WIDTH / bufferLength) * 2.5;
     let barHeight;
     let x = 0;
@@ -255,6 +256,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     height: 7.5rem;
     background: linear-gradient(-45deg, #000000, #DCDCDC, #FFFFFF, #D3D3D3);
     background-size: 400% 400%;
+    background-image: url(/assets/clouds.jpg);
     animation: gradientMove 15s ease infinite;
 }
 
@@ -389,7 +391,7 @@ input[type=range]::-moz-range-track {
 input[type=range]::-moz-range-thumb {
   box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0 0 0.1rem #0d0d0d;
   border: 0.1rem solid #000000;
-  height: 1rem;
+  height: 2rem;
   width: 0.5rem;
   border-radius: 0.25rem;
   background: #ffffff;
