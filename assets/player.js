@@ -185,6 +185,11 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.playPauseBtn.innerHTML = "▶︎";
   }
 
+  runPlayer() {
+    this.playPauseBtn.innerHTML ='';
+    this.playPauseBtn.innerHTML = "‖";
+  }
+
   updateTrackInfo() {
     const trackName = this.getTrackName(this.playlist[this.currentTrackIndex]);
     let status = "Ready to play";
@@ -198,11 +203,10 @@ class AudioPlaylistPlayer extends HTMLElement {
     } else {
       if (navigator.userActivation.isActive) {
 	      status = "Now Playing";
-        this.playPauseBtn.innerHTML ='';
-        this.playPauseBtn.innerHTML = "‖";
+          this.runPlayer();
       } else {
 	      status = "Paused";
-          pausePlayer();
+          this.pausePlayer();
       }
     }
     this.currentTrackInfo.textContent = `${status}: ${trackName.substring(0, 13)}`;
