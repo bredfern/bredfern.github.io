@@ -1,90 +1,85 @@
 <!doctype html>
 <html lang="en" class="h-100">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Brian Redfern - composer and developer.">
-        <link rel="shortcut icon" href="/assets/favicon.ico">
-        <title>The website of web developer/composer/artist Brian Redfern.</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" rel="preload" as="style" href="assets/site.css">
-    </head>
-    <body>
-        <div class="container">
-            <header>
-             <img src="/assets/red.svg" id="logo" alt="REDFERN">
-              <nav>
-                <a href="https://github.com/bredfern" class="no-decor">
-                  <picture>
-                    <img src="/assets/github.svg" class="icon" alt="github">
-                  </picture>
-                </a>
-                <a href="https://soundcloud.com/brianredfern" class="no-decor">
-                  <picture>
-                    <img src="/assets/soundcloud.svg"  class="icon" alt="soundcloud">
-                  </picture>
-                </a>
-                 <a href="https://www.youtube.com/@brianredfern" class="no-decor">
-                  <picture>
-                    <img src="/assets/youtube.svg"  class="icon" alt="youtube">
-                  </picture>
-                </a>
-                <a href="https://linkedin.com/in/bredfern" class="no-decor">
-                  <picture>
-                    <img src="/assets/linkedin.svg"  class="icon" alt="linkedin">
-                  </picture>
-                </a>
-                </nav>
-            </header>
-            <main>
-               <div id="content">
-                 <div class="tabset">
-  <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
-  <label for="tab1">Home</label>
-  <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
-  <label for="tab2">Code</label>
-  <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
-  <label for="tab3">Art</label>
-   <input type="radio" name="tabset" id="tab4" aria-controls="punkies">
-  <label for="tab4">Music</label>
-
-  <div class="tab-panels">
-    <section id="marzen" class="tab-panel">
-      <h1>Hello, World</h1>
-     <p> 
-      I am a senior level full stack web developer with tons of LAMP and now I make heavy use of standards based web components to enable advanced client side interactivity. On this site I do not even use any build for the js code to show just what can be done with a completely hand written single page app using nothing but web standards.
-     </p>
-     <p>
-     Check me out on <a href="https://soundcloud.com/brianredfern" target="new">Soundcloud</a> to hear more of my music. To listen to my guitar, check out my <a href="https://youtube.com/@brianredfern">Youtube channel</a>. You can also hear my music on the sound track for the linux video game Chromium BSU. To read more about my background or to contact me, look me up on <a href="https://linkedin.com/in/bredfern" target="new">Linkedin</a>.
-     </p>
-    </section>
-    <section id="rauchbier" class="tab-panel">
-      <github-user-profile></github-user-profile>
-    </section>
-    <section id="dunkles" class="tab-panel">
-      <ultra-gallery>
-        <img src="/assets/cat.jpg" alt="1">
-        <img src="/assets/mushroom.jpg" alt="2">
-        <img src="/assets/rainbow.jpg" alt="3">
-        <img src="/assets/devil.jpg" alt="4">
-	<img src="/assets/car.jpg" alt="5">
-	<img src="/assets/totem.jpg" alt="6">
-      </ultra-gallery>
-    </section>
-    <section id="punkies" class="tab-panel">
-      <audio-playlist-player playlist='[
-       "/assets/jeruduo.mp3",
-       "/assets/roadx.mp3",
-       "/assets/mrr.mp3",
-       "/assets/vorst.mp3"]'>
-      </audio-playlist-player>
-    </section>
-  </div>
-</div>
-</main>
-<footer class="centered">&#169; 2026 Brian Redfern</footer>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The website of Brian Redfern.</title>
+  <meta name="description" content="Brian Redfern - composer and developer.">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" rel="preload" as="style" href="assets/site.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <img src="/assets/red.svg" id="logo" alt="REDFERN">
+    <nav>
+      <a href="https://github.com/bredfern" target="new" class="no-decor">
+      <picture>
+        <img src="/assets/github.svg" class="icon" alt="github">
+      </picture>
+      </a>
+      <a href="https://soundcloud.com/brianredfern" target="new" class="no-decor">
+      <picture>
+        <img src="/assets/soundcloud.svg"  class="icon" alt="soundcloud">
+      </picture>
+      </a>
+      <a href="https://www.youtube.com/@brianredfern" target="new" class="no-decor">
+        <picture>
+          <img src="/assets/youtube.svg"  class="icon" alt="youtube">
+        </picture>
+      </a>
+      <a href="https://linkedin.com/in/bredfern" target="new" class="no-decor">
+      <picture>
+        <img src="/assets/linkedin.svg"  class="icon" alt="linkedin">
+      </picture>
+      </a>
+    </nav>
+  </header>
+  <main>
+    <div id="content">
+      <div class="tabset">
+        <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+        <label for="tab1">Home</label>
+        <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+        <label for="tab2">Code</label>
+        <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+        <label for="tab3">Art</label>
+        <input type="radio" name="tabset" id="tab4" aria-controls="punkies">
+        <label for="tab4">Music</label>
+        <div class="tab-panels">
+          <section id="marzen" class="tab-panel">
+            <h1>Hello, World</h1>
+            <p>
+              I am a senior level full stack web developer with tons of LAMP and now I make heavy use of standards based web components to enable advanced client side interactivity. On this site I do not even use any build for the js code to show just what can be done with a completely hand written single page app using nothing but web standards. Like many other engineers I orginally started in music as a guitarist, dj and producer in the 1990s. Later I went on to write the sound track for the video game, <a href="https://en.wikipedia.org/wiki/Chromium_B.S.U." target="new">Chromium BSU</a>. I am also a visual artist but currently I am rolling all these into my first commercial indie game.
+            </p>
+          </section>
+          <section id="rauchbier" class="tab-panel">
+            <github-user-profile></github-user-profile>
+          </section>
+          <section id="dunkles" class="tab-panel">
+            <ultra-gallery>
+              <img src="/assets/cat.webp" alt="1">
+              <img src="/assets/robot.webp" alt="2">
+              <img src="/assets/argue.webp" alt="3">
+              <img src="/assets/devil.webp" alt="4">
+              <img src="/assets/alien.webp" alt="5">
+            </ultra-gallery>
+          </section>
+          <section id="punkies" class="tab-panel">
+            <audio-playlist-player playlist='[
+              "/assets/roadx.mp3",
+              "/assets/jeruduo.mp3",
+              "/assets/mrr.mp3",
+              "/assets/vorst.mp3"]'>
+            </audio-playlist-player>
+          </section>
+        </div>
+      </div>
+  </main>
+  <footer class="centered">&#169; 2026 Brian Redfern</footer>
 </div>
 <script src="/assets/player.js" defer></script>
 <script src="/assets/ultra-gallery.js" defer></script>

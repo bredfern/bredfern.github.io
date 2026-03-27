@@ -1,3 +1,4 @@
+
 class AudioPlaylistPlayer extends HTMLElement {
   constructor() {
     super();
@@ -46,10 +47,6 @@ class AudioPlaylistPlayer extends HTMLElement {
     
     // The visualizer is started when the 'playing' event fires
     this.audioPlayer.addEventListener("playing", () => this.startVisualizer());
-
-    this.volumeSlider.onchange = () => {
-        this.audioPlayer.volume = this.volumeSlider.value;
-    }
 
     this.playPauseBtn.addEventListener("click", () => {
       if (this.audioPlayer.paused) {
@@ -183,6 +180,11 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.loadTrack(this.currentTrackIndex + 1);
   }
 
+  pausePlayer() {
+    this.playPauseBtn.innerHTML ='';
+    this.playPauseBtn.innerHTML = "▶︎";
+  }
+
   updateTrackInfo() {
     const trackName = this.getTrackName(this.playlist[this.currentTrackIndex]);
     let status = "Ready to play";
@@ -200,8 +202,7 @@ class AudioPlaylistPlayer extends HTMLElement {
         this.playPauseBtn.innerHTML = "‖";
       } else {
 	      status = "Paused";
-        this.playPauseBtn.innerHTML ='';
-        this.playPauseBtn.innerHTML = "▶︎";
+          pausePlayer();
       }
     }
     this.currentTrackInfo.textContent = `${status}: ${trackName.substring(0, 13)}`;
@@ -254,16 +255,10 @@ class AudioPlaylistPlayer extends HTMLElement {
     margin-bottom: 0.5rem;
     margin-top: 0;
     height: 7.5rem;
-    background: linear-gradient(-45deg, #000000, #DCDCDC, #FFFFFF, #D3D3D3);
-    background-size: 400% 400%;
-    background-image: url(/assets/clouds.jpg);
-    animation: gradientMove 15s ease infinite;
-}
-
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+    background-image: url(/assets/bars.webp);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
 }
   
 #current-track-info {
@@ -328,7 +323,6 @@ class AudioPlaylistPlayer extends HTMLElement {
     cursor: pointer;
     width: auto;
     height: 3rem;
-    margin-top: 1rem;
     width: 100%;
 }
 
@@ -336,75 +330,11 @@ label {
     color: #000000;
     font-weight: bold;
 }
-
-#volume-slider {
-    width: 100%;
-    margin-bottom: 1rem;
-    background: transparent;
-}
-
-.slider-label {
-  color: #000000;
-  font-size 120%;
-}
-
-input[type=range] {
-  -webkit-appearance: none;
-  margin: 0.5rem 0;
-  width: 100%;
-}
-input[type=range]:focus {
-  outline: none;
-}
-input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 0.1rem;
-  cursor: pointer;
-  box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0 0 0.1rem #0d0d0d;
-  background: #000000;
-  border-radius: 0.25rem;
-  border: 0.1rem solid #010101;
-}
-input[type=range]::-webkit-slider-thumb {
-  box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0 0 0.1rem #0d0d0d;
-  border: 0.1rem solid #000000;
-  height: 1rem;
-  width: 0.5rem;
-  border-radius: 0.25rem;
-  background: #ffffff;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -0.5rem;
-}
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #ffffff;
-}
-input[type=range]::-moz-range-track {
-  width: 100%;
-  height: 0.5rem;
-  cursor: pointer;
-  box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0 0 0.1rem #0d0d0d;
-  background: #ffffff;
-  border-radius: 0.25rem;
-  border: 0.1rem solid #010101;
-}
-input[type=range]::-moz-range-thumb {
-  box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0 0 0.1rem #0d0d0d;
-  border: 0.1rem solid #000000;
-  height: 2rem;
-  width: 0.5rem;
-  border-radius: 0.25rem;
-  background: #ffffff;
-  cursor: pointer;
-}
-
 </style>
 <div class="player-container">
  <div id="custom-audio-player">
    <canvas id="visualizer-canvas" width="400" height="80"></canvas>
    <audio id="audio-player"></audio>
-   <label for="volume-slider" class="slider-label">Volume</label> 
-   <input id="volume-slider" type="range" class="neon-text" min="0" max="1" step="0.01" value="1">
    <button id="play-pause-btn">Click to Start</button>
    <div id="current-track-info">Ready to play...</div>
    <ul id="playlist-list"></ul>
