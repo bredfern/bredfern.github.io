@@ -54,11 +54,12 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.playPauseBtn.addEventListener("click", () => {
       if (this.audioPlayer.paused) {
         this.audioPlayer.play();
-        this.playPauseBtn.style.color = "#000000";
-        
+        this.playPauseBtn.innerHTML ='';
+        this.playPauseBtn.innerHTML = "‖";
       } else {
         this.audioPlayer.pause();
-        this.playPauseBtn.style.color = "#cecece";
+        this.playPauseBtn.innerHTML ='';
+        this.playPauseBtn.innerHTML = "▶︎";
       }
     });
 
