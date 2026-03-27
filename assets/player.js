@@ -102,7 +102,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     const HEIGHT = this.canvas.height;
     const bufferLength = this.dataArray.length;
 
-    this.canvasCtx.fillStyle = "#ffffff";
+    this.canvasCtx.fillStyle = "transparent";
     this.canvasCtx.fillRect(0, 0, WIDTH, HEIGHT);
   
     let barWidth = (WIDTH / bufferLength) * 2.5;
