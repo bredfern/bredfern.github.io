@@ -174,10 +174,10 @@ footer {
     bottom: 0;
     height: auto;
     font-size: 1.2rem;
-    opacity: 0.5;
     width: 100%;
     color: #000000;
-    background-color: #8cbde1;
+    border-top: solid 0.25rem #000000;
+    background-color: #ffffff;
     text-align: center;
     position: fixed;
 }
