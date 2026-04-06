@@ -156,15 +156,7 @@ header {
     height: auto;
     padding: 0.75rem;
     width: 100%;
-    background: linear-gradient(-45deg, #000000, #DCDCDC, #FFFFFF, #D3D3D3);
-    background-size: 400% 400%;
-    animation: gradientMove 15s ease infinite;
-}
-
-@keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    background-color: #cececece;
 }
 
 footer {
