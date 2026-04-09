@@ -137,9 +137,8 @@ a:hover {
 
 .icon {
     display: inline;
-    width: 2.5rem;
-    height: 2.5rem;
-    height: auto;
+    width: 2rem;
+    height: 2rem;
 }
 
 nav {
