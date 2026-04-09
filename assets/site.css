@@ -116,39 +116,39 @@ input:focus-visible + label {
 a,
 a:visited,
 a:active {
-  color: #000;
-  text-decoration: underline;
+    color: #000;
+    text-decoration: underline;
 }
 
 #logo {
-  border: none;
-  width: 12rem;
-  height: auto;
+    border: none;
+    width: 12rem;
+    height: auto;
 }
 
 a:hover {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .container {
-  width: 100%;
-  min-height: 100vh;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .icon {
-    display: inline;
-    width: 1.4rem;
-    height: 1.4rem;
+      display: inline;
+      width: 1.4rem;
+      height: 1.4rem;
 }
 
 nav {
-  position: absolute;
-  right: 1.1rem;
-  top: 2rem;
+    position: absolute;
+    right: 1.1rem;
+    top: 2rem;
 }
 
 .no-decor, h1 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 header {
@@ -173,7 +173,6 @@ footer {
 }
 
 @media (max-width: 48rem) {
-    
     #content {
 	width: 100%;
     }
