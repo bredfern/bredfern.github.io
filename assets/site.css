@@ -2,6 +2,18 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #121212;
+        --text-color: #ffffff;
+    }
+}
+
 html { 
     min-height: 100%;
     padding: 0;
@@ -10,8 +22,8 @@ html {
 }
 
 body {
-    background: #ffffff;
-    color: #000;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     padding: 0;
     margin: 0;
     width: 100%;
