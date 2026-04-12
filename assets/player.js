@@ -245,6 +245,10 @@ class AudioPlaylistPlayer extends HTMLElement {
   border-radius: 0.25rem;
 }
 
+a {
+color: red;
+}
+
 .player-container {
     padding: 0;
     margin-top: 0;
@@ -304,7 +308,6 @@ class AudioPlaylistPlayer extends HTMLElement {
 }
 
 #playlist-list li.active {
-    background-color: #cecece;
     color: #000000;
     font-weight: bold;
 }
