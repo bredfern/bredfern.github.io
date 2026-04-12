@@ -23,6 +23,16 @@ body {
     "YTLC" 500;
 }
 
+button {
+    color: #000000;
+    background: transparent;
+    padding: 0.15rem;
+    font-size: 1.8rem;
+    width: auto;
+    height: auto;
+    border: none;
+}
+
 .dark-mode {
     background-color: #000000;
     color: #ffffff;
