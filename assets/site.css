@@ -47,32 +47,6 @@ button {
     border: none;
 }
 
-.dark-mode {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-.dark-mode a {
-    color: #ffffff;
-}
-
-.dark-mode .tabset > input:checked + label {
-    color: #ffffff;
-}
-
-.dark-mode .tabset > label:hover,
-.tabset > input:focus + label,
-.tabset > input:checked + label {
-    color: #ffffff;
-}
-
-.dark-mode .tabset > input:checked + label {
-    border-color: #949695;
-    border-bottom: 0.06rem solid #fff;
-    margin-bottom: -0.06rem;
-}
-
-
 /*
  CSS for the main interaction
 */
@@ -102,7 +76,7 @@ button {
     position: relative;
     display: inline-block;
     padding: 0.9rem 0.9rem 1.5rem;
-    border: 0.06rem solid transparent;
+    border: 0.06rem solid color: var(--text-color);
     border-bottom: 0;
     cursor: pointer;
     font-weight: 600;
@@ -118,7 +92,7 @@ button {
 }
 
 input:focus-visible + label {
-    outline: 2px solid #000;
+    outline: 2px solid color: var(--text-color);
     border-radius: 3px;
 }
 
@@ -135,7 +109,7 @@ input:focus-visible + label {
 }
 
 .tabset > input:checked + label {
-    border-color: #949695;
+    border-color: color: var(--text-color);
     border-bottom: 0.06rem solid #000;
     margin-bottom: -0.06rem;
 }
@@ -225,5 +199,4 @@ footer {
 	width: 100%;
     }
 }
-
 
