@@ -12,12 +12,6 @@
   --text: #ffffff;
 }
 
-:root.dark a {
-  --bg: #000000;
-  --text: #ffffff;
-}
-
-
 /* Dark Mode override */
 @media (prefers-color-scheme: dark) {
   :root {
