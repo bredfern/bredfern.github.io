@@ -310,7 +310,7 @@ color: red;
 }
 
 #playlist-list li.active {
-    color: #000000;
+    color: #ffffff;
     font-weight: bold;
 }
 
