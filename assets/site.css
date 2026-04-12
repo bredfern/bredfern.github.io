@@ -3,15 +3,26 @@
 }
 
 :root {
-  --bg-color: #ffffff;
-  --text-color: #000000;
+  --bg: #ffffff;
+  --text: #000000;
 }
+
+:root.dark {
+  --bg: #0000000;
+  --text: #ffffff;
+}
+
+:root.dark a {
+  --bg: #000000;
+  --text: #ffffff;
+}
+
 
 /* Dark Mode override */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #000000;
-    --text-color: #ffffff;
+    --bg: #000000;
+    --text: #ffffff;
   }
 }
 
@@ -23,8 +34,8 @@ html {
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color: var(--bg);
+    color: var(--text);
     transition: background-color 0.3s ease;
     padding: 0;
     margin: 0;
@@ -38,7 +49,7 @@ body {
 }
 
 button {
-    color: var(--text-color);
+    color: var(--text);
     background: transparent;
     padding: 0.15rem;
     font-size: 1.8rem;
@@ -76,7 +87,7 @@ button {
     position: relative;
     display: inline-block;
     padding: 0.9rem 0.9rem 1.5rem;
-    border: 0.06rem solid color: var(--text-color);
+    border: 0.06rem solid color: var(--text);
     border-bottom: 0;
     cursor: pointer;
     font-weight: 600;
@@ -92,14 +103,14 @@ button {
 }
 
 input:focus-visible + label {
-    outline: 2px solid color: var(--text-color);
+    outline: 2px solid color: var(--text);
     border-radius: 3px;
 }
 
 .tabset > label:hover,
 .tabset > input:focus + label,
 .tabset > input:checked + label {
-    color: var(--text-color);
+    color: var(--text);
 }
 
 .tabset > label:hover::after,
@@ -109,7 +120,7 @@ input:focus-visible + label {
 }
 
 .tabset > input:checked + label {
-    border-color: color: var(--text-color);
+    border-color: color: var(--text);
     border-bottom: 0.06rem solid #000;
     margin-bottom: -0.06rem;
 }
