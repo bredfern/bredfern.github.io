@@ -12,14 +12,6 @@
   --text: #ffffff;
 }
 
-/* Dark Mode override */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #000000;
-    --text: #ffffff;
-  }
-}
-
 html { 
     min-height: 100%;
     padding: 0;
