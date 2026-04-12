@@ -289,7 +289,6 @@ color: red;
     max-height: 12.5rem;
     overflow-y: auto;
     background: #cecece;
-    border-top: 0.1rem solid #ffffff;
     margin-top: 0.5rem;
     text-align: left;
 }
