@@ -285,10 +285,11 @@ color: red;
     list-style: none;
     width: auto;
     padding: 0.5rem;
+    background: #000000;
     max-height: 12.5rem;
     overflow-y: auto;
     background: #cecece;
-    border-top: 0.1rem solid #000000;
+    border-top: 0.1rem solid red;
     margin-top: 0.5rem;
     text-align: left;
 }
