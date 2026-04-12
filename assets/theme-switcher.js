@@ -1,16 +1,17 @@
-const themeToggle = document.getElementById('theme-toggle');
-const htmlElement = document.documentElement;
+const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
-// 1. Check for saved theme OR system preference
-const currentTheme = (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-
-// 2. Apply the theme on page load
-if (currentTheme === 'dark') {
-  htmlElement.classList.add('dark');
+function handleThemeChange(e) {
+  if (e.matches) {
+    console.log("Switching to Dark Mode");
+    // Add your dark mode logic here
+  } else {
+    console.log("Switching to Light Mode");
+    // Add your light mode logic here
+  }
 }
 
-// 3. Handle the toggle click
-themeToggle.addEventListener('click', () => {
-  const isDark = htmlElement.classList.toggle('dark');
-});
+// Watch for changes while the user is on the page
+darkModeMediaQuery.addEventListener('change', handleThemeChange);
 
+// Initial check
+handleThemeChange(darkModeMediaQuery);
