@@ -310,6 +310,8 @@ color: red;
 
 #playlist-list li.active {
     font-weight: bold;
+    background: #ffffff;
+    color: #000000;
 }
 
 #custom-audio-player {
