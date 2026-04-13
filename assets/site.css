@@ -108,7 +108,6 @@ input:focus-visible + label {
 }
 
 .tabset > input:checked + label {
-    border-bottom: 0.06rem solid #000;
     margin-bottom: -0.06rem;
 }
 
