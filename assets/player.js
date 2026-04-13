@@ -285,7 +285,6 @@ color: red;
     list-style: none;
     width: auto;
     padding: 0.5rem;
-    background: #000000;
     max-height: 12.5rem;
     overflow-y: auto;
     background: #cecece;
@@ -296,7 +295,8 @@ color: red;
 #playlist-list li {
     padding: 0.25rem;
     border-bottom: 0.1rem solid red;
-    background-color: #000000;
+    background-color: #cecece;
+    color: #000000;
     cursor: pointer;
     transition: background-color 0.2s;
     white-space: nowrap;
@@ -305,11 +305,10 @@ color: red;
 }
 
 #playlist-list li:hover {
-    background-color: #cecece;
+    background-color: #000000;
 }
 
 #playlist-list li.active {
-    color: #ffffff;
     font-weight: bold;
 }
 
