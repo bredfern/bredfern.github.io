@@ -305,7 +305,7 @@ color: red;
 }
 
 #playlist-list li:hover {
-    background-color: #ffffff;
+    background-color: #cecece;
 }
 
 #playlist-list li.active {
