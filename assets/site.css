@@ -108,7 +108,7 @@ input:focus-visible + label {
 }
 
 .tabset > input:checked + label {
-    margin-bottom: -0.06rem;
+    margin-bottom: -0.1rem;
 }
 
 .tab-panel {
