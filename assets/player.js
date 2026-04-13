@@ -294,7 +294,7 @@ color: red;
 
 #playlist-list li {
     padding: 0.25rem;
-    border-bottom: 0.1rem solid red;
+    border-bottom: 0.1rem solid #000000;
     background-color: #cecece;
     color: #000000;
     cursor: pointer;
@@ -305,7 +305,7 @@ color: red;
 }
 
 #playlist-list li:hover {
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 #playlist-list li.active {
