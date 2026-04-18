@@ -133,7 +133,7 @@ class GithubUserProfile extends HTMLElement {
                     display: block;
                     font-family: Verdana";
                     padding: 1.25rem;
-                    max-width: 40rem;
+                    max-width: 80rem;
                     box-shadow: 0 0.2rem  rgba(0, 0, 0, 0.05);
                     background-color: #cececece;
                     border-radius: 0.25rem;
