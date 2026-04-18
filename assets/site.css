@@ -37,17 +37,6 @@ body {
     "YTLC" 500;
 }
 
-button {
-    color: var(--text);
-    background: transparent;
-    padding: 0.15rem;
-    font-size: 1.8rem;
-    width: auto;
-    height: auto;
-    border: none;
-}
-
-
 *,
 *:before,
 *:after {
@@ -57,7 +46,6 @@ button {
 
 #content {
     padding: 0.5rem;
-    max-width: 80rem;
     margin-left: auto;
     margin-right: auto;
 }
