@@ -134,8 +134,6 @@ class GithubUserProfile extends HTMLElement {
                     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
                     padding: 1.25rem;
                     max-width: 40rem;
-                    margin: 1.25rem auto;
-                    margin-top: 0.7rem;
                     box-shadow: 0 0.2rem  rgba(0, 0, 0, 0.05);
                     background-color: #cececece;
                     border-radius: 0.25rem;
