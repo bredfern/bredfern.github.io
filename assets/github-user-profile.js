@@ -42,7 +42,7 @@ class GithubUserProfile extends HTMLElement {
             const userData = await userResponse.json();
 
             // 2. Fetch User Repositories (Projects)
-            const reposResponse = await fetch(`https://api.github.com/users/${this.username}/repos?sort=updated&per_page=5`); // Get 10 most recently updated repos
+            const reposResponse = await fetch(`https://api.github.com/users/${this.username}/repos?sort=updated&per_page=3`); // Get 10 most recently updated repos
             
             if (!reposResponse.ok) {
                 throw new Error(`HTTP error! Status: ${reposResponse.status} fetching repository data.`);
@@ -131,7 +131,7 @@ class GithubUserProfile extends HTMLElement {
             <style>
                 :host {
                     display: block;
-                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                    font-family: Verdana";
                     padding: 1.25rem;
                     max-width: 40rem;
                     box-shadow: 0 0.2rem  rgba(0, 0, 0, 0.05);
