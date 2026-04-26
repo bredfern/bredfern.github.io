@@ -33,7 +33,7 @@ class GithubUserProfile extends HTMLElement {
             //const userResponse = await fetch(`https://api.github.com/users/${this.username}`);
 
             // Fetch staic user data
-            const userResponse = await fetch('bredfern.json');
+            const userResponse = await fetch('/assets/bredfern.json');
 
             /* if (!userResponse.ok) {
                 if (userResponse.status === 404) {
@@ -48,7 +48,7 @@ class GithubUserProfile extends HTMLElement {
             // const reposResponse = await fetch(`https://api.github.com/users/${this.username}/repos?sort=updated&per_page=4`);
             
             // Fetch static repo data
-            const reposResponse = await fetch('bredfern-detail.json');
+            const reposResponse = await fetch('/assets/bredfern-detail.json');
 
             if (!reposResponse.ok) {
                 throw new Error(`HTTP error! Status: ${reposResponse.status} fetching repository data.`);
