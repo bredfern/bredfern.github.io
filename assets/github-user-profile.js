@@ -29,21 +29,27 @@ class GithubUserProfile extends HTMLElement {
         container.classList.remove('error');
 
         try {
-            // 1. Fetch User Profile Data
-            const userResponse = await fetch(`https://api.github.com/users/${this.username}`);
-            
-            if (!userResponse.ok) {
+            // 1. Fetch User Profile Data dynamically
+            //const userResponse = await fetch(`https://api.github.com/users/${this.username}`);
+
+            // Fetch staic user data
+            const userResponse = await fetch('bredfern.json');
+
+            /* if (!userResponse.ok) {
                 if (userResponse.status === 404) {
                     throw new Error(`GitHub user "${this.username}" not found.`);
                 }
                 throw new Error(`HTTP error! Status: ${userResponse.status} fetching user data.`);
-            }
+            }*/
 
             const userData = await userResponse.json();
 
-            // 2. Fetch User Repositories (Projects)
-            const reposResponse = await fetch(`https://api.github.com/users/${this.username}/repos?sort=updated&per_page=4`);
+            // 2. Fetch User Repositories (Projects) dynamically
+            // const reposResponse = await fetch(`https://api.github.com/users/${this.username}/repos?sort=updated&per_page=4`);
             
+            // Fetch static repo data
+            const reposResponse = await fetch('bredfern-detail.json');
+
             if (!reposResponse.ok) {
                 throw new Error(`HTTP error! Status: ${reposResponse.status} fetching repository data.`);
             }

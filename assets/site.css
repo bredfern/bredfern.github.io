@@ -26,9 +26,6 @@ body {
     background-color: var(--bg);
     color: var(--text);
     transition: background-color 0.3s ease;
-    padding: 0;
-    margin: 0;
-    width: 100%;
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
@@ -43,14 +40,6 @@ body {
     box-sizing: border-box;
 }
 
-
-#content {
-    padding: 0.5rem;
-    max-width: 40rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 a,
 a:visited,
 a:active {
@@ -58,19 +47,16 @@ a:active {
     text-decoration: underline;
 }
 
-#logo {
-    border: none;
-    width: 9rem;
-    height: auto;
-}
-
 a:hover {
     font-weight: bold;
 }
 
 .container {
-    width: 100%;
     min-height: 100vh;
+    padding: 0.5rem;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .icon {
@@ -79,37 +65,10 @@ a:hover {
       width: 26px;
 }
 
-nav {
-    position: absolute;
-    right: 1.1rem;
-    top: 2rem;
-}
-
 .no-decor, h1 a {
     text-decoration: none;
 }
 
-header {
-    color: #000000;
-    height: auto;
-    padding: 0.75rem;
-    width: 100%;
-    background-color: #cecece;
-    margin-bottom: 1rem;
-}
-
-footer {
-    padding: 0.5rem;
-    margin: 0;
-    bottom: 0;
-    height: auto;
-    font-size: 1.2rem;
-    width: 100%;
-    color: #000000;
-    background-color: #cecece;
-    text-align: center;
-    position: fixed;
-}
 
 @media (max-width: 48rem) {
     #content {
