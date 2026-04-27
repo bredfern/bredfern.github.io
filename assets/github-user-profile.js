@@ -35,6 +35,7 @@ class GithubUserProfile extends HTMLElement {
             // Fetch staic user data
             const userResponse = await fetch('/assets/bredfern.json');
 
+            // Only for dynammic mode
             /* if (!userResponse.ok) {
                 if (userResponse.status === 404) {
                     throw new Error(`GitHub user "${this.username}" not found.`);
@@ -93,7 +94,7 @@ class GithubUserProfile extends HTMLElement {
         container.innerHTML = `
             <div class="profile-section">
                 <div class="profile-header">
-                    <img src="${user.avatar_url}" alt="${safeText(user.login)}'s avatar" class="avatar">
+                    <img src="/assets/refern.jpg" alt="${safeText(user.login)}'s avatar" class="avatar">
                     <div>
                         <h2>${safeText(user.name)}</h2>
                         <p class="login-name">@${safeText(user.login)}</p>
