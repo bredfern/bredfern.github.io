@@ -148,16 +148,9 @@ class GithubUserProfile extends HTMLElement {
                     color: #000000;                    
                 }
                 
-                /* Dark Mode override */
-                @media (prefers-color-scheme: dark) {
-                    :host {
-                        --bg: #000000;
-                        --text: #ffffff;
-                    }
-                }
                 .profile-container {
                     color: #000000;
-		    padding: 1rem;
+		                padding: 1rem;
                 }
                 .profile-container.error {
                     color: #cb2431;
