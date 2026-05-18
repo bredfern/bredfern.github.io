@@ -6,12 +6,12 @@ class GithubUserProfile extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
-        this.username = 'matt'; // Default user
+        this.username = 'vlc'; // Default user
     }
 
     connectedCallback() {
         this.render();
-        this.fetchData(); // New single entry point for both fetches
+        this.fetchData();
     }
 
     attributeChangedCallback(name, oldValue, newValue) {
@@ -148,6 +148,13 @@ class GithubUserProfile extends HTMLElement {
                     color: #000000;                    
                 }
                 
+                        /* Dark mode styles */
+                @media (prefers-color-scheme: dark) {
+                    :host {
+                        background: #222;
+                        color: #fff;
+                    }
+                }
                 .profile-container {
                     color: #000000;
 		                padding: 1rem;
