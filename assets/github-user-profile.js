@@ -1,12 +1,13 @@
 class GithubUserProfile extends HTMLElement {
     static get observedAttributes() {
-        return ['username'];
+        return ['username', 'theme'];
     }
 
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
         this.username = 'bredfern'; // Default user
+        this.theme = 'light';
     }
 
     connectedCallback() {
@@ -139,12 +140,21 @@ class GithubUserProfile extends HTMLElement {
                 :host {
                     display: block;
                     font-family: Verdana";
-                    padding: 2.5rem;
-                    max-width: 80rem;
+                    padding: 0;
                     box-shadow: 0 0.2rem  rgba(0, 0, 0, 0.05);
                     background-color: #cececece;
                     border-radius: 0.25rem;
                     border: solid 0.1rem #cecece;
+                    background: #ffffff;
+                    color: #000000;                    
+                }
+                
+                /* Dark Mode override */
+                @media (prefers-color-scheme: dark) {
+                    :host {
+                        --bg: #000000;
+                        --text: #ffffff;
+                    }
                 }
                 .profile-container {
                     color: #000000;
