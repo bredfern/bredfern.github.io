@@ -1,13 +1,12 @@
 class GithubUserProfile extends HTMLElement {
     static get observedAttributes() {
-        return ['username', 'theme'];
+        return ['username'];
     }
 
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
-        this.username = 'bredfern'; // Default user
-        this.theme = 'light';
+        this.username = 'matt'; // Default user
     }
 
     connectedCallback() {
