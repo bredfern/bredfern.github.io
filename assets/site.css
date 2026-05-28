@@ -2,79 +2,231 @@
     box-sizing: border-box;
 }
 
-:root {
-  --bg: #ffffff;
-  --text: #000000;
-}
-
-/* Dark Mode override */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #000000;
-    --text: #ffffff;
-  }
-}
-
 html { 
     min-height: 100%;
     padding: 0;
     margin: 0; 
-    font-family: "Verdana", sans-serif; 
+    font-family: "Avenir Next", "Avenir", sans-serif; 
 }
 
 body {
-    background-color: var(--bg);
-    color: var(--text);
-    transition: background-color 0.3s ease;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    font-variation-settings:
+    background: #ffffff;
+    color: #000;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
     "wdth" 100,
     "YTLC" 500;
+}
+
+/*
+ CSS for the main interaction
+*/
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+/*
+ Styling
+*/
+
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  padding: 0.9rem 0.9rem 1.5rem;
+  border: 0.06rem solid transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tabset > label::after {
+  content: "";
+  position: absolute;
+  left: 0.9rem;
+  bottom: 10px;
+  width: 22px;
+  height: 4px;
+  background: #8d8d8d;
+}
+
+input:focus-visible + label {
+  outline: 2px solid #000;
+  border-radius: 3px;
+}
+
+.tabset > label:hover,
+.tabset > input:focus + label,
+.tabset > input:checked + label {
+  color: #000;
+}
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+  background: #8aa399;
+}
+
+.tabset > input:checked + label {
+  border-color: #949695;
+  border-bottom: 0.06rem solid #000;
+  margin-bottom: -0.06rem;
+}
+
+.tab-panel {
+  padding: 10px 0;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.tabset {
+  max-width: 65em;
+}
+
+#content {
+  padding: 1rem;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a,
 a:visited,
 a:active {
-    color: var(--text-color);
-    text-decoration: underline;
+  color: #000;
+  text-decoration: underline;
+}
+
+#logo {
+  border: none;
+  width: 8rem;
 }
 
 a:hover {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .container {
-    min-height: 100vh;
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .icon {
-      display: inline;
-      height: 26px;
-      width: 26px;
+  width: 2rem;
+  margin-top: 0.5rem;
+  margin-right: 0.25rem;
+  display: inline;
 }
 
 .no-decor, h1 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
+header {
+  background-color: #cecece;
+  color: #000;
+  height: 3.25rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+nav {
+	position: absolute;
+	right:  0.15rem;
+	left: auto;
+	top: 0;
+	bottom: 0.15rem;
+}
+
+footer {
+    padding: 0.5rem;
+    margin: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    background-color: #cecece;
+    color: #000;
+    text-align: center;
+    position: fixed;
+}
 
 @media (max-width: 48rem) {
-    .container {
-        width: 100%;
-        margin: 0;
-        padding: 0;
+    
+    #content {
+	width: 100%;
     }
+}
+
+.card {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2rem;
+	/* hide outer part of glow */
+	overflow: hidden;
+	/* needed for absolutely positioned pseudo */
+	position: relative;
+	/* adjust width as needed IF it's even necessary to set */
+	width: Min(10.5em, 80vmin);
+	/* adjust aspect-ratio OR height IF height not given by content */
+	aspect-ratio: 1;
+	/* round outer card corners */
+	border-radius: .5em;
+	
+	/* text & layout styles below just for prettifying */
+	place-self: center;
+	place-content: center;
+	padding: .5em;
+	color: #ededed;
+	font: clamp(0.25em, 2vw + 2vh, 2em) sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	text-wrap: balance
+}
+
+.card::before {
+	/* grid doesn't work for stacking when a stacked item is text node */
+	position: absolute;
+	/* place behind card content, so card text is selectable, etc */
+	z-index: -1;
+	/* best if inset is at least half the border-width with minus */
+	inset: -1em;
+	/* reserve space for border */
+	border: solid 1.25em;
+	border-image: 
+		/* adjust gradient as needed, I just used a random palette */
+		conic-gradient(from var(--a), #669900, #000000, #7dee66, 
+				#00993b, #224b00, #027408, #f0f7f000, 
+				#8cff7d, #116805, #1eff00, #000000) 1;
+	/* blur this pseudo */
+	filter: blur(.75em);
+	/* tweak animation duration as necessary */
+	animation: a 4s linear infinite;
+	/* needed so pseudo is displayed */
+	content: ''
 }
 

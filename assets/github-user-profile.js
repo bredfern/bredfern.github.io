@@ -6,12 +6,12 @@ class GithubUserProfile extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
-        this.username = 'vlc'; // Default user
+        this.username = 'bredfern'; // Default user
     }
 
     connectedCallback() {
         this.render();
-        this.fetchData();
+        this.fetchData(); // New single entry point for both fetches
     }
 
     attributeChangedCallback(name, oldValue, newValue) {
@@ -29,28 +29,21 @@ class GithubUserProfile extends HTMLElement {
         container.classList.remove('error');
 
         try {
-            // 1. Fetch User Profile Data dynamically
-            //const userResponse = await fetch(`https://api.github.com/users/${this.username}`);
-
-            // Fetch staic user data
-            const userResponse = await fetch('/assets/bredfern.json');
-
-            // Only for dynammic mode
-            /* if (!userResponse.ok) {
+            // 1. Fetch User Profile Data
+            const userResponse = await fetch(`https://api.github.com/users/${this.username}`);
+            
+            if (!userResponse.ok) {
                 if (userResponse.status === 404) {
                     throw new Error(`GitHub user "${this.username}" not found.`);
                 }
                 throw new Error(`HTTP error! Status: ${userResponse.status} fetching user data.`);
-            }*/
+            }
 
             const userData = await userResponse.json();
 
-            // 2. Fetch User Repositories (Projects) dynamically
-            // const reposResponse = await fetch(`https://api.github.com/users/${this.username}/repos?sort=updated&per_page=4`);
+            // 2. Fetch User Repositories (Projects)
+            const reposResponse = await fetch(`https://api.github.com/users/${this.username}/repos?sort=updated&per_page=5`); // Get 10 most recently updated repos
             
-            // Fetch static repo data
-            const reposResponse = await fetch('/assets/bredfern-detail.json');
-
             if (!reposResponse.ok) {
                 throw new Error(`HTTP error! Status: ${reposResponse.status} fetching repository data.`);
             }
@@ -94,7 +87,7 @@ class GithubUserProfile extends HTMLElement {
         container.innerHTML = `
             <div class="profile-section">
                 <div class="profile-header">
-                    <img src="/assets/refern.jpg" alt="${safeText(user.login)}'s avatar" class="avatar">
+                    <img src="${user.avatar_url}" alt="${safeText(user.login)}'s avatar" class="avatar">
                     <div>
                         <h2>${safeText(user.name)}</h2>
                         <p class="login-name">@${safeText(user.login)}</p>
@@ -138,27 +131,18 @@ class GithubUserProfile extends HTMLElement {
             <style>
                 :host {
                     display: block;
-                    font-family: Verdana";
-                    padding: 0;
+                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                    padding: 1.25rem;
+                    max-width: 40rem;
+                    margin: 1.25rem auto;
+                    margin-top: 0.7rem;
                     box-shadow: 0 0.2rem  rgba(0, 0, 0, 0.05);
-                    background-color: #cececece;
+                    background-color: transparent;
                     border-radius: 0.25rem;
                     border: solid 0.1rem #cecece;
-                    background: #ffffff;
-                    color: #000000;                    
-                }
-                
-                        /* Dark mode styles */
-                @media (prefers-color-scheme: dark) {
-                    :host {
-                        background: #222;
-                        color: #fff;
-                    }
                 }
                 .profile-container {
                     color: #000000;
-		                padding: 1rem;
-                    background: gray;
                 }
                 .profile-container.error {
                     color: #cb2431;
