@@ -1,9 +1,11 @@
+
 class AudioPlaylistPlayer extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
     this.currentTrackIndex = 0;
     this.playlist = [];
+    this.fontContent = "Player";
 
     // Web Audio API properties
     this.audioContext = null;
@@ -33,21 +35,11 @@ class AudioPlaylistPlayer extends HTMLElement {
 
     this.audioPlayer = this.shadowRoot.querySelector("#audio-player");
     this.playlistList = this.shadowRoot.querySelector("#playlist-list");
-    this.seekSlider = this.shadowRoot.querySelector("#seek-slider");
-    
-    this.fontSettings = "62px sans-serif";
-    this.fontContent = "Press Play";
-    this.fontLeft = 160;
-    this.fontTop = 60;
-
-
     this.currentTrackInfo = this.shadowRoot.querySelector("#current-track-info");
     this.volumeSlider = this.shadowRoot.querySelector("#volume-slider"); 
     this.playPauseBtn = this.shadowRoot.querySelector("#play-pause-btn");
     this.canvas = this.shadowRoot.querySelector("#visualizer-canvas");
     this.canvasCtx = this.canvas.getContext("2d");
-    this.canvasCtx.font = this.fontSettings;
-    this.canvasCtx.fillText(this.fontContent, this.fontLeft, this.fontiTop);
 
     // Event listeners
     this.audioPlayer.addEventListener("ended", this.playNext.bind(this));
@@ -55,32 +47,16 @@ class AudioPlaylistPlayer extends HTMLElement {
     
     // The visualizer is started when the 'playing' event fires
     this.audioPlayer.addEventListener("playing", () => this.startVisualizer());
-    
-    this.audioPlayer.addEventListener('timeupdate', () => {
-        this.seekSlider.value = this.audioPlayer.currentTime;
-    });
-
-    this.audioPlayer.onloadedmetadata = () => {
-        this.seekSlider.max = this.audioPlayer.duration;
-    };
-
-
-    this.seekSlider.onchange = () => {
-        this.audioPlayer.currentTime = this.seekSlider.value;
-    };
-
-    this.volumeSlider.onchange = () => {
-        this.audioPlayer.volume = this.volumeSlider.value;
-    }
 
     this.playPauseBtn.addEventListener("click", () => {
       if (this.audioPlayer.paused) {
         this.audioPlayer.play();
-        this.playPauseBtn.style.color = "#000000";
-        
+        this.playPauseBtn.innerHTML ='';
+        this.playPauseBtn.innerHTML = "‖";
       } else {
         this.audioPlayer.pause();
-        this.playPauseBtn.style.color = "#cecece";
+        this.playPauseBtn.innerHTML ='';
+        this.playPauseBtn.innerHTML = "▶︎";
       }
     });
 
@@ -98,8 +74,6 @@ class AudioPlaylistPlayer extends HTMLElement {
   initAudioContext() {
     if (!this.audioContext) {
       this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
-      //this.audioPlayer.pause();
-      this.playPauseBtn.style.color = "#cecece";
 
       this.analyser = this.audioContext.createAnalyser();
       this.analyser.fftSize = 256;
@@ -125,9 +99,9 @@ class AudioPlaylistPlayer extends HTMLElement {
     const HEIGHT = this.canvas.height;
     const bufferLength = this.dataArray.length;
 
-    this.canvasCtx.fillStyle = "red";
+    this.canvasCtx.fillStyle = "#fff";
     this.canvasCtx.fillRect(0, 0, WIDTH, HEIGHT);
-
+  
     let barWidth = (WIDTH / bufferLength) * 2.5;
     let barHeight;
     let x = 0;
@@ -190,8 +164,13 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.audioPlayer.src = url;
     // Note: Playing may still fail if the browser requires user interaction first.      
       if (navigator.userActivation.isActive) {
-      this.audioPlayer.play();
-      this.playPauseBtn.color = "#e2e2e2";
+      	this.audioPlayer.play();
+      	this.playPauseBtn.innerHTML ='';
+        this.playPauseBtn.innerHTML = "‖";
+      } else {
+      	this.audioPlayer.pause();
+	this.playPauseBtn.innerHTML ='';
+        this.playPauseBtn.innerHTML = "▶︎";
       }
       this.updatePlaylistActiveState();
       this.updateTrackInfo();
@@ -199,6 +178,16 @@ class AudioPlaylistPlayer extends HTMLElement {
 
   playNext() {
     this.loadTrack(this.currentTrackIndex + 1);
+  }
+
+  pausePlayer() {
+    this.playPauseBtn.innerHTML ='';
+    this.playPauseBtn.innerHTML = "▶︎";
+  }
+
+  runPlayer() {
+    this.playPauseBtn.innerHTML ='';
+    this.playPauseBtn.innerHTML = "‖";
   }
 
   updateTrackInfo() {
@@ -212,9 +201,14 @@ class AudioPlaylistPlayer extends HTMLElement {
     } else if (this.audioPlayer.seeking || this.audioPlayer.waiting) {
       status = "Loading";
     } else {
-      status = "Now Playing";
+      if (navigator.userActivation.isActive) {
+	      status = "Now Playing";
+          this.runPlayer();
+      } else {
+	      status = "Paused";
+          this.pausePlayer();
+      }
     }
-
     this.currentTrackInfo.textContent = `${status}: ${trackName.substring(0, 13)}`;
   }
 
@@ -265,9 +259,12 @@ class AudioPlaylistPlayer extends HTMLElement {
     margin-bottom: 0.5rem;
     margin-top: 0;
     height: 7.5rem;
-    background-color: red;
+    background-image: url(/assets/bars.webp);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
 }
-
+  
 #current-track-info {
     text-align: center;
     margin: 0.5rem;
@@ -330,7 +327,6 @@ class AudioPlaylistPlayer extends HTMLElement {
     cursor: pointer;
     width: auto;
     height: 3rem;
-    margin-top: 1rem;
     width: 100%;
 }
 
@@ -338,78 +334,12 @@ label {
     color: #000000;
     font-weight: bold;
 }
-
-#seek-slider, #volume-slider {
-    width: 100%;
-    margin-bottom: 1rem;
-    background: transparent;
-}
-
-.slider-label {
-  color: #000000;
-  font-size 120%;
-}
-
-input[type=range] {
-  -webkit-appearance: none;
-  margin: 0.5rem 0;
-  width: 100%;
-}
-input[type=range]:focus {
-  outline: none;
-}
-input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 0.1rem;
-  cursor: pointer;
-  box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0 0 0.1rem #0d0d0d;
-  background: #000000;
-  border-radius: 0.25rem;
-  border: 0.1rem solid #010101;
-}
-input[type=range]::-webkit-slider-thumb {
-  box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0 0 0.1rem #0d0d0d;
-  border: 0.1rem solid #000000;
-  height: 1rem;
-  width: 0.5rem;
-  border-radius: 0.25rem;
-  background: #ffffff;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -0.5rem;
-}
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #ffffff;
-}
-input[type=range]::-moz-range-track {
-  width: 100%;
-  height: 0.5rem;
-  cursor: pointer;
-  box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0 0 0.1rem #0d0d0d;
-  background: #ffffff;
-  border-radius: 0.25rem;
-  border: 0.1rem solid #010101;
-}
-input[type=range]::-moz-range-thumb {
-  box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0 0 0.1rem #0d0d0d;
-  border: 0.1rem solid #000000;
-  height: 1rem;
-  width: 0.5rem;
-  border-radius: 0.25rem;
-  background: #ffffff;
-  cursor: pointer;
-}
-
 </style>
 <div class="player-container">
  <div id="custom-audio-player">
    <canvas id="visualizer-canvas" width="400" height="80"></canvas>
-   <label for="seek-slider" class="slider-label">Seek</label> 
-   <input type="range" id="seek-slider" class="neon-text" min="0" value="0">
-   <audio id="audio-player" autoplay="false" crossOrigin="anonymous"></audio>
-   <label for="volume-slider" class="slider-label">Volume</label> 
-   <input id="volume-slider" type="range" class="neon-text" min="0" max="1" step="0.01" value="1">
-   <button id="play-pause-btn">▶︎‖</button>
+   <audio id="audio-player"></audio>
+   <button id="play-pause-btn">Click to Start</button>
    <div id="current-track-info">Ready to play...</div>
    <ul id="playlist-list"></ul>
  </div>

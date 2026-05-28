@@ -16,10 +16,10 @@ body {
     margin: 0;
     width: 100%;
     font-family: "Nunito Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
     "wdth" 100,
     "YTLC" 500;
 }
@@ -28,12 +28,12 @@ body {
  CSS for the main interaction
 */
 .tabset > input[type="radio"] {
-  position: absolute;
-  left: -200vw;
+    position: absolute;
+    left: -200vw;
 }
 
 .tabset .tab-panel {
-  display: none;
+    display: none;
 }
 
 .tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
@@ -42,7 +42,7 @@ body {
 .tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
 .tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
 .tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
-  display: block;
+    display: block;
 }
 
 /*
@@ -50,67 +50,67 @@ body {
 */
 
 .tabset > label {
-  position: relative;
-  display: inline-block;
-  padding: 0.9rem 0.9rem 1.5rem;
-  border: 0.06rem solid transparent;
-  border-bottom: 0;
-  cursor: pointer;
-  font-weight: 600;
+    position: relative;
+    display: inline-block;
+    padding: 0.9rem 0.9rem 1.5rem;
+    border: 0.06rem solid transparent;
+    border-bottom: 0;
+    cursor: pointer;
+    font-weight: 600;
 }
 
 .tabset > label::after {
-  content: "";
-  position: absolute;
-  left: 0.9rem;
-  bottom: 10px;
-  width: 22px;
-  height: 4px;
-  background: #8d8d8d;
+    content: "";
+    position: absolute;
+    left: 0.9rem;
+    bottom: 10px;
+    width: 22px;
+    height: 4px;
+    background: #8d8d8d;
 }
 
 input:focus-visible + label {
-  outline: 2px solid #000;
-  border-radius: 3px;
+    outline: 2px solid #000;
+    border-radius: 3px;
 }
 
 .tabset > label:hover,
 .tabset > input:focus + label,
 .tabset > input:checked + label {
-  color: #000;
+    color: #000;
 }
 
 .tabset > label:hover::after,
 .tabset > input:focus + label::after,
 .tabset > input:checked + label::after {
-  background: #8aa399;
+    background: #8aa399;
 }
 
 .tabset > input:checked + label {
-  border-color: #949695;
-  border-bottom: 0.06rem solid #000;
-  margin-bottom: -0.06rem;
+    border-color: #949695;
+    border-bottom: 0.06rem solid #000;
+    margin-bottom: -0.06rem;
 }
 
 .tab-panel {
-  padding: 10px 0;
+    padding: 10px 0;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .tabset {
-  max-width: 65em;
+    max-width: 65em;
 }
 
 #content {
-  padding: 1rem;
-  max-width: 40rem;
-  margin-left: auto;
-  margin-right: auto;
+    padding: 1rem;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a,
@@ -122,7 +122,8 @@ a:active {
 
 #logo {
   border: none;
-  width: 8rem;
+  width: 10rem;
+  height: auto;
 }
 
 a:hover {
@@ -135,10 +136,15 @@ a:hover {
 }
 
 .icon {
-  width: 2rem;
-  margin-top: 0.5rem;
-  margin-right: 0.25rem;
-  display: inline;
+    display: inline;
+    width: 2rem;
+    height: auto;
+}
+
+nav {
+  position: absolute;
+  right: 1.1rem;
+  top: 2rem;
 }
 
 .no-decor, h1 a {
@@ -146,21 +152,20 @@ a:hover {
 }
 
 header {
-  background-color: #cecece;
-  color: #000;
-  height: 3.25rem;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  width: 100%;
+    color: #000000;
+    height: auto;
+    padding: 0.75rem;
+    width: 100%;
+    background: linear-gradient(-45deg, #000000, #DCDCDC, #FFFFFF, #D3D3D3);
+    background-size: 400% 400%;
+    background-image: url(/assets/clouds.webp);
+    animation: gradientMove 15s ease infinite;
 }
 
-nav {
-	position: absolute;
-	right:  0.15rem;
-	left: auto;
-	top: 0;
-	bottom: 0.15rem;
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 footer {
@@ -182,51 +187,10 @@ footer {
     }
 }
 
-.card {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 2rem;
-	/* hide outer part of glow */
-	overflow: hidden;
-	/* needed for absolutely positioned pseudo */
-	position: relative;
-	/* adjust width as needed IF it's even necessary to set */
-	width: Min(10.5em, 80vmin);
-	/* adjust aspect-ratio OR height IF height not given by content */
-	aspect-ratio: 1;
-	/* round outer card corners */
-	border-radius: .5em;
-	
-	/* text & layout styles below just for prettifying */
-	place-self: center;
-	place-content: center;
-	padding: .5em;
-	color: #ededed;
-	font: clamp(0.25em, 2vw + 2vh, 2em) sans-serif;
-	text-align: center;
-	text-transform: uppercase;
-	text-wrap: balance
-}
-
-.card::before {
-	/* grid doesn't work for stacking when a stacked item is text node */
-	position: absolute;
-	/* place behind card content, so card text is selectable, etc */
-	z-index: -1;
-	/* best if inset is at least half the border-width with minus */
-	inset: -1em;
-	/* reserve space for border */
-	border: solid 1.25em;
-	border-image: 
-		/* adjust gradient as needed, I just used a random palette */
-		conic-gradient(from var(--a), #669900, #000000, #7dee66, 
-				#00993b, #224b00, #027408, #f0f7f000, 
-				#8cff7d, #116805, #1eff00, #000000) 1;
-	/* blur this pseudo */
-	filter: blur(.75em);
-	/* tweak animation duration as necessary */
-	animation: a 4s linear infinite;
-	/* needed so pseudo is displayed */
-	content: ''
+.cologo {
+  display: block;
+  padding: 0;
+  width: 18.75rem;
+  height: 6.25rem;
 }
 

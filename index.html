@@ -1,98 +1,90 @@
 <!doctype html>
 <html lang="en" class="h-100">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-            name="description"
-            content="Brian Redfern links to my code and music."
-        />
-        <link rel="shortcut icon" href="/assets/favicon.ico" />
-        <title>The website of web developer/composer/artist Brian Redfern.</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-
-        <link
-            rel="stylesheet"
-            type="text/css"
-            rel="preload"
-            as="style"
-            href="assets/site.css"
-        />
-    </head>
-    <body>
-        <div class="container">
-            <header>
-              <img src="/assets/red.svg" id="logo" alt="REDFERN">
-              <nav>
-                <a href="https://github.com/bredfern" class="no-decor">
-                  <picture>
-                    <img src="/assets/github-icon.svg" class="icon" alt="github" />
-                  </picture>
-                </a>
-                <a href="https://linkedin.com/in/bredfern" class="no-decor">
-                  <picture>
-                    <img src="/assets/linkedin-logo.svg"  class="icon" alt="linkedin" />
-                  </picture>
-                </a>
-                </nav>
-            </header>
-            <main>
-               <div id="content">
-                 <div class="tabset">
-  <!-- Tab 1 -->
-  <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
-  <label for="tab1">Home</label>
-  <!-- Tab 2 -->
-  <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
-  <label for="tab2">Projects</label>
-  <!-- Tab 3 -->
-  <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
-  <label for="tab3">Music</label>
-
-  <div class="tab-panels">
-    <section id="marzen" class="tab-panel">
-      <h1>Welcome</h1>
-     <p> 
-     I build web and native applications for both computer and mobile. Notice how tiny this site is, and if you run the other tabs they contain cool web components, one showing off my projects on 
-     github, and the other showing off a couple of my electronic music compositions. By using vanilla web components I use less than 2 megs of ram to run my application that dynamically displays my 
-     information from github along with a playlist based audio jukebox that shows a nice audio wave graphic display. All under 2 megs of ram, not 2 gigs, 2 megs. 
-     </p>
-     <p>
-     Over time before the disruption causeed by Ai the web applications have been growing larger and larger and larger. My laptop has only 4 gigs of ram but opening up facebook on a browser simply 
-     locked up my entire machine. Fortunately this is not my only machine, but if you want to find someone who can build things that work across the world and not just for macbook pro users I am your
-     developer As an expert I actually use Ai these days but in consrained fashion. I use gemini to produce initial code for web components which works but might need help to be usable for the long term.
-     </p>
-     <p>
-     To find out more about my work stuff check me out on <a href="https://linkedin/in/bredfern" target="new">Linkedin</a>. 
-     </p>
-     <p>
-    Currently I am working on my first project with rust and htmx to provide a system for creatives to be able to give each other constructive critique on their work.
-     </p>
-    </section>
-    <section id="rauchbier" class="tab-panel">
-      <github-user-profile></github-user-profile>
-    </section>
-    <section id="dunkles" class="tab-panel">
-      <audio-playlist-player playlist='[
-      	"https://ia601008.us.archive.org/0/items/doglove_202510/Bone_Spurs.mp3",
-      	"https://dn710106.ca.archive.org/0/items/doglove_202510/Caledonia.mp3",
-	"https://dn710106.ca.archive.org/0/items/doglove_202510/WethePeople.mp3",
-	"https://dn710106.ca.archive.org/0/items/doglove_202510/backingtrack.mp3",
-	"https://dn710106.ca.archive.org/0/items/doglove_202510/TheSitter.mp3",
-	"https://dn710106.ca.archive.org/0/items/doglove_202510/210918_0067.mp3",
-	"https://dn710106.ca.archive.org/0/items/doglove_202510/220608_0096.mp3",
-	"https://dn710106.ca.archive.org/0/items/doglove_202510/220610_0097.mp3"
-	]'>
-      </audio-playlist-player>
-    </section>
-  </div>
-</div>
-</main>
-<footer class="centered">&#169; 2026 Brian Redfern</footer>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The website of Brian Redfern.</title>
+  <meta name="description" content="Brian Redfern - composer and developer.">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" rel="preload" as="style" href="assets/site.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <img src="/assets/red.svg" id="logo" alt="REDFERN">
+    <nav>
+      <a href="https://github.com/bredfern" target="new" class="no-decor">
+      <picture>
+        <img src="/assets/github.svg" class="icon" alt="github">
+      </picture>
+      </a>
+      <a href="https://soundcloud.com/brianredfern" target="new" class="no-decor">
+      <picture>
+        <img src="/assets/soundcloud.svg"  class="icon" alt="soundcloud">
+      </picture>
+      </a>
+      <a href="https://www.youtube.com/@brianredfern" target="new" class="no-decor">
+        <picture>
+          <img src="/assets/youtube.svg"  class="icon" alt="youtube">
+        </picture>
+      </a>
+      <a href="https://linkedin.com/in/bredfern" target="new" class="no-decor">
+      <picture>
+        <img src="/assets/linkedin.svg"  class="icon" alt="linkedin">
+      </picture>
+      </a>
+    </nav>
+  </header>
+  <main>
+    <div id="content">
+      <div class="tabset">
+        <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
+        <label for="tab1">Home</label>
+        <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+        <label for="tab2">Code</label>
+        <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+        <label for="tab3">Art</label>
+        <input type="radio" name="tabset" id="tab4" aria-controls="punkies">
+        <label for="tab4">Music</label>
+        <div class="tab-panels">
+          <section id="marzen" class="tab-panel">
+            <h1>They Call Me Brian</h1>
+            <p>
+              I am a senior level full stack web developer with tons of LAMP and now I make heavy use of standards based web components to enable advanced client side interactivity.
+	    </p>
+	    <p>
+	      Like many other engineers I orginally started in music as a guitarist, dj and producer in the 1990s. Later I went on to write the sound track for the video game, <a href="https://en.wikipedia.org/wiki/Chromium_B.S.U." target="new">Chromium BSU</a>. I am also a visual artist but currently I am rolling all these into my first commercial indie game.
+            </p>
+          </section>
+          <section id="rauchbier" class="tab-panel">
+            <github-user-profile></github-user-profile>
+          </section>
+          <section id="dunkles" class="tab-panel">
+            <ultra-gallery>
+              <img src="/assets/cat.webp" alt="1">
+              <img src="/assets/robot.webp" alt="2">
+              <img src="/assets/slid.webp" alt="3">
+              <img src="/assets/alien.webp" alt="4">
+            </ultra-gallery>
+          </section>
+          <section id="punkies" class="tab-panel">
+            <audio-playlist-player playlist='[
+              "/assets/roadx.mp3",
+              "/assets/jeruduo.mp3",
+              "/assets/mrr.mp3",
+              "/assets/vorst.mp3"]'>
+            </audio-playlist-player>
+          </section>
+        </div>
+      </div>
+  </main>
+  <footer class="centered">&#169; 2026 Brian Redfern</footer>
 </div>
 <script src="/assets/player.js" defer></script>
+<script src="/assets/ultra-gallery.js" defer></script>
 <script src="/assets/github-user-profile.js" defer></script>
 </body>
 </html>
