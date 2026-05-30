@@ -303,7 +303,7 @@ class AudioPlaylistPlayer extends HTMLElement {
 }
 
 #playlist-list li.active {
-    background-color: #cecece;
+    background-color: #78ade2;
     color: #000000;
     font-weight: bold;
 }
@@ -311,7 +311,7 @@ class AudioPlaylistPlayer extends HTMLElement {
 #custom-audio-player {
     gap: 0.25rem;
     text-align: center;
-    background-color: #cecece;
+    background-color: #78ade2;
     padding: 0.5rem;
     border-radius: 0.5rem;
 }
