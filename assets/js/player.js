@@ -259,7 +259,7 @@ class AudioPlaylistPlayer extends HTMLElement {
     margin-bottom: 0.5rem;
     margin-top: 0;
     height: 7.5rem;
-    background-image: url(/assets/bars.webp);
+    background-image: url(/assets/webp/bars.webp);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
