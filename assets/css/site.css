@@ -169,7 +169,7 @@ header {
 }
 
 footer {
-    padding: 0.5rem;
+    padding: 1rem;
     margin: 0;
     bottom: 0;
     height: auto;
@@ -178,6 +178,11 @@ footer {
     color: #000;
     text-align: center;
     position: fixed;
+    background: linear-gradient(-45deg, #000000, #DCDCDC, #FFFFFF, #D3D3D3);
+    background-size: 400% 400%;
+    background-image: url(/assets/webp/clouds.webp);
+    animation: gradientMove 15s ease infinite;
+
 }
 
 @media (max-width: 48rem) {
