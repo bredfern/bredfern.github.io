@@ -111,6 +111,7 @@ input:focus-visible + label {
     max-width: 40rem;
     margin-left: auto;
     margin-right: auto;
+    font-size: 1.2rem;
 }
 
 a,
