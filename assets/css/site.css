@@ -96,6 +96,9 @@ input:focus-visible + label {
     padding: 10px 0;
 }
 
+-fancy-panel {
+    border: dashed 0.25rem #000;
+}
 *,
 *:before,
 *:after {
