@@ -303,7 +303,7 @@ class AudioPlaylistPlayer extends HTMLElement {
 }
 
 #playlist-list li.active {
-    background-color: #78ade2;
+    background-color: #F5F5F5;
     color: #000000;
     font-weight: bold;
 }
