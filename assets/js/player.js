@@ -311,7 +311,7 @@ class AudioPlaylistPlayer extends HTMLElement {
 #custom-audio-player {
     gap: 0.25rem;
     text-align: center;
-    background-color: #78ade2;
+    background-color: silver;
     padding: 0.5rem;
     border-radius: 0.5rem;
 }
