@@ -131,8 +131,8 @@ class GithubUserProfile extends HTMLElement {
             <style>
                 :host {
                     display: block;
-                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-                    padding: 1.25rem;
+                    font-family: 'Scaver Med'";
+                    padding: 1.5rem;
                     max-width: 40rem;
                     margin: 1.25rem auto;
                     margin-top: 0.7rem;
@@ -141,8 +141,48 @@ class GithubUserProfile extends HTMLElement {
                     border-radius: 0.25rem;
                     border: solid 0.1rem #cecece;
                 }
+
+                @font-face {
+                    font-family: 'Scaver Med';
+                    src: url('Scaver-Medium.woff2') format('woff2'),
+                    url('Scaver-Medium.woff') format('woff');
+                    font-weight: 500;
+                    font-style: normal;
+                    font-display: swap;
+                }
+
+                @font-face {
+                    font-family: 'Scaver ExtBd';
+                    src: url('Scaver-ExtraBold.woff2') format('woff2'),
+                    url('Scaver-ExtraBold.woff') format('woff');
+                    font-weight: bold;
+                    font-style: normal;
+                    font-display: swap;
+                }
+
+                /* Typography */
+
+                h1 {
+                    font-size: 3.2rem;
+                }
+
+                h2 {
+                    font-size: 2.4rem;
+                }
+
+                h1,h2 {
+                    font-family: 'scaverextbld', serif;
+                    letter-spacing: 0.2rem;
+                }
+
+                p {
+
+                    font-family: 'scavermed', sans-serif;
+                }
+
                 .profile-container {
                     color: #000000;
+                    padding: 1rem;
                 }
                 .profile-container.error {
                     color: #cb2431;

@@ -130,8 +130,9 @@ a:active {
 
 #logo {
   border: none;
-  width: 10rem;
+  width: 21.5rem;
   height: auto;
+
 }
 
 a:hover {
@@ -147,6 +148,7 @@ a:hover {
     display: inline;
     width: 2rem;
     height: auto;
+    margin-top: 7.5rem;
 }
 
 nav {
@@ -161,7 +163,7 @@ nav {
 
 header {
     color: #000000;
-    height: 6rem;
+    height: 12rem;
     padding: 0.75rem;
     width: 100%;
     background: linear-gradient(-45deg, #000000, #DCDCDC, #FFFFFF, #D3D3D3);
@@ -209,10 +211,10 @@ footer {
 }
 
 @font-face {
-    font-family: 'Scaver';
-    src: url('Scaver-Black.woff2') format('woff2'),
-    url('Scaver-Black.woff') format('woff');
-    font-weight: 900;
+    font-family: 'Scaver Med';
+    src: url('Scaver-Medium.woff2') format('woff2'),
+    url('Scaver-Medium.woff') format('woff');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
@@ -229,11 +231,11 @@ footer {
 /* Typography */
 
 h1 {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
 }
 
 h2 {
-    font-size: 2.4rem;
+    font-size: 1.4rem;
 }
 
 h1,h2 {
@@ -242,10 +244,7 @@ h1,h2 {
 }
 
 p {
-    font-size: 1.6rem;
-    line-height: 1.6;
-    letter-spacing: 0.1rem;
-    word-spacing: 0.3rem;
-    font-family: 'scaver', sans-serif;
+    font-size: 1rem;
+    font-family: 'scavermed', sans-serif;
 }
 

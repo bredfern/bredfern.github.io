@@ -237,12 +237,53 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.shadowRoot.innerHTML = `
 <style>
 :host {
+  font-family: 'Scaver Med';
   display: block;
   padding: 0.5rem;
   width: 100%; /* Increased max-width for repos */
   box-shadow: 0 0.19rem 0.5rem rgba(0, 0, 0, 0.05);
   border-radius: 0.25rem;
 }
+
+
+@font-face {
+  font-family: 'Scaver Med';
+  src: url('Scaver-Medium.woff2') format('woff2'),
+  url('Scaver-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Scaver ExtBd';
+  src: url('Scaver-ExtraBold.woff2') format('woff2'),
+  url('Scaver-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h1,h2 {
+  font-family: 'scaverextbld', serif;
+  letter-spacing: 0.2rem;
+}
+
+p {
+  font-size: 1rem;
+  font-family: 'scavermed', sans-serif;
+}
+
 
 .player-container {
     padding: 0;
