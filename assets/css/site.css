@@ -131,7 +131,7 @@ a:active {
 #logo {
   border: none;
   max-width: 20rem;
-  height: 10rem;
+  height: 8rem;
 
 }
 
@@ -146,9 +146,9 @@ a:hover {
 
 .icon {
     display: inline;
-    width: 1.5rem;
+    width: 1.8rem;
     height: auto;
-    margin-top: 7.8rem;
+    margin-top: 8rem;
 }
 
 nav {
