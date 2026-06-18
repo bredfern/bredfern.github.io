@@ -148,7 +148,7 @@ a:hover {
     display: inline;
     width: 2rem;
     height: auto;
-    margin-top: 7.5rem;
+    margin-top: 7rem;
 }
 
 nav {
@@ -176,7 +176,7 @@ header {
 }
 
 footer {
-    padding: 0.3rem;
+    padding: 0.5rem;
     bottom: 0;
     height: auto;
     width: 100%;	
