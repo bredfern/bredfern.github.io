@@ -169,7 +169,7 @@ class AudioPlaylistPlayer extends HTMLElement {
         this.playPauseBtn.innerHTML = "‖";
       } else {
       	this.audioPlayer.pause();
-	this.playPauseBtn.innerHTML ='';
+	      this.playPauseBtn.innerHTML ='';
         this.playPauseBtn.innerHTML = "▶︎";
       }
       this.updatePlaylistActiveState();
@@ -178,6 +178,7 @@ class AudioPlaylistPlayer extends HTMLElement {
 
   playNext() {
     this.loadTrack(this.currentTrackIndex + 1);
+    this.audioPlayer.play();
   }
 
   pausePlayer() {
