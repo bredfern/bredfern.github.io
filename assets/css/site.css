@@ -6,7 +6,7 @@ html {
     min-height: 100%;
     padding: 0;
     margin: 0; 
-    font-family: "Avenir Next", "Avenir", sans-serif; 
+    font-family: "Scaver Med", "Avenir Next", "Avenir", sans-serif; 
 }
 
 body {
@@ -146,15 +146,12 @@ a:hover {
 
 .icon {
     display: inline;
-    width: 1.8rem;
+    width: 1.2rem;
     height: auto;
-    margin-top: 7.2rem;
 }
 
 nav {
-  position: absolute;
-  right: 1.1rem;
-  top: 2rem;
+float: right;
 }
 
 .no-decor, h1 a {
