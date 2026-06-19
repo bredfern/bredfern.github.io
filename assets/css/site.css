@@ -186,7 +186,9 @@ footer {
 }
 
 #marzen {
-    border: solid 0.1rem  #000;
+    background-color: transparent;
+    border-radius: 0.25rem;
+    border: solid 0.1rem #cecece;
     padding: 1rem;
     margin-top: 1rem;
 }
