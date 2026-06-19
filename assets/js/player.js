@@ -352,7 +352,7 @@ p {
 #custom-audio-player {
     gap: 0.25rem;
     text-align: center;
-    background-color: silver;
+    background-color: #FFE4B5;
     padding: 0.5rem;
     border-radius: 0.5rem;
 }
