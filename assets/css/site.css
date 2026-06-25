@@ -218,9 +218,9 @@ footer {
 }
 
 @font-face {
-    font-family: 'Cloude-Outline';
-    src: url('Cloude-Outline.woff2') format('woff2'),
-        url('Cloude-Outline.woff') format('woff');
+    font-family: 'Cloude';
+    src: url('Cloude.woff2') format('woff2'),
+        url('Cloude.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -237,7 +237,7 @@ h2 {
 }
 
 h1,h2 {
-    font-family: 'cloudeoutline', serif;
+    font-family: 'cloude', serif;
     letter-spacing: 0.2rem;
 }
 
