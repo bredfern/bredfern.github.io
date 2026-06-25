@@ -229,11 +229,11 @@ footer {
 /* Typography */
 
 h1 {
-    font-size: 2.6rem;
+    font-size: 2.2rem;
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 2.0rem;
 }
 
 h1,h2 {
@@ -242,7 +242,7 @@ h1,h2 {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-family: 'scavermed', sans-serif;
 }
 
