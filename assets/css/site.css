@@ -218,10 +218,10 @@ footer {
 }
 
 @font-face {
-    font-family: 'Scaver ExtBd';
-    src: url('Scaver-ExtraBold.woff2') format('woff2'),
-    url('Scaver-ExtraBold.woff') format('woff');
-    font-weight: bold;
+    font-family: 'Cloude';
+    src: url('Cloude.woff2') format('woff2'),
+        url('Cloude.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
@@ -237,7 +237,7 @@ h2 {
 }
 
 h1,h2 {
-    font-family: 'scaverextbld', serif;
+    font-family: 'cloude', serif;
     letter-spacing: 0.2rem;
 }
 
