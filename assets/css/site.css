@@ -17,11 +17,9 @@ body {
     width: 100%;
     font-family: sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: normal;
     font-style: normal;
-    font-variation-settings:
-    "wdth" 100,
-    "YTLC" 500;
+    font-variation-settings: "wdth" 100, "YTLC" 500;
 }
 
 h1 {
