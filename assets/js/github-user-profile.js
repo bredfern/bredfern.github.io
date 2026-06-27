@@ -170,7 +170,7 @@ class GithubUserProfile extends HTMLElement {
                     font-size: 2.4rem;
                 }
 
-                h1,h2 {
+                h1 {
                     font-family: 'scaverextbd', serif;
                     letter-spacing: 0.2rem;
                 }
