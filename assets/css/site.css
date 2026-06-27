@@ -145,7 +145,7 @@ a:hover {
 .icon {
     display: inline;
     width: 2.6rem;
-    height: auto;
+    height: 2.6rem;
     margin-top: 0.35rem;
 }
 
@@ -216,13 +216,14 @@ footer {
 }
 
 @font-face {
-    font-family: 'Cloude-Outline';
-    src: url('Cloude-Outline.woff2') format('woff2'),
-        url('Cloude-Outline.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Scaver ExtBd';
+    src: url('Scaver-ExtraBold.woff2') format('woff2'),
+    url('Scaver-ExtraBold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
+
 
 /* Typography */
 
@@ -235,7 +236,7 @@ h2 {
 }
 
 h1,h2 {
-    font-family: 'cloude-outline', serif;
+    font-family: 'scaverextbld', serif;
     letter-spacing: 0.2rem;
 }
 
