@@ -151,15 +151,6 @@ class GithubUserProfile extends HTMLElement {
                     font-display: swap;
                 }
 
-                @font-face {
-                    font-family: 'Scaver ExtBd';
-                    src: url('Scaver-ExtraBold.woff2') format('woff2'),
-                    url('Scaver-ExtraBold.woff') format('woff');
-                    font-weight: bold;
-                    font-style: normal;
-                    font-display: swap;
-                }
-
                 /* Typography */
 
                 h1 {
@@ -171,7 +162,7 @@ class GithubUserProfile extends HTMLElement {
                 }
 
                 h1 {
-                    font-family: 'scaverextbd', serif;
+                    font-family: 'scaveremed', serif;
                     letter-spacing: 0.2rem;
                 }
 
