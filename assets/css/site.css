@@ -179,7 +179,9 @@ footer {
     padding: 0.5rem;
     bottom: 0;
     height: auto;
-    width: 90%;	
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #87CEFA;
     color: red;
     text-align: center;
