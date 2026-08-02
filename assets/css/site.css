@@ -144,8 +144,8 @@ a:hover {
 
 .icon {
     display: inline;
-    width: 2.6rem;
-    height: 2.6rem;
+    width: 0.6rem;
+    height: 0.6rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
@@ -156,7 +156,7 @@ a:hover {
 
 header {
     color: #000;
-    height: auto;
+    height: 10rem;
     padding: 0.5rem;
     width: 100%;
     text-align: center;
