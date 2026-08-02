@@ -113,6 +113,9 @@ input:focus-visible + label {
 
 #content {
     padding: 1rem;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 1.2rem;
     margin-bottom: 6rem;
 }
@@ -127,7 +130,6 @@ a:active {
 #logo {
   border: none;
   width: 100%;
-  height: 98%;
 }
 
 
@@ -136,13 +138,14 @@ a:hover {
 }
 
 .container {
+  width: 100%;
   min-height: 100vh;
 }
 
 .icon {
     display: inline;
-    width: 2rem;
-    height: 2rem;
+    width: 2.6rem;
+    height: 2.6rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
@@ -153,7 +156,7 @@ a:hover {
 
 header {
     color: #000;
-    height: 9.2rem;
+    height: auto;
     padding: 0.5rem;
     width: 100%;
     text-align: center;
@@ -174,7 +177,7 @@ footer {
     padding: 0.5rem;
     bottom: 0;
     height: auto;
-    width: 100%;
+    width: 100%;	
     background-color: #87CEFA;
     color: red;
     text-align: center;
