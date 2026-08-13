@@ -9,35 +9,15 @@
   <link rel="stylesheet" href="/assets/css/site.css">
 </head>
 <body>
-<div class="container">
   <header>
     <img src="/assets/svg/red.svg" id="logo" alt="REDFERN" fetchpriority="high">
   </header>
   <main>
-    <div id="content">
-      <div class="tabset">
-        <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
-        <label for="tab1">Home</label>
-        <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
-        <label for="tab2">Code</label>
-        <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
-        <div class="tab-panels">
-          <section id="marzen" class="tab-panel fancy-panel">
-	    <h1>Brian Redfern</h1>
-            <p>
-            I had worked as a web developer since 1995. I was on the pre-ipo team at Geocities where we created the early web by enabling ordinary people to easily make their own pages for free.
-            </p>
-          </section>
-          <section id="rauchbier" class="tab-panel">
-            <github-user-profile></github-user-profile>
-          </section>
-        </div>
-      </div>
+    <github-user-profile></github-user-profile>
   </main>
   <footer class="centered">
-    <div>&#169; 2026 Brian Redfern</div>
+    &#169; 2026 Brian Redfern
   </footer>
-</div>
-<script src="/assets/js/github-user-profile.js" defer></script>
+  <script src="/assets/js/github-user-profile.js" defer></script>
 </body>
 </html>

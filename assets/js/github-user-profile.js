@@ -132,10 +132,8 @@ class GithubUserProfile extends HTMLElement {
                 :host {
                     display: block;
                     font-family: 'Scaver Med', serif;
-                    padding: 1.5rem;
-                    max-width: 40rem;
-                    margin: 1.25rem auto;
-                    margin-top: 0.7rem;
+                    padding: 0.5rem;
+                    max-width: 100%;
                     box-shadow: 0 0.2rem  rgba(0, 0, 0, 0.05);
                     background-color: transparent;
                     border-radius: 0.25rem;
