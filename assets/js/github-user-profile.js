@@ -131,9 +131,11 @@ class GithubUserProfile extends HTMLElement {
             <style>
                 :host {
                     display: block;
-                    font-family: 'Scaver Med', serif;
-                    padding: 0.5rem;
-                    max-width: 100%;
+                    font-family: 'Scaver Med'";
+                    padding: 1.5rem;
+                    max-width: 40rem;
+                    margin: 1.25rem auto;
+                    margin-top: 0.7rem;
                     box-shadow: 0 0.2rem  rgba(0, 0, 0, 0.05);
                     background-color: transparent;
                     border-radius: 0.25rem;
@@ -149,6 +151,15 @@ class GithubUserProfile extends HTMLElement {
                     font-display: swap;
                 }
 
+                @font-face {
+                    font-family: 'Scaver ExtBd';
+                    src: url('Scaver-ExtraBold.woff2') format('woff2'),
+                    url('Scaver-ExtraBold.woff') format('woff');
+                    font-weight: bold;
+                    font-style: normal;
+                    font-display: swap;
+                }
+
                 /* Typography */
 
                 h1 {
@@ -159,8 +170,8 @@ class GithubUserProfile extends HTMLElement {
                     font-size: 2.4rem;
                 }
 
-                h1 {
-                    font-family: 'scaveremed', serif;
+                h1,h2 {
+                    font-family: 'scaverextbld', serif;
                     letter-spacing: 0.2rem;
                 }
 

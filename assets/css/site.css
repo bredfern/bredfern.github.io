@@ -10,16 +10,18 @@ html {
 }
 
 body {
-    background: #fff;
+    background: #FDF5E6;
     color: #000;
     padding: 0;
     margin: 0;
     width: 100%;
     font-family: sans-serif;
     font-optical-sizing: auto;
-    font-weight: normal;
+    font-weight: <weight>;
     font-style: normal;
-    font-variation-settings: "wdth" 100, "YTLC" 500;
+    font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
 }
 
 h1 {
@@ -113,9 +115,9 @@ input:focus-visible + label {
 
 #content {
     padding: 1rem;
-    /*max-width: 80rem;
+    max-width: 40rem;
     margin-left: auto;
-    margin-right: auto;*/
+    margin-right: auto;
     font-size: 1.2rem;
     margin-bottom: 6rem;
 }
@@ -130,8 +132,8 @@ a:active {
 #logo {
   border: none;
   width: 100%;
-  height: auto;
 }
+
 
 a:hover {
   font-weight: bold;
@@ -144,8 +146,9 @@ a:hover {
 
 .icon {
     display: inline;
-    width: 1.3rem;
-    height: 1.3rem;
+    width: 2rem;
+    height: auto;
+    margin-top: 0.35rem;
 }
 
 .no-decor, h1 a {
@@ -157,6 +160,7 @@ header {
     height: auto;
     padding: 0.5rem;
     width: 100%;
+    text-align: center;
     background: linear-gradient(-45deg, #000000, #DCDCDC, #FFFFFF, #D3D3D3);
     background-size: 400% 400%;
     background-image: url(/assets/webp/clouds.webp);
@@ -204,7 +208,6 @@ footer {
   height: 6.25rem;
 }
 
-
 @font-face {
     font-family: 'Scaver Med';
     src: url('Scaver-Medium.woff2') format('woff2'),
@@ -223,15 +226,14 @@ footer {
     font-display: swap;
 }
 
-
 /* Typography */
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 h1,h2 {
@@ -240,7 +242,7 @@ h1,h2 {
 }
 
 p {
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-family: 'scavermed', sans-serif;
 }
 
