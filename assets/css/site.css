@@ -4,6 +4,7 @@
 
 html { 
     min-height: 100%;
+    width: 100%; 
     padding: 0;
     margin: 0; 
     font-family: "Scaver Med", "Avenir Next", "Avenir", sans-serif; 
@@ -18,9 +19,7 @@ body {
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
-    font-variation-settings:
-    "wdth" 100,
-    "YTLC" 500;
+    font-variation-settings: "wdth" 100, "YTLC" 500;
 }
 
 h1 {
