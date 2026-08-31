@@ -3,10 +3,6 @@
 }
 
 html { 
-    min-height: 100%;
-    width: 100%; 
-    padding: 0;
-    margin: 0; 
     font-family: "Scaver Med", "Avenir Next", "Avenir", sans-serif; 
 }
 
@@ -115,7 +111,7 @@ input:focus-visible + label {
     padding: 1rem;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 30rem;
     font-size: 1.2rem;
     margin-bottom: 6rem;
 }
