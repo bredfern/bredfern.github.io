@@ -1,0 +1,26 @@
+var c = document.getElementById("c").getContext("2d");
+var cw, ch;
+
+function resize() {
+  cw = c.canvas.clientWidth;
+  ch = c.canvas.clientHeight;
+  c.canvas.width = cw * devicePixelRatio;
+  c.canvas.height = ch * devicePixelRatio;
+  c.scale(devicePixelRatio, devicePixelRatio);
+  c._stars=Array.from({length:800},function(){return{x:(Math.random()-.5)*2,y:(Math.random()-.5)*2,z:Math.random()}})
+}
+
+resize();
+window.addEventListener("resize", function() {
+  c.setTransform(1, 0, 0, 1, 0, 0);
+  resize();
+});
+
+var start = performance.now();
+(function loop(ts) {
+  cw = c.canvas.clientWidth;
+  ch = c.canvas.clientHeight;
+  var w = cw, h = ch, t = ts - start;
+  var s=c._stars,cx=w/2,cy=h/2;c.fillStyle='#000';c.fillRect(0,0,w,h);for(var i=0;i<s.length;i++){s[i].z-=.008;if(s[i].z<=0){s[i].x=(Math.random()-.5)*2;s[i].y=(Math.random()-.5)*2;s[i].z=1}var px=(s[i].x/s[i].z)*w/2+cx,py=(s[i].y/s[i].z)*h/2+cy,d=1-s[i].z,r=d*3+1;if(px<0||px>w||py<0||py>h)continue;var a=Math.min(1,1.5*d);c.beginPath();c.arc(px,py,Math.max(.5,r),0,Math.PI*2);c.fillStyle='rgba('+(180+75*d)+','+(200+55*d)+',255,'+a+')';c.fill()}
+  requestAnimationFrame(loop);
+})(performance.now());
