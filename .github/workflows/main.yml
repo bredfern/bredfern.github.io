@@ -67,4 +67,3 @@ runs:
       uses: actions/upload-pages-artifact@v3
       with:
         path: ${{ inputs.working_directory }}/${{ inputs.output_dir }}
-
