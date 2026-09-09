@@ -6,7 +6,7 @@ inputs:
     description: "Zola version tag"
     required: true
 
-  working_directory:
+  working_directory: "."
     description: "Directory containing config.toml"
     required: false
     default: "."
