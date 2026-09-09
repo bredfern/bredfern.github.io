@@ -2,34 +2,34 @@ name: "Build Zola site for GitHub Pages"
 description: "Build a Zola site using a specific Zola version and upload a GitHub Pages artifact."
 
 inputs:
-  zola_version: v0.23.3
-  description: "Zola version tag"
-  required: true
+  zola_version:
+    description: "Zola version tag (e.g. v0.22.0)"
+    required: true
 
-working_directory:
-  description: "Directory containing config.toml"
-  required: false
-  default: "."
+  working_directory:
+    description: "Directory containing config.toml"
+    required: false
+    default: "."
 
-output_dir:
-  description: "Zola output directory"
-  required: false
-  default: "public"
+  output_dir:
+    description: "Zola output directory"
+    required: false
+    default: "public"
 
-build_flags:
-  description: "Extra flags passed to `zola build`"
-  required: false
-  default: ""
+  build_flags:
+    description: "Extra flags passed to `zola build`"
+    required: false
+    default: ""
 
-check_links:
-  description: "Run `zola check` before building"
-  required: false
-  default: "false"
+  check_links:
+    description: "Run `zola check` before building"
+    required: false
+    default: "false"
 
-check_flags:
-  description: "Extra flags passed to `zola check`"
-  required: false
-  default: ""
+  check_flags:
+    description: "Extra flags passed to `zola check`"
+    required: false
+    default: ""
 
 runs:
   using: "composite"
