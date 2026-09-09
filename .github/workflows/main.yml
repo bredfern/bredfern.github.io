@@ -1,69 +1,45 @@
-name: "Build Zola site for GitHub Pages"
-description: "Build a Zola site using a specific Zola version and upload a GitHub Pages artifact."
+name: Build Zola site for GitHub Pages
 
-inputs:
-  zola_version:
-    description: "Zola version tag (e.g. v0.22.0)"
-    required: true
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
 
-  working_directory:
-    description: "Directory containing config.toml"
-    required: false
-    default: "."
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
-  output_dir:
-    description: "Zola output directory"
-    required: false
-    default: "public"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-  build_flags:
-    description: "Extra flags passed to `zola build`"
-    required: false
-    default: ""
+      - name: Validate Zola version
+        shell: bash
+        run: |
+          set -euo pipefail
+          v="v0.22.0" # Set your version here
+          if [[ ! "$v" =~ ^v[0-9]+\.[0-9]+\.[0-9]+([\-+].*)?$ ]]; then
+            echo "Invalid zola_version: '$v' (expected e.g. v0.22.0)" >&2
+            exit 1
+          fi
 
-  check_links:
-    description: "Run `zola check` before building"
-    required: false
-    default: "false"
+      - name: Build site with Zola
+        shell: bash
+        run: |
+          set -euo pipefail
+          image="ghcr.io/getzola/zola:v0.22.0"
+          echo "Using image: $image"
 
-  check_flags:
-    description: "Extra flags passed to `zola check`"
-    required: false
-    default: ""
-
-runs:
-  using: "composite"
-  steps:
-    - name: Validate Zola version
-      shell: bash
-      run: |
-        set -euo pipefail
-        v="${{ inputs.zola_version }}"
-        if [[ ! "$v" =~ ^v[0-9]+\.[0-9]+\.[0-9]+([\-+].*)?$ ]]; then
-          echo "Invalid zola_version: '$v' (expected e.g. v0.22.0)" >&2
-          exit 1
-        fi
-
-    - name: Build site with Zola
-      shell: bash
-      run: |
-        set -euo pipefail
-        image="ghcr.io/getzola/zola:${{ inputs.zola_version }}"
-        echo "Using image: $image"
-
-        if [[ "${{ inputs.check_links }}" == "true" ]]; then
           docker run --rm \
             -v "${{ github.workspace }}":/workspace \
-            -w "/workspace/${{ inputs.working_directory }}" \
-            "$image" check ${{ inputs.check_flags }}
-        fi
+            -w "/workspace/." \
+            "$image" build
 
-        docker run --rm \
-          -v "${{ github.workspace }}":/workspace \
-          -w "/workspace/${{ inputs.working_directory }}" \
-          "$image" build ${{ inputs.build_flags }}
-
-    - name: Upload GitHub Pages artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: ${{ inputs.working_directory }}/${{ inputs.output_dir }}
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
