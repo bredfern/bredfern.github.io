@@ -35,6 +35,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: "./public" # Uploads ONLY the generated HTML/CSS files
+          zola_version: v0.22.0
+          root: "." # Ensure this points to the exact folder containing config.toml
 
   deploy:
     runs-on: ubuntu-latest
