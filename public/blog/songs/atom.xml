@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title> - Songs</title>
-    <link rel="self" type="application/atom+xml" href="https://fraterbrian.com/blog/songs/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://fraterbrian.com/blog/songs/"/>
+    <link rel="self" type="application/atom+xml" href="https://bredfern.github.io/blog/songs/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/songs/"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2025-01-18T00:00:00+00:00</updated>
-    <id>https://fraterbrian.com/blog/songs/atom.xml</id>
+    <id>https://bredfern.github.io/blog/songs/atom.xml</id>
     <entry xml:lang="en">
         <title>Only Daughter</title>
         <published>2025-01-18T00:00:00+00:00</published>
@@ -15,10 +15,10 @@
           <name>Unknown</name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://fraterbrian.com/blog/songs/onlydaughter/"/>
-        <id>https://fraterbrian.com/blog/songs/onlydaughter/</id>
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/songs/onlydaughter/"/>
+        <id>https://bredfern.github.io/blog/songs/onlydaughter/</id>
         
-        <content type="html" xml:base="https://fraterbrian.com/blog/songs/onlydaughter/">&lt;p&gt;[Verse 1] Oh, my daughter Why did you run away from me Knowing the
+        <content type="html" xml:base="https://bredfern.github.io/blog/songs/onlydaughter/">&lt;p&gt;[Verse 1] Oh, my daughter Why did you run away from me Knowing the
 daughter Joined a husband in the desert sea My only daughter Why did you
 run away from me Knowing the daughter Run in the desert from me&lt;/p&gt;
 &lt;p&gt;[Instrumental]&lt;/p&gt;
@@ -45,10 +45,10 @@ now right&lt;/p&gt;
           <name>Unknown</name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://fraterbrian.com/blog/songs/ridin/"/>
-        <id>https://fraterbrian.com/blog/songs/ridin/</id>
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/songs/ridin/"/>
+        <id>https://bredfern.github.io/blog/songs/ridin/</id>
         
-        <content type="html" xml:base="https://fraterbrian.com/blog/songs/ridin/">&lt;p&gt;[Verse 1] He&#39;s the one who gets caught up in the chaos The one I won&#39;t
+        <content type="html" xml:base="https://bredfern.github.io/blog/songs/ridin/">&lt;p&gt;[Verse 1] He&#39;s the one who gets caught up in the chaos The one I won&#39;t
 forget The one I&#39;m going to teach you about The one I&#39;m going to teach
 you about&lt;/p&gt;
 &lt;p&gt;[Chorus] If you want to run, run, run But you must know that I get to
@@ -78,10 +78,10 @@ run to If you want to run, run, run But you must know, you must know&lt;/p&gt;
           <name>Unknown</name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://fraterbrian.com/blog/songs/tinder/"/>
-        <id>https://fraterbrian.com/blog/songs/tinder/</id>
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/songs/tinder/"/>
+        <id>https://bredfern.github.io/blog/songs/tinder/</id>
         
-        <content type="html" xml:base="https://fraterbrian.com/blog/songs/tinder/">&lt;p&gt;Fog in brain Like ceiling fan Wearing out With soot and dust&lt;/p&gt;
+        <content type="html" xml:base="https://bredfern.github.io/blog/songs/tinder/">&lt;p&gt;Fog in brain Like ceiling fan Wearing out With soot and dust&lt;/p&gt;
 &lt;p&gt;I saw the towel rise and whip around all by itself&lt;/p&gt;
 &lt;p&gt;someone must have died here I don&#39;t really care until I am aloft in the
 air About to be thrown downstairs&lt;/p&gt;
@@ -105,10 +105,10 @@ air About to be thrown downstairs&lt;/p&gt;
           <name>Unknown</name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://fraterbrian.com/blog/songs/the-day-after-christmas/"/>
-        <id>https://fraterbrian.com/blog/songs/the-day-after-christmas/</id>
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/songs/the-day-after-christmas/"/>
+        <id>https://bredfern.github.io/blog/songs/the-day-after-christmas/</id>
         
-        <content type="html" xml:base="https://fraterbrian.com/blog/songs/the-day-after-christmas/">&lt;p&gt;&lt;em&gt;(Chord above line 1: C9)&lt;/em&gt;&lt;/p&gt;
+        <content type="html" xml:base="https://bredfern.github.io/blog/songs/the-day-after-christmas/">&lt;p&gt;&lt;em&gt;(Chord above line 1: C9)&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Well, maybe God&#39;s&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;(Chord above line 2: F9)&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;just like Santa Claus,&lt;/p&gt;
@@ -190,10 +190,10 @@ air About to be thrown downstairs&lt;/p&gt;
           <name>Unknown</name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://fraterbrian.com/blog/songs/the-shadows/"/>
-        <id>https://fraterbrian.com/blog/songs/the-shadows/</id>
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/songs/the-shadows/"/>
+        <id>https://bredfern.github.io/blog/songs/the-shadows/</id>
         
-        <content type="html" xml:base="https://fraterbrian.com/blog/songs/the-shadows/">&lt;p&gt;Jason was lost in&lt;/p&gt;
+        <content type="html" xml:base="https://bredfern.github.io/blog/songs/the-shadows/">&lt;p&gt;Jason was lost in&lt;/p&gt;
 &lt;p&gt;the long shadows&lt;/p&gt;
 &lt;p&gt;His night vision gone&lt;/p&gt;
 &lt;p&gt;Torn from his sockets,&lt;/p&gt;
@@ -215,10 +215,10 @@ air About to be thrown downstairs&lt;/p&gt;
           <name>Unknown</name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://fraterbrian.com/blog/songs/poor-old-tom/"/>
-        <id>https://fraterbrian.com/blog/songs/poor-old-tom/</id>
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/songs/poor-old-tom/"/>
+        <id>https://bredfern.github.io/blog/songs/poor-old-tom/</id>
         
-        <content type="html" xml:base="https://fraterbrian.com/blog/songs/poor-old-tom/">&lt;p&gt;&lt;strong&gt;G&lt;/strong&gt;&lt;/p&gt;
+        <content type="html" xml:base="https://bredfern.github.io/blog/songs/poor-old-tom/">&lt;p&gt;&lt;strong&gt;G&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Poor old Tom was a&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;C&lt;/strong&gt; &lt;strong&gt;D&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;dirty old man,&lt;/p&gt;

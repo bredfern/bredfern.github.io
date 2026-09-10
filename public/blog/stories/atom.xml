@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title> - Stories</title>
-    <link rel="self" type="application/atom+xml" href="https://fraterbrian.com/blog/stories/atom.xml"/>
-    <link rel="alternate" type="text/html" href="https://fraterbrian.com/blog/stories/"/>
+    <link rel="self" type="application/atom+xml" href="https://bredfern.github.io/blog/stories/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/stories/"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2020-03-02T00:00:00+00:00</updated>
-    <id>https://fraterbrian.com/blog/stories/atom.xml</id>
+    <id>https://bredfern.github.io/blog/stories/atom.xml</id>
     <entry xml:lang="en">
         <title>Generation Ship</title>
         <published>2020-03-02T00:00:00+00:00</published>
@@ -15,10 +15,10 @@
           <name>Unknown</name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://fraterbrian.com/blog/stories/generation/"/>
-        <id>https://fraterbrian.com/blog/stories/generation/</id>
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/stories/generation/"/>
+        <id>https://bredfern.github.io/blog/stories/generation/</id>
         
-        <content type="html" xml:base="https://fraterbrian.com/blog/stories/generation/">&lt;pre class=&quot;giallo&quot; style=&quot;color: #CDD6F4; background-color: #1E1E2E;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;It was one of those cloudy nights, it was not unusual to never see any stars here. It created the illusion in this city that one was living inside a dome.&lt;/span&gt;&lt;/span&gt;
+        <content type="html" xml:base="https://bredfern.github.io/blog/stories/generation/">&lt;pre class=&quot;giallo&quot; style=&quot;color: #CDD6F4; background-color: #1E1E2E;&quot; &gt;&lt;code data-lang=&quot;plain&quot;&gt;&lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;It was one of those cloudy nights, it was not unusual to never see any stars here. It created the illusion in this city that one was living inside a dome.&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;giallo-l&quot;&gt;&lt;/span&gt;
 &lt;span class=&quot;giallo-l&quot;&gt;&lt;/span&gt;
 &lt;span class=&quot;giallo-l&quot;&gt;&lt;span&gt;Late to work again and his phone was dead. The train had frozen on the track and sat there in the dark for 3 hours, long enough for his half empty phone to run out.&lt;/span&gt;&lt;/span&gt;
@@ -381,10 +381,10 @@ analog override!&quot;&lt;/p&gt;
           <name>Unknown</name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://fraterbrian.com/blog/stories/explodes/"/>
-        <id>https://fraterbrian.com/blog/stories/explodes/</id>
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/stories/explodes/"/>
+        <id>https://bredfern.github.io/blog/stories/explodes/</id>
         
-        <content type="html" xml:base="https://fraterbrian.com/blog/stories/explodes/">&lt;p&gt;The electricity sizzled and popped, as the huge spark shot up through metal tires, and into the open air, exploding into a brilliant green blue flash. Wheels spun, lights flashed on, and the machine was on. The scientist sitting at the controls flipped a switch, and was instantly transported across the lab basement floor.&lt;/p&gt;
+        <content type="html" xml:base="https://bredfern.github.io/blog/stories/explodes/">&lt;p&gt;The electricity sizzled and popped, as the huge spark shot up through metal tires, and into the open air, exploding into a brilliant green blue flash. Wheels spun, lights flashed on, and the machine was on. The scientist sitting at the controls flipped a switch, and was instantly transported across the lab basement floor.&lt;/p&gt;
 &lt;p&gt;His colleagues stood in amazement, stunned at his accomplishment, so stunned, that in fact, they decided to pretend that the event had never happened, and so in their own stuffy Victorian ways, they dismissed it as parlor magic, and kicked Dr. Long out of the society of science for fraud.&lt;/p&gt;
 &lt;p&gt;Dr. Long packed the machine in disgust.&lt;/p&gt;
 &lt;p&gt;&quot;Thirty years of work thrown away in an instant by a bunch of overstuffed narrow-minded cynics, who try to call themselves scientists, Rumpth!!&quot;&lt;/p&gt;
@@ -439,10 +439,10 @@ I burnt L.A. in effigy.&lt;/p&gt;
           <name>Unknown</name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://fraterbrian.com/blog/stories/satisfied-to-control/"/>
-        <id>https://fraterbrian.com/blog/stories/satisfied-to-control/</id>
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/stories/satisfied-to-control/"/>
+        <id>https://bredfern.github.io/blog/stories/satisfied-to-control/</id>
         
-        <content type="html" xml:base="https://fraterbrian.com/blog/stories/satisfied-to-control/">&lt;p&gt;I realize now what a formative moment that battle w/ ETS was for me.&lt;/p&gt;
+        <content type="html" xml:base="https://bredfern.github.io/blog/stories/satisfied-to-control/">&lt;p&gt;I realize now what a formative moment that battle w/ ETS was for me.&lt;/p&gt;
 &lt;p&gt;Up until then I had been anally-retentive because I had faith in the system, I believed in the system, not in those around me, I didn&#39;t realize the absurdity of the system.&lt;/p&gt;
 &lt;p&gt;So when Chad &amp;amp; Vache cheated on the test, I turned them in, because they broke the rules. I also turned them in because they betrayed our trust, and I still think that what they did, that betrayal was wrong. But they understood, or at least Erevan understood that there was something fundamentally absurd about the system itself, one which bases a whole year&#39;s work on one single test score. Their amorality was simply a reaction to the amorality of the whole system.&lt;/p&gt;
 &lt;p&gt;I realized this when ETS turned on us, the believers in the system. Though we believed in them, we were also a threat, because we had unknowingly &amp;amp; innocently revealed the weakness in their system.&lt;/p&gt;
@@ -480,10 +480,10 @@ I burnt L.A. in effigy.&lt;/p&gt;
           <name>Unknown</name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://fraterbrian.com/blog/stories/poems-about-war/"/>
-        <id>https://fraterbrian.com/blog/stories/poems-about-war/</id>
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/stories/poems-about-war/"/>
+        <id>https://bredfern.github.io/blog/stories/poems-about-war/</id>
         
-        <content type="html" xml:base="https://fraterbrian.com/blog/stories/poems-about-war/">&lt;p&gt;Father says to son &quot;Ya done good son, ya done real good, now wash the blood off ya&#39; hands and come on inside, your mother made your favorite, meatloaf.&quot;&lt;/p&gt;
+        <content type="html" xml:base="https://bredfern.github.io/blog/stories/poems-about-war/">&lt;p&gt;Father says to son &quot;Ya done good son, ya done real good, now wash the blood off ya&#39; hands and come on inside, your mother made your favorite, meatloaf.&quot;&lt;/p&gt;
 &lt;p&gt;By turning in Dash to Hackett, his manager Erin, ends up jacking off again, goes to confession, but priest says its a sinful, lonely thing, but priest works for Hackett, and turns in Arto, but Arto gets back, because when he&#39;s&lt;/p&gt;
 &lt;p&gt;celibate with Dash, all the people want Dash to love him alone&lt;/p&gt;
 </content>
@@ -498,10 +498,10 @@ I burnt L.A. in effigy.&lt;/p&gt;
           <name>Unknown</name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://fraterbrian.com/blog/stories/feral/"/>
-        <id>https://fraterbrian.com/blog/stories/feral/</id>
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/stories/feral/"/>
+        <id>https://bredfern.github.io/blog/stories/feral/</id>
         
-        <content type="html" xml:base="https://fraterbrian.com/blog/stories/feral/">&lt;p&gt;Five million die for God, we could all be lost for Ideology.&lt;/p&gt;
+        <content type="html" xml:base="https://bredfern.github.io/blog/stories/feral/">&lt;p&gt;Five million die for God, we could all be lost for Ideology.&lt;/p&gt;
 &lt;p&gt;For Gods to subtle to comprehend, but too real to ignore. Paranoia Paranoia, Paranoia, rushing through my veins, through my brain.&lt;/p&gt;
 &lt;p&gt;Paranoia, Paranoia, daughter of infamy.&lt;/p&gt;
 &lt;p&gt;Prerequisite to insanity. Is someone watching over me? The voice, the voice from my throat cannot be mine,&lt;/p&gt;
@@ -529,10 +529,10 @@ the candlestick.&lt;/p&gt;
           <name>Unknown</name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://fraterbrian.com/blog/stories/the-family-way/"/>
-        <id>https://fraterbrian.com/blog/stories/the-family-way/</id>
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/stories/the-family-way/"/>
+        <id>https://bredfern.github.io/blog/stories/the-family-way/</id>
         
-        <content type="html" xml:base="https://fraterbrian.com/blog/stories/the-family-way/">&lt;p&gt;Poor little Susie Was in a family way Belly hard and smooth Little sister Suzie says &quot;Mommy, how did Susie get that way?&quot; Mommy says &quot;Hush, just something I cannot tell you.&quot;&lt;/p&gt;
+        <content type="html" xml:base="https://bredfern.github.io/blog/stories/the-family-way/">&lt;p&gt;Poor little Susie Was in a family way Belly hard and smooth Little sister Suzie says &quot;Mommy, how did Susie get that way?&quot; Mommy says &quot;Hush, just something I cannot tell you.&quot;&lt;/p&gt;
 </content>
         
     </entry>
@@ -545,10 +545,10 @@ the candlestick.&lt;/p&gt;
           <name>Unknown</name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://fraterbrian.com/blog/stories/six-day-creation/"/>
-        <id>https://fraterbrian.com/blog/stories/six-day-creation/</id>
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/stories/six-day-creation/"/>
+        <id>https://bredfern.github.io/blog/stories/six-day-creation/</id>
         
-        <content type="html" xml:base="https://fraterbrian.com/blog/stories/six-day-creation/">&lt;p&gt;Nothing left to believe in but my worn gym shoes&lt;/p&gt;
+        <content type="html" xml:base="https://bredfern.github.io/blog/stories/six-day-creation/">&lt;p&gt;Nothing left to believe in but my worn gym shoes&lt;/p&gt;
 &lt;p&gt;Take me anywhere – god&#39;s country&lt;/p&gt;
 &lt;p&gt;But I can&#39;t believe in god anymore,&lt;/p&gt;
 &lt;p&gt;my gym shoes are worn and dirty my feet are tired&lt;/p&gt;
@@ -577,10 +577,10 @@ the candlestick.&lt;/p&gt;
           <name>Unknown</name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://fraterbrian.com/blog/stories/story-of-a-human/"/>
-        <id>https://fraterbrian.com/blog/stories/story-of-a-human/</id>
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/stories/story-of-a-human/"/>
+        <id>https://bredfern.github.io/blog/stories/story-of-a-human/</id>
         
-        <content type="html" xml:base="https://fraterbrian.com/blog/stories/story-of-a-human/">&lt;p&gt;Woody tried to shake the boy&#39;s hand, as it is considered polite to do so, but it was awkward.&lt;/p&gt;
+        <content type="html" xml:base="https://bredfern.github.io/blog/stories/story-of-a-human/">&lt;p&gt;Woody tried to shake the boy&#39;s hand, as it is considered polite to do so, but it was awkward.&lt;/p&gt;
 &lt;p&gt;The boy thrust his left hand out from behind him, upsidedown. Woody grabbed he boy&#39;s pinky and Woody tried to shake it with his dond left hand, but he couldn&#39;t get it at the right angle. He grabbed the little pinky in desperation and shook it resolutely.&lt;/p&gt;
 &lt;p&gt;&quot;How ya doin&#39;?&quot; asked the kid, staring into Woody&#39;s eyes with eyes with his own so tilt~~-like brown eyes.&lt;/p&gt;
 &lt;p&gt;&quot;Fine,&quot; said Woody, squirming nder the boy&#39;s scrutiny.&lt;/p&gt;
@@ -602,10 +602,10 @@ the candlestick.&lt;/p&gt;
           <name>Unknown</name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://fraterbrian.com/blog/stories/the-kid/"/>
-        <id>https://fraterbrian.com/blog/stories/the-kid/</id>
+        <link rel="alternate" type="text/html" href="https://bredfern.github.io/blog/stories/the-kid/"/>
+        <id>https://bredfern.github.io/blog/stories/the-kid/</id>
         
-        <content type="html" xml:base="https://fraterbrian.com/blog/stories/the-kid/">&lt;p&gt;They said that Kid Sataminid had a gift, He could see the hideous in all people, But this time it was different, she seemed strangely beautiful to him, though she was larger than fashionable.&lt;/p&gt;
+        <content type="html" xml:base="https://bredfern.github.io/blog/stories/the-kid/">&lt;p&gt;They said that Kid Sataminid had a gift, He could see the hideous in all people, But this time it was different, she seemed strangely beautiful to him, though she was larger than fashionable.&lt;/p&gt;
 &lt;p&gt;He said: &quot;Sometimes her face is shaped just like a tear, sometimes like a horse&#39;s backside, that&#39;s why I love her.&quot;&lt;/p&gt;
 </content>
         
