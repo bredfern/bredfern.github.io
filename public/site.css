@@ -2,7 +2,7 @@
     font-family: 'Scaver-Thin';
     src: url('Scaver-Thin.woff2') format('woff2'),
     url('Scaver-Thin.woff2') format('woff');
-    font-weight: 500;
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
