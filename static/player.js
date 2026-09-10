@@ -1,4 +1,3 @@
-
 class AudioPlaylistPlayer extends HTMLElement {
   constructor() {
     super();
@@ -239,7 +238,6 @@ class AudioPlaylistPlayer extends HTMLElement {
     this.shadowRoot.innerHTML = `
 <style>
 :host {
-  font-family: 'Scaver Med';
   display: block;
   padding: 0;
   width: 100%; /* Increased max-width for repos */
@@ -317,7 +315,7 @@ class AudioPlaylistPlayer extends HTMLElement {
 #play-pause-btn {
     background-color: #ffffff;
     color: #000000;
-    border: none;
+    border: sold 0.15rem #000;
     font-size: 120%;
     font-weight: bold;
     padding: 0.25rem 0.5rem;
