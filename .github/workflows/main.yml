@@ -1,10 +1,9 @@
         uses: actions/deploy-pages@v4
-        uses: actions/deploy-pages@v4
 name: Build and deploy Zola website
 on:
   push:
     branches:
-      - main
+      - master
 
 permissions:
   contents: read
@@ -19,24 +18,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: checkout
         uses: actions/checkout@v4
 
-      - name: Install Zola
-        run: |
-          wget https://github.com/getzola/zola/releases/download/v0.22.0/zola-v0.22.0-x86_64-unknown-linux-gnu.tar.gz
-          tar -xzf zola-v0.22.0-x86_64-unknown-linux-gnu.tar.gz
-          sudo mv zola /usr/local/bin/
-
-      - name: Build Site
-        run: zola build
-
-      - name: Upload Pages Artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Build Zola + upload Pages artifact
+        uses: getzola/github-pages@v1.0.1
         with:
-          path: "./public" # Uploads ONLY the generated HTML/CSS files
           zola_version: v0.22.0
-          root: "." # Ensure this points to the exact folder containing config.toml
+          out_dir: public
 
   deploy:
     runs-on: ubuntu-latest
