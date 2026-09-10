@@ -28,6 +28,12 @@ body {
     background-color: lightgray;
 }
 
+form {
+  width: 100%;
+  padding: 0.5rem;
+  border: 0.15rem solid #000;
+}
+
 #logo {
     width: 23rem;
     height: 10rem;
