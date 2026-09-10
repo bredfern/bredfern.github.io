@@ -24,7 +24,6 @@ jobs:
         uses: getzola/github-pages@v1.0.1
         with:
           zola_version: v0.22.0
-          out_dir: public
 
   deploy:
     runs-on: ubuntu-latest
