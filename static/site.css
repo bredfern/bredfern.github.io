@@ -1,12 +1,3 @@
-@font-face {
-    font-family: 'Scaver-ExtBd';
-    src: url('Scaver-ExtraBold.woff2') format('woff2'),
-    url('Scaver-ExtraBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -45,16 +36,14 @@ a:hover {
 }
 
 h1 {
-    font-size: 2rem;
-    float: left;
-    margin-left: .5rem;
-    font-family: 'Scaver-ExtBd', serif;
+    font-size: 150%;
     letter-spacing: 0.2rem;
 }
 
 ul {
     list-style-type: none;
     margin: 0;
+    margin-top: 1rem;
     padding: 0;
 }
 
@@ -195,8 +184,10 @@ footer {
         grid-template-columns: auto;
         grid-template-rows: auto;
     }
-
-    nav, .aside, .aside-content, main,  #logo {
+    nav {
+      display: none;
+    }
+    .aside, .aside-content, main,  #logo {
         margin: 0;
         width: 100%;
         padding: 0.25rem;
