@@ -3,25 +3,25 @@ body {
     padding: 0;
     line-height: 1.5;
     font-size: 100%;
-    background-color: lightgray;
+    background-color: #20B2AA;
 }
 
 #logo {
-    width: 23rem;
-    height: 10rem;
+    width: 100%;
+    height: 9rem;
 }
 
 #heading {
-    color: #000;
+    color: #000000;
     text-decoration: none;
 }
 
 a, a:visited, a:active {
-    color: #000;
+    color: #000000;
 }
 
 a.blk, a:visited.blk, a:active.blk, .blk {
-    color: #000;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -31,7 +31,6 @@ a.blk, a:visited.blk, a:active.blk, .blk {
 
 a:hover {
     text-decoration: none;
-    color: red;
     font-weight: bold;
 }
 
@@ -132,7 +131,7 @@ textarea {
 }
 
 header {
-    background-color: lightgray;
+    background-color: #fff;
     color: #000;
     padding: .25rem;
     grid-area: header;
@@ -167,7 +166,7 @@ aside {
 footer {
     grid-area: footer;
     padding: .6rem;
-    background-color: lightgray;
+    background-color: #fff;
     color: #000;
     text-align: center;
 }
