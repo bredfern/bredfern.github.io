@@ -8,30 +8,28 @@
         />
         <link rel="shortcut icon" href="/favicon.ico" />
         <title>Brian Redfern Divination and Web Development Blog.</title>
-        <link rel="stylesheet" type="text/css" rel="preload" as="style" href="/site.css">
+        <link rel="stylesheet" type="text/css" rel="preload" as="style" href="/site.css" onload="this.onload=null;this.rel='stylesheet'">
     </head>
     <body>
-        <div class="container">
+        <section>
             <header>
-                <h1><a href="/" id="heading">Brian Redfern</a></h1>
+                <h1><a href="/">Brian Redfern</a></h1>
             </header>
             <nav>
-              <div class="menu">
-                    <ul>
-                      <li><a href="/" class="menu-item">Home</a></li>
-                      <li><a href="/blog/poems" class="menu-item">Poetry</a></li>
-                      <li><a href="/blog/diary" class="menu-item">Diary</a></li>
-                      <li><a href="/blog/stories" class="menu-item">Stories</a></li>
-                      <li><a href="/blog/tarot" class="menu-item">Readings</a></li>
-                      <li><a href="/blog/songs" class="menu-item">Songs</a></li>
-                    </ul>
-                </div> 
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog/poems">Poetry</a></li>
+                <li><a href="/blog/diary">Diary</a></li>
+                <li><a href="/blog/stories">Stories</a></li>
+                <li><a href="/blog/tarot">Readings</a></li>
+                <li><a href="/blog/songs">Songs</a></li>
+              </ul>
             </nav>
             <main>
-                <div class="centered">
-                  <a href="/"><img src="/me.svg" alt="logo" id="logo"></a>
+                <div>
+                  <a href="/"><img src="/me.svg" alt="logo" id="logo" loading="lazy"></a>
                 </div>
-                <div class="blog-sections centered">
+                <div id="middle-menu">
                   <a href="/">Home</a>
                   <a href="/blog/poems">Poetry</a>  
                   <a href="/blog/diary">Diary</a>
@@ -39,18 +37,19 @@
                   <a href="/blog/tarot">Readings</a>
                   <a href="/blog/songs">Songs</a>
                 </div>
-                <hr>
                 <div>{% block content %} {% endblock %}</div>
             </main>
-            <aside class="aside-content">
-              <h2 class="centered">Get a Reading</h2>
+            <aside> 
               <form action="https://formsubmit.co/brianwredfern@gmail.com" method="POST">
-                <p><label>Name <input type="text" name="name" /></label></p>
-                <p><label>Email <input type="email" name="email" /></label></p>
-                <p><button type="submit">submit</button></p>
+                <fieldset>
+                  <legend><h2>Get a Tarot Reading</h2></legend>
+                  <label for="name">Name <input type="text" name="name" /></label>
+                  <label for="email">Email <input type="email" name="email" /></label>
+                  <div><input type="submit"></div>
+                </fieldset>
               </form>
             </aside>
-            <footer class="centered">&#169; 2026 Brian Redfern</footer>
-        </div>
+            <footer><h3>&#169; 2026 Brian Redfern</h3></footer>
+        </section>
     </body>
 </html>
