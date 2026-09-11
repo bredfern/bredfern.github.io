@@ -1,13 +1,7 @@
----
-title: "Genesis Passing"
-date: 2026-08-25
-categories: 
-  - "diary"
-  - "margick"
-coverImage: "89721962_684292940694_2402035106819604480_n.jpg"
----
-
-2020-03-16
++++
+title = "Genesis Passing"
+date = 2020-08-25
++++
 
 Back in 2017 I was able to see one of her last Psychic TV shows. Compared to say the Rolling Stones it was a small venue but the music was amazing and the light show and video.
 
