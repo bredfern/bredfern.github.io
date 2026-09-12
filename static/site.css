@@ -5,6 +5,10 @@ body {
   color: #000;
 }
 
+fieldset {
+  border: solid 0.15rem #000;
+}
+
 section {
   border:  solid 0.15rem#000;
   display: grid;
@@ -23,7 +27,7 @@ section {
 
 img {
   width: 20rem;
-  height: auto;
+  height: 13rem;
 }
 
 input {

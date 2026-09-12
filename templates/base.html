@@ -24,12 +24,17 @@
               </ul>
             </nav>
             <main>
+              <picture>
+                <source srcset="me.avif" type="image/avif">
+                <source srcset="me.webp" type="image/webp">
+                <img src="me.jpg" alt="my pic" loading="lazy" decoding="async">
+              </picture>
               {% block content %} {% endblock %}
             </main>
             <aside> 
               <form action="https://formsubmit.co/brianwredfern@gmail.com" method="POST">
                 <fieldset>
-                  <legend><h2>Get a Tarot Reading</h2></legend>
+                  <legend><h2>Get a Consultation</h2></legend>
                   <label for="name">Name <input type="text" name="name" id="name" /></label>
                   <label for="email">Email <input type="email" name="email" id="email" /></label>
                   <div><input type="submit"></div>

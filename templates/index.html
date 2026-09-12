@@ -1,19 +1,4 @@
 {% extends "base.html" %} {% block content %}
-<picture>
-  <!-- 1. High-efficiency AVIF for modern browsers -->
-  <source srcset="me.avif" type="image/avif">
-  
-  <!-- 2. Next-gen WebP fallback -->
-  <source srcset="me.webp" type="image/webp">
-  
-  <!-- 3. Standard fallback with performance attributes -->
-  <img 
-    src="me.jpg" 
-    alt="A descriptive sentence about the image content" 
-    loading="lazy" 
-    decoding="async">
-</picture>
-
 <h2>Hi I'm Brian</h2>
 <p>
 I am a universal life minister, software engineer, writer, visual artist and guitarist. Feel free to contact me for a free consultation.
