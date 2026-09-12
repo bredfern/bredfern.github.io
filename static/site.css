@@ -21,6 +21,11 @@ section {
   margin-right: auto;
 }
 
+img {
+  width: 20rem;
+  height: auto;
+}
+
 input {
   margin-bottom: 1rem;
   display: block;
@@ -112,9 +117,11 @@ form {
 
 footer {
   grid-area: footer;
+  padding: 0.5rem;
   background-color: #fff;
   color: #000;
   text-align: center;
+  border-top: 0.15rem solid #000;
 }
 
 .category {
@@ -135,9 +142,14 @@ footer {
       grid-template-columns: auto;
       grid-template-rows: auto;
   }
+  
+  img {
+    width: 16rem;
+    height: auto;
+  }
 
-  li.category {
-    width: 10rem;
+  ul {
+    width: 100%;
   }
 
   header, footer {
@@ -145,11 +157,14 @@ footer {
     border: none;
   }
   
-  ul, form {
-    width: 18rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0.5rem;
+  form {
+    width: 21rem;
+    margin: 0;
+  }
+
+  input {
+    margin-bottom: 2rem;
+    height: 1rem;
   }
   
   section {
@@ -160,6 +175,7 @@ footer {
     border: none;
     height: 100%;
     width: 16rem;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
   }

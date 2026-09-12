@@ -1,9 +1,21 @@
 {% extends "base.html" %} {% block content %}
+<picture>
+  <!-- 1. High-efficiency AVIF for modern browsers -->
+  <source srcset="me.avif" type="image/avif">
+  
+  <!-- 2. Next-gen WebP fallback -->
+  <source srcset="me.webp" type="image/webp">
+  
+  <!-- 3. Standard fallback with performance attributes -->
+  <img 
+    src="me.jpg" 
+    alt="A descriptive sentence about the image content" 
+    loading="lazy" 
+    decoding="async">
+</picture>
+
 <h2>Hi I'm Brian</h2>
 <p>
-I am a universal life minister, web developer, and a kaballah practitioner. I work with the tarot along with various rituals of kaballistic and planetary rituals to address your problems as a zoom based live streaming tarot reading. 
-</p>
-<p>
-Feel free to contact me for a free initial consultation. I handle everything from personal issues to business questions with the same dedication to integrity and privacy.
+I am a universal life minister, software engineer, writer, visual artist and guitarist. Feel free to contact me for a free consultation.
 </p>
 {% endblock content %}
