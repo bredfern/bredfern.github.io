@@ -148,8 +148,8 @@ footer {
   }
   
   img {
-    width: 16rem;
-    height: auto;
+    width: 12rem;
+    height: 5rem;
   }
 
   ul {
@@ -162,7 +162,7 @@ footer {
   }
   
   form {
-    width: 21rem;
+    width: 91%;
     margin: 0;
   }
 
