@@ -22,7 +22,7 @@ section {
 input {
   margin-bottom: 1rem;
   display: block;
-  width: 100%;
+  width: 90%;
 }
 
 img {
@@ -100,7 +100,7 @@ aside {
 form {
   margin-top: 0;
   padding: 0;
-  width: 20rem;
+  width: 98%;
   margin-left: auto;
   margin-right: auto;
   
@@ -129,11 +129,16 @@ footer {
   nav {
     display: none;
   }
-    main, header, footer, img {
-        margin: 0;
-        width: 100%;
-        padding: 0.25rem;
-
-    }
+  
+  form {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+  }
+  main, header, footer, img, aside {
+    width: 100%;
+    padding: 0.5rem;
+  }
 }
 
