@@ -76,7 +76,7 @@ h1 {
 
 header {
     grid-area: header;
-    height: 6rem;
+    height: 4rem;
     background-color: #fff;
 }
 
@@ -130,7 +130,11 @@ footer {
   nav {
     display: none;
   }
-  
+
+  header {
+    text-align: center;
+  }
+
   form {
     width: 90%;
     margin-left: auto;
@@ -139,6 +143,7 @@ footer {
   }
   main, header, footer, img, aside {
     width: 100%;
+    margin: 0;
     padding: 0.5rem;
   }
 }
