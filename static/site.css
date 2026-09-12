@@ -82,7 +82,7 @@ header {
 nav {
     grid-area: nav;
     display: block;
-    padding: 0.25rem;
+    padding: 2rem;
     margin-top: 0;
     background: #fff; 
 }
