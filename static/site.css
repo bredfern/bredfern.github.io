@@ -6,6 +6,7 @@ body {
 }
 
 section {
+  border:  solid 0.15rem#000;
   display: grid;
   grid-template-areas:
   "header header header"
@@ -14,7 +15,7 @@ section {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto 2fr auto;
   grid-gap: 0.2rem;
-  min-height: 100vh;
+  min-height: 90vh;
   max-width: 64rem;
   margin-left: auto;
   margin-right: auto;
@@ -28,12 +29,6 @@ input {
 
 legend {
   text-align:center;
-}
-
-img {
-  height: auto;
-  width: 100%;
-  margin: 0;
 }
 
 a, a:visited, a:active {
@@ -51,6 +46,7 @@ ul {
   margin: 0;
   margin-top: 0rem;
   padding: 0;
+  width: 16rem;
 }
 
 ul li {
@@ -121,6 +117,12 @@ footer {
   text-align: center;
 }
 
+.category {
+  border: none;
+  font-size: 1.2rem;
+  border-bottom: #000 solid 0.15rem;
+}
+
 /* Fixed broken media query block syntax */
 @media (max-width: 640px) {
   section {
@@ -134,6 +136,10 @@ footer {
       grid-template-rows: auto;
   }
 
+  li.category {
+    width: 10rem;
+  }
+
   header, footer {
     height: 2rem;
     border: none;
@@ -145,7 +151,11 @@ footer {
     margin-right: auto;
     margin-bottom: 0.5rem;
   }
- 
+  
+  section {
+    border: none;
+  }
+
   main {
     border: none;
     height: 100%;
