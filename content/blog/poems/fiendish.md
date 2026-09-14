@@ -1,5 +1,5 @@
 +++
-title = "Fiendish Desiers"
+title = "Fiendish Desires"
 date = 2025-02-10
 +++
 
