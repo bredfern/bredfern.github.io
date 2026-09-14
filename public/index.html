@@ -18,13 +18,24 @@
             </header>
             <nav>
               <ul>
+                <li><a href="/">Home</a></li>
                 <li><a href="/blog/poems">Blog</a></li>
+                <li><a href="/music">Stories</a></li>
                 <li><a href="/contact">Contact Me</a></li>
                 <li><a href="/music">Music</a></li>
               </ul>
             </nav>
             <main>
-              {% block content %} {% endblock %}
+              
+<picture>
+  <source srcset="/me.avif" type="image/avif">
+  <source srcset="/me.webp" type="image/webp">
+  <img src="/me.jpg" alt="my pic" loading="lazy" decoding="async">
+</picture>
+
+<h2>Hi I'm Brian</h2>
+I am a Universal Life minister, writer, visual artist and guitarist. Feel free to contact me for a free consultation.
+
             </main>
             <footer>&#169; 2026 Brian Redfern</footer>
         </section>
