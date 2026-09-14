@@ -1,23 +1,23 @@
 @font-face {
-    font-family: 'JetBrainsMono-Regular';
-    src: url('JetBrainsMono-Regular.woff2') format('woff2');
-    font-display: swap;
+  font-family: 'JetBrainsMono-Regular';
+  src: url('JetBrainsMono-Regular.woff2') format('woff2');
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'JetBrainsMono-Bold';
-    src: url('JetBrainsMono-Bold.woff2') format('woff2');
-    font-display: swap;
+  font-family: 'JetBrainsMono-Bold';
+  src: url('JetBrainsMono-Bold.woff2') format('woff2');
+  font-display: swap;
 }
 
 html { 
-    font-family: "JetBrainsMono-Regular", sans-serif; 
+  font-family: "JetBrainsMono-Regular", sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  background: #fff;
   color: #000;
 }
 
@@ -30,7 +30,7 @@ section {
   display: grid;
   grid-template-areas:
   "header header header"
-  "nav content side"
+  "nav content content"
   "footer footer footer";
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto 2fr auto;
@@ -42,8 +42,8 @@ section {
 }
 
 img {
-  width: 20rem;
-  height: 13rem;
+  width: 32rem;
+  height: 20rem;
 }
 
 input {
@@ -74,23 +74,12 @@ ul {
   width: 16rem;
 }
 
-ul li {
+li {
   text-decoration: none;  
   padding: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-aside {
-  color: #000;
-  background-color: #fff;
-  text-align: left;
-}
-
-/* Fixed missing dot prefix on .aside-content selector */
-li {
-    color: #000;
-    padding: 0.5rem;
-    border: 0.15rem solid #000; 
+  padding: 0.5rem;
+  border: 0.15rem solid #000;
 }
 
 h1 {
@@ -101,30 +90,23 @@ h1 {
 }
 
 header {
-    grid-area: header;
-    height: 4rem;
-    border-bottom: #000 0.15rem solid;
-    background-color: #fff;
+  grid-area: header;
+  height: 4rem;
+  border-bottom: #000 0.15rem solid;
 }
 
 nav {
-    grid-area: nav;
-    display: block;
-    padding: 2rem;
-    margin-top: 0;
-    background: #fff; 
+  grid-area: nav;
+  display: block;
+  padding: 2rem;
+  margin-top: 0;
 }
 
 main {
-    background: #fff;
     padding: 1rem;
-    width: 100%;
+    width: 40rem;
     margin-top: 1rem;
     grid-area: content;
-}
-
-aside {
-    grid-area: side;
 }
 
 form {
@@ -139,8 +121,6 @@ form {
 footer {
   grid-area: footer;
   padding: 0.5rem;
-  background-color: #fff;
-  color: #000;
   text-align: center;
   border-top: 0.15rem solid #000;
 }
@@ -152,28 +132,19 @@ footer {
 }
 
 /* Fixed broken media query block syntax */
-@media (max-width: 640px) {
+@media (max-width: 800px) {
   section {
-      grid-template-areas: 
-          "header" 
-          "nav" 
-          "content" 
-          "side" 
-          "footer";
-      grid-template-columns: auto;
-      grid-template-rows: auto;
+    grid-template-areas:
+      "header"
+      "nav"
+      "content"
+      "footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    border: none;
   }
   
-  img {
-    width: 12rem;
-    height: 5rem;
-  }
-
-  ul {
-    width: 100%;
-  }
-
-  header, footer {
+  header {
     height: 2rem;
     border: none;
   }
@@ -188,23 +159,15 @@ footer {
     height: 1rem;
   }
   
-  section {
-    border: none;
+  h1 {
+    font-size: 2.6rem;
   }
 
-  main {
-    border: none;
-    height: 100%;
-    width: 16rem;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  header, footer, aside {
-    width: 100%;
+  header, footer, main, img, ul {
+    width: 35rem;
     margin: 0;
     padding: 1rem;
+    border: none;
   }
 }
 

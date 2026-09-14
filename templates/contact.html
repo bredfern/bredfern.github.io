@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% block content %}
+<h2>Contact Me</h2>
+<p>Need patoral counciling? Need a cutting edge Ruby on Rails web application? Contct me too!</p>
+<form action="https://formsubmit.co/brianwredfern@gmail.com" method="POST">
+  <fieldset>
+    <legend><h2>Contact</h2></legend>
+    <label for="name">Name <input type="text" name="name" id="name" /></label>
+    <label for="email">Email <input type="email" name="email" id="email" /></label>
+    <input type="submit"><
+  </fieldset>
+</form>
+
+{% endblock content %}
