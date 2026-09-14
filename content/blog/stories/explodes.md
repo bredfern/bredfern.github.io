@@ -76,11 +76,3 @@ The drill sergeant shouted into the barracks, like a raging hurricane, and bello
 
 "What am I doing here," cried Patty despondently, as he tried to trace the logic of his situation.
 
-Momma wanna know me?
-
-I burnt L.A. in effigy.
-I took my L.A. poster off the wall,
-and brought it down to the shopping mall,
-
-Momma wanna be proud of me,
-I burnt L.A. in effigy.

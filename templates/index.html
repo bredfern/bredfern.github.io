@@ -1,4 +1,10 @@
 {% extends "base.html" %} {% block content %}
+<picture>
+  <source srcset="/me.avif" type="image/avif">
+  <source srcset="/me.webp" type="image/webp">
+  <img src="/me.jpg" alt="my pic" loading="lazy" decoding="async">
+</picture>
+
 <h2>Hi I'm Brian</h2>
 I am a Universal Life minister, writer, visual artist and guitarist. Feel free to contact me for a free consultation.
 {% endblock content %}
