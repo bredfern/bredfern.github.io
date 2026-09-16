@@ -1,28 +1,39 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" 
-          content="Brian Redfern, Universal Life Minister, Divination Expert, Poet and Composer" 
-        />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <title>Brian Redfern Tarot, Poetry, Creative Non fiction and Web Development Blog.</title>
-        <link rel="stylesheet" type="text/css" rel="preload" as="style" href="/site.css" onload="this.onload=null;this.rel='stylesheet'">
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description" 
+        content="Brian Redfern, Universal Life Minister, Divination Expert, Poet and Composer" 
+      />
+      <link rel="shortcut icon" href="/favicon.ico" />
+      <title>Brian Redfern Tarot, Poetry, Creative Non fiction and Web Development Blog.</title>
+      <link rel="stylesheet" type="text/css" rel="preload" as="style" href="/site.css" onload="this.onload=null;this.rel='stylesheet'">
     </head>
     <body>
         <section>
             <header>
-              <h1><a href="/">Brian Redfern</a></h1> 
+              <h1><a href="/">Brian Redfern</a></h1>
+              <div id="main-nav">
+                <a href="/blog">Blog</a> | <a href="/music">Music</a>
+              </div>
             </header>
-            <nav>
-              <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/music">Music</a></li>
+            <nav id="side-nav">
+               <ul id="side-nav">
+                 <li><a href="/">Home</a></li>
+                <li><a href="/blog/poems">Poetry</a></li>
+                <li><a href="/blog/diary">Diary</a></li>
+                <li><a href="/blog/stories">Fiction</a></li>
+                <li><a href-"/music">Music</a></li>
+                <li><a href="/contact">Contact</a></li>
               </ul>
             </nav>
             <main>
+              <picture>
+                <source srcset="/me.avif" type="image/avif">
+                <source srcset="/me.webp" type="image/webp">
+                <img src="/me.jpg" alt="my pic" loading="lazy" decoding="async">
+              </picture>
               {% block content %} {% endblock %}
             </main>
             <footer>&#169; 2026 Brian Redfern</footer>

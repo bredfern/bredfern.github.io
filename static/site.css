@@ -42,8 +42,9 @@ section {
 }
 
 img {
-  width: 32rem;
+  width: 100%;
   height: 20rem;
+  margin-top: 0;
 }
 
 input {
@@ -84,14 +85,13 @@ li {
 
 h1 {
   font-family: "JetBrainsMono-Bold", sans-serif; 
-  font-size: 3rem;
-  margin: 0;
-  padding-left: 1rem;
+  align-items: flex-start;
 }
 
 header {
   grid-area: header;
-  height: 4rem;
+  height: auto;
+  display: flex;
   border-bottom: #000 0.15rem solid;
 }
 
@@ -125,6 +125,11 @@ footer {
   border-top: 0.15rem solid #000;
 }
 
+#main-nav {
+  margin-left: auto;
+  margin-top: 1.5rem;
+  padding: 0.25rem;
+}
 .category {
   border: none;
   font-size: 1.2rem;
@@ -150,23 +155,36 @@ footer {
   }
   
   form {
-    width: 91%;
+    width: 90%;
     margin: 0;
   }
 
+  img {
+    margin: 0;
+    height: 20rem;
+    width: 100%;
+  }
+  
   input {
     margin-bottom: 2rem;
     height: 1rem;
   }
   
   h1 {
-    font-size: 2.6rem;
+    font-size: 1.6rem;
+  }
+ 
+  nav {
+    display: none;
   }
 
-  header, footer, main, img, ul {
-    width: 35rem;
+  li {
+    margin:0;
+  }
+  header, footer, main  {
+    width: 22.25rem;
     margin: 0;
-    padding: 1rem;
+    padding: 0.5rem;
     border: none;
   }
 }
