@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+}
+
+html { 
+    font-family: "Scaver Med", "Avenir Next", "Avenir", sans-serif; 
+}
+
+body {
+    background: #FDF5E6;
+    color: #000;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+h1 {
+    margin: 0;
+}
+
+/*
+ CSS for the main interaction
+*/
+.tabset > input[type="radio"] {
+    position: absolute;
+    left: -200vw;
+}
+
+.tabset .tab-panel {
+    display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+    display: block;
+}
+
+/*
+ Styling
+*/
+
+.tabset > label {
+    position: relative;
+    display: inline-block;
+    padding: 0.9rem 0.9rem 1.5rem;
+    border: 0.06rem solid transparent;
+    border-bottom: 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.tabset > label::after {
+    content: "";
+    position: absolute;
+    left: 0.9rem;
+    bottom: 10px;
+    width: 22px;
+    height: 4px;
+    background: #8d8d8d;
+}
+
+input:focus-visible + label {
+    outline: 2px solid #000;
+    border-radius: 3px;
+}
+
+.tabset > label:hover,
+.tabset > input:focus + label,
+.tabset > input:checked + label {
+    color: #000;
+}
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+    background: #8aa399;
+}
+
+.tabset > input:checked + label {
+    border-color: #949695;
+    border-bottom: 0.06rem solid #000;
+    margin-bottom: -0.06rem;
+}
+
+.tab-panel {
+    padding: 10px 0;
+}
+
+-fancy-panel {
+    border: dashed 0.25rem #000;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.tabset {
+    max-width: 65em;
+}
+
+#content {
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30rem;
+    font-size: 1.2rem;
+    margin-bottom: 6rem;
+}
+
+a,
+a:visited,
+a:active {
+  color: #000;
+  text-decoration: underline;
+}
+
+#logo {
+  border: none;
+  width: 98%;
+  height: 10rem;
+}
+
+
+a:hover {
+  font-weight: bold;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.icon {
+    display: inline;
+    width: 2rem;
+    height: auto;
+    margin-top: 0.35rem;
+}
+
+.no-decor, h1 a {
+  text-decoration: none;
+}
+
+header {
+    color: #000;
+    padding: 0.5rem;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(-45deg, #000000, #DCDCDC, #FFFFFF, #D3D3D3);
+    background-size: 400% 400%;
+    background-image: url(/assets/webp/clouds.webp);
+    animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+footer {
+    padding: 0.5rem;
+    bottom: 0;
+    height: auto;
+    width: 100%;	
+    background-color: #87CEFA;
+    color: red;
+    text-align: center;
+    font-size: 1rem;
+    position: fixed;
+}
+
+#marzen {
+    background-color: transparent;
+    border-radius: 0.25rem;
+    border: solid 0.1rem #cecece;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 48rem) {
+    
+    #content {
+	width: 100%;
+    }
+}
+
+.cologo {
+  display: block;
+  padding: 0;
+  width: 18.75rem;
+  height: 6.25rem;
+}
+
+@font-face {
+    font-family: 'Scaver Med';
+    src: url('Scaver-Medium.woff2') format('woff2'),
+    url('Scaver-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Scaver ExtBd';
+    src: url('Scaver-ExtraBold.woff2') format('woff2'),
+    url('Scaver-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Typography */
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h1,h2 {
+    font-family: 'scaverextbld', serif;
+    letter-spacing: 0.2rem;
+}
+
+p {
+    font-size: 1rem;
+    font-family: 'scavermed', sans-serif;
+}
+
