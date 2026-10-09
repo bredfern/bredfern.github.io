@@ -3,7 +3,7 @@
 }
 
 html { 
-    font-family: "Scaver Med", "Avenir Next", "Avenir", sans-serif; 
+    font-family: "Cloude", "Scaver-Regular", sans-serif;
 }
 
 body {
@@ -203,19 +203,19 @@ footer {
 }
 
 @font-face {
-    font-family: 'Scaver Med';
-    src: url('Scaver-Medium.woff2') format('woff2'),
-    url('Scaver-Medium.woff') format('woff');
+    font-family: 'Cloude-Outline';
+    src: url('Cloude-Outline.woff2') format('woff2'),
+    url('Cloud-Outline.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Scaver ExtBd';
-    src: url('Scaver-ExtraBold.woff2') format('woff2'),
-    url('Scaver-ExtraBold.woff') format('woff');
-    font-weight: bold;
+    font-family: 'Scaver-Regular';
+    src: url('Scaver-Regular.woff2') format('woff2'),
+    url('Scaver-regular.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
@@ -231,12 +231,12 @@ h2 {
 }
 
 h1,h2 {
-    font-family: 'scaverextbld', serif;
+    font-family: 'Cloude-Outline', sans-serif;
     letter-spacing: 0.2rem;
 }
 
 p {
-    font-size: 1rem;
-    font-family: 'scavermed', sans-serif;
+    font-size: 1.25rem;
+    font-family: 'Scaver-Regulare', sans-serif;
 }
 
