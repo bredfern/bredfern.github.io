@@ -311,7 +311,6 @@ p {
     text-align: center;
     margin: 0.5rem;
     font-weight: bold;
-    color: #000000;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
