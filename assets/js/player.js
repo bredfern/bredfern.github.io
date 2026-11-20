@@ -324,8 +324,6 @@ p {
     padding: 0.5rem;
     max-height: 12.5rem;
     overflow-y: auto;
-    background: #ffffff;
-    border-top: 0.1rem solid #000000;
     margin-top: 0.5rem;
     text-align: left;
 }
@@ -345,8 +343,6 @@ p {
 }
 
 #playlist-list li.active {
-    background-color: #F5F5F5;
-    color: #000000;
     font-weight: bold;
 }
 
