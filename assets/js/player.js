@@ -332,7 +332,7 @@ p {
 
 #playlist-list li {
     padding: 0.25rem;
-    border-bottom: 0.1rem solid #000000;
+    border-bottom: 0.1rem solid #fff;
     cursor: pointer;
     transition: background-color 0.2s;
     white-space: nowrap;
