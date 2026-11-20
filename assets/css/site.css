@@ -75,7 +75,7 @@ input:focus-visible + label {
 .tabset > label:hover,
 .tabset > input:focus + label,
 .tabset > input:checked + label {
-    color: #000;
+    color: red;
 }
 
 .tabset > label:hover::after,
@@ -108,7 +108,7 @@ input:focus-visible + label {
 }
 
 #content {
-    padding: 1rem;
+    padding: 2rem;
     margin-left: auto;
     margin-right: auto;
     width: 30rem;
@@ -126,7 +126,6 @@ a:active {
 #logo {
   border: none;
   width: 100%;
-  height: 16rem;
 }
 
 
@@ -157,6 +156,7 @@ header {
     width: 100%;
     text-align: center;
     background: #000;
+    margin-top: 0;
 }
 
 footer {
@@ -164,7 +164,7 @@ footer {
     bottom: 0;
     height: auto;
     width: 100%;	
-    background-color: #87CEFA;
+    background-color: #000;
     color: red;
     text-align: center;
     font-size: 1rem;
