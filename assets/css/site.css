@@ -81,7 +81,7 @@ input:focus-visible + label {
 .tabset > label:hover::after,
 .tabset > input:focus + label::after,
 .tabset > input:checked + label::after {
-    background: #8aa399;
+    background: red;
 }
 
 .tabset > input:checked + label {
