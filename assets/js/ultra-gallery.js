@@ -133,7 +133,7 @@ class UltraGallery extends HTMLElement {
   render() {
     this.shadowRoot.innerHTML = `
       <style>
-        :host { display: block; background-color: transparent;
+        :host { display: block; background-color: #fff;
                     border-radius: 0.25rem;
                     border: solid 0.1rem #cecece; color: #000; padding: 0.25rem 0; font-family: system-ui; }
         .gallery-container { perspective: 125rem; height: 21rem; display: flex; align-items: center; justify-content: center; }
