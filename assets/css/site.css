@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'Scaver Med';
+    src: url('Scaver-Medium.woff2') format('woff2'),
+    url('Scaver-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Scaver ExtBd';
+    src: url('Scaver-ExtraBold.woff2') format('woff2'),
+    url('Scaver-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -15,7 +33,7 @@ body {
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
-    font-variation-settings: "wdth" 100, "YTLC" 500;
+    font-variation-settings: "width" 100, "YTLC" 500;
 }
 
 h1 {
@@ -51,7 +69,7 @@ h1 {
     position: relative;
     display: inline-block;
     padding: 0.9rem 0.9rem 1.5rem;
-    border: 0.06rem solid transparent;
+    border: 0.06rem solid #fff;
     border-bottom: 0;
     cursor: pointer;
     font-weight: 600;
@@ -64,7 +82,7 @@ h1 {
     bottom: 10px;
     width: 22px;
     height: 4px;
-    background: #8d8d8d;
+    background: #fff;
 }
 
 input:focus-visible + label {
@@ -85,7 +103,7 @@ input:focus-visible + label {
 }
 
 .tabset > input:checked + label {
-    border-color: #949695;
+    border-color: #fff;
     border-bottom: 0.06rem solid #000;
     margin-bottom: -0.06rem;
 }
@@ -191,24 +209,6 @@ footer {
   padding: 0;
   width: 18.75rem;
   height: 6.25rem;
-}
-
-@font-face {
-    font-family: 'Scaver Med';
-    src: url('Scaver-Medium.woff2') format('woff2'),
-    url('Scaver-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Scaver ExtBd';
-    src: url('Scaver-ExtraBold.woff2') format('woff2'),
-    url('Scaver-ExtraBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
 }
 
 /* Typography */
